@@ -18,6 +18,7 @@
 | 7 | `universe.py` | `universe.csv` | 全站盤點：哪些市場現在能套用規則（價差、到期、中價範圍） |
 | 8 | `sizing.py` | `universe_plan.csv` | 每個市場的最適本金：獎勵(C) − 門檻 × 預期虧損 × C |
 | 9 | `plan_1m.py` | `plan_1m.csv`、`plan_1m_core.csv` | 投入 $1M 的配置，以及虧損率是估計值 1–4 倍時的報酬 |
+| — | `turnover_test.py` | — | 每小時重選市場的換手率：隔 15 分鐘重選一次，有／沒有遲滯各留下多少（要從 repo 根目錄用 `PYTHONPATH=.` 執行） |
 | — | `reward_oos.py` | — | 早期的樣本外檢查（獎勵 vs 實際成交虧損） |
 | — | `btc_maker_markout.py`、`btc_markout_short.py` | `btc_maker_trades.csv`、`btc_markouts.csv` | BTC 每日盤：掛單方抱到結算／短期的盈虧（沒有流動性獎勵，只有返佣） |
 

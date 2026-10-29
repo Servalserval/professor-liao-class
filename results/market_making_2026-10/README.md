@@ -11,3 +11,5 @@
 | `param_search_output.txt` | `param_search.py` 的完整輸出（敏感度、等級相關、交叉驗證、兩半都好的組合） |
 | `plan_1m.csv` | 全部投入 $1M 時的每個市場配置（2026-10-29 的訂單簿） |
 | `mm_plan_live.csv` | `python -m pmopt mm-plan --budget 350000` 在 2026-10-29 的輸出：999 個市場的本金、預期獎勵、預期淨額 |
+| `paper_run1/`、`paper_run2/` | 兩次全規模模擬（約 950 個市場、$35 萬）：設定、每分鐘彙整、事件記錄、`mm-report` 的輸出 |
+| `turnover_test.txt` | 遲滯的實測：隔 15 分鐘重選市場，有／沒有遲滯留下的比例 |
