@@ -81,8 +81,8 @@ class _FakeAPI:
             slug = params["slug"]
             for d in DAYS:
                 if slug == H.daily_slugs(d)[0]:
-                    # 規則：收在 12:00 的那根 K 線（11:59 開盤）
-                    settle_close = _spot(int((H.settle_time(d) - timedelta(minutes=1)).timestamp() * 1000))
+                    # 實際結算：12:00 開盤的那根 K 線
+                    settle_close = _spot(int(H.settle_time(d).timestamp() * 1000))
                     markets = [dict(
                         question=f"Will the price of Bitcoin be above ${k:,} on {d:%B} {d.day}?",
                         closed=True, clobTokenIds=json.dumps([f"{d}-{k}-yes", f"{d}-{k}-no"]),

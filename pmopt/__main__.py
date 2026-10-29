@@ -242,7 +242,7 @@ def cmd_backtest(args) -> int:
         df.to_csv(out / "history.csv", index=False)
         print(f"原始資料已存到 {out / 'history.csv'}（之後可用 --from-csv 重新分析，不必再連網）")
 
-    for col, candle in (("rule_check", "11:59 開盤、12:00 收盤"), ("rule_check_alt", "12:00 開盤")):
+    for col, candle in (("rule_check", "12:00 開盤"), ("rule_check_alt", "11:59 開盤、12:00 收盤")):
         if col in df and df[col].notna().any():
             mk = df[df[col].notna()].drop_duplicates(["day", "strike"])
             bad = int((mk[col].astype(str) == "False").sum())

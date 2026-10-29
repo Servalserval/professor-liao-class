@@ -131,8 +131,10 @@ def summarize_collected(csv_path: Path, out_dir: Path, min_edge: float = 0.01) -
 
     fig, ax = plt.subplots(figsize=(7.5, 4.2))
     buckets = [str(b) for b in summary.index]
-    ax.bar(buckets, summary["平均 edge"], width=0.5, color=BLUE)
+    ax.bar(buckets, summary["平均 edge"], width=0.35, color=BLUE)
     ax.axhline(0, color=TEXT_2, lw=1)
+    ax.grid(axis="x", visible=False)
+    ax.set_axisbelow(True)
     ax.set_xlabel("期權推算的公允機率（分桶）")
     ax.set_ylabel("平均可捕捉 edge（美元／股）")
     ax.set_title(f"{len(df):,} 筆觀測：哪個機率區間的錯價最大？", loc="left", fontsize=12)
@@ -220,7 +222,6 @@ def plot_reliability(by_pm: pd.DataFrame, by_model: pd.DataFrame, out_dir: Path,
     """
     fig, ax = plt.subplots(figsize=(6.4, 5.6))
     ax.plot([0, 1], [0, 1], color=TEXT_2, lw=1, alpha=0.6)
-    ax.text(0.72, 0.66, "完全準確", color=TEXT_2, fontsize=9, ha="center", va="center", rotation=45)
     for d, x, color, label in ((by_model, "model_prob", BLUE, "模型（DVOL 對數常態）"),
                                (by_pm, "pm_price", ORANGE, "Polymarket 價格")):
         ax.errorbar(d[x], d["realized"], yerr=1.96 * d["realized_se"].fillna(0), color=color, lw=2,
@@ -230,7 +231,7 @@ def plot_reliability(by_pm: pd.DataFrame, by_model: pd.DataFrame, out_dir: Path,
     ax.set_aspect("equal")
     ax.set_xlabel("結算前的預測機率（分組平均）")
     ax.set_ylabel("實際發生的頻率（誤差線：95%，以天為群組）")
-    ax.set_title("每日盤的校準：點在對角線下方 = 高估", loc="left", fontsize=12, pad=20)
+    ax.set_title("每日盤的校準：灰色對角線 = 完全準確，點在下方 = 高估", loc="left", fontsize=12, pad=20)
     if title_note:
         ax.text(0, 1.015, title_note, transform=ax.transAxes, color=TEXT_2, fontsize=9, va="bottom")
     ax.legend(loc="upper left", bbox_to_anchor=(0, 0.95))

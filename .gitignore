@@ -11,3 +11,5 @@ data/live/
 data/cache/
 results/*
 !results/snapshot_2026-10-29/
+!results/live_2026-10-29/
+!results/backtest_2025-10_2026-10/

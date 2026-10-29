@@ -84,7 +84,9 @@ def settle_time(day: date) -> datetime:
     """每日盤的結算時刻：美東時間中午 12:00，換成 UTC（自動處理夏令時間）。
 
     規則原文是「the Binance 1 minute candle for BTC/USDT closing at 12:00 in the ET timezone」，
-    也就是 11:59 開盤、12:00 收盤的那根。Binance 的 K 線以開盤時間標示，所以要往前一分鐘取。
+    字面上像是 11:59 開盤的那根。但用 2025-10 ~ 2026-10 的 4,266 個已結算市場驗證，
+    實際結算用的是 Binance 上標示為 12:00（12:00 開盤、12:00:59 收盤）的那根：
+    用它算 0 個不一致，用 11:59 那根有 3 個不一致（履約價剛好夾在兩根的收盤價之間）。
     """
     return datetime(day.year, day.month, day.day, 12, 0, tzinfo=ET).astimezone(timezone.utc)
 
@@ -223,9 +225,9 @@ def collect_history(start: date, end: date, horizons_h: tuple[float, ...] = (24.
         markets = resolved_markets(f, day, asset)
         settle = settle_time(day)
         if markets:
-            # 規則寫的是「收在 12:00」那根（11:59 開盤）；12:00 開盤那根也記下來，用實際結算判斷哪一根才對
-            settle_close = binance_close(f, settle - timedelta(minutes=1), f"{asset}USDT")
-            settle_close_alt = binance_close(f, settle, f"{asset}USDT")
+            # 實際結算用 12:00 開盤那根（見 settle_time）；11:59 開盤那根也記下來，持續驗證
+            settle_close = binance_close(f, settle, f"{asset}USDT")
+            settle_close_alt = binance_close(f, settle - timedelta(minutes=1), f"{asset}USDT")
             spots = {h: binance_close(f, settle - timedelta(hours=h), f"{asset}USDT") for h in horizons_h}
             for m in markets:
                 hist, fid = price_history(f, m["token_yes"], int((settle - span).timestamp()), int(settle.timestamp()))
