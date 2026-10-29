@@ -6,6 +6,8 @@
     python -m pmopt collect --minutes 120 --interval 60          # 每分鐘收集一次，存成 CSV
     python -m pmopt summarize data/live/scans.csv                # 彙整收集到的資料
     python -m pmopt backtest --start 2026-09-01 --end 2026-10-28 # 已結算的每日盤：誰比較準？
+
+掛單嚕流動性獎勵（mm-plan、mm-paper、mm-live、mm-report、mm-earnings）見 pmopt/mm/cli.py。
 """
 
 from __future__ import annotations
@@ -353,6 +355,9 @@ def main(argv: list[str] | None = None) -> int:
     sp.add_argument("--out", default="results/summary")
     sp.add_argument("--min-edge", type=float, default=0.01)
     sp.set_defaults(func=cmd_summarize)
+
+    from .mm.cli import add_parsers
+    add_parsers(sub)
 
     args = p.parse_args(argv)
     if args.cmd == "backtest" and not args.from_csv and not (args.start and args.end):

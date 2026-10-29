@@ -9,7 +9,15 @@ venv/
 # 自己收集的即時資料與輸出（示範用的快照和結果會保留）
 data/live/
 data/cache/
+data/mm_logs/
 results/*
 !results/snapshot_2026-10-29/
 !results/live_2026-10-29/
 !results/backtest_2025-10_2026-10/
+!results/market_making_2026-10/
+
+# 掛單研究腳本的中間資料（重跑會重新產生）
+research/mm/*.csv
+research/mm/*.pkl
+research/mm/trades/
+research/mm/prices/
