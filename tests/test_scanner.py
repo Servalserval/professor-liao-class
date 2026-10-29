@@ -110,8 +110,11 @@ def test_collect_and_summarize_with_mocked_network(tmp_path, monkeypatch, snapsh
     assert main(["collect", "--minutes", "0.02", "--interval", "0.4", "--out", str(out_csv)]) == 0
     df = pd.read_csv(out_csv)
     assert {"ts_utc", "sync_gap_sec", "center_factor", "best_edge_centered"} <= set(df.columns)
+    pairs = pd.read_csv(tmp_path / "scans_pairs.csv")
+    assert {"ts_utc", "pair", "slack", "p_gap", "ev"} <= set(pairs.columns)
     assert main(["summarize", str(out_csv), "--out", str(tmp_path / "summary")]) == 0
     assert (tmp_path / "summary" / "edge_by_bucket.png").exists()
+    assert (tmp_path / "summary" / "pairs_summary.csv").exists()
 
 
 def test_cli_offline_demo_runs(tmp_path, capsys):
@@ -119,3 +122,10 @@ def test_cli_offline_demo_runs(tmp_path, capsys):
     assert (tmp_path / "scan_raw.csv").exists() and (tmp_path / "scan_centered.csv").exists()
     assert (tmp_path / "ladder_polymarket_vs_options.png").exists()
     assert "中心價格" in capsys.readouterr().out
+
+
+def test_cli_check_runs(tmp_path, capsys):
+    assert main(["check", "--snapshot", str(SNAP), "--out", str(tmp_path)]) == 0
+    out = capsys.readouterr().out
+    assert "沒有任何一組的成本低於 $1" in out and "77,500–78,000" in out
+    assert (tmp_path / "pairs_touch_vs_terminal.csv").exists()

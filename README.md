@@ -37,9 +37,15 @@ python -m pmopt scan --snapshot data/snapshot_2026-10-29 --out results/demo --pl
 # 2) 即時掃描一次（需要能連到 deribit.com 與 polymarket.com）
 python -m pmopt scan --live
 
-# 3) 每分鐘收集一次、連續 2 小時，存成 CSV；再彙整
+# 3) Polymarket 自己的兩組市場（觸價盤 vs 到期盤）彼此一致嗎？不需要期權也能檢查
+python -m pmopt check --snapshot data/snapshot_2026-10-29 --out results/demo --plot
+
+# 4) 每分鐘收集一次、連續 2 小時，存成 CSV；再彙整（也會記錄第 3 步的組合）
 python -m pmopt collect --minutes 120 --interval 60 --out data/live/scans.csv
 python -m pmopt summarize data/live/scans.csv --out results/summary
+
+# 5) 歷史回測：過去已結算的每日盤，Polymarket 和期權模型誰比較準？（需要網路）
+python -m pmopt backtest --start 2026-09-01 --end 2026-10-28 --horizons 24,6 --out results/backtest --verbose
 
 # 跑測試
 pip install pytest
@@ -82,6 +88,57 @@ python -m pytest
 4. 就算錯價是真的，要怎麼避險？Polymarket 的結算是 Binance BTC/USDT 某一分鐘的收盤價，
    Deribit 期權在 08:00 UTC 用自己的指數結算，兩者對不齊會帶來什麼風險？
 
+## 第二輪：Polymarket 自己跟自己比
+
+第一輪的比較有兩個弱點：要假設期權是對的，而且 Deribit 和 Polymarket 的結算來源、時間都對不齊。
+第二輪改問一個比較乾淨的問題：**Polymarket 自己的兩組市場，彼此一致嗎？**
+
+兩組市場都用 Binance BTC/USDT 的 1 分鐘 K 線結算，所以有不需要任何模型的關係。例如：
+
+> 如果 10/31 中午那根 K 線**收盤** ≤ 77,500，那根 K 線的**最低價**一定也 ≤ 77,500，
+> 所以「10 月內會跌到 77,500」一定成立。
+> 因此「買觸及 ↓77,500 Yes + 買高於 77,500 Yes」不管發生什麼都至少拿回 $1。
+
+`python -m pmopt check` 會列出所有這類組合（單調性、觸價 vs 到期），用**可成交的賣價**算買進成本。
+
+**結果一：無模型的關係全部守住。** 106 組裡沒有任何一組成本低於 $1，好幾組剛好等於 $1.000。
+看起來有人在專門維持這些邊界。
+
+**結果二：差一點點就不守了。** 觸價盤是 77,500，到期盤只有 76,000 和 78,000。
+「觸及 ↓77,500 Yes（0.090）+ 高於 78,000 Yes（0.870）」只要 **$0.960**，
+只有在收盤落在 77,500–78,000 之間、而且整個窗口都沒碰到 77,500 時才會兩腳都歸零。
+用反射原理算，這個機率約 **0.3%**；把 S 放在 79,500–81,500、σ 放在 20%–55% 之間，最高也只有約 1.2%。
+加上手續費模型（c = 0.07）成本是 0.974，期望值仍為正。
+
+![近似套利的報酬](results/snapshot_2026-10-29/near_arb_payoff.png)
+
+**結果三：但這很可能又是時間差。** 程式會用期權的微笑形狀，分別反推兩組 Polymarket 市場「以為」BTC 在哪裡：
+
+| 資料 | 隱含的中心價格 |
+|---|---|
+| Deribit 期權 | 80,166 |
+| Polymarket 到期盤 | 80,880（+0.89%） |
+| Polymarket 觸價盤 | 81,654（+1.86%） |
+
+觸價盤的向上和向下兩邊**各自**都指向 81,600–81,900。三份資料像是在三個不同的 BTC 價位抓的。
+不管用上表哪**一個**中心價格，這兩腳的公允值加總都在 1.056–1.108 之間（超過 1 是因為兩腳可能同時付錢），組合並不便宜。
+那 4¢ 完全可以用「兩組市場在 BTC 相差約 770 美元的時候分別被抓下來」來解釋。
+
+**第一輪學到「結果太好要懷疑」，第二輪學到：換一個更乾淨的方法，還是要再懷疑一次。**
+要分辨真假，兩腳必須在**同一時刻**抓下來；`collect` 現在每一輪都會同時記錄這些組合和兩組市場各自的中心價格。
+
+**結果四：形狀上的線索。** 用各自的中心價格對齊之後，觸價盤和 Deribit 的微笑形狀幾乎完全吻合
+（5 個市場的平方誤差合計 0.00014），但到期盤的兩邊尾巴明顯比較厚。
+如果這是真的，學術研究說的「Polymarket 高估尾部」可能主要發生在每日到期盤。
+這要用很多天的資料驗證，所以新增了 `backtest`：拿過去已結算的每日盤，直接比較報價和實際結果。
+
+### 第二輪討論題
+
+5. 為什麼無模型的關係守得這麼緊（剛好 $1.000），差 500 美元的缺口卻可能留下 4¢？
+   提示：誰在維持這些邊界？他們的程式需要模型嗎？
+6. 「觸價盤的中心價格比到期盤高 0.96%」有幾種可能的解釋？你要收集什麼資料，才能把它們一一排除？
+7. 回測時，同一天有十幾個履約價。為什麼不能把它們當成十幾個獨立樣本？（看 `history.clustered_mean_se`）
+
 ## 方法摘要
 
 | 步驟 | 做法 | 程式 |
@@ -92,6 +149,8 @@ python -m pytest
 | 觸價盤 | 對數常態、連續監看的觸價機率（反射原理），波動率取觸價價位的值 | `pmopt/pricing.py` |
 | 比較 | edge = 公允值 − 賣價（買 Yes）或 買價 − 公允值（賣 Yes），可扣手續費 | `pmopt/scanner.py` |
 | 中心對齊 | 平移期權曲面，找出最接近 Polymarket 中價的中心價格（最小平方） | `pmopt/scanner.py` |
+| 內部一致性 | 同一結算來源推出的支配關係；有缺口時用反射原理算「兩腳都歸零」的機率 | `pmopt/consistency.py` |
+| 歷史校準 | 已結算的每日盤：報價 vs 實際結果，Brier score、分組校準、以「天」為群組的標準誤 | `pmopt/history.py` |
 
 完整的數學、假設和沒有處理的部分，請看 [docs/method.md](docs/method.md)。
 
@@ -106,9 +165,11 @@ pmopt/
   polymarket.py   Polymarket Gamma / CLOB 公開 API、事件網址的命名規則
   live.py         一次抓好兩邊的即時資料，並記錄時間差
   scanner.py      計算公允機率、edge、中心對齊
+  consistency.py  Polymarket 內部一致性：無模型的支配關係、近似套利的缺口機率
+  history.py      歷史回測：已結算的每日盤、價格歷史、Binance K 線、DVOL、校準分析
   report.py       畫圖與彙整
-  __main__.py     命令列介面（scan / collect / summarize）
-tests/            45 個測試：公式對 Monte Carlo、曲面的無套利性質、解析器、CLI 全流程
+  __main__.py     命令列介面（scan / check / collect / summarize / backtest）
+tests/            71 個測試：公式對 Monte Carlo、曲面的無套利性質、解析器、模擬 API、合成資料、CLI 全流程
 data/snapshot_2026-10-29/   離線示範用的真實快照
 results/snapshot_2026-10-29/  示範輸出（CSV 與圖）
 docs/
@@ -125,6 +186,10 @@ docs/
   Deribit 看自己的指數；時間點也不同。
 - **觸價盤用的是近似。** 只用一個波動率，沒有完整考慮整條微笑曲線與時間結構。
 - **使用資格。** 各平台都有地區限制，使用前請自行確認。
+- **`backtest` 還沒有用真的 API 跑過。** 開發環境連不到 Polymarket、Binance、Deribit，
+  資料格式是照官方文件寫的，並用模擬回應測試。第一次執行請加 `--verbose`，確認每一步都拿到資料。
+- **手續費係數不確定。** 各來源對加密貨幣盤的 taker 費率說法不一（詳見 [docs/research.md](docs/research.md)），
+  請以市場 API 的 `feeSchedule` 為準。
 
 ## 這個專案是怎麼做出來的
 

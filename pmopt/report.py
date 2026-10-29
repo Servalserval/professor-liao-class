@@ -28,8 +28,9 @@ GRID = "#e4e3df"
 
 plt.rcParams.update({
     "font.family": "sans-serif",
-    "font.sans-serif": ["Noto Sans CJK TC", "Noto Sans CJK JP", "PingFang TC", "Heiti TC",
-                        "Microsoft JhengHei", "Arial Unicode MS", "DejaVu Sans"],
+    # 依序找第一個有中文字的字型；Linux 常見的是 Noto CJK 或文泉驛
+    "font.sans-serif": ["Noto Sans CJK TC", "Noto Sans CJK JP", "Noto Sans CJK SC", "PingFang TC", "Heiti TC",
+                        "Microsoft JhengHei", "WenQuanYi Zen Hei", "Arial Unicode MS", "DejaVu Sans"],
     "axes.unicode_minus": False,
     "figure.facecolor": SURFACE,
     "axes.facecolor": SURFACE,
@@ -139,3 +140,103 @@ def summarize_collected(csv_path: Path, out_dir: Path, min_edge: float = 0.01) -
     fig.savefig(out_dir / "edge_by_bucket.png", dpi=160)
     plt.close(fig)
     return summary
+
+
+def summarize_pairs(csv_path: Path, out_dir: Path) -> pd.DataFrame:
+    """彙整 collect 記下的 Polymarket 內部組合：哪些組合常常便宜？便宜多久？"""
+    df = pd.read_csv(csv_path)
+    g = df.groupby(["relation", "pair"])
+    summary = pd.DataFrame({
+        "觀測次數": g.size(),
+        "成本 < $1 的比例": g["slack"].apply(lambda s: (s > 0).mean()).round(3),
+        "slack 中位數": g["slack"].median().round(4),
+        "slack 最大值": g["slack"].max().round(4),
+    })
+    if "p_gap" in df.columns:
+        summary["p_gap 中位數"] = g["p_gap"].median().round(4)
+        summary["ev 中位數"] = g["ev"].median().round(4)
+    summary = summary.sort_values(["成本 < $1 的比例", "slack 中位數"], ascending=False)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    summary.to_csv(out_dir / "pairs_summary.csv")
+    return summary
+
+
+def plot_pair_payoff(row: dict, out_dir: Path) -> Path:
+    """畫「觸價盤 + 到期盤」組合在到期時的報酬：x 軸是到期盤那根 K 線的收盤價，兩條線是兩種路徑。
+
+    row 需要：pair, _touch_kind, _B, _K, cost_fee, p_gap, gap_lo, gap_hi（evaluate_near_arbs 的輸出）。
+    """
+    B, K, cost = float(row["_B"]), float(row["_K"]), float(row["cost_fee"])
+    down = row["_touch_kind"] == "touch_down"
+    lo, hi = min(B, K) - 2_500, max(B, K) + 2_500
+    xs = np.linspace(lo, hi, 2_001)
+    if down:
+        # 曾碰到 B：觸價腳付 $1，收盤 > K 時到期腳再付 $1；沒碰到 B：收盤必定 > B，只有到期腳
+        touched = 1.0 + (xs > K)
+        untouched = np.where(xs > B, (xs > K).astype(float), np.nan)
+        leg2 = f"高於 {K:,.0f} Yes"
+    else:
+        touched = 1.0 + (xs <= K)
+        untouched = np.where(xs < B, (xs <= K).astype(float), np.nan)
+        leg2 = f"高於 {K:,.0f} No"
+
+    fig, ax = plt.subplots(figsize=(8, 4.4))
+    ax.axvspan(row["gap_lo"], row["gap_hi"], color=GRID, alpha=0.8, lw=0, zorder=0)
+    ax.axhline(cost, color=TEXT_2, lw=1, zorder=1)
+    ax.text(lo + 150, cost - 0.05, f"成本 \\${cost:.3f}（比 \\$1 少 {(1 - cost) * 100:.1f}¢）",
+            color=TEXT_2, fontsize=9, va="top")
+    ax.plot(xs, touched, color=BLUE, lw=2, solid_capstyle="round", zorder=3,
+            label=f"窗口內曾碰到 {B:,.0f}")
+    ax.plot(xs, untouched, color=ORANGE, lw=2, solid_capstyle="round", zorder=3,
+            label=f"整個窗口都沒碰到 {B:,.0f}")
+    ax.axvline(B, color=TEXT_2, lw=1, alpha=0.5)
+    ax.text(B, 2.18, f"觸價 {B:,.0f}", color=TEXT_2, ha="center", fontsize=9)
+    ax.annotate(f"缺口：兩腳都付 $0\n機率約 {row['p_gap'] * 100:.1f}%（模型估計）",
+                xy=((row["gap_lo"] + row["gap_hi"]) / 2, 0.04), xytext=(max(B, K) + 900, 0.45),
+                ha="left", va="center", fontsize=9, color=TEXT,
+                arrowprops=dict(arrowstyle="-", color=TEXT_2, lw=1))
+    ax.set_ylim(-0.1, 2.35)
+    ax.set_yticks([0, 1, 2])
+    ax.yaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda y, _: f"${y:.0f}"))
+    ax.set_xlim(lo, hi)
+    ax.xaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda x, _: f"{x:,.0f}"))
+    ax.set_xlabel("到期盤結算那根 1 分鐘 K 線的收盤價（Binance BTC/USDT）")
+    ax.set_ylabel("組合到期時拿回的錢")
+    kind = "觸及 ↓" if down else "觸及 ↑"
+    ax.set_title(f"買「{kind}{B:,.0f} Yes」+「{leg2}」：只有灰色缺口會虧", loc="left", fontsize=12)
+    ax.legend(loc="center left", bbox_to_anchor=(0, 0.62))
+    fig.tight_layout()
+    out_dir.mkdir(parents=True, exist_ok=True)
+    p = out_dir / "near_arb_payoff.png"
+    fig.savefig(p, dpi=160)
+    plt.close(fig)
+    return p
+
+
+def plot_reliability(by_pm: pd.DataFrame, by_model: pd.DataFrame, out_dir: Path, title_note: str = "") -> Path:
+    """可靠度圖：x 軸是預測的機率（分組平均），y 軸是實際發生的頻率；準的話會落在對角線上。
+
+    by_pm 用 Polymarket 價格分組，by_model 用模型機率分組（history.calibration_table 的輸出）。
+    """
+    fig, ax = plt.subplots(figsize=(6.4, 5.6))
+    ax.plot([0, 1], [0, 1], color=TEXT_2, lw=1, alpha=0.6)
+    ax.text(0.72, 0.66, "完全準確", color=TEXT_2, fontsize=9, ha="center", va="center", rotation=45)
+    for d, x, color, label in ((by_model, "model_prob", BLUE, "模型（DVOL 對數常態）"),
+                               (by_pm, "pm_price", ORANGE, "Polymarket 價格")):
+        ax.errorbar(d[x], d["realized"], yerr=1.96 * d["realized_se"].fillna(0), color=color, lw=2,
+                    marker="o", ms=7, mec=SURFACE, mew=2, capsize=0, elinewidth=1, label=label)
+    ax.set_xlim(-0.02, 1.02)
+    ax.set_ylim(-0.02, 1.02)
+    ax.set_aspect("equal")
+    ax.set_xlabel("結算前的預測機率（分組平均）")
+    ax.set_ylabel("實際發生的頻率（誤差線：95%，以天為群組）")
+    ax.set_title("每日盤的校準：點在對角線下方 = 高估", loc="left", fontsize=12, pad=20)
+    if title_note:
+        ax.text(0, 1.015, title_note, transform=ax.transAxes, color=TEXT_2, fontsize=9, va="bottom")
+    ax.legend(loc="upper left", bbox_to_anchor=(0, 0.95))
+    fig.tight_layout()
+    out_dir.mkdir(parents=True, exist_ok=True)
+    p = out_dir / "reliability.png"
+    fig.savefig(p, dpi=160)
+    plt.close(fig)
+    return p

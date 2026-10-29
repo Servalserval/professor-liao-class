@@ -108,3 +108,68 @@ $$f^* = \arg\min_f \sum_i \big(\text{fair}_i(f) - \text{mid}_i\big)^2$$
 - 結算來源的基差：Binance BTC/USDT 1 分鐘 K 線 vs Deribit 指數。
 - 資金成本：Polymarket 的部位要鎖到結算（有持倉獎勵可部分抵銷）。
 - 回測：在多天、多個到期日上收集同步資料，看錯價是否持續、是否在結算前收斂。
+
+## 8. Polymarket 內部一致性（`pmopt check`）
+
+第 1–6 節都要假設期權是對的。這一節只用 Polymarket 自己的報價，而且兩組市場的結算來源相同
+（Binance BTC/USDT 1 分鐘 K 線），所以結算基差和期權到期時間的問題都不存在。
+
+### 8.1 無模型的支配關係
+
+令 t 是到期盤結算的那一分鐘，而且 t 落在觸價盤的窗口內。
+
+| 關係 | 為什麼成立 | 至少付 $1 的組合 |
+|---|---|---|
+| 收盤 ≤ B ⇒ 觸及 ↓B | 那根 K 線的最低價 ≤ 收盤價 | 觸及 ↓B Yes + 高於 K Yes，K ≤ B |
+| 收盤 > K ≥ B ⇒ 觸及 ↑B | 那根 K 線的最高價 ≥ 收盤價 | 觸及 ↑B Yes + 高於 K No，K ≥ B |
+| 高於 K₂ ⇒ 高於 K₁（K₁ < K₂） | 單調性 | 高於 K₁ Yes + 高於 K₂ No |
+| 觸及 ↑B₂ ⇒ 觸及 ↑B₁（B₁ < B₂） | 單調性 | 觸及 ↑B₁ Yes + 觸及 ↑B₂ No（↓ 方向相反） |
+
+買 Yes 的價格是 Yes 的賣價；買 No 的價格是 1 − Yes 的買價（Yes 和 No 共用一本訂單簿）。
+組合成本 < $1 就是套利；`slack = 1 − 成本 − 手續費`。
+
+### 8.2 有缺口的近似套利
+
+履約價沒對齊時，例如「觸及 ↓B Yes + 高於 K Yes」但 K > B，只有在
+**收盤落在 (B, K]，而且整個窗口 [0, T₂] 都沒碰到 B** 時兩腳都歸零。這個機率：
+
+$$P_\text{gap} = \int_{\ln(B/S)}^{\ln(K/S)} g(x)\,\big[1 - \text{OneTouch}(S e^x, B, T_2 - T_1, \sigma)\big]\,dx$$
+
+$$g(x) = \frac{1}{\sigma\sqrt{T_1}}\left[\varphi\!\left(\frac{x - \mu T_1}{\sigma\sqrt{T_1}}\right) - e^{2\mu b/\sigma^2}\,\varphi\!\left(\frac{x - 2b - \mu T_1}{\sigma\sqrt{T_1}}\right)\right],\quad \mu = -\tfrac{\sigma^2}{2},\ b = \ln(B/S)$$
+
+g(x) 是「到 T₁ 都沒碰到 b、而且 X_T₁ = x」的密度（有漂移的反射原理）；後面的中括號是 T₁ 之後到窗口結束也沒碰到的機率。
+`tests/test_consistency.py` 用 Monte Carlo（加布朗橋修正）驗證，四個情境的誤差都在 0.1 個百分點以內。
+
+組合的報酬只有 0、1、2 三種，所以
+
+$$\text{期望報酬} \ \ge\ \text{slack} - P_\text{gap}$$
+
+模型只需要提供 P_gap 這一個數字，比「期權推算的公允值」穩健得多。
+
+### 8.3 兩組市場各自的中心價格
+
+`fit_center` 加上 `kinds=("touch_up", "touch_down")`，就能用觸價盤反推中心價格。
+如果到期盤和觸價盤的中心價格明顯不同，最可能的原因是兩組報價不是同一時間抓的；
+這時近似套利的 slack 可能只是時間差，`check` 會印出警告。
+
+## 9. 歷史校準（`pmopt backtest`）
+
+問「期權和 Polymarket 誰對」，最直接的辦法是看已經發生的結果。
+
+1. 對每一天 D，抓 `bitcoin-above-on-<月>-<日>[-<年>]` 這個事件裡已結算的市場（`outcomePrices` 為 1/0）。
+2. 用 CLOB `prices-history` 取「結算前 h 小時」之前最後一筆價格，記下價格有多舊（`price_age_min`）。
+3. 用 Binance 1 分鐘 K 線取當時的現貨，以及結算那一分鐘的收盤價（自己驗證結算結果，`rule_check`）。
+4. 模型機率：P = N(d₂)，σ = DVOL × `--vol-scale`，F = 當時現貨。
+5. 分析：
+   - **Brier score**：(p − 結果)² 的平均，越小越準；`brier_diff` 是 Polymarket 減模型。
+   - **分組校準**：依價格分組，比較「平均價格」和「實際發生頻率」。尾部那幾組最重要。
+   - **簡單策略**：價差超過門檻就交易並抱到結算，扣掉假設的半價差。
+
+**標準誤一定要以「天」為群組。** 同一天的十幾個履約價共用一條價格路徑：BTC 那天大漲，
+所有「高於 K」都一起變成 Yes。把它們當成獨立樣本，標準誤會小好幾倍，看起來什麼都顯著。
+`clustered_mean_se` 先把同一天的偏差加總，再在天與天之間算變異。
+
+限制：
+- `prices-history` 是成交或中價的時間序列，不是可成交價，策略報酬要扣價差（`--half-spread`）。
+- DVOL 是 30 天期的隱含波動率，拿來算 1 天內的機率只是近似；可以用 `--vol-scale` 做敏感度分析。
+- 已結算市場的細粒度價格歷史有時是空的，程式會退回 60 分鐘或 720 分鐘的粒度，並記錄 `fidelity_min`。

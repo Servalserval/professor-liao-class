@@ -75,3 +75,49 @@
 4. **尾部風險能不能對沖**？偏差多在低機率那側，沒對沖就是「贏 8¢、輸 92¢」的賭局。
 
 這個 repo 的 `collect` 指令，就是為了回答第 1 和第 3 題而設計的。
+
+## 第六步：第二輪（同一天稍晚，接續上一個對話）
+
+提問只有一句：「你就沿著這個一路往下研究」。這一輪的執行環境一樣連不到 Polymarket、Deribit、Binance，
+所以沒有新資料，只能把現有快照挖深，再把「需要網路才能回答」的問題做成工具。
+
+### 重新看快照：一個上一輪沒注意到的現象
+
+對齊中心價格後，Polymarket 的**觸價盤**和 Deribit 幾乎完全一致（反推波動率 39.2% 對 38.9%、47.5% 對 47.7%），
+偏差只集中在**每日到期盤**。這讓問題從「Polymarket 和期權一不一致」變成「Polymarket 自己的兩組市場一不一致」。
+後者有兩個好處：不用假設期權是對的；兩組市場的結算來源（Binance 1 分鐘 K 線）相同。
+
+### 文獻與規則查證（網路搜尋）
+
+- 沒找到比較 Polymarket「每日到期盤」和「每月觸價盤」一致性的研究或文章。
+  找到的多半是單一市場的紀錄頁，或是像 [podshopguy](https://podshopguy.substack.com/p/polymarket-overprices-volatility)
+  這樣的交易想法。
+- 規則（第三方頁面轉述，交易前請看市場頁面的 Rules）：
+  - 每日盤：美東中午 12:00 那根 Binance BTC/USDT 1 分鐘 K 線的收盤價高於履約價就是 Yes
+    （例：[bitcoin-above-on-december-22](https://polymarket.com/event/bitcoin-above-on-december-22)）。
+  - 觸價盤：窗口內任何一根 1 分鐘 K 線的最高價（向上）／最低價（向下）碰到價位就是 Yes
+    （例：週盤 [will-bitcoin-reach-76k-march-2-8](https://polymarket.com/market/will-bitcoin-reach-76k-march-2-8)、
+    [struct.to 的市場紀錄](https://explorer.struct.to/markets/will-bitcoin-reach-80k-may-25-31-2026)）。
+    月盤的窗口據搜尋結果中的第三方轉述，是從市場建立開始到當月最後一天美東 23:59，沒能核對原文。
+  - 這兩條規則就是第 8 節「無模型支配關係」的依據：收盤價一定介於同一根 K 線的最高價與最低價之間。
+- 手續費：形狀（在 50% 最高、靠近 0 或 1 趨近於零）各來源一致，但加密貨幣盤的係數說法不一：
+  搜尋結果裡的官方文件快照寫 fee rate 0.25、指數 2（最高有效費率 1.56%），但時間早於 3 月的改版；
+  [Sacra](https://www.sacra.com/c/polymarket/) 寫新版是 0.07，另一篇分析寫最高有效費率 1.80%
+  （[Pine Analytics](https://pineanalytics.substack.com/p/polymarket-fee-rollout)、
+  [Action Network](https://www.actionnetwork.com/news/polymarket-fees-explained-how-polymarket-trading-fees-work-in-2026)）。
+  官方頁面 [docs.polymarket.com/trading/fees](https://docs.polymarket.com/trading/fees) 在這個環境打不開，沒能核對。
+
+### 第二輪的結論（都還是單一快照，不是研究結論）
+
+1. 106 組無模型的關係全部守住，好幾組剛好等於 $1.000。
+2. 有一組「近似套利」：觸及 ↓77,500 Yes + 高於 78,000 Yes 共 $0.960，兩腳都歸零的機率約 0.3%。
+3. 但觸價盤隱含的中心價格（81,654）比到期盤（80,880）高 0.96%，兩組報價很可能不是同一時間抓的；
+   用任何一個一致的中心價格算，這個組合都不便宜。**最可能的解釋是時間差。**
+4. 形狀上，觸價盤吻合期權的微笑，每日到期盤的尾巴比較厚。
+   這是一個可以用歷史資料檢驗的假說：「Polymarket 高估尾部」是否主要發生在每日到期盤？
+
+### 下一步（需要網路）
+
+1. `collect`：同一輪抓取兩組市場，看近似套利在**同步資料**裡還在不在、持續多久。
+2. `backtest`：拿過去幾個月已結算的每日盤，看尾部價格和實際頻率差多少（以天為群組算標準誤）。
+3. 同樣的回測也可以做在月觸價盤上，比較兩種題型的校準。

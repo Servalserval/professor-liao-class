@@ -96,8 +96,10 @@ def pm_implied_vol(spec, prob: float, T: float, surface: VolSurface, usdt_usd: f
 
 
 def fit_center(markets: pd.DataFrame, surface: VolSurface, now: datetime, cfg: ScanConfig | None = None,
-               band: tuple[float, float] = (0.05, 0.95)) -> float | None:
+               band: tuple[float, float] = (0.05, 0.95), kinds: tuple[str, ...] = ("above", "below")) -> float | None:
     """找出 Polymarket「到期價格盤」隱含的中心價格，回傳相對於期權 forward 的倍數。
+
+    kinds 改成 ("touch_up", "touch_down") 就是觸價盤隱含的中心價格（band 要放寬，觸價盤的價格通常很小）。
 
     做法：把期權曲面整體平移 factor 倍，找出讓 fair 和 Polymarket 中價最接近（最小平方）的 factor。
     只用中價落在 band 內的市場，因為接近 0 或 1 的市場對中心價格幾乎沒有資訊。
@@ -114,7 +116,7 @@ def fit_center(markets: pd.DataFrame, surface: VolSurface, now: datetime, cfg: S
         if getattr(m, "closed", False) or pd.isna(m.best_bid) or pd.isna(m.best_ask):
             continue
         spec = parse_question(m.question)
-        if spec is None or spec.asset != cfg.asset or spec.kind not in ("above", "below"):
+        if spec is None or spec.asset != cfg.asset or spec.kind not in kinds:
             continue
         mid = (float(m.best_bid) + float(m.best_ask)) / 2
         if not band[0] <= mid <= band[1]:
