@@ -106,7 +106,7 @@ def cmd_live(args) -> int:
     key, wallet, relayer = _secrets()
     if cfg.auto_merge and relayer is None:
         sys.exit("auto_merge 需要 Relayer API key（POLYMARKET_RELAYER_API_KEY 和 POLYMARKET_RELAYER_API_KEY_ADDRESS）")
-    print(f"實盤：預算 {cfg.budget:,.0f} USDC、單一市場上限 {cfg.market_cap:,.0f}、單日總虧損上限 "
+    print(f"實盤：預算 {cfg.budget:,.0f} 美元、單一市場上限 {cfg.market_cap:,.0f}、單日總虧損上限 "
           f"{cfg.max_daily_loss_frac * cfg.budget:,.0f}（{cfg.max_daily_loss_frac:.1%}）")
     print("啟動時會先撤掉這個帳號上所有的掛單；請用專門的錢包跑，不要和手動交易混用。")
     if not args.yes:

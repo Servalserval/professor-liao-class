@@ -165,10 +165,10 @@ class Runner:
             budget = None
             cash = await self.exchange.collateral()
             if cash is not None:
-                self.event("collateral", usdc=round(cash, 2))
+                self.event("collateral", balance=round(cash, 2))
                 if cash < self.cfg.budget:
                     budget = 0.95 * cash
-                    log.warning("USDC 餘額 %.0f 少於預算 %.0f，改用 %.0f", cash, self.cfg.budget, budget)
+                    log.warning("抵押品（pUSD）餘額 %.0f 少於預算 %.0f，改用 %.0f", cash, self.cfg.budget, budget)
             await asyncio.to_thread(self.refresh_universe, t_start, budget)
             self._started = True
             if self.mode == "live":
@@ -182,8 +182,9 @@ class Runner:
                 try:
                     if tick >= next_refresh:
                         next_refresh = tick + self.cfg.universe_refresh_min * 60
+                        # 官方：可下單量 = 餘額 − 掛單佔用，所以餘額本身已經包含掛著的單
                         cash = await self.exchange.collateral()
-                        budget = None if cash is None else min(self.cfg.budget, 0.95 * (cash + self._quoted_capital()))
+                        budget = None if cash is None else min(self.cfg.budget, 0.95 * cash)
                         await asyncio.to_thread(self.refresh_universe, tick, budget)
                         poller.set_markets({c: s.info.yes_token for c, s in self.everyone().items()})
                         if self.mode == "live":

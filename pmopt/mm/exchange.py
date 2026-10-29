@@ -265,7 +265,7 @@ class LiveExchange:
         self._known.clear()
 
     async def collateral(self) -> float | None:
-        """可用的 USDC 餘額（美元）。"""
+        """抵押品（pUSD）餘額，美元。注意這是總餘額：掛單佔用的部分沒有扣掉。"""
         ba = await self.client.get_balance_allowance(asset_type="COLLATERAL")
         return ba.balance / 1e6
 
@@ -280,7 +280,7 @@ class LiveExchange:
         return out
 
     async def merge(self, condition_id: str) -> bool:
-        """把成對的 Yes + No 換回 USDC（鏈上交易，最多等 60 秒）。"""
+        """把成對的 Yes + No 換回抵押品（鏈上交易，最多等 60 秒）。"""
         try:
             handle = await self.client.merge_positions(condition_id=condition_id, amount="max")
             await asyncio.wait_for(handle.wait(), timeout=60)
