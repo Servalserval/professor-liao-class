@@ -81,6 +81,21 @@ def fair_probability(spec, T: float, surface: VolSurface, usdt_usd: float = 1.0)
     raise ValueError(spec.kind)
 
 
+def touch_fair_alt(spec, T: float, surface: VolSurface, usdt_usd: float = 1.0) -> float:
+    """觸價機率的第二種近似：2 × 考慮微笑的數位期權（反射原理的「兩倍法則」，把 skew 算進去）。
+
+    fair_probability 用的是「觸價價位那一點的單一波動率」。BTC 的下檔波動率比較高（負偏斜），
+    這兩種近似會往相反方向偏：實測（2026-10-29）向下觸價 77,500 一個是 0.280、一個是 0.210，
+    Polymarket 報 0.245，剛好在中間。真正的答案要用局部波動率或隨機波動率模型模擬，
+    在那之前，把兩者當成「模型不確定性的區間」。
+    """
+    F, K = surface.forward(T), spec.strike * usdt_usd
+    if (spec.kind == "touch_up" and surface.spot >= K) or (spec.kind == "touch_down" and surface.spot <= K):
+        return 1.0
+    d = digital_call_smile(F, K, T, lambda x: surface.vol(x, T))
+    return min(2.0 * (d if spec.kind == "touch_up" else 1.0 - d), 1.0)
+
+
 def pm_implied_vol(spec, prob: float, T: float, surface: VolSurface, usdt_usd: float = 1.0) -> float | None:
     if prob is None or not (0.0 < prob < 1.0):
         return None
@@ -159,6 +174,12 @@ def scan(markets: pd.DataFrame, surface: VolSurface, now: datetime, cfg: ScanCon
             signal = "買 Yes" if best == e_buy else "賣 Yes（=買 No）"
         else:
             signal = ""
+        # 觸價盤的公允值對模型很敏感：只有報價落在兩種近似的區間之外，才算穩健的 edge
+        fair_alt = touch_fair_alt(spec, T, surface, cfg.usdt_usd) if spec.kind.startswith("touch") else fair
+        lo, hi = min(fair, fair_alt), max(fair, fair_alt)
+        r_buy = lo - ask - _fee(ask, cfg.taker_fee_coeff) if ask is not None else float("nan")
+        r_sell = bid - hi - _fee(bid, cfg.taker_fee_coeff) if bid is not None else float("nan")
+        robust = max([x for x in (r_buy, r_sell) if not math.isnan(x)], default=float("nan"))
         piv = pm_implied_vol(spec, mid, T, surface, cfg.usdt_usd) if mid is not None else None
         out.append(dict(
             event_slug=getattr(m, "event_slug", ""),
@@ -170,11 +191,13 @@ def scan(markets: pd.DataFrame, surface: VolSurface, now: datetime, cfg: ScanCon
             deribit_vol=round(dvol * 100, 1),
             pm_iv=round(piv * 100, 1) if piv else None,
             fair=round(fair, 4),
+            fair_alt=round(fair_alt, 4),
             bid=bid,
             ask=ask,
             edge_buy_yes=round(e_buy, 4),
             edge_sell_yes=round(e_sell, 4),
             best_edge=round(best, 4),
+            best_edge_robust=round(robust, 4),
             signal=signal,
         ))
     return pd.DataFrame(out)

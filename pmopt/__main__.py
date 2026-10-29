@@ -24,7 +24,8 @@ from .polymarket import load_snapshot, parse_time
 from .scanner import ScanConfig, fit_center, scan
 from .surface import VolSurface
 
-SHOW = ["market", "end_utc", "hours_left", "deribit_vol", "pm_iv", "fair", "bid", "ask", "best_edge", "signal"]
+SHOW = ["market", "end_utc", "hours_left", "deribit_vol", "pm_iv", "fair", "fair_alt", "bid", "ask", "best_edge",
+        "best_edge_robust", "signal"]
 
 
 def _print_table(df: pd.DataFrame, title: str) -> None:
@@ -195,6 +196,7 @@ def cmd_collect(args) -> int:
                 if centered is not None:
                     raw["fair_centered"] = centered["fair"].to_numpy()
                     raw["best_edge_centered"] = centered["best_edge"].to_numpy()
+                    raw["best_edge_robust_centered"] = centered["best_edge_robust"].to_numpy()
                 raw.to_csv(out, mode="a", header=not out.exists(), index=False)
             # Polymarket 內部一致性：觸價 vs 到期的組合全記，單調性只記接近邊界的
             pairs, near, _ = _pairs_with_model(snap.markets, snap.surface, snap.now, cfg, factor)

@@ -33,6 +33,17 @@ def test_above_ladder_fair_is_decreasing(snapshot):
     assert res["fair"].is_monotonic_decreasing
 
 
+def test_touch_markets_get_a_model_band(snapshot):
+    surf, markets = snapshot
+    res = scan(markets, surf, NOW)
+    touch, above = res[res["kind"].str.startswith("touch")], res[res["kind"] == "above"]
+    assert (above["fair_alt"] == above["fair"]).all()
+    # 負偏斜下，「2 × 微笑數位」的向下觸價機率比「觸價價位單一波動率」低
+    down = touch[(touch["kind"] == "touch_down") & (touch["fair"] > 0.01)]
+    assert (down["fair_alt"] < down["fair"]).all()
+    assert (res["best_edge_robust"] <= res["best_edge"] + 1e-9).all()
+
+
 def test_edge_definitions(snapshot):
     surf, markets = snapshot
     r = scan(markets, surf, NOW).iloc[0]
