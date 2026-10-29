@@ -70,6 +70,23 @@ def minute_of(ts: float) -> int:
     return int(ts // 60)
 
 
+def without_own(book: Book, own: list[tuple[str, float, float]]) -> Book:
+    """實盤時訂單簿裡有自己的單：扣掉之後才是「別人」的報價（算中價、價差、競爭者分數都要用這個）。
+
+    own：[(leg, Yes 價格, 剩餘股數)]，leg 是 'bid' 或 'ask'。
+    """
+    if not own:
+        return book
+    bids, asks = dict(book.bids), dict(book.asks)
+    for leg, price, size in own:
+        side = bids if leg == "bid" else asks
+        key = next((p for p in side if abs(p - price) < 1e-9), None)
+        if key is not None:
+            side[key] -= size
+    keep = lambda d: tuple((p, q) for p, q in d.items() if q > 1e-9)
+    return Book(book.ts, keep(bids), keep(asks), book.tick, book.min_order_size)
+
+
 @dataclass
 class MarketState:
     info: MarketInfo

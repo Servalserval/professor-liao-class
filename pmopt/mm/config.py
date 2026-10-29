@@ -38,6 +38,7 @@ class MMConfig:
     cost_of_capital: float = 0.04      # 年化
     min_days_left: float = 1.0         # 剩不到這麼多天到期的市場不放
     mid_band: tuple = (0.03, 0.97)     # 中價太接近 0 或 1 不放
+    incumbent_hurdle_frac: float = 0.5 # 已經在掛的市場，門檻打幾折（遲滯：避免每小時大換血、重新暖機）
     max_markets: int | None = None     # 分階段上線時，限制市場數
     exclude_categories: list = field(default_factory=list)
 

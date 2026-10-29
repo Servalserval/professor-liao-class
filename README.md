@@ -284,7 +284,7 @@ pmopt/
   report.py       畫圖與彙整
   __main__.py     命令列介面（scan / check / collect / summarize / backtest / mm-*）
   mm/             第四輪：掛單嚕流動性獎勵（選市場、規則、報價、模擬／實盤交易所、風控、主迴圈）
-tests/            115 個測試：公式對 Monte Carlo、曲面的無套利性質、解析器、模擬 API、合成資料、CLI 全流程、
+tests/            119 個測試：公式對 Monte Carlo、曲面的無套利性質、解析器、模擬 API、合成資料、CLI 全流程、
                   掛單規則與報價、配置、模擬成交、假 SDK 的實盤介面、主迴圈與停機
 scripts/          第三輪的補充分析（同步資料、回測），文件裡的數字由這兩支程式產生
 research/mm/      第四輪的研究腳本（全站盤點、逐分鐘回測、參數搜尋、本金配置）

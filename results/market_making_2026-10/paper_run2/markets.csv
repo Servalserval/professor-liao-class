@@ -1,0 +1,929 @@
+condition_id,question,category,capital,mtm_pnl,est_reward,rebate,yes,no
+0x5b3cdb0752f14ae759ebcac108e7668eadd003ecca5469cd4768a5a78c053680,Will Jordan Love have 24.5+ passing touchdowns in the 2026-27 NFL regular season,運動／電競,219.24,0.07,0.05,0.0,2.0,0.0
+0xbee216cc24d94aa9e324bb57a479d72f2043235d32eb84d8a3b7bf483b024b5d,Will Allstate (ALL) beat quarterly earnings?,其他,84.13,1.17,0.03,0.02,0.0,29.16
+0x6bc317e5f5c383ee718f442b9f4745c90a2ac529790077344bc50b82a6aaedbc,Will OpenRouter process between 195T and 205T tokens the week of October 26?,其他,36.36,0.12,0.01,0.0,0.0,4.0
+0x503cc9bb044162425e05c62a3b73812e82ab1d3d621e6aa3e804a6486f08119b,Will any other company have the best AI model on LiveBench (Mathematics) at the ,其他,1991.6,0.0,2.19,0.0,0.0,0.0
+0xa55e6d0a127dc7f882b95cc8aa3027dc4846ba8a08a06a358f637cc03a6002ac,Will there be no change in Fed interest rates after the April 2027 meeting?,總經,3681.38,0.0,5.52,0.0,0.0,0.0
+0x0af8a5f5305804d818cc02d135fc9e8bf4e01e2aa3ea586fb78f3274cde9646f,Will Gemini Carbon debut with an HLE-Diamond score of 65% or higher?,其他,248.69,0.0,0.62,0.0,0.0,0.0
+0xb788b8cb9b8c8ff6c09c536820300fae028e7db2ea3e629cf3330bfe95a78809,Will Yashar be in the next Israeli government?,其他,2197.44,0.0,2.81,0.0,0.0,0.0
+0x69032c7492764e828a8ed90122aacb1a768ff155811e1c34a056e07d4a58dbcd,Will the Fed increase interest rates by 25 bps after the April 2027 meeting?,總經,2175.42,0.0,1.54,0.0,0.0,0.0
+0x17fc2ae8fd1ca647756f55b6e816fae0b4e437a53f513bc61e163e02ed1cdb8c,Will RZP-Zehut be in the next Israeli government?,其他,399.22,0.0,2.41,0.0,0.0,0.0
+0xe005ed1628e64a5c2ed02cf769d3541ef3425e625a891b969b3fc2f6f9f3be2f,"Next Israeli government formed by December 31, 2026?",其他,3257.99,0.0,3.64,0.0,0.0,0.0
+0xb1a8312921fde446e0a20c3c0a4f84add9b481e9ea720a638205fe3ebc94f581,Will the Fed increase interest rates by 25 bps after the March 2027 meeting?,總經,3752.25,0.0,1.95,0.0,0.0,0.0
+0x385caa8a6b86f602065720731ddb21a7689e11441d778d825448d726d5d3b4b9,Israel Election: Arab party disqualified?,政治,2225.04,0.0,0.91,0.0,0.0,0.0
+0x924150d8e5d4a19e390312a34f703b7898f117ede3e8832d7b245084fa53c3ee,"Next Israeli government formed by February 28, 2027?",其他,3784.16,0.0,3.01,0.0,0.0,0.0
+0x5f8ddf845134292a45f90bf7e4c9005a72ff8e2f3761950bd8a5f2478db4c6ad,"Will ""Nobody Wants This: Season 3"" be the #2 global Netflix show this week?",其他,1611.23,0.0,1.87,0.0,0.0,0.0
+0xd0b24abd98e6e21723a9b48a5dd416fb31f9fa842a8cf5236d0599df0c8deca0,"Will no next Israeli Minister of Justice be appointed by February 28, 2027?",政治,202.4,0.0,0.0,0.0,0.0,0.0
+0x3f2a47205607e6f8755d2033524967751db2507571f5a0215f1f218bdb4ac3f8,Will The Democrats be in the next Israeli government?,其他,2499.38,0.0,2.73,0.0,0.0,0.0
+0x8aedef3c37c54bc3a5883e2e96ca33024e6fd03190af64e22de0144466970260,Will the 5-year Treasury yield dip below 4.65% before 2027?,其他,91.9,0.0,0.65,0.0,0.0,0.0
+0xe66f6bc1b92d873779c2ffd142511c29492602a732a49e4b1c2bef1653149f24,Israel x Iran ceasefire continues through November 22?,其他,3237.11,0.0,3.09,0.0,0.0,0.0
+0x4df2c9f90bc6f9fc1e437cdbb54476d51d5d4f7d5fe7f4f6d9ab9071bdcd521e,"Will Donald Trump post 200+ Truth Social posts from October 27 to November 3, 20",政治,316.31,0.0,0.33,0.0,0.0,0.0
+0x65a45fa009e0577cbd10780c17b570b77f1c5c1286945d4f5e1e3dbd7c90b5c7,"Will Gemini Carbon be released between November 2 and November 8, 2026?",其他,1554.56,0.0,0.99,0.0,0.0,0.0
+0xd4d06fd6c4062baad68cde012b1b913613a5191c0ffc1d4f437b3f7ad6a83f2a,"Will Anthropic IPO on November 18, 2026?",其他,3298.59,0.0,2.24,0.0,0.0,0.0
+0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556,Israel x Iran ceasefire continues through December 15?,其他,2312.07,0.0,2.74,0.0,0.0,0.0
+0x8ad7b291941d1fdc34743befe5693aeac3f5e5a3e369516469ab1da9b42b5027,Republican House odds dip to 7% by October 31?,政治,1507.37,0.0,0.94,0.0,0.0,0.0
+0x0bd4bf2192c4f526d7dc422669b5f00355d5efa7ce39ff2d9c88d5033e399855,Will Tatyana Ali be eliminated in week 8 of Dancing With The Stars: Season 35?,其他,1840.47,0.0,1.84,0.0,0.0,0.0
+0xf8432e1e6c6c761f61f7d6f24964a30cb98ceeef166622056ab51fd8e8fe3486,"Will Trump say ""Million"" or ""Billion"" or ""Trillion"" 30+ times during his Midterm",政治,739.48,0.0,0.8,0.0,0.0,0.0
+0x2b9c96fa7af32784122245a04b11ee21724b8f9f801b4a6ee38225ad501ebced,Will Space Exploration Technologies’ market capitalization be between $1.75T and,其他,877.78,0.0,1.18,0.0,0.0,0.0
+0xf2309b0b571433b1b3a6372707ac9e1e1fe720c56031d6cfdf7a1373bc6f5418,Will ISM Manufacturing PMI be between 54.0 and 54.9 in October?,其他,1074.39,0.0,1.08,0.0,0.0,0.0
+0xb4401733eed8e257ceba7f6133de1793bb7d409d1e44864a789c31824460a374,"Will Apple be the largest company in the world by market cap on October 31, 2026",其他,180.32,-0.07,0.03,0.0,1.23,0.0
+0x685ccb1b69d19c23edc048fb463c3edb31b3e93e6547a2994b192056a89dd84f,Government shutdown by December 31?,其他,796.05,0.0,0.03,0.0,0.0,0.0
+0x8e74c3eddf266e5d9c4b4aa9903cbce2ad05ff39ec1f7099d2bfca7ab8f5e907,"Will ""The One About Matthew Perry: Limited Series"" be the top US Netflix show th",運動／電競,1527.15,0.0,0.87,0.0,0.0,0.0
+0x90951ab796faf491c57433f67290844cb54e079bcf04f0d617603fbcd738daee,Will 190-209 ships transit the Bab el-Mandeb Strait between October 26-November ,其他,1035.61,0.0,1.03,0.0,0.0,0.0
+0xe1e7ca8c2cfbb293055b116bb65724c6aa938211d65f82fc7ee6a3ec06ae8e23,"Will no next Israeli Minister of Finance be appointed by February 28, 2027?",政治,4432.63,0.0,1.31,0.0,0.0,0.0
+0x72c0fd1c5fcb47ccc431c1c8e5dbf1e7e4bf01b0bf9764ca144f6adbae4c4f7d,Will Shas be in the next Israeli government?,其他,2773.93,0.0,2.1,0.0,0.0,0.0
+0x761fa6ce3ee0803afea0d77b912f8baf332ebcafb341a3790a5db53d5ffd3a10,"Gemini Carbon released by November 11, 2026?",其他,597.56,0.0,0.89,0.0,0.0,0.0
+0x6ffb13f712ac81e8aa029670ecb15717987a6028909d4e300c1a5962b4548846,"Will there be no next Gemini Flash-Lite model (3.6+) release by November 30, 202",其他,1820.44,0.0,1.52,0.0,0.0,0.0
+0x9e6071988bd1390813f43f1033dd274bc1bcbe2ce12215a3f75f6ecc63729a23,Walmart (WMT) Q3 US comp sales (ex-fuel) growth 2.5% to 4%?,其他,898.09,0.0,1.39,0.0,0.0,0.0
+0x4066132660dabde791bb1c5e70d7cbde889ac56a300afa020c54492c0986a62d,Will the Texas Democrat perform best among these tossup Senate races?,政治,1200.19,0.0,0.66,0.0,0.0,0.0
+0x8f9acb3fb4f512d7552d2b008cc940488c89de9e510ce7672d88d4ee3fbca3dd,"Will Kimi K3.1 Pro debut at a score of at least 1480 by June 30, 2027?",其他,946.25,0.0,0.93,0.0,0.0,0.0
+0x50378a9069427b82e68dd334fcf40bae1e077c0658214926c3635ff64c539bbc,Trump declares election interference national emergency by December 31?,政治,14839.57,0.0,0.0,0.0,0.0,0.0
+0xa71fced3fe34866647b31723358325ee1bf818cddcddeb65597f8c154ad8ab87,Will Gemini Carbon debut with an HLE-Diamond score of 70% or higher?,其他,914.33,0.0,0.92,0.0,0.0,0.0
+0x6d6093ebbb38b760aa4ad9c05226863b458bb1a82cac3e7e9a7a3356b05b5e19,Next Israeli government a minority government?,其他,930.63,0.0,0.92,0.0,0.0,0.0
+0xfbe29d06a6d9180b8d26d053680cae3b180801add24e64971e12b1f7455b4c7e,Republican Senate odds dip to 30% by October 31?,政治,1347.75,0.0,0.86,0.0,0.0,0.0
+0x0badb3dd2c09cc9b1314e61041a97d9ce7bde5ba4d58bc750d9614721c40710e,Will UKMTO publish 4-7 notices between October 26-November 1?,其他,423.38,0.0,0.98,0.0,0.0,0.0
+0xda43f40c50a66deda01650de5fb0515ddeee3b363bfac0173837599840dcb169,Will USD be between 2.7M and 2.8M Iranian rials on October 31?,其他,208.46,0.0,0.94,0.0,0.0,0.0
+0xb04310144d4a11b5f5b3f68f5a137ebb31db1ddf4d3322b563f6e0bcf79e305c,Will Google have the third highest OpenRouter market share the week of October 2,其他,2021.87,0.0,1.52,0.0,0.0,0.0
+0x717c8db5d4cd6c4a916d24b57c97ecbd74e284b9a2322bf632af05c32f0fa09a,"Gemini Carbon released by November 15, 2026?",其他,304.3,0.0,0.88,0.0,0.0,0.0
+0x4a830f69fdf32e539860c5e0ca3fa6470cf34013ce6725fcc8145fc479f2ac56,Will the highest temperature in Chongqing be 18°C on October 31?,其他,836.82,0.0,0.7,0.0,0.0,0.0
+0x2b27fb4df42dc03c85264602000b29b264cf05548dbf52270b6e83e14ba0e86a,Gavin Newsom Democratic nomination odds leader on October 31?,其他,795.29,0.0,0.88,0.0,0.0,0.0
+0x473aa7f3b03f4bcb2fec9481ab6116e25e0a2cfbfb6781c01386e611427efc92,Will there be no change in Fed interest rates after the March 2027 meeting?,總經,2600.18,0.0,1.1,0.0,0.0,0.0
+0xdd9b7c331092c4c8d380d686ebe371bf26922699cd29b9a37226a86325b6ff5a,Will James Comer be the Republican nominee for Kentucky Governor?,政治,136.88,0.0,0.91,0.0,0.0,0.0
+0x9f476162c3d1f5bcf2bd9ee144daccfb6d952aed1918e591a1526bb2135d78eb,Will the highest temperature in Taipei be 29°C on October 31?,其他,194.44,0.0,0.12,0.0,0.0,0.0
+0xee3e32c755cfbfdabf66b73a457820dd0cd93680529765ffbb8d94211fb15915,Will the Republicans win Texas in the 2028 Presidential Election?,政治,563.33,0.0,0.38,0.0,0.0,0.0
+0x696f09695dd8834d5632514e184f6733cf413ae6e61278d43ebcab0427d5e5cb,Will the highest temperature in Seoul (Incheon) be 15°C on October 31?,其他,396.96,0.0,0.24,0.0,0.0,0.0
+0xbe2ab79ba6f7de10565351b0ddfad2f6068f4d32f695bfefe00c10057461cf0d,Will the highest temperature in Amsterdam be 12°C on October 31?,其他,586.43,0.0,0.62,0.0,0.0,0.0
+0x55d1e14fcbacc8b7150efe7031c814575fad66cb85dc8b233eaacc6adaf69cd4,Will Democrats win 5 or more House seats in Wisconsin in the 2026 midterm electi,政治,635.45,0.0,0.33,0.0,0.0,0.0
+0x8f6e8fc8300b5330c210423269930e421789495bac7e25fb923e4f7f5a0ef776,Will the Democrats win Maine in the 2028 Presidential Election?,政治,940.51,0.0,0.46,0.0,0.0,0.0
+0xae95d10e90fa93a9505906afa3a160c373d1900160c5f5067ca7fa6be9f18ef0,Will the highest temperature in Austin be between 78-79°F on October 31?,其他,529.91,0.0,0.6,0.0,0.0,0.0
+0xbcfec229801a189235925ab4926ed9bde394809c54e71e6bf672b8524d3da054,Will UKMTO publish 8-11 notices between October 26-November 1?,其他,251.04,0.0,0.6,0.0,0.0,0.0
+0x264712934c1141385c67c91b3f2245dcd492bd5046088fb6c6cd66bc82cc4298,Will GPT Astra 6.1+ debut in the top 20 of the Text Arena leaderboard by June 30,其他,875.17,0.0,0.82,0.0,0.0,0.0
+0x32f50adb8b946fc8203b3be484da59685b761539fdb47aa3d4d1bed4f1f5250e,Will there be between 30 and 34 average daily transits of the Bab el-Mandeb Stra,其他,1273.45,0.0,0.87,0.0,0.0,0.0
+0x0ed81a5cff079ade379c350e5cb0f7ab3f1457194e20005fc2c32b85e80fbe9f,Will the Fed Pause-Hike-Pause in the next three decisions (Oct-Dec-Jan)?,總經,2263.36,0.0,0.34,0.0,0.0,0.0
+0xf65f336f88d86c075decfd57fb7152f89ab6c72892bae4dee2ea464c02833630,Will there be between 25 and 29 average daily transits of the Bab el-Mandeb Stra,其他,1964.07,0.0,1.28,0.0,0.0,0.0
+0x22057ce16607403d07f2d6cb1bcf1189918107025ac2fc848a58895e9bbd07a1,"Will GPT Astra 6.1+ be released between November 16 and November 22, 2026?",其他,718.87,0.0,0.83,0.0,0.0,0.0
+0xf41ac60fdfbf0a68842b93e873548cd2bf782a8b0c609b38413831c2a34d30d9,Will the highest temperature in Tel Aviv be 27°C on October 31?,其他,559.89,0.0,0.72,0.0,0.0,0.0
+0x00888c5238555ef721ca2535bd5a539446e72709b5f7ef68bf07753a6eb2d5ea,"Will Trump's approval rating be between 38.0 and 38.4 on October 30, 2026?",政治,935.48,0.0,0.46,0.0,0.0,0.0
+0xd3834b3e683ac6c505734e95eb9a970c5130faa0f7535342c49210562813f0ba,Will the highest temperature in London be 14°C on October 31?,其他,298.54,0.0,0.43,0.0,0.0,0.0
+0x68103234850aa46ba877aab5259394b879cbbfe9da79673d70aab1135b170fe6,"Next Fable Model (5.2+) released by November 10, 2026?",其他,672.07,0.0,0.72,0.0,0.0,0.0
+0x4f943743e24937f52d9cdcd6e64efcfbea36594beaa50a6ff1cd1ddc328e5c79,Will the highest temperature in Miami be between 86-87°F on October 31?,其他,506.64,0.0,0.6,0.0,0.0,0.0
+0xc7cf9c7d9f6069a63870bdcb4d7439f370e0cc2a7a86a19c0a45c0827c5e32a8,Will the highest temperature in Paris be 16°C on October 31?,其他,437.6,0.0,0.63,0.0,0.0,0.0
+0xcf277aae6aa365ca371a4cf99cb4b21ba08442423695d0cb733a4c278e991f08,Will MOUZ Win the PGL Masters Bucharest 2026?,其他,42.85,0.0,0.05,0.0,0.0,0.0
+0x11b37f62f9e9654c6734d3af5204f4f54fcd6dac1a9e22bc0e999abecc94e873,Will the highest temperature in Hong Kong be 28°C on October 31?,其他,619.56,0.0,0.64,0.0,0.0,0.0
+0x0b63d31ec1b435d02f09e625230a2806d61631fba8c9b47be5e8eef7dbb3c25f,Will the highest temperature in Warsaw be 9°C on October 31?,其他,625.03,0.0,0.67,0.0,0.0,0.0
+0xee03ed7670db3d22fa0be56aba434ba1867695cd287178077ed0c524704aaf4e,Will the highest temperature in Amsterdam be 13°C on October 31?,其他,544.92,0.0,0.69,0.0,0.0,0.0
+0x253393332e4d464542ed2cd55896f6e01b3a2837a7fef3d71759f9c31312609b,"Will no next Israeli Minister of Foreign Affairs be appointed by February 28, 20",政治,2154.9,0.0,0.8,0.0,0.0,0.0
+0xc9c45970a2b948e7071f4e92791b76dd4e95b8bfc86f6805780f60cdcfcb7e22,Will Yair Lapid be the next Israeli Minister of Foreign Affairs?,政治,654.16,0.0,0.3,0.0,0.0,0.0
+0x714e151eb0978a38ea32673a3cbfaedcf2c34057b9ac819e25bc65a317a69b83,Will Trump meet with Flávio Bolsonaro in 2026?,政治,4704.6,0.0,1.66,0.0,0.0,0.0
+0x4461c900715c311e70ebcfe25267ad1d63f5df1fefe391ef15240cda44fe575f,Will the 30-year Treasury yield dip below 5.05% before 2027?,其他,46.73,0.0,0.68,0.0,0.0,0.0
+0xa8203143cdac77b5a238edae0b8f354e4535d54332a7e0a77bec4bdb6fc816ad,"Will Luiz Inácio Lula da Silva win Brazil, Gadi Eizenkot become Israeli PM, and ",政治,742.89,0.0,0.39,0.0,0.0,0.0
+0x44333726b434e0608b11535378a0a006e3d58885682952f2c8cedcf7d450b7a0,Will Demon1 play for Cloud9 in 2027?,其他,354.32,0.0,0.43,0.0,0.0,0.0
+0x51b5e9f6da5066243bd0a35699205565dc1a5fe39f005ee522528b2c92c984c6,"Will Trump's approval rating be at least 39.0 on October 30, 2026?",政治,882.9,0.0,0.46,0.0,0.0,0.0
+0x413a8e74f4bd531f6cf0835789ce37d53c3370d6b10e7f8d0e21cbdfd0de010f,"Will ""Clayface"" 2nd Weekend Box Office be between 8m and 10m?",其他,365.71,0.0,0.34,0.0,0.0,0.0
+0xacb745a75acc9323b323b98bc7d27a411f6d1fa02533af6b96978afd54f7da0c,Will Yisrael Beiteinu be in the next Israeli government?,其他,906.58,0.0,1.21,0.0,0.0,0.0
+0x7b93d1e003562919081f662f449ab7a227c59d6d207329735ee01eb6cf14645d,Will the highest temperature in Lucknow be 24°C on October 31?,其他,625.86,0.0,0.34,0.0,0.0,0.0
+0x7b5802f3b03259ab9cdf1db201dc1a97b8749d6113de42aa876b338044fd65c4,"Will Elon Musk post 340-359 tweets from October 23 to October 30, 2026?",其他,704.58,0.0,0.56,0.0,0.0,0.0
+0x1f81a5df8405d071d3c5d476f5e582ffb73f7d0e0575b937bf6b2d8b44919cf4,Will the Louisiana 2026 Senate race be within 5%?,政治,1208.04,0.0,0.62,0.0,0.0,0.0
+0x67924fa4f892b116b4459a097542c78d9da882fccff66a1cb63777e796a177dd,"Will Zelenskyy post 80-99 posts from October 30 to November 6, 2026?",其他,910.86,0.0,0.73,0.0,0.0,0.0
+0xdeda6ebe0bea57c9a24d0b9c0ab07b2140a426f053d408c07ecab9b5037fe2e5,Will the highest temperature in Helsinki be 9°C on October 31?,其他,377.3,0.0,0.61,0.0,0.0,0.0
+0x33d74dd3aa369aade1e9a1c4d9a442e02e6b91ad76e3758a51dea02fe9831635,Will the highest temperature in Shanghai be 23°C on October 31?,其他,368.76,0.0,0.22,0.0,0.0,0.0
+0x556890cf8eab7a897eb6bd0aedb7b0b3b95550de19a6acd4a736992b8e129b97,Will Benjamin Netanyahu be the next Israeli Minister of Foreign Affairs?,政治,118.78,0.0,0.32,0.0,0.0,0.0
+0xaa0854122f641ac9b02361799c183837fdd41a2d083298eac3945075fd64f37a,Will the Democratic Party candidate win the 2026 Michigan gubernatorial election,政治,402.67,0.0,0.42,0.0,0.0,0.0
+0xab2ae047829911a120eba46dcfd7abbcdad3628717de5ad4033e2117834053cf,Will Trey McBride be the highest-scoring TE of the 2026-27 NFL season?,運動／電競,541.14,0.0,0.38,0.0,0.0,0.0
+0x51d614baad5c783ee898a97e7c853e7eaf663f54d8e99303c4653cf78ea73c0d,Will Manchester City finish in the top 5 of the 2026-27 English Premier League s,運動／電競,166.63,0.0,0.03,0.0,0.0,0.0
+0xd199ca50b6298536efb00a8d0448a3a64bdb78bb1965d394f6ad42ee73a318f4,"Will CZ post 20-39 posts from October 27 to November 3, 2026?",其他,267.19,0.0,0.72,0.0,0.0,0.0
+0xc8ba4e67daab659a5896f4a37488a1a8f3f26aa93c45609a547a87c6968d158a,Will the highest temperature in Beijing be 12°C on October 31?,其他,683.89,0.0,0.5,0.0,0.0,0.0
+0x391922891bfbc39f997a9291a9128127b470d99402469eaf61b163e06eba9bb2,"Will Gemini Carbon be released on November 17, 2026?",其他,759.5,0.0,0.68,0.0,0.0,0.0
+0x074c95557f5c21cac0fbaf151ee84248d27abc5b52c3c65d39978edee6e9e48a,Will total votes cast in the 2026 midterm election for Senator from Wyoming be b,政治,788.39,0.0,0.34,0.0,0.0,0.0
+0x90d952bc1f2dd52d3cf0b4f0b29eea4bb1f169f000b24e3415b3a15bec3bb37f,"Will Donald Trump post 160-179 Truth Social posts from October 27 to November 3,",政治,192.07,0.0,0.23,0.0,0.0,0.0
+0x37f33f38779eaa1089981e5396467477c729bb33c9db51e17f5a45c56fab5639,"Will ""You Can See Everything"" 3rd Weekend Box Office be between $10M and $12M?",其他,469.4,0.0,0.46,0.0,0.0,0.0
+0xbe4c06c0b88513b0ae76e2ca1d3b3035b885ad2bac421bdbca2a318961e07cd6,Will total votes cast in the 2026 midterm election for Senator from Wyoming be b,政治,475.49,0.0,0.4,0.0,0.0,0.0
+0xbd94e92ca892bd4f6833a5e1ad9bd34d2a9f8ada141a33f6685612d1c46ceac6,Will the highest temperature in Munich be 8°C on October 31?,其他,397.32,0.0,0.14,0.0,0.0,0.0
+0x05eeddc01fc622d168380b7d24101782c202bc7db8aa63074564967c5a8e1a6d,"Will ""Call of Duty: Modern Warfare 4"" be the #2 Steam Weekly Top Seller for the ",其他,464.91,0.0,0.49,0.0,0.0,0.0
+0xc145e5c00989802cf449a99a5e055d03e165905537e049114dfdb870a3c1db91,Will the highest temperature in Miami be between 82-83°F on October 31?,其他,77.52,0.0,0.33,0.0,0.0,0.0
+0x4cad4fbbb7b4378dba4f0023c5cc5aa4bb54fff92c03b35622e6a1a7d5900be4,"Will any AI model reach 1580 Coding Arena Score by December 31, 2026?",其他,443.14,0.0,0.45,0.0,0.0,0.0
+0x92f3620e4b4fdb4687be2981ad3d4ac9625698ed080a83dee47bc96e1bad46aa,Will Diable play for SK Gaming in 2027?,運動／電競,466.87,0.0,0.18,0.0,0.0,0.0
+0xa6de2bce79e4dc1523fe0c0ceaf5dd83b73c4b5a0db2298692188f6bdedd3f17,Will an Independent candidate win the 2026 Nebraska Senate election by 3% or mor,政治,663.9,0.0,0.37,0.0,0.0,0.0
+0x89a62100af79a6c1f221321914dd8fec587f867a5dba78c2a2046048fcd836ba,Will the highest temperature in Chicago be between 58-59°F on October 31?,其他,753.73,0.0,0.37,0.0,0.0,0.0
+0xd088ce492bcec567b938cd5db419ba6fe1a7944671c5a1bb21e912c003428a8c,"Will Trump's approval rating be at least 37.0 on October 30, 2026?",政治,781.43,0.0,0.4,0.0,0.0,0.0
+0x14ee64d4374c6d46a1fa02aaef31643da89dac507acb46e86ed442e9bca23fa8,"Will ""Werwulf"" be nominated for Best Cinematography at the 99th Academy Awards?",其他,463.32,0.0,0.47,0.0,0.0,0.0
+0x0d1f8af3d8b1dfc53b7c278510ae233458cb72e5477b18eebba008086f7ddb06,"Will ""Wuthering Heights"" be nominated for Best Costume Design at the 99th Academ",其他,476.1,0.0,0.47,0.0,0.0,0.0
+0x59be54505cd36e662b07939039e13c12ad757ae8a79183ef3fa3ebdd1c67608f,Will the 30-year Treasury yield dip below 5.10% before 2027?,其他,335.13,0.0,0.58,0.0,0.0,0.0
+0xb5f621fe389108c1d13d2e6fac72ae477d260f1d03eb70867a5acdda2cbe596d,"Next Fable Model (5.2+) released by November 5, 2026?",其他,511.33,0.0,0.5,0.0,0.0,0.0
+0xf0f29d2994ea37406d158d72e9dde22035eef4bba5ed2ece5be846cef6435948,Will Republicans hold 47–49 Senate seats and ≤192 House seats after the 2026 mid,政治,742.78,0.0,0.39,0.0,0.0,0.0
+0x9e05eb6a4b9154043b0a93fd6b6b55851b61930cd87fcb9e63c70356f0e3d00e,"Will ""God is Shy"" be nominated for Best Animated Short Film at the 99th Academy ",其他,389.14,0.0,0.46,0.0,0.0,0.0
+0xd7f37155b439c4380d600db81dbd16fd35ee4d2035fa57fdbe0b0337a517ce8e,Will the highest temperature in Lucknow be 23°C on October 31?,其他,648.61,0.0,0.51,0.0,0.0,0.0
+0x32c382ed92a2e6d7e6ea07e2f72052c8b15fe9b4226730600d5be8b01433eb5d,Will total votes cast in the 2026 midterm election for Senator from Rhode Island,政治,778.76,0.0,0.38,0.0,0.0,0.0
+0x63f7ff9183a915fdc067cf76ce8e4eb7b38f77daae21128d3b845e90ef7948d2,Will total votes cast in the first round of the 2026 midterm election for Senato,政治,282.52,0.0,0.25,0.0,0.0,0.0
+0xf4123c71f7f1b37d53be909c409a4d5503e7988ff0d21106d2fefefac055cd30,Will the 5-year Treasury yield dip below 4.55% before 2027?,其他,137.35,0.0,0.35,0.0,0.0,0.0
+0x128c33c2ba8adefd0f1bea91f88975395bba02357789d3ca6211a5ac019e6b75,Will ISM Manufacturing PMI be between 55.0 and 55.9 in October?,其他,1001.54,0.0,0.57,0.0,0.0,0.0
+0x9cd04ab7acf0b7dc2d53fc530a017c33b192fbaa0892324b69ad47f6b593aa0f,Will the highest temperature in Karachi be 35°C on October 31?,其他,418.56,0.0,0.34,0.0,0.0,0.0
+0xc3e04fe7eeebd43a78f2b26028f26863e9341e8b9cf7b8afb52a18175dfe52ef,Will OpenAI have the third highest OpenRouter market share the week of October 2,其他,854.14,0.0,0.0,0.0,0.0,0.0
+0x71c46eaab8e99b8871c2d447186a120a6b931d5a8b851bb8949a2e39bd892369,Will Qualcomm (QCOM) beat quarterly earnings?,其他,126.64,0.0,0.21,0.0,0.0,0.0
+0x196330fda38279bd1469d9189d5febd8fe37360d0bdeb7c545605095964cfcd7,"Next Fable Model (5.2+) released by November 19, 2026?",其他,176.51,0.0,0.35,0.0,0.0,0.0
+0xd682a3e2d40786fff6ba1b6de540f5a70ba55fb2b7c2c1f056b44e756de593e2,Will the highest temperature in Tokyo be 22°C on October 31?,其他,743.76,0.0,0.21,0.0,0.0,0.0
+0x56faa823e697cbfb8ea1e49540c09cb7b971af396acc7ea903f6997a0b1e05c9,Will the highest temperature in Chongqing be 19°C on October 31?,其他,627.2,0.0,0.51,0.0,0.0,0.0
+0x477f984e867c5152741e97eb387849c94da5d9fc0c48739696b5ecb792c9214c,"GitHub.com critical incident by October 31, 2026?",其他,18.18,0.0,0.0,0.0,0.0,0.0
+0x60d64828ceaad17cb820d198a5387b3d60ec636284aa03d965c2253dddf501ec,Will Ilia Topuria fight Arman Tsarukyan next?,運動／電競,118.55,0.0,0.18,0.0,0.0,0.0
+0x92a51cd0a7f6c9f4dd83c1e46337aa1940eb2bb95810f5fbfc71afe030496f06,Will the lowest Baton Rouge river level be 5.00 to 5.99 ft by November 30?,其他,402.64,0.0,0.38,0.0,0.0,0.0
+0x90a2d8aca80d0e870daa3721c430ac2e4dc1c06f8b24693a10e824cb17201005,Will voter turnout in the second round of the 2026 Bulgaria presidential electio,政治,1431.91,0.0,0.53,0.0,0.0,0.0
+0xee84f81ac4694cf2fdbbdeb293438f97143a6b35b7178bcfbbb097c494aae1c4,Will Republicans hold 47–49 Senate seats and 193–207 House seats after the 2026 ,政治,1878.0,0.0,0.54,0.0,0.0,0.0
+0x36614664b2f4023d68eaaa0a003a0c574c617f390cc4b861c166ea287b65b571,"Next Astra Model (6.1+) released by December 15, 2026?",其他,726.89,0.0,0.56,0.0,0.0,0.0
+0x29e0792ea05736053ff0cb113549be50c4fa4662c4262a1cd36a50a4f6981ea2,Will the next Fable model (5.2+) debut in the top 3 of the Text Arena leaderboar,其他,543.95,0.0,0.53,0.0,0.0,0.0
+0xf09c6ec32d669912ecd752437167db7124e24b13dc33345f04fcd39c3bd5bee0,"Will Kimi K3.1 Pro debut at a score of at least 1470 by June 30, 2027?",其他,771.96,0.0,0.46,0.0,0.0,0.0
+0x98f8f1f32dab2e411688309e5ab1f33f3481f07b9c7c1d3a6c791ba0997c4dd2,Will the next GPT Terra model (5.7+) debut at a score of at least 1460 by June 3,其他,616.93,0.0,0.53,0.0,0.0,0.0
+0xedafb5940658fa7c78443c8f41f780851cad6c5783a6010a1d60ca6b50ddee5a,Will Rockstar release GTA VI on PC after March 2027?,其他,705.33,0.0,0.47,0.0,0.0,0.0
+0x6dae9b31254459bf496d342d1f2bcd6c56c0654417829c8888dfb6870f354dcf,Will the highest temperature in Taipei be 27°C on October 31?,其他,272.05,0.0,0.17,0.0,0.0,0.0
+0x05927581b40d4d55c90e8e32a3895f80ec87c97a8ffbc9d9cb62b0d36e9d6ad7,Will there be 0 earthquakes of 6.5 or above magnitude worldwide?,其他,333.22,0.0,0.38,0.0,0.0,0.0
+0x5efc0f5e94ca01af3b910187ef8a0b20c659bfdb1a8462a53e1a36eedd51a93c,"Will ""Obsession"" be nominated for Best Original Screenplay at the 99th Academy A",其他,96.46,0.0,0.31,0.0,0.0,0.0
+0xef36304a6b9cbf84774c02aec180547222970e18f86fda8deeb967c8fb6bbaec,Will the highest temperature in Amsterdam be 14°C or higher on October 31?,其他,284.34,0.0,0.3,0.0,0.0,0.0
+0xf338cc5b311bc1e667f8e3521bdcbadc1bedf8a6171a1a61d196a3796dd05aaf,Will the Democratic Party candidate win the 2026 IL-04 House election by 30%-35%,政治,432.64,0.0,0.22,0.0,0.0,0.0
+0x5683dba19dc26922d47bf0bc443c99fbbd79d47ca788d1be3c0a2e7f2e2e6237,"Next Fable Model (5.2+) released by November 9, 2026?",其他,382.94,0.0,0.33,0.0,0.0,0.0
+0xa22ff00d5e52fb3d4e19bc6e9f165735fef52f9fb07acdd4f32672904afbb4d1,Will the highest temperature in Taipei be 28°C on October 31?,其他,600.03,0.0,0.51,0.0,0.0,0.0
+0x2d858f0a25a61dfde6485f3d8e75aed397bed616c3e458b66e10e642fb2f9759,Pete Hegseth out as Secretary of Defense by November 30?,加密貨幣,1199.86,0.0,0.47,0.0,0.0,0.0
+0xdf68e4981faf909c9b2ca53a2aa6e69518bce64840daa0120a30534fea883d9d,Will the highest temperature in Houston be between 80-81°F on October 31?,其他,576.7,0.0,0.39,0.0,0.0,0.0
+0xb7e36df35b06b4de5d0553c8f8bd544cc0660fc64942f1921364d7ec90275a46,Will Hanwha Life Esports Reach the Worlds 2026 Knockout Stage?,運動／電競,46.85,0.0,0.0,0.0,0.0,0.0
+0xd1908d82fffc0da6e8b5fa6a435e9024713d24733653c90d056cb5e7e966c7bf,Will Xavier Becerra win Fresno County in the California governor race in 2026?,政治,882.18,0.0,0.43,0.0,0.0,0.0
+0xdded1086ea6aca11f88b997328ff3b0f5bb9374e5ecb450422c862f67c9f3cbe,Will Anthropic's market cap be between $1.75T and $2.0T at market close on IPO d,其他,190.8,0.0,0.12,0.0,0.0,0.0
+0x2b7b692f83ed30cc0d8a1133ec1786dd8ab8a41960ca2126179e308cb8d7d05a,Will Harry Kane win the 2026 BBC Sports Personality of the Year award?,其他,694.07,0.0,0.29,0.0,0.0,0.0
+0x639872370f619e00fecc3edbcfa19c9791b695570165aea13ea9f9c16b9d72ba,"Will ""Godzilla Minus Zero"" Opening Weekend Box Office be between 31m and 34m?",其他,127.98,0.0,0.0,0.0,0.0,0.0
+0x7ab265e9a58ec0156aea39a95b14676a02e1a51496fe8f9e46753a41f75c5be3,Will the 30-year Treasury yield dip below 5.00% before 2027?,其他,736.74,0.0,0.48,0.0,0.0,0.0
+0x9940b0fdc557a6599bcaa0b3bb4e91ead7e254e5f1dffcb21e37156b1290e1ff,Will the Republican Party candidate win the 2026 Texas Railroad Commissioner ele,政治,337.32,0.0,0.18,0.0,0.0,0.0
+0xe450a37e220ae603aa4278a6d424c22c46ebd92d98c6d20b7b2f43e9c8df04e0,Will the Democratic Party candidate win the 2026 MN-03 House election by 20%-25%,政治,253.0,0.0,0.14,0.0,0.0,0.0
+0x6ec7488799349b287b7d7074880fce11d87d6b8173c64550b063501d8d1a65f3,Will Trey McBride finish the 2026-27 NFL regular season with the most receptions,運動／電競,77.36,0.0,0.19,0.0,0.0,0.0
+0xb3058892fc4857ebe5919a320e6acce2a4924f253adc781df17c0e8694993377,Will the Republican Party candidate win the 2026 PA-13 House election by 35%-40%,政治,720.84,0.0,0.28,0.0,0.0,0.0
+0x9beb023f95d83c9046eae91130938636d449beb93d18a1c537026c8531e83302,Will South African inflation be greater than 5.0% in 2026?,運動／電競,303.48,0.0,0.13,0.0,0.0,0.0
+0x2a33a6bfc2f9cd3e83f9317eb661bb20c8bdade880a817a1a876c2bdc438fc60,"Will Donald Trump post 180-199 Truth Social posts from October 23 to October 30,",政治,669.62,0.0,0.18,0.0,0.0,0.0
+0x3a0cfd022f4c5c45a46f166e0692dffa2bfe5844af2b563d1884b9cf0e953832,"Will GPT Astra 6.1+ be released between November 30 and December 6, 2026?",其他,253.17,0.0,0.36,0.0,0.0,0.0
+0x67c52d6ce0a15d61df49d427e8d99757fccccdb20805710a00c0da86ba686230,"Will Luiz Inácio Lula da Silva win Brazil, Benjamin Netanyahu become Israeli PM,",政治,124.14,0.0,0.28,0.0,0.0,0.0
+0xfc79ea178d946a0080cede4ee53d42769c288a7f032c3d67c2b05e879b6568a5,Will the highest temperature in New York City be between 56-57°F on October 31?,其他,660.72,0.0,0.36,0.0,0.0,0.0
+0x17438403d6bb43cc329129220a2a39f404a3cdc9d5db1b1f298a4a738a6650ef,Will the Republican Party candidate win the 2026 PA-13 House election by 30%-35%,政治,494.54,0.0,0.22,0.0,0.0,0.0
+0xd21ba5e63b72e3f54cbf49bda5b79840f5de6bfb944f8a28e2c8418dbcf18e07,Will the Democratic Party candidate win the 2026 NC-09 House election by 0%-3%?,政治,513.92,0.0,0.22,0.0,0.0,0.0
+0x334931805ae11470f59f662e303a65f7c196e2f934749b3fcf0540c959b27b5a,Will the 5-year Treasury yield dip below 4.50% before 2027?,其他,754.23,0.0,0.45,0.0,0.0,0.0
+0x8c22e52e0415607861ccc1791ed5b1aef824837b1347364f9b8555752539e347,Will the Republican Party candidate win the 2026 TX-32 House election by 6%-9%?,政治,156.84,0.0,0.11,0.0,0.0,0.0
+0xe4e05e26f3b71694066589779c660778919367b66ae616dc7102e6181ce0e554,Will Tee Higgins have 10.5+ receiving touchdowns in the 2026-27 NFL regular seas,運動／電競,58.39,0.0,0.03,0.0,0.0,0.0
+0x4d93f4e28110b26f65a23ae1c2d5e3a62175cc0cd862606459624c55f75d617f,Will the highest temperature in Busan be 22°C on October 31?,其他,763.4,0.0,0.24,0.0,0.0,0.0
+0x40c1b3aa62b449d47e30d1ecd829ad339bcb59ada11ffd7570d187b61dfd4a38,Bank of Japan increases interest rates by 25 bps after the December 2026 meeting,總經,183.48,0.0,0.11,0.0,0.0,0.0
+0xf4d48163eadda3880a8572dce5e86c76d1404b2e54bead06a1896dedd9cffcfb,"Will Slingshot launch a token by September 30, 2027?",其他,29.11,0.0,0.0,0.0,0.0,0.0
+0x5da64bd0766ad75610527f93cac1dc0b06b99ade73f0f0e896a4a86b95339189,Will the highest temperature in Wellington be 13°C on October 31?,其他,399.1,0.0,0.32,0.0,0.0,0.0
+0x49156c7d0a7eb24a3bd4dce5237769c17c243d8577f0804143cad4722f6a4856,"Gemini Carbon released by November 9, 2026?",其他,606.86,0.0,0.42,0.0,0.0,0.0
+0x246388b64b7658f5a27969b342d8e2abb64421a34d2af58dee7ba4f0b655c78f,Will the 30-year Treasury yield dip below 5.25% before 2027?,其他,336.47,0.0,0.28,0.0,0.0,0.0
+0x034c62e4932c9442a4ec1be93a2b1a90a3ecef1d281e0c2f65424496360b9876,"Will Mike Evans have 1,024.5+ receiving yards in the 2026-27 NFL regular season?",運動／電競,149.82,0.0,0.09,0.0,0.0,0.0
+0xb72d3500156ff9aec50f87d70888e1702aca3e937c65d11797a02f2ccef35853,Will Gen.G and T1 meet in the Worlds 2026 Grand Final?,運動／電競,317.8,0.0,0.19,0.0,0.0,0.0
+0xc69755d10573be81c34b780d4eab0e12981f402876ad4919e043833667fcaa6a,Will the Democratic Party candidate win the 2026 Minnesota gubernatorial electio,政治,349.72,0.0,0.2,0.0,0.0,0.0
+0x45de1f2dec01d183cd1d8dfbb4f4ec0ec4c4a3c7ed7b0a60ad3c0c9b628e3447,"Will Brock Purdy have 4,049.5+ passing yards in the 2026-27 NFL regular season?",運動／電競,204.12,0.0,0.09,0.0,0.0,0.0
+0xbdd4c79c8f1c722c800ab6e381d65df0292bbaf30ffa176ee8aa708d031bf4b4,Will Rockstar release GTA VI on PC in March 2027 (ET)?,其他,138.94,0.0,0.28,0.0,0.0,0.0
+0x18e919d55cab06a5c5d4a84eb426ad66dd415f82fd05e5deb19f3273b53816c2,Will Davante Adams have 774.5+ receiving yards in the 2026-27 NFL regular season,運動／電競,157.45,0.0,0.09,0.0,0.0,0.0
+0xf62ab811893ddecfb15ca7a036d87fb68a1d1f0eb09de0332235177e73cb10e1,"Next Astra Model (6.1+) released by November 30, 2026?",其他,773.01,0.0,0.41,0.0,0.0,0.0
+0x08cebc2fb0f40161e03e9299bc11dd689b55de11b8a9c03c25f70f11b6bc9d80,Will the Republican Party candidate win the 2026 NE-03 House election by 45%-50%,政治,510.37,0.0,0.22,0.0,0.0,0.0
+0x47fb19793fd16c0b05199af0c3c6a442d3eb692d5ec2e3e58e29534baab1f1ae,"Will Trump's approval rating be between 38.5 and 38.9 on October 30, 2026?",政治,745.9,0.0,0.25,0.0,0.0,0.0
+0x70459ccdd3bb66397b4608cc071d6f78d1714aa2578ba2c22076ddbaf9b7a19c,Will Quinshon Judkins have 899.5+ rushing yards in the 2026-27 NFL regular seaso,運動／電競,112.54,0.0,0.09,0.0,0.0,0.0
+0x10eb2b28ae215d79e181414abd9dfcbd616ea4fa0759bc0c0c0df9d7c8f45d35,Will there be more than 13 earthquakes of 5.5 or above magnitude worldwide?,其他,566.9,0.0,0.32,0.0,0.0,0.0
+0x7ec5d0a1d8d09d8f90d56a316cd4248c534a1da0fe7499c1fcb2a5642093f222,"Next Fable Model (5.2+) released by November 6, 2026?",其他,89.98,0.0,0.23,0.0,0.0,0.0
+0xdf559125c008f45ee992bc395dfe98d36303a16386eedbd73b3fb0a7eba9fb9e,Will Matthew Stafford have 27.5+ passing touchdowns in the 2026-27 NFL regular s,運動／電競,218.3,0.0,0.09,0.0,0.0,0.0
+0x33180ab8f5bce65df6d57e97a3ea68819319ccdec5bc5adbd5816cc2d356a0ff,"Will ""You Can See Everything"" 3rd Weekend Box Office be between $12M and $14M?",其他,249.07,0.0,0.24,0.0,0.0,0.0
+0xc75fbd9a9ce839c74f0985cb844203177d6a3ede84527698e8edc34ed137dc9a,Will the highest temperature in Beijing be 13°C on October 31?,其他,272.73,0.0,0.22,0.0,0.0,0.0
+0x03a107d57be09cd5fc9a75f6e73a2086aabaa37a01356744459cee560e9c270b,Will the highest temperature in Guangzhou be 33°C on October 31?,其他,115.64,0.0,0.23,0.0,0.0,0.0
+0xf678bbcd9ae594797e9d4772174f8fb4138f2beedbde076c74b2d31d1dc3b01f,Will the Democrats win Texas in the 2028 Presidential Election?,政治,485.8,0.0,0.21,0.0,0.0,0.0
+0x4a1c22c0954c56903bd9179b198aa5dc0abe9126c5e11449383132102c73517e,Will the Democratic Party candidate win the 2026 WI-01 House election by 0%-3%?,政治,183.32,0.0,0.13,0.0,0.0,0.0
+0x4a5969c9ea3edaca58bce54c2d2bda9208802ce4672dd71bdab22a46b66753c3,Predict.fun FDV above $800M one day after launch?,其他,279.84,0.0,0.36,0.0,0.0,0.0
+0x957f8fc5728011569eccf4c92c8212a07f9624f89d444f3a74f2aaccedb625ee,Will the Democratic Party candidate win the 2026 GA-13 House election by 45%-50%,政治,278.46,0.0,0.13,0.0,0.0,0.0
+0x7cefbc64b52dde9282ca624c59142a138991eeba249cc4c4c1fdc2aaf48f9842,Will the next GPT Terra model (5.7+) debut at a score of at least 1450 by June 3,其他,671.48,0.0,0.38,0.0,0.0,0.0
+0x06e351bf32a26eae18c1cc7daf8ce1c467a402d1b68b169cdb9cda67bda7ff45,Walmart (WMT) Q3 US eCommerce sales growth 21% to 25%?,其他,836.31,0.0,0.41,0.0,0.0,0.0
+0x2a7f2f011883eece6cf85a17fdc994c571d035cb70b8151ea68de2ce8ba05cca,"Will Bo Nix have 2,999.5+ passing yards in the 2026-27 NFL regular season?",運動／電競,181.66,0.0,0.09,0.0,0.0,0.0
+0x8e6d5ef1814b97f3fa393c7929a20699bbe54c80b987784e0796e37d8e0644cb,Will Dak Prescott have 30.5+ passing touchdowns in the 2026-27 NFL regular seaso,運動／電競,215.83,0.0,0.09,0.0,0.0,0.0
+0x84d42cffc4dcae1f319c831f9487481610e79497252872b76de5f39adcdd33b2,Will the Republican Party candidate win the 2026 NY-11 House election by 10%-15%,政治,351.12,0.0,0.17,0.0,0.0,0.0
+0x556a31573cfdb8c42d28ce4244e579f071a9e4aa3692d3ca4a609bff675d3d2f,Will the Dallas Mavericks make the 2027 NBA Playoffs?,運動／電競,217.81,0.0,0.09,0.0,0.0,0.0
+0x5f7763c65b6cd52c991eb94266a77aa20fb9ce3897304ebd372437a808d2df2f,"Next Astra Model (6.1+) released by November 15, 2026?",其他,670.49,0.0,0.37,0.0,0.0,0.0
+0xab0d7b51496a888b38972d9170bf0cc8ed2a54815f112508159c90ab0256f466,Will the Democratic Party candidate win the 2026 GA-06 House election by 60%-65%,政治,530.2,0.0,0.18,0.0,0.0,0.0
+0x57d098280ed56afe64bdd70a51087b86115783ef8855f8a3e6106b62875319fc,Will Bo Nix have 27.5+ passing touchdowns in the 2026-27 NFL regular season?,運動／電競,206.4,0.0,0.09,0.0,0.0,0.0
+0xd28ea31e33657406042671215895845ea8b4220e0879ed266b4180c8107881d1,Will Colston Loveland have 799.5+ receiving yards in the 2026-27 NFL regular sea,運動／電競,192.8,0.0,0.09,0.0,0.0,0.0
+0xe5a190a6e3efbaef21bc3794a45ff351239c1174bfd0c23907c444f4f18d6b07,Will the Republicans win Minnesota in the 2028 Presidential Election?,政治,223.35,0.0,0.19,0.0,0.0,0.0
+0x27b1dadfb457a340d506a2301950c5fb07d569ea8b86095034a0653e6ec9e67f,Will Yum! Brands (YUM) beat quarterly earnings?,其他,151.56,0.0,0.15,0.0,0.0,0.0
+0x1f22770c7b6bf6997b7b4a8ee16273bf0f339053570378d6bf2ae014ee208bd0,Will AJ Barner be the highest-scoring TE of the 2026-27 NFL season?,運動／電競,305.72,0.0,0.0,0.0,0.0,0.0
+0x182c4ed2f471ae9281f292aa88abac70c0b94c38442261d4a6edf8271e913290,US imports Russian diesel by December 31?,其他,197.54,0.0,0.33,0.0,0.0,0.0
+0x5b3350e20f05e072422dbb35a02cc87a7c83c63052794a9d91a3c25c8c1f5dd0,"Will Anthropic have a #1 AI model by December 31, 2026?",其他,377.0,0.0,0.25,0.0,0.0,0.0
+0x470878e03230646fffbfe4019b1ae07eec092869247ccf5f0537c51afb03283d,Will Quentin Johnston have 649.5+ receiving yards in the 2026-27 NFL regular sea,運動／電競,168.14,0.0,0.09,0.0,0.0,0.0
+0xe126dd71c6dbb97556647ab8ae0fb64adcd6ce4a654876ace770354c6ce8ead8,Will Makai Lemon have 449.5+ receiving yards in the 2026-27 NFL regular season?,運動／電競,137.13,0.0,0.05,0.0,0.0,0.0
+0xbccb6d6fa8affc875b6e0683587008dd18f3e612c83a87255aab679da46d073b,Will Ja'Marr Chase have 10+ receiving touchdowns in the 2026-27 NFL regular seas,運動／電競,212.16,0.0,0.09,0.0,0.0,0.0
+0xd21daae0dd39d57f9ad2e359b9fd002e4ac7f0ae77a3241d02300837db29ab2e,Will Courtland Sutton have 774.5+ receiving yards in the 2026-27 NFL regular sea,運動／電競,217.34,0.0,0.09,0.0,0.0,0.0
+0x05ef70f32ceb65e0d50301493550faa7a6808f1eb2283e96f4c994d3d3051018,Will the Democratic Party candidate win the 2026 ME-02 House election by 0%-3%?,政治,465.59,0.0,0.18,0.0,0.0,0.0
+0x62b8efb4db753aa64cd337c425f2e58c82cbcff42603689da0792e68c8c04d01,Will total votes cast in the 2026 midterm election for Senator from Alaska be be,政治,60.35,0.0,0.02,0.0,0.0,0.0
+0xbb8f8493c02976eb18b8968ca68fae6b2c4d45311b587c0e09b2e7315b11449e,Will OpenAI be the third-best AI Agent Lab at the end of October 2026?,其他,227.94,0.0,0.19,0.0,0.0,0.0
+0x97b1a139bdc0da2564cb12b39920e039d9090d4219b2ec6cbdf36bd6382c1555,Will Argentina's monthly inflation in October 2026 be between 1.9% and 2.1%?,運動／電競,138.2,0.0,0.07,0.0,0.0,0.0
+0x7b3f572c80e860a020d31e14d0761fb51dd1e5bc15ff820a4a988316482e9a23,Will Ra'am be in the next Israeli government?,其他,384.21,0.0,0.55,0.0,0.0,0.0
+0xfb37b207e4ac37622e667af752bf20203fae5e1b4241f09a35342d76be5412f4,Will Kyle Pitts have 574.5+ receiving yards in the 2026-27 NFL regular season?,運動／電競,215.83,0.0,0.09,0.0,0.0,0.0
+0x3e40014c82bb31e192844614d67a243713198152db61fc8d8acea6f6d6dfd117,"Will Brock Purdy have 4,299.5+ passing yards in the 2026-27 NFL regular season?",運動／電競,138.74,0.0,0.09,0.0,0.0,0.0
+0x3192bbb458565aacf98659ffbce08497e74348c4fa4aafbea991a42d649eb884,Will total votes cast in the 2026 midterm election for Senator from Iowa be betw,政治,358.02,0.0,0.14,0.0,0.0,0.0
+0x5daa47aa3f16849b18d64fba05af0899a848cb1a3b2463e6b2bcd75c61f0ec00,Will Napoli qualify for the 2027-28 UEFA Europa League?,運動／電競,113.84,0.0,0.09,0.0,0.0,0.0
+0xa1a10f915d8f8f30ef18e665995b572b25bc053d123dad8886b9e1cbe9956c33,Will total votes cast in the 2026 midterm election for Senator from Idaho be 720,政治,239.67,0.0,0.15,0.0,0.0,0.0
+0x282208109b6957825f13aea3f995f69d42d1426c4e09ebc29ef0308a3176dbcc,Will the Democratic Party candidate win the 2026 MA-09 House election by 30%-35%,政治,533.48,0.0,0.17,0.0,0.0,0.0
+0x16d058d94679673e7bde2a41087fab3345184ee258d185fe33c197f953277772,Will Josh Allen finish the 2026-27 NFL regular season with the most rushing touc,運動／電競,148.71,0.0,0.09,0.0,0.0,0.0
+0x259a6310bd6e61eb21db90275c7cfbdd61d0ae6eb46d2021021837ff6ab0b04e,"Will Ted Cruz post 120-139 posts from October 23 to October 30, 2026?",其他,70.15,0.0,0.07,0.0,0.0,0.0
+0x438867619ce8a2029b73b3b825d6529e91fc5faff9454836efd02dcf36cad0c8,Will Williams (WMB) beat quarterly earnings?,其他,181.13,0.0,0.14,0.0,0.0,0.0
+0x453c996677d593484bbab14d0545d290e09d7f47688964b81f00499f9f72bd61,Will the Democratic Party candidate win the 2026 NY-10 House election by 65%-70%,政治,508.72,0.0,0.18,0.0,0.0,0.0
+0x9de59e38c8b79e8e62d41017ffac86bbbc050509c383008cadefa1f73c89ffe4,Will Emeka Egbuka have 499.5+ receiving yards in the 2026-27 NFL regular season?,運動／電競,215.83,0.0,0.09,0.0,0.0,0.0
+0xba4a30cc8deca861f0f724d35dc4f8f09dc228bd97bd0af84eb7db173db21824,Will Brazil’s Annual Inflation in 2026 be between 5.00% and 5.49%?,運動／電競,60.68,0.0,0.09,0.0,0.0,0.0
+0xb56d743475b61978784e7a7de168beeac31b18ed948cb7eb287bde82d4157e13,Will the Democratic Party candidate win the 2026 NY-17 House election by 3%-6%?,政治,424.21,0.0,0.15,0.0,0.0,0.0
+0xf062c34322fd3ff98b9eb32a5d6cc3ce687d61a332b7093dc7c3df3239848392,Will Luka Doncic lead the NBA in three-pointers made per game in 2026-27?,運動／電競,287.32,0.0,0.14,0.0,0.0,0.0
+0x3e20908c1d9d1cb796851cbd0261a76b45f9838c4e30e124a1488adf9a119a65,Will there be exactly 6 UK parliamentary by-elections in 2026?,政治,418.73,0.0,0.14,0.0,0.0,0.0
+0x8574ff6d94b615383e056564d20b7ce030c3b32a8cc06463abaf0a53629de11a,Will Bijan Robinson have 3.5+ receiving touchdowns in the 2026-27 NFL regular se,運動／電競,218.38,0.0,0.09,0.0,0.0,0.0
+0x567ce2a1f39f2770b9ce84ff0f1632e2aefce7aa94acb114f1718618b27d1833,Will the Democratic Party candidate win the 2026 IA-03 House election by 9%-12%?,政治,267.16,0.0,0.14,0.0,0.0,0.0
+0xbf0c76ead3181a2f4be4f3c86db21b4cb5fbddbe75dec21c09204573da0c524c,Will TSG Hoffenheim qualify for the 2027-28 UEFA Europa League?,運動／電競,195.65,0.0,0.08,0.0,0.0,0.0
+0x1497c6d57cb67a9bc6cbda7f945c261fa0dc5e7277e8008f582102176f2a7ab5,Will the Republican Party candidate win the 2026 OH-12 House election by 25%-30%,政治,378.11,0.0,0.14,0.0,0.0,0.0
+0xd36791a79060bbc04da98490a84b32920d8b7d5e7935d348a5b15ecd2a6dd7d9,Will the highest temperature in Tokyo be 24°C on October 31?,其他,59.69,0.0,0.08,0.0,0.0,0.0
+0xa772c6618f881066a0f0424eb45a6821b95812534dab605486fd9b3db1781724,Will Mark Andrews have 4.5+ receiving touchdowns in the 2026-27 NFL regular seas,運動／電競,185.47,0.0,0.08,0.0,0.0,0.0
+0x91d5d1a86b7545323f90c7d06e4c31b016014bee917e8218a03248d7fda2a444,Will the Houston Rockets finish as the #1 seed in the 2026-27 NBA Western Confer,運動／電競,142.08,0.0,0.09,0.0,0.0,0.0
+0x4c49518c31b7f6e7c66f7655e80df8ebbff2ccb3b85b72198b799e599b9b6b81,Will LCK have the most teams in the Worlds 2026 Knockout Stage?,運動／電競,434.11,0.0,0.13,0.0,0.0,0.0
+0xfd1e5ef471af1b3e24b83baeb4cfcb8ac95a5365a46369034a637c3e47a77999,Will Brandon Miller win the 2026-27 NBA Most Improved Player?,運動／電競,171.65,0.0,0.08,0.0,0.0,0.0
+0x3a644ca16db680f2052eccd21a7c4925d685da961ed579d81dd161dc13ad0b1d,"Will Trevor Lawrence have 4,274.5+ passing yards in the 2026-27 NFL regular seas",運動／電競,18.74,0.0,0.08,0.0,0.0,0.0
+0x4d85187a94170935110b3154f4361e2c561061a8b5f99064a18e48b008af0b52,"Will CeeDee Lamb have 1,599.5+ receiving yards in the 2026-27 NFL regular season",運動／電競,205.55,0.0,0.02,0.0,0.0,0.0
+0xd9300b991a3449ec97f546c84329d3d40e89c9b9807c31ae1dbe3e139a894f68,"Will Donald Trump post 160-179 Truth Social posts from October 30 to November 6,",政治,175.69,0.0,0.17,0.0,0.0,0.0
+0xd3036b40190c99967cf69f69c450d3dfe5237834fe143296913deb3690a13fb0,"Will ""Dune: Part Three"" be nominated for Best Sound at the 99th Academy Awards?",其他,82.61,0.0,0.13,0.0,0.0,0.0
+0x69ecb7ef1b43bc25c21ea44bb8bea7814bd622cbf16cd602d5a97aaaa0881fae,Over $25M committed to the over.computer public sale?,其他,93.66,0.0,0.09,0.0,0.0,0.0
+0x1b5a15d8910cb6033710faf6561c83257b6973e19e398a2c72e25999f1d77994,Will Anthropic be the second-best Math AI lab at the end of November 2026?,其他,62.19,0.0,0.07,0.0,0.0,0.0
+0xc6d0907bc328ec0726d7a9b1970999c23299a70eb7c6efda44a6aaeed27fab84,Will the highest temperature in Beijing be 11°C on October 31?,其他,88.41,0.0,0.19,0.0,0.0,0.0
+0xa9513d4a9506fb403d423aad6611b8d45356b819b81e743905033d9a197722f9,"Will Dak Prescott have 3,999.5+ passing yards in the 2026-27 NFL regular season?",運動／電競,213.95,0.0,0.08,0.0,0.0,0.0
+0x2711d23d939ff0e0a6a5f5dc7d999883c92c793987db33ac6dfaa513443ba689,Will Cameron Ward have 18.5+ passing touchdowns in the 2026-27 NFL regular seaso,運動／電競,206.37,0.0,0.08,0.0,0.0,0.0
+0x27bb45f7d81a99c3b4c20a148a3fb05bd327d2c4f7f9f736eea4607f76dae7d7,"Will the next Grok model (4.8+) be released on November 26, 2026?",其他,208.11,0.0,0.13,0.0,0.0,0.0
+0xeefb5ec3ca547f51a4b8ac69765f11c2deb103f653e76e3558f84a24e08ba1e7,Will Malik Nabers finish as a top-5 WR in the 2026-27 NFL season?,運動／電競,212.05,0.0,0.08,0.0,0.0,0.0
+0xbb7a74ae33f05fc155fab3712f8bed7011165c70cb0acdb5e3c538d829c8fb83,Will Carnell Tate have 974.5+ receiving yards in the 2026-27 NFL regular season?,運動／電競,169.5,0.0,0.06,0.0,0.0,0.0
+0xcb251bef81c1eaa9267a4bc8b9811922722d9afc9a6e7f5477b2167884011ba2,Will the highest score achieved on Humanity’s Last Exam in 2026 be 60% or higher,其他,330.49,0.0,0.17,0.0,0.0,0.0
+0x2a7cef666521e13c048610dbd78668eecac1d77ffaeaf6e2c5715435938fc83a,Will HubSpot (HUBS) beat quarterly earnings?,其他,91.09,0.0,0.0,0.0,0.0,0.0
+0x33b2f2a17110a5c5f9f436e71ec3bf51c33f262061ef25f7a338c460ab9c38e0,"Will Russia target Kyiv on October 31, 2026?",其他,149.88,0.0,0.1,0.0,0.0,0.0
+0xd4ec5d09ef602468f7d8d2d141fe1da6009184528bc4393ad0c58ed89390b587,Will the Maine Democrat perform best among these tossup Senate races?,政治,297.17,0.0,0.1,0.0,0.0,0.0
+0x9434b4fda3f95c3e0f05a4da54e2bfc584684dbad81a888e1cbae88d2ab66f64,Will Zach Werenski record 80+ points in the 2026-27 regular season?,運動／電競,206.65,0.0,0.08,0.0,0.0,0.0
+0x97b3562cc188410420b3316f8dc9c96727cd7fa58cbc36d4a184d78b04465962,Will the highest temperature in Cape Town be 25°C on October 31?,其他,366.87,0.0,0.17,0.0,0.0,0.0
+0x950590802ebf6cb117ca28092c93dcc0ed41f8546724bb7601b602f1f805c595,Will the Democratic Party candidate win the 2026 PA-07 House election by 0%-3%?,政治,81.94,0.0,0.07,0.0,0.0,0.0
+0xb30a9b4cd13eb8f6ea55ba8f836cd89d9d112cd422a1cd7b762329ef1cba70df,Will the 30-year Treasury yield dip below 5.20% before 2027?,其他,256.15,0.0,0.17,0.0,0.0,0.0
+0x22818c9a43965f280f08e22667605df6418f3f5e621f206393931fd89e63c266,Will the Democratic Party candidate win the 2026 OH-13 House election by 20%-25%,政治,270.44,0.0,0.12,0.0,0.0,0.0
+0xda328d49f7b6ead684fe49db4ba2f72aab9d9b07929f7a3e2443329b059e78e1,Will Bijan Robinson have 8.5+ rushing touchdowns in the 2026-27 NFL regular seas,運動／電競,161.95,0.0,0.08,0.0,0.0,0.0
+0x59baa73b4ed3f44236a21e8352ecde25b5c7a82c99963de1ddd2b08dac819642,Will Bijan Robinson have 10.5+ rushing touchdowns in the 2026-27 NFL regular sea,運動／電競,202.18,0.0,0.08,0.0,0.0,0.0
+0xf37d2da41926cff57597ef43476919c9f3335ec9f750434d8a6797b8756fb0ed,Will the Seattle Seahawks make the 2027 NFL Playoffs?,運動／電競,203.97,0.0,0.07,0.0,0.0,0.0
+0x0d59d7e0728010e14ebbba3195a4707dc84dc83eda4bbd7a69897c71ecd60420,Will the Republican Party candidate win the 2026 CO-05 House election by 3%-6%?,政治,471.45,0.0,0.02,0.0,0.0,0.0
+0xae0f7a9a4592b1c9ec0484cd8771e691aeb06f17239b86dea024c44f84ddacb8,Will total votes cast in the 2026 midterm election for Governor of California be,政治,18.74,0.0,0.0,0.0,0.0,0.0
+0x5142be04c728f39973e57d51c32260e86b3eb88d323d3369e551f41644c92288,Will Manchester City be relegated from the 2026-27 Premier League?,運動／電競,204.3,0.0,0.07,0.0,0.0,0.0
+0x7d124bbda74aea8fa22212485a2ebcb04caec5e40cbc50310428b5fdd0d758ec,"Will GPT Astra 6.1+ debut at a score of at least 1470 by June 30, 2027?",其他,500.35,0.0,0.27,0.0,0.0,0.0
+0xa8ad0a76ec061a692b9726dd46c0a1cca614d6a4a38abe0884beecf972b23af4,Will the Cincinnati Bengals have more than 7.5 wins during the 2026 NFL season?,運動／電競,19.94,0.0,0.01,0.0,0.0,0.0
+0x4cb87cef07505bdb538246fd7fe22ce4ac829006e2fd8b20c7b3f2cb37394ac7,Will the highest temperature in Dallas be between 72-73°F on October 31?,其他,245.9,0.0,0.15,0.0,0.0,0.0
+0x9d5eb0e4852eed67bbb07c2842dab78b9a08b160f43774d07393a5d1d27d33c9,Will Trevor Lawrence have 31.5+ passing touchdowns in the 2026-27 NFL regular se,運動／電競,211.63,0.0,0.06,0.0,0.0,0.0
+0x806712ba0a08a38b1a3d158df36129fb65df9190e7b3b3679d73407feaa23d8e,Will the highest temperature in Cape Town be 23°C on October 31?,其他,441.0,0.0,0.16,0.0,0.0,0.0
+0x48a9ee902a8a8a622c95ffb69dbf65eb2c12fa52b72e6dd9381c09ffe1b5eda3,Will Claude Fable 5.2+ debut at an output token price of at least $50 by June 30,其他,416.79,0.0,0.22,0.0,0.0,0.0
+0x95b63c150def5abd3ad8999e61dc150f9107d23f0c111984454777e31f0b1224,Will the Democratic Party candidate win the 2026 CO-03 House election by 0%-3%?,政治,391.42,0.0,0.11,0.0,0.0,0.0
+0x89e47f8f74e9db70ad4eac193debd84ec22521cf9d3cd92f92f48c5a80984189,"Will the next Fable model (5.2+) be released on November 20, 2026?",其他,92.73,0.0,0.1,0.0,0.0,0.0
+0xea374c440f27859d839dcd9cfe412ce906376cb0c86fc6968ba128efc749ba8d,Will the highest temperature in Chongqing be 20°C on October 31?,其他,125.63,0.0,0.06,0.0,0.0,0.0
+0x178d67e9beaf7f51c6c39bc5c8be2e7fb01a309c8f2dacd023788ea66f0110db,Will Kansas City Chiefs advance to the Divisional Round in the 2027 NFL Playoffs,運動／電競,77.18,0.0,0.07,0.0,0.0,0.0
+0xe605216c7c484eb652d8fd4b0b97265d4f8ee72a3eda4ea7966f6454034378f2,Houthis capture Taiz city by November 30?,其他,716.74,0.0,0.23,0.0,0.0,0.0
+0x14d1b6e652bfbfa1d2a69f0e6772ecf3486ae639c7c7a18cefd9201d7ddecf2e,Will the Seattle Seahawks have more than 8.5 wins during the 2026 NFL season?,運動／電競,19.74,0.0,0.0,0.0,0.0,0.0
+0x952221675b107e04901de02888374dc248428d85800c38759798383d08108ab3,Will the Democratic Party candidate win the 2026 Arizona gubernatorial election ,政治,726.17,0.0,0.17,0.0,0.0,0.0
+0xacf8013b576b04f77783f75712c2d3afb2009f9f0edfbbe50e1a8e2186d285e2,Will G2 Esports Reach the Worlds 2026 Knockout Stage?,運動／電競,112.21,0.0,0.05,0.0,0.0,0.0
+0x0a9e9f5c8c22ecaea859a4d18388107c16643b29dcb145d56e71990325726fa5,Will Mike Thompson win the CA-04 House seat?,政治,39.25,0.0,0.04,0.0,0.0,0.0
+0x914e12590e5d5061c77ee80e9cd5971c755e653e91d04d729746dbed60ed8d41,Will the highest temperature in Busan be 20°C on October 31?,其他,38.42,0.0,0.05,0.0,0.0,0.0
+0xe45b3ff14b513d99c6e774cafc2534abfd1cdf1b40b0162152ee0d7e3c738104,Will Breece Hall have 3.5+ rushing touchdowns in the 2026-27 NFL regular season?,運動／電競,161.58,0.0,0.0,0.0,0.0,0.0
+0x9a6cf3c9d5c2a7e45ab6bdc9cf659a7610f983752ef431bb6330ac4e2b574324,Will Mark Andrews have 6.5+ receiving touchdowns in the 2026-27 NFL regular seas,運動／電競,105.77,0.0,0.07,0.0,0.0,0.0
+0x99b6b8de8fd0ac293bc8656426400919fcadcebb3f906d33773dbd6961464935,Will total votes cast in the first round of the 2026 midterm election for Senato,政治,266.36,0.0,0.07,0.0,0.0,0.0
+0xc9ddced1ce7a76eb4e1519fc8686866f7b84f61aa57d210ecfa085d96ae06350,Will Davante Adams have 574.5+ receiving yards in the 2026-27 NFL regular season,運動／電競,188.71,0.0,0.07,0.0,0.0,0.0
+0x7d2d4aaffd1e4af29a1bbff41c32e65f6f376db31e3cb01688c4b99557df195b,Will total votes cast in the 2026 midterm election for Senator from Iowa be betw,政治,295.77,0.0,0.08,0.0,0.0,0.0
+0xad278c6bc93c5481efcdc4f7898978658bc153cabe25a78baffee819b25bd10e,"Gemini Carbon released by November 13, 2026?",其他,134.23,0.0,0.15,0.0,0.0,0.0
+0xe7c57c905638512f6181458503e042ca5096564ebaed3a3d9491bb259369a3c0,Will Julieta Ramírez Padilla win the 2027 Baja California Governor Election?,政治,69.66,0.0,0.02,0.0,0.0,0.0
+0x7360eb38afa624464cbf7cf5bab34f521e6f7256961f033f87a6d0b2a5366cfb,Will the Democratic Party candidate win the 2026 Michigan Senate election by 3%-,政治,962.11,0.0,0.16,0.0,0.0,0.0
+0x7d59713f5ce99c23d16328336eb401255614e46b59bc3ec98fa2856603983cbc,Will Alex de Minaur Make the Top 10 in the 2026 ATP end of year rankings,運動／電競,198.39,0.0,0.07,0.0,0.0,0.0
+0x0f85c0d101f011f260f269e529f3b57b3dab4b225e102df89d99ffb9f55c8269,Will Morena win the most seats in the 2027 Chihuahua Congress election?,政治,45.45,0.0,0.0,0.0,0.0,0.0
+0xdb46cf75fcafbef0d96c0f7db10afa265b553a1f3e6f06232633f1dd478b471d,Will Travis Etienne Jr. have 574.5+ rushing yards in the 2026-27 NFL regular sea,運動／電競,145.95,0.0,0.06,0.0,0.0,0.0
+0xde2a119ca20179db4387489814841767c1c60347f0b820f1387809494c617f2a,Will Republicans hold ≤46 Senate seats and 193–207 House seats after the 2026 mi,政治,767.53,0.0,0.17,0.0,0.0,0.0
+0x0532d04a996e9adebfe9e34fa697d04fd46423a7edf23e47d11bfea735526178,Will the Democratic Party candidate win the 2026 New Mexico gubernatorial electi,政治,688.52,0.0,0.16,0.0,0.0,0.0
+0x397b978bdccddf5cec23835fc9fd8fe0eee337516db61d21baf4e19f4736b822,Will Drake Maye have 26.5+ passing touchdowns in the 2026-27 NFL regular season?,運動／電競,215.29,0.0,0.07,0.0,0.0,0.0
+0xbc2842f3a92a5524dc5519a4e6828b68a12f5e7d73731c2ea9153fdf6a70de98,Will total votes cast in the 2026 midterm election for Senator from Kentucky be ,政治,365.83,0.0,0.1,0.0,0.0,0.0
+0xcc4abef01a8ab34761c2c71e3d92313ff7d441a546850ddd354ec347e4b950f3,Will Omar Cooper Jr. have 699.5+ receiving yards in the 2026-27 NFL regular seas,運動／電競,195.07,0.0,0.06,0.0,0.0,0.0
+0x92a9d21ce4a85093e38787b4de69252ae6a221e3919018a4081a6aeab4514fd4,"Will ""Rockstar"" by Post Malone, 21 Savage be on the radio in GTA VI at launch?",其他,18.18,0.0,0.0,0.0,0.0,0.0
+0x5f6be4547eb8c100a3c3fdda8c668f7343bb44ac4382ebe9883b0b86a309c202,Will Viktor Lavička be the next Mayor of České Budějovice?,政治,44.05,0.0,0.0,0.0,0.0,0.0
+0x42d3c787069288b36162742882ce0a619ad0b424464322e99978dc7fe3489599,Will Nico Collins have 10+ receiving touchdowns in the 2026-27 NFL regular seaso,運動／電競,215.81,0.0,0.07,0.0,0.0,0.0
+0x22fc36eeaab460cb6f4fa9d167ea5ac6ef0655fecd6190f70fdb5b66356259f4,"Will Drake Maye have 4,299.5+ passing yards in the 2026-27 NFL regular season?",運動／電競,149.44,0.0,0.06,0.0,0.0,0.0
+0x55a8302462e78f236de6565ead4ef086ddb7561ecfdf3eea5970f2c1ffa00c08,Will total votes cast in the 2026 midterm election for Senator from Nebraska be ,政治,788.5,0.0,0.08,0.0,0.0,0.0
+0xe36f4354387651d024d6445da736bbe0c66ed269dd3278aa831ae55a7735ab7b,Will total votes cast in the 2026 midterm election for Senator from New Hampshir,政治,189.14,0.0,0.11,0.0,0.0,0.0
+0x2c5f84264d47914e08766f402fad40817cc71fb368c9ee7d48088fd655bc9861,Will Airbnb (ABNB) beat quarterly earnings?,其他,165.32,0.0,0.1,0.0,0.0,0.0
+0xa2eb805301c1548982b7f363c939077826bcc5d6bfc4ef09c5d5210e19b80f4e,Will Cameron Skattebo have 824.5+ rushing yards in the 2026-27 NFL regular seaso,運動／電競,174.41,0.0,0.06,0.0,0.0,0.0
+0x4fb1c5b8b54ebaadb2cbe57fd04f72475b50755af068cb721cf544f08d6f876f,Will total votes cast in the 2026 midterm election for Senator from Iowa be betw,政治,143.82,0.0,0.01,0.0,0.0,0.0
+0x59f6d27ee5c46086cd6bf7d2f617e3bb55b29db33d0c171e8e6e16a306204771,Will the Democrats win Pennsylvania in the 2028 Presidential Election?,政治,493.14,0.0,0.14,0.0,0.0,0.0
+0xa6c00a06b7cf8a9d043edb261e64b473c1f8bd68e4900bdf89fb01670e081375,Will C.J. Stroud have 25.5+ passing touchdowns in the 2026-27 NFL regular season,運動／電競,185.09,0.0,0.06,0.0,0.0,0.0
+0xfd9748ad0a499f06ae6106ba3ac54708a882a4ba7a78e2cc1f444a2cb16be66e,Will Cody Bellinger win a 2026 AL Gold Glove Award?,運動／電競,158.06,0.0,0.06,0.0,0.0,0.0
+0x77c6332db73bc1f50bece922befabab94ee4d5e66f01d36d06fff84a3037ba7b,NATO downs another Russian drone before Russia x Ukraine peace talks?,其他,62.07,0.0,0.07,0.0,0.0,0.0
+0xdd803140b305a5d5a520c6b9fcf1bd9b0e275fea918fdd27aaff5831491df20e,Will the Republican Party candidate win the 2026 OH-10 House election by 6%-9%?,政治,205.36,0.0,0.1,0.0,0.0,0.0
+0x99f18bc7978dec08d3dea44371e86e71d0258032772bff4db3f907f6cd61dde5,Will Jorge Martin win the 2026 MotoGP World Championship?,運動／電競,86.29,0.0,0.04,0.0,0.0,0.0
+0x4abe6b6e50794654b4e2f9ef0e096783c344ed51c4f1f46e51cd803d2eeb8077,Will Kansas use a new congressional map for the 2026 United States midterm elect,政治,45.45,0.0,0.02,0.0,0.0,0.0
+0xc5ff32c80742c7db179c5f9f706296784c8740d4566814028d9f73e0ff16428f,"Will ""The Legend of Zelda: Ocarina of Time"" have a Metascore of at least 90?",其他,86.74,0.0,0.07,0.0,0.0,0.0
+0xd0c9c067b6874375d0334a39a356dd2203abbf3cefcffb7edd3d9bd9c5c05cc4,Will the Democratic Party candidate win the 2026 NJ-11 House election by 15%-20%,政治,104.59,0.0,0.07,0.0,0.0,0.0
+0x9f61b7cd02f4a3a3776bb236aa0b18787939176725b680d4f7ab46a6d5c4d4c3,Will Rome Odunze have 599.5+ receiving yards in the 2026-27 NFL regular season?,運動／電競,195.59,0.0,0.06,0.0,0.0,0.0
+0x6a716d85afbfd62039c4b603248accaf316a5d3526dbe0029b371b22761eb725,Will the Republican Party candidate win the 2026 MS-01 House election by 25%-30%,政治,18.46,0.0,0.12,0.0,0.0,0.0
+0xd575b19a11a544056ec469d44de956cc7e7530775b66bb5912cf02aac7ac0a2a,Another GTA VI trailer released by November 30?,其他,204.28,0.0,0.13,0.0,0.0,0.0
+0x602b892bc552882bb9524d4b481eb4edf8e73d52e4df4a8d5359f2017006e12e,"Will Donald Trump publicly insult Kevin Warsh by December 31, 2026?",政治,161.64,0.0,0.06,0.0,0.0,0.0
+0x75b0afc33a3a696b4c2ff44e4a63ff1ea755cb38905367dec39cc886831e89fb,Will Nico Collins have 6.5+ receiving touchdowns in the 2026-27 NFL regular seas,運動／電競,173.92,0.0,0.06,0.0,0.0,0.0
+0x73e86292e643869fa8a56d51704188c1c58e55007d178ebafc9f38c2e359b69a,Will Claude Fable's output price be at or below $45 in 2026?,其他,456.45,0.0,0.15,0.0,0.0,0.0
+0xb0fba3b2d3b84f4f6be999be8a4219668457026f238f73b37227bb7015d62f65,"Will Justin Herbert have 3,849.5+ passing yards in the 2026-27 NFL regular seaso",運動／電競,18.74,0.0,0.05,0.0,0.0,0.0
+0x747086d10879ffb0c17404e1d59e0cb0fef52c29205f960e9aedc5b0f999fc7c,Will the Winnipeg Jets record 90+ points?,運動／電競,128.67,0.0,0.06,0.0,0.0,0.0
+0x64502ba08fdb11fe1f2eac5b7b0621c9913366eb935fddd4276b222cd05fc667,Will the Democratic Party candidate win the 2026 NY-16 House election by 45%-50%,政治,272.34,0.0,0.09,0.0,0.0,0.0
+0x7406d857d301357beadfb2d6b32b4d0ad335dd5186e7ae022c194220fc9b43a3,Will the Democrats win Iowa in the 2028 Presidential Election?,政治,247.26,0.0,0.08,0.0,0.0,0.0
+0xaf4dde07022a866ad90b46c6bbaadd65eb1bca0e29f6c10f9e34440357c49d5c,"Will Grok 5 be released by December 31, 2026?",其他,84.51,0.0,0.06,0.0,0.0,0.0
+0x5eb61e7dedb37942b3985e83963df66c3ab6b9ea09f2b51951d456c2a8843d65,Will Dagmar Škodová Parmová be the next Mayor of České Budějovice?,政治,44.05,0.0,0.0,0.0,0.0,0.0
+0xd94c9c96fb71f8ea77906f44c650267aeb041de08c8e3ccf38b283a6686f5c0b,Will Bryce Young have 17.5+ passing touchdowns in the 2026-27 NFL regular season,運動／電競,19.74,0.0,0.0,0.0,0.0,0.0
+0x5c752219b737d9c64dfe3b6d6925c062beb139671e400cf1dddaaf7028779eeb,Will Anthropic be the second-best Math AI lab at the end of October 2026?,其他,177.84,0.0,0.12,0.0,0.0,0.0
+0xaf1bc46c3ec6eb35cfd28b37af24e09d631dfd47d673bcff9cfd09c92545d816,Will Tyler Warren have 7.5+ receiving touchdowns in the 2026-27 NFL regular seas,運動／電競,177.18,0.0,0.05,0.0,0.0,0.0
+0x41e7b99eddc9ce93bd7fac154e5a92c6041454870b046d07482aeec69b8649f9,Will the Republican Party candidate win the 2026 AR-01 House election by 40%-45%,政治,224.26,0.0,0.1,0.0,0.0,0.0
+0xc2c6515345d1753e0a2b724a59f9f15ba9f9fa420eca0771b52dbcdac9b084e2,Will Nvidia’s market capitalization be between $5.50T and $6.00T at the end of 2,其他,35.69,0.0,0.04,0.0,0.0,0.0
+0xc0c54965ae307c78ad9449ec0c1bacda265b9fd4585d6943cf5b47706fe01844,Will Brock Bowers have 5.5+ receiving touchdowns in the 2026-27 NFL regular seas,運動／電競,175.82,0.0,0.05,0.0,0.0,0.0
+0xb7852b398ca52d2829a82df8061e3cdc06cac832f2faf9eb86d26cc29afea8d9,Will 25-29 ships transit the Strait of Hormuz between November 2-November 8?,其他,131.21,0.0,0.09,0.0,0.0,0.0
+0x62e28df3e21ceb63416d8f24e6afa50a21d7623c682f9a51d59be8a485ef35ba,Will Marathon Petroleum (MPC) beat quarterly earnings?,其他,135.41,0.0,0.09,0.0,0.0,0.0
+0xe3ffc6e9666c89d1eb2f77326282447a436ba013704f785416482a9af600536f,"Will Trump's approval rating hit 34% by June 30, 2027?",政治,66.93,0.0,0.04,0.0,0.0,0.0
+0x4f2fd4ac46bee62e405764adefb72450fed89166de578cc5ca58710228f686a8,Will Jayden Daniels have 15.5+ passing touchdowns in the 2026-27 NFL regular sea,運動／電競,124.61,0.0,0.05,0.0,0.0,0.0
+0xf4f152e30e83a89063caec7ffa180411bf3dcd7c1f88fe54c51e3391773601b6,Will the Central Bank of Colombia make no change to the monetary policy interest,總經,228.39,0.0,0.06,0.0,0.0,0.0
+0xe29f72fb6016f6937d8d82ff34b52ed949c87d913368233ff1b6a1dde6cbf0c8,Will Trump speak to Mark Rutte by October 31?,政治,97.61,0.0,0.04,0.0,0.0,0.0
+0x205b11ab2023eedf5b621208c05154c544676d0671ce7be17b0f98d2179a2ff3,Will Manchester City finish in the top 4 of the 2026-27 English Premier League s,運動／電競,194.66,0.0,0.05,0.0,0.0,0.0
+0x1805be41197a9a30dbe91a1188ee9a9f2eb612f3123dbe5edc2a21a182bb3530,Will 100 or more unique champions be played at Worlds 2026?,運動／電競,165.75,0.0,0.05,0.0,0.0,0.0
+0xe144566b6626ffca25edeb9e0d986bc89fde8d6aede82987aefb121ea272dc04,"Will the Ornn H100 Index be at least $4.00 on December 31, 2026?",其他,34.1,0.0,0.04,0.0,0.0,0.0
+0xd82f7dc629cbaac0e7888d1cf62ec676c9ed5c203f6e548b9895032be3889b25,Will the Democratic Party candidate win the 2026 Nevada gubernatorial election b,政治,799.87,0.0,0.16,0.0,0.0,0.0
+0xac3f9a8ea369f76c60a8add9069240ff55fea957796f4fe82727653f6dfa5210,"Will Ukraine agree to give up the rest of Donbas by December 31, 2027?",運動／電競,119.1,0.0,0.04,0.0,0.0,0.0
+0x1ee69f5f8d95aadeed32b89beb02b51a7b801aa2f6d6979c51fa57806c9452ba,Will the Democratic Party candidate win the 2026 NC-01 House election by 6%-9%?,政治,459.42,0.0,0.1,0.0,0.0,0.0
+0x2c07f1f2fca7da073370085c7f8f0643356f79963e60692ace7325645c9b6dae,Will Brian Kemp announce a presidential run before 2028?,政治,50.67,0.0,0.03,0.0,0.0,0.0
+0xca86607c6a611d7195931c861becc4830dbd122ec3299709abdc80c3950cddbb,Will Hims & Hers (HIMS) beat quarterly earnings?,其他,106.7,0.0,0.08,0.0,0.0,0.0
+0x1d730eae559959dd3823a3e69aa99999ab2914ab3fd8932f43ae768beba58d64,"Will Trump's approval rating hit 35% by June 30, 2027?",政治,108.75,0.0,0.04,0.0,0.0,0.0
+0xbe824a07ac6c89bdcef941f3aea3b79cbc3d255b8c9bd2abbde12c68b0918ded,Will Trump speak to Ahmed al-Sharaa by October 31?,政治,105.38,0.0,0.04,0.0,0.0,0.0
+0x8267a0f47814b805690b2a8f19ffe87ef06e928a43914a999aef913c6fa9c92c,Will Krispy Kreme (DNUT) beat quarterly earnings?,其他,45.45,0.0,0.02,0.0,0.0,0.0
+0x95b01f1ddbf8c89f007425d3f78d65ab2d8ac4c355eb7e2b7752dedf1f214105,Will the UK’s 2026 inflation be between 3.5% and 3.9%?,運動／電競,52.66,0.0,0.05,0.0,0.0,0.0
+0xca53890a1d74dad9329c2115a731dbc55d6796f03ec99ee55cd4c8a4f0d7d3f1,Will the Democratic Party candidate win the 2026 NJ-03 House election by 20%-25%,政治,74.95,0.0,0.03,0.0,0.0,0.0
+0x77657a21a3cfbb45cb2dc3679360e0dbd9089adf2f095aba47ba61f7cc9e7fd7,Will Eliseo Fernández Montúfar win the 2027 Campeche Governor Election?,政治,44.05,0.0,0.02,0.0,0.0,0.0
+0xc2b6d17d80aef21ee1c824af474e4979cbccddcd5ff52f815583d7ef0d91d741,Will Dallas Goedert have 574.5+ receiving yards in the 2026-27 NFL regular seaso,運動／電競,208.96,0.0,0.05,0.0,0.0,0.0
+0x424eacec76f48e4e2b0ecf2f0c54c84bf765d8437d4c6b61d68bd6ffccb9f050,Will the Republican Party candidate win the 2026 MD-01 House election by 6%-9%?,政治,205.95,0.0,0.07,0.0,0.0,0.0
+0x3ae3e74d996c83a1711de63c1b7874af2f31d5d40c4b81dc37dc9b179fe82c4b,Will the highest temperature in Hong Kong be 27°C on October 31?,其他,37.26,0.0,0.05,0.0,0.0,0.0
+0x85b52a79eafa693115e95cbfa0e7c680488748c5848a7c51f5fb89261a21ce99,Will Bijan Robinson be the highest-scoring RB of the 2026-27 NFL season?,運動／電競,203.58,0.0,0.05,0.0,0.0,0.0
+0x8934fde98c0de180274d65947e23dd30d5d2fd12b7b89f008d635cf5b87917aa,Will the 5-year Treasury yield hit 5.10% before 2027?,其他,140.01,0.0,0.16,0.0,0.0,0.0
+0x6dafe0af85ea3388e6c1e7560f45de63aa5152ffb6dfed89c06da8772695fd39,Will the Democratic Party candidate win the 2026 TX-35 House election by 3%-6%?,政治,31.49,0.0,0.02,0.0,0.0,0.0
+0x9a03ef7e44fc2b77661344740fb36ac7a63390eb182bd2dcc762a7827b5cd382,Will the Amendment of 19 December 2025 to the Federal Act on War Material (LFMG),其他,45.45,0.0,0.0,0.0,0.0,0.0
+0x5b490b369b45b7583c7e8b168c5141e5f08cd874c7d14e5db24356530b0557be,Will the Democratic Party candidate win the 2026 NJ-01 House election by 25%-30%,政治,78.9,0.0,0.06,0.0,0.0,0.0
+0xb601ea8fbfc22e22de56daed791b63d7028eccd69c4c7b058ed3f8b30295cf20,Will Jorge Yunda win the next Quito mayoral election?,政治,158.31,0.0,0.05,0.0,0.0,0.0
+0x95ae6f2320b1374245bb321a131579d88f9d8fc2dc27a5a7049d99b74f1646db,Will $ANSEM dip to $0.04 before 2027?,其他,96.61,0.0,0.06,0.0,0.0,0.0
+0x889f4d3e6b997fa7844a1f39913ccfde411d5733aa6a2ab7aa6c7538344aaddd,Will the Miami Heat make the 2027 NBA Playoffs?,運動／電競,65.1,0.0,0.04,0.0,0.0,0.0
+0xd67aaead6a704e74e3503b89b408ab2223cc68f9b86cd06026644d620ba1f64d,OpenAI IPO closing market cap above $1.4T?,其他,87.56,0.0,0.05,0.0,0.0,0.0
+0x90caebaefa747ef875d5243d690c98fd30ca6f515312b17e011a395cc68a0686,Will Anthropic be the #2 AI lab at the end of November 2026?,其他,68.3,0.0,0.05,0.0,0.0,0.0
+0x238c188a7bbcc7e6583aa17b0689bf952100e3a8caf51cab3242d8193f129f17,"Venezuela election scheduled by March 31, 2027?",政治,144.63,0.0,0.02,0.0,0.0,0.0
+0xc660c1acf12114937a1f8a912da6ddae2cd64f52a4eb6547b848107e59bfaa0a,Will Ashton Jeanty have 3.5+ rushing touchdowns in the 2026-27 NFL regular seaso,運動／電競,151.81,0.0,0.04,0.0,0.0,0.0
+0x683f7d4b6319617cbd547c2a32ad61c91d00050e7fdf082bc9175063677c6ffc,White House press briefing room decommissioned by November 30?,政治,33.07,0.0,0.0,0.0,0.0,0.0
+0x2d024a1edcf89324c11b8bca7c368c0c6d196d2599358b95369bbd340d3fe816,Will PCN win the second most seats in the 2027 Salvadoran legislative election?,政治,45.45,0.0,0.02,0.0,0.0,0.0
+0xe83778c342c966289dbbc33bbc53851ae057ed77b8e497fd8aaf0fb1142f3b5a,Will the 5-year Treasury yield hit 5.05% before 2027?,其他,125.67,0.0,0.14,0.0,0.0,0.0
+0x2acef7dca973d23805ba109054e9f6ededee211c48afb5c83130fb6418787f38,Will Alix Earle attend an F1 race in 2026?,其他,77.99,0.0,0.05,0.0,0.0,0.0
+0xd8ae4cb306ceb180c1ad736369e8c23cac905eee4b809e233fea9044c5bc56df,Will Apple (AAPL) beat quarterly earnings?,其他,72.13,0.0,0.0,0.0,0.0,0.0
+0x1a25ab2aafedd6e777e1e1eb28bccf2eabda34d200014160ec5656b570911a98,Will the 5-year Treasury yield dip below 4.60% before 2027?,其他,180.51,0.0,0.09,0.0,0.0,0.0
+0x9b62331b6cf91ae5b2c0133ec22cea1d405958b9a52b6433562292aab6f9f728,Will PSOE receive 30% or more of the vote in the 2026 Spanish general election?,政治,84.78,0.0,0.05,0.0,0.0,0.0
+0x3aa3174b827f3ae135a431165fb0d753517269e9c3ab66333a1328002a12dafc,Will total votes cast in the 2026 midterm election for Senator from Tennessee be,政治,679.61,0.0,0.05,0.0,0.0,0.0
+0x2692b8da9364e9a7a3585b9eba73c637f956770032c0cd64e6a326c7b55f3652,"Will no next Israeli Minister of National Security be appointed by February 28, ",政治,541.6,0.0,0.15,0.0,0.0,0.0
+0x417ec0e1cc9fefb5370866f349187db8f4987ec7b2cb2ea4e153600bfbc5fe5c,Will Wilson Merino win the next Quito mayoral election?,政治,26.07,0.0,0.03,0.0,0.0,0.0
+0x3e5f5188e476ae34c2db271b9965fd976592106a0a19da4b74610eabe1bdee8a,Will the Republican Party candidate win the 2026 OH-08 House election by 10%-15%,政治,339.07,0.0,0.07,0.0,0.0,0.0
+0x6e444de740466644891671015f6e31a523c6065e35173db75c8e12a256af8296,"Will Melania Trump visit Ukraine by December 31, 2026?",政治,94.81,0.0,0.03,0.0,0.0,0.0
+0x1ce5717d3c95afa585f47e5ba1941da47b1dc859994f3557b914b9be38eb24dc,Will the Republican Party candidate win the 2026 NY-23 House election by 10%-15%,政治,273.4,0.0,0.07,0.0,0.0,0.0
+0x62844230d5cb9f05cdc704e97bd971b35bec3e73a37e2bf2f2ecb47fc0271766,Will SC Freiburg qualify for the 2027-28 UEFA Europa League?,運動／電競,38.87,0.0,0.04,0.0,0.0,0.0
+0x0cc55cf0cbe7dc0c0e0cb1389226c44b8e2fd1b98c613d13e9504d437a474d55,Will Morena win the most seats in the 2027 Colima Congress election?,政治,96.23,0.0,0.04,0.0,0.0,0.0
+0x032cd05bcfa21fa0697fe65fb71187c10de64e1f9f8e396417286409fea231be,Will Teleflex (TFX) beat quarterly earnings?,其他,91.68,0.0,0.06,0.0,0.0,0.0
+0xffcabdc93e161835ca1e5aa9954b81e1c35a28a8e76d1646a62edc9c9ee2d819,Will Dallas Goedert have 374.5+ receiving yards in the 2026-27 NFL regular seaso,運動／電競,218.38,0.0,0.04,0.0,0.0,0.0
+0x3eb718f11854338d969712ed0d2f241df9b10a2ad0a32798e88e7be0ea6b66a8,Will Pfizer (PFE) beat quarterly earnings?,其他,87.18,0.0,0.0,0.0,0.0,0.0
+0xaa618d3715869914c31a6496da9bb4b9bd958bde866988d1222d65e4c2183807,Will Cole Caufield record 80+ points in the 2026-27 regular season?,運動／電競,52.26,0.0,0.04,0.0,0.0,0.0
+0x89d066248eddc1fc9635c8a5794055e0b82285d313e85b72e0aa9919a84cba66,Will the Democratic Party candidate win the 2026 Texas Railroad Commissioner ele,政治,114.51,0.0,0.05,0.0,0.0,0.0
+0xd4b1e3240778ae3c4370ee78876bedb6020e3349eccbcd39e0f9823af80dc54c,Will Captain America (Sam Wilson) die in Avengers: Doomsday?,其他,68.12,0.0,0.04,0.0,0.0,0.0
+0x286d881a57be1a96ec1040e748bb56fb6016f3c49a3efbc5cc115f9d5927aa17,Will J.B. Pritzker announce a Presidential run before 2028?,政治,36.27,0.0,0.02,0.0,0.0,0.0
+0x4ee405ff52c63d818fc8b259094c0f9a08c53b02e05adbfb5b0dab2eb7c370ff,Will Meta be the third-best Math AI lab at the end of October 2026?,其他,66.26,0.0,0.04,0.0,0.0,0.0
+0xd02b21502df7078c23d9c7e7ffe34b4d09df460d990725f51e254855550710da,Will the highest temperature in Guangzhou be 31°C on October 31?,其他,124.06,0.0,0.11,0.0,0.0,0.0
+0xe09975d9d0e190e8b6325c37b9ff2c179a98b601593d68037297d3e3b6544b7a,Will Lens qualify for the 2027-28 UEFA Champions League?,運動／電競,92.71,0.0,0.04,0.0,0.0,0.0
+0xaa8c0c68c87e62aca16d002d40e242a87af1740c48babcb82e1a953e7ceb3e0a,Will the Republican Party candidate win the 2026 AL-03 House election by 30%-35%,政治,260.68,0.0,0.07,0.0,0.0,0.0
+0x1477a29da5bdf455b9dc9a592462fc50be5d36ea303d8eb68934e54e82866c92,Will monthly inflation increase by 0.3% in October?,運動／電競,40.69,0.0,0.03,0.0,0.0,0.0
+0x6db99b0e8127ed4c6e7946b00c6060f16bfb265ea6f02c798bcd1fdabb4e60f7,Will PSOE win the most seats in León in the 2026 Spanish general election?,政治,50.0,0.0,0.02,0.0,0.0,0.0
+0xe41cd2ccdd8a4bec7f2a12db7b2c1332541edc246829d486a7e207689b201ae3,Will Anthropic be the second-best AI lab at the end of November 2026?,其他,153.58,0.0,0.07,0.0,0.0,0.0
+0x90118038e95964075805dcbf173aa8019ce29592576b10313897da23a23b6bf9,"Next GPT Luna (6.1+) released by November 30, 2026?",其他,65.14,0.0,0.04,0.0,0.0,0.0
+0x56441522b6c3cd6bcb2447764933a9aa147a3bd94063fd67fd83e2cf14d4967d,Will Eric Jones win the CA-04 House seat?,政治,83.79,0.0,0.03,0.0,0.0,0.0
+0x2c119baf8d12f9e241d4884b740072285c6e31af7ef702fc4e49e7fb2df9854b,Will Morena win the most seats in the 2027 Querétaro Congress election?,政治,64.69,0.0,0.02,0.0,0.0,0.0
+0xdeab233637105aa70df3344957c25e8db35719838abc99299744ca94c497dfc2,Will the Democratic Party candidate win the 2026 NM-02 House election by 10%-15%,政治,202.15,0.0,0.06,0.0,0.0,0.0
+0x99a6c97f1d0dc3865ac4644986edad64a2226fe089f34df17c8544a7e8bcc031,Will Micron Q1 DRAM revenue be above $48B?,其他,19.16,0.0,0.02,0.0,0.0,0.0
+0xb2c888e89416bc9479f23067c0ececdfb9a9927ae8eebf70c4954e97b52bb4ec,Will PP win the most seats in Burgos in the 2026 Spanish general election?,政治,45.45,0.0,0.02,0.0,0.0,0.0
+0xdc91099105f9f31c4c21068d3948d8e4224e4862f729e127d762a92631fa48ec,Will CVS Health (CVS) beat quarterly earnings?,其他,126.88,0.0,0.06,0.0,0.0,0.0
+0xacd04f630724ce40ba69506ae156cf9463e1120042c9f503d0ce967ebbe8a10a,"Will NYC Mayor post 40-59 posts from October 30 to November 6, 2026?",政治,84.46,0.0,0.03,0.0,0.0,0.0
+0x5b2929fdc2f0ec89f7bc2ec3263569af86749d9f09e108dd1a809067ef161d1c,Will Kyle Monangai have 649.5+ rushing yards in the 2026-27 NFL regular season?,運動／電競,126.32,0.0,0.03,0.0,0.0,0.0
+0x7b5f75810a8f58aa27159d45fc27caec68f307ad9fc12bea58efaa0a78d60dcd,Will Leeds United finish in the top 5 of the 2026-27 English Premier League seas,運動／電競,41.32,0.0,0.01,0.0,0.0,0.0
+0x16e60551bf54989166d764e909d12fc21ab40750d07a085417d1f54ae2e380da,Will total votes cast in the 2026 midterm election for Governor of Connecticut b,政治,204.56,0.0,0.01,0.0,0.0,0.0
+0x325f133a76e21236dfbcb4277088078247f8216509bc6c1907b5c5bad99085ec,John Ratcliffe out as CIA Director by December 31?,其他,18.76,0.0,0.02,0.0,0.0,0.0
+0xd5175b9e717fb4cf4de5fe69ed13465c831917782f2224ac330e260ee35b02a8,Bank of England increases interest rates by 25 bps after December 2026 meeting?,總經,168.43,0.0,0.03,0.0,0.0,0.0
+0xd39a7f31791f90f7641ecfc4bdb8c0a5aac068a40372d00b25e8fc3d926cf75f,"Will Hyperliquid dip to $65 by December 31, 2026?",其他,18.18,0.0,0.03,0.0,0.0,0.0
+0x4ae7a436b70cea63e34a201ebb42189980bf6205aa787ac7d67d945ca589ec23,"Will Gemini Carbon be released between December 7 and December 13, 2026?",其他,59.17,0.0,0.05,0.0,0.0,0.0
+0x94a192c30c9296872039884bb8dab40b4b4f53d1fe682f78068e5d2c73395b93,Will PSOE win the most seats in Guadalajara in the 2026 Spanish general election,政治,45.45,0.0,0.0,0.0,0.0,0.0
+0x290fbe43ef590be7305b86800e6b3973ca6450752b8906ece96a2e5547c1d561,Will the Democratic Party candidate win the 2026 AL-07 House election by 25%-30%,政治,153.8,0.0,0.06,0.0,0.0,0.0
+0xcdd518507658d5f37e0a94f26eb1a156370ddaaa120e3db1fc8f1bd2ce3ee87d,Will TreVeyon Henderson have 699.5+ rushing yards in the 2026-27 NFL regular sea,運動／電競,62.31,0.0,0.03,0.0,0.0,0.0
+0xc32830b068006b8198c2253eea0eeeded473378a8fbe5d50b6af5eac885dc207,Will China’s CPI increase by between 0.7% and 0.8% over the 12 month period endi,運動／電競,77.21,0.0,0.03,0.0,0.0,0.0
+0x480b2e853f40fab6a15fabe206bbb48849b25e6a6acdc90a658b8622167aadd8,Will the Democratic Party candidate win the 2026 NY-25 House election by 20%-25%,政治,35.93,0.0,0.01,0.0,0.0,0.0
+0x47ba29e6d3f59c20daaa51304f771c89bf6c43baf9de5d3dfd8fa8b8e6ea2341,"Will the median home value in the Chicago Metro be between $313,000 and $318,000",其他,41.84,0.0,0.03,0.0,0.0,0.0
+0x68ad245cb933f6f43524215e2c54af2049c7fd6d187d48b0e6880fe81f27064b,Will France pass a national budget by December 31?,其他,46.85,0.0,0.03,0.0,0.0,0.0
+0x9858a10c1e101d12aa68cb2e7952e6151bb4ea7e0652aec5187a723811561bd4,Will Anthropic's valuation hit (HIGH) $2.25T by December 31?,其他,298.37,0.0,0.08,0.0,0.0,0.0
+0x56797f1ed3825ce2202d4202b45fc631bc933ce170040e729401b1362bfdddb6,"Will Pump.fun dip to $0.0026 by December 31, 2026?",其他,18.18,0.0,0.01,0.0,0.0,0.0
+0x2889127fba004cc84f82290eb722d0a3fdddc7869aa6b4a5f8f34472e3d5cb62,Will the Democratic Party candidate win the 2026 Virginia Senate election by 21%,政治,74.57,0.0,0.02,0.0,0.0,0.0
+0x0cb5277ca7c8ee58ac185ca7e2de83dc5ee443f1ebe9c3fb2d220b3675b4c2c8,Will Team Yandex win PARI Universe?,其他,469.79,0.0,0.1,0.0,0.0,0.0
+0xcb7d38102c3aabcfbbacebfb988b879c7268a4b49554c5d8a7b934c417dd6f2d,Will the Philadelphia Eagles have more than 8.5 wins during the 2026 NFL season?,運動／電競,22.93,0.0,0.01,0.0,0.0,0.0
+0x2cf6225b65b8234a4b39c71285b18c5f81a5db25d50b8085d8ba0c6dbffd64ec,Will the October 2026 unemployment rate be 4.3%?,總經,90.86,0.0,0.02,0.0,0.0,0.0
+0xdaae829981042e7b447e86c0b5fff90364d2d8fed19c06c2fe0fa7e8a703b0ec,Will the 10-year Treasury yield dip below 4.8% before 2027?,其他,53.68,0.0,0.03,0.0,0.0,0.0
+0x9d88680fbb5820ac4aa1fca6dd032cd9c21640e5342ef6fb8a0a25d411a3b43e,Will the Alaska 2026 Senate race be within 1%?,政治,84.58,0.0,0.02,0.0,0.0,0.0
+0x398cc451736fbc2243148ca88717d62a602cadec608b7862e38c5bbfff538312,Will Abimbola Adekanmbi win the 2027 Oyo State gubernatorial election?,政治,44.05,0.0,0.01,0.0,0.0,0.0
+0x67f5f349c07dffac571c75450882221f31ee189a1641def8d2374620dc202f1d,"Will Puka Nacua have 1,000+ receiving yards in the 2026-27 NFL regular season?",運動／電競,38.94,0.0,0.01,0.0,0.0,0.0
+0xc8a087b79ed7a122973ff804bca7e9c9908221047055f64a2d622d53d0ad977f,"Will Lamar Jackson have 2,749.5+ passing yards in the 2026-27 NFL regular season",運動／電競,101.99,0.0,0.03,0.0,0.0,0.0
+0x217e5bcaba80ae49de7591a72edcdc7876959580fa0113aa3288e7aa6781c51b,Will TreVeyon Henderson have 6.5+ rushing touchdowns in the 2026-27 NFL regular ,運動／電競,139.05,0.0,0.03,0.0,0.0,0.0
+0xcd0982df2b103913cf57b35e3b19a839388e0279ff2532e7681b31627089d93f,"Will Hylo launch a token by December 31, 2026?",其他,48.13,0.0,0.02,0.0,0.0,0.0
+0x6b0c6e3073c0a4a92ce26f80cfd4851fd70d7fb8435a438e8e5aead9ff3d9107,Will the Republican Party candidate win the 2026 TX-22 House election by 10%-15%,政治,68.24,0.0,0.02,0.0,0.0,0.0
+0x92db92b0c2a161440cb8500db98b5883c475e5a5e3b869990fb4276bd1f70a04,Will Mexico’s 2026 Annual Inflation be between 4.00% and 4.49%?,運動／電競,77.3,0.0,0.02,0.0,0.0,0.0
+0x15dea55ccf435ee711c2e65fc9d526cad1997e37de3762712e5bd7090fe799da,Will the Memphis Grizzlies make the 2027 NBA Playoffs?,運動／電競,174.4,0.0,0.03,0.0,0.0,0.0
+0xfead1a91e143be4c1d865f645bac5da356a187021d1039211a66ce09508692f0,Will the Democratic Party candidate win the 2026 FL-24 House election by 55% or ,政治,184.43,0.0,0.03,0.0,0.0,0.0
+0x0e7adbe7de778544afc9177f609cdd021e2593bf00abe39cfafd745ead276691,"Will Christian Watson have 1,199.5+ receiving yards in the 2026-27 NFL regular s",運動／電競,69.46,0.0,0.02,0.0,0.0,0.0
+0x16e9b78513909286d5703d555704e20b4966d5ed31c937b3abd39f97c76c5f60,Will Kyren Williams have 9.5+ rushing touchdowns in the 2026-27 NFL regular seas,運動／電競,143.37,0.0,0.03,0.0,0.0,0.0
+0x0e9bfe6cec54852516e94758690c28756a225027c9a05cd0392b387610f279bf,"Will Trump's approval rating hit 36% by June 30, 2027?",政治,49.79,0.0,0.02,0.0,0.0,0.0
+0xd890d14db469342993029280ae0ba98a45fbc63de128990295c09984e09a6226,Will the 30-year Treasury yield hit 5.60% before 2027?,其他,83.39,0.0,0.03,0.0,0.0,0.0
+0x1744e03820b2d0d525e5b4216508e134e420ce6070f10e021854f55e4d07220b,Will Brock Bowers be the highest-scoring TE of the 2026-27 NFL season?,運動／電競,64.24,0.0,0.03,0.0,0.0,0.0
+0xd039234a54f8451b394b9bf5c3242564030238d145989fd40f07cb4b8feb4049,Will Jordan Addison have 674.5+ receiving yards in the 2026-27 NFL regular seaso,運動／電競,37.98,0.0,0.02,0.0,0.0,0.0
+0x2cfc4c6d577109270352159a5ea834e706b4434e27e0fee45cc40bbdf238c78f,Will Bad Bunny release an album in 2026?,其他,18.18,0.0,0.01,0.0,0.0,0.0
+0xb1ef019d5ba32959d4cbd22560e0ee21b5d02886430694fe3ec90327b5eee6b3,Will PSOE win the most seats in Huesca in the 2026 Spanish general election?,政治,178.64,0.0,0.0,0.0,0.0,0.0
+0x7177e2195521a9a3ca8d06e2ec89094a0d4060374704409ae125d3167ce6c6ae,Will the Republicans win Virginia in the 2028 Presidential Election?,政治,205.79,0.0,0.03,0.0,0.0,0.0
+0x690a7369ee0a9ac15f6c47222ea2622640b6fc4416274dc797ff0bd88d6a8794,"Will the Ornn H100 Index be at least $3.25 on November 30, 2026?",其他,23.94,0.0,0.03,0.0,0.0,0.0
+0x5f0260408142b613d64328c4bf92a35510107a115e78b03761f7c361746f1274,Will Travis Kelce have 4.5+ receiving touchdowns in the 2026-27 NFL regular seas,運動／電競,34.06,0.0,0.01,0.0,0.0,0.0
+0x28364d5f16176f63b7577f9dd3956335af848b8fdcf7be8d7007704d982517f2,Will the chopsticks catch the Starship for SpaceX Starship Flight Test 15?,其他,18.18,0.0,0.02,0.0,0.0,0.0
+0xd3ee3ddaa4ab76d99166b0445ba6efe3001ed3b74ac3ca9355e379fdd7d9524f,Will Ruth González Silva win the 2027 San Luis Potosí Governor Election?,政治,45.05,0.0,0.0,0.0,0.0,0.0
+0x4c8e4e26fdf7c9b91deec0d9dbcff4156d41ba51ef614500a8aee94a6cc590df,Will Rafael Fiziev fight Mateusz Gamrot next?,運動／電競,34.26,0.0,0.01,0.0,0.0,0.0
+0x15dc913b30c02250777bcea66df9fa893b2cb2cdd4b8dfd3c4f657396205306f,Will The Black Ball win Best Film Editing at the 99th Academy Awards?,其他,35.8,0.0,0.0,0.0,0.0,0.0
+0x500dd9aab670637dee0fee91d96f4d3770700093be2272586bd423453675b062,Will Amanda Seyfried be nominated for Best Supporting Actress at the 99th Academ,其他,340.68,0.0,0.07,0.0,0.0,0.0
+0xcad30fcc10966c30da49f3a5187da03a020464627f78da1c14646f1b869354e3,Will PSOE win the most seats in Santa Cruz de Tenerife in the 2026 Spanish gener,政治,45.45,0.0,0.01,0.0,0.0,0.0
+0xca3830a66f46052fc2d730b765597be67d2e15133f3610e28620d2d19396c3c7,Will the Republican Party candidate win the 2026 FL-17 House election by 5%-10%?,政治,36.39,0.0,0.02,0.0,0.0,0.0
+0x08d3feb5ac25fe34cd3b8558a2c635d48481b8fe48ac3bc1e64e9922fcd2826d,Will Bijan Robinson have 5.5+ receiving touchdowns in the 2026-27 NFL regular se,運動／電競,31.73,0.0,0.01,0.0,0.0,0.0
+0x5e2308501f28e574ca4478d2ebcdabd4ccac631c3db1c30ae5fa4e8a7cd9f47e,Will South African inflation be between 4.7% and 5.0% in 2026?,運動／電競,51.52,0.0,0.02,0.0,0.0,0.0
+0x7bfbe8f58fdbcbb3ef3e93c60ada1ea1a38cfb7cd0c41956a67adb244c359af5,"Will Derrick Henry have 1,449.5+ rushing yards in the 2026-27 NFL regular season",運動／電競,141.67,0.0,0.02,0.0,0.0,0.0
+0x2dbaf9888bcb602150200874f3e87e44b90ee6de7b444bae629557a0593168ac,Will the Democratic Party candidate win the 2026 NJ-06 House election by 30%-35%,政治,44.6,0.0,0.02,0.0,0.0,0.0
+0xbc5425303cb762061f82e834462371f9d9f153d419417db4e90cbad3ec543575,Will the Republican Party candidate win the 2026 NJ-02 House election by 6%-9%?,政治,272.49,0.0,0.03,0.0,0.0,0.0
+0x3949698984a52c85de89eed4b1d10db4ef93aaefb6213c8a780c0302a40b8722,Will Josh Allen have 21.5+ passing touchdowns in the 2026-27 NFL regular season?,運動／電競,85.47,0.0,0.02,0.0,0.0,0.0
+0xffda1c03516975d418d8f87b201ddfafac0c9c3995494bdcb02106cfc7da0847,Will JAY-Z release a new song in 2026?,其他,36.4,0.0,0.02,0.0,0.0,0.0
+0x5a09f4cdad75d65a63aceeac5d25efe0e5013f0a0f2cb1029266b32a930df58b,Will $ANSEM dip to $0.02 before 2027?,其他,46.99,0.0,0.02,0.0,0.0,0.0
+0xc7ad4a67739a2e2e722f2e8778c49222bb57da7cda18ebc29e79503b4b7a1c25,Will Chris Olave have 10+ receiving touchdowns in the 2026-27 NFL regular season,運動／電競,28.54,0.0,0.01,0.0,0.0,0.0
+0xc3121b03d22c82c02750f4368261c978a25ac7dd2e22cbc30467e8af4b8849e7,Will Anthropic have the #1 AI model at the end of December 2026?,其他,71.9,0.0,0.02,0.0,0.0,0.0
+0x4e71045742d3f97b8af241d9eb60656118e6556523e8b5647cf1a32585d2b2aa,Will Google be the second-best Math AI lab at the end of December 2026?,其他,22.67,0.0,0.02,0.0,0.0,0.0
+0x1fd89ab7f279be2048492ff71547cb057451687d8849e53230af63e3a69949b5,Will Nicolas Dupont-Aignan be on the ballot for the 2027 French presidential ele,政治,45.45,0.0,0.01,0.0,0.0,0.0
+0x7de7918ba7be54764ec10958af792776d0dc2f77bff0d8aaaeac7c6f97015b77,Josh O'Connor announced as next James Bond?,其他,99.16,0.0,0.03,0.0,0.0,0.0
+0x88f7f8be04dca0742b22115e24cfbcb77a77d950cdfc960a067dd2b30e100f65,Will total votes cast in the 2026 midterm election for Senator from New Mexico b,政治,26.89,0.0,0.02,0.0,0.0,0.0
+0xba000c7a306fc3076c40fa93ac9350190cfde91fc89dd9ed72487052ada04f0f,Will Joel Embiid win the 2026-27 NBA Clutch Player of the Year?,運動／電競,41.32,0.0,0.0,0.0,0.0,0.0
+0xa69a116cff3a02bef4e1c5e688cbcee64bc6a466611a3afd2b0a903191c8a67a,Will Cooper Flagg lead the NBA in Player Efficiency Rating (PER) in 2026-27?,運動／電競,41.04,0.0,0.0,0.0,0.0,0.0
+0x6df00a4b5a728a102802a3c125a9d5f4db1baf1bb7b3918d0dfb70b6f92baa05,Will Meta be the third-best AI lab at the end of October 2026?,其他,332.6,0.0,0.05,0.0,0.0,0.0
+0xf52ca3c57786dc5aad15a08720cca71d79883af59ba113e4b0b0ce4d3217edef,"Will Baker Mayfield have 3,500+ passing yards in the 2026-27 NFL regular season?",運動／電競,26.12,0.0,0.01,0.0,0.0,0.0
+0xcbcb6dac52280ee7dd8d51848335cb5a3f212db4440f26eca8ef1cdec581ef5f,"Will Trump's approval rating hit 40% by June 30, 2027?",政治,89.66,0.0,0.01,0.0,0.0,0.0
+0x8152fd956c4cd49db8e29270e98bf530190b939873376ede8ed38cda1a863e7c,Will Alex DeBrincat record 80+ points in the 2026-27 regular season?,運動／電競,185.09,0.0,0.02,0.0,0.0,0.0
+0x8a6edc1fd770112031d2b5e9ef0809021c1d6b18013c760baf2d5e5b3e2b4b9d,Will C.J. Stroud have 28.5+ passing touchdowns in the 2026-27 NFL regular season,運動／電競,80.38,0.0,0.01,0.0,0.0,0.0
+0xaa5911d0fa7a9a88ccac604f67610de9b90fd3bff9aac23ba15c4a8058215fff,Will Edin Forto be the next Chairman of the Council of Ministers of Bosnia and H,政治,190.75,0.0,0.02,0.0,0.0,0.0
+0xe45b274302f4bdc36d507bccee82bd583b328168e2bffcce1b0ed6d9db485367,Will Estée Lauder (EL) beat quarterly earnings?,其他,46.45,0.0,0.02,0.0,0.0,0.0
+0xdbb5adb1fecc3d1c091d4361e3dc930d7bed9b9f2d5145e4de71c0e59630ce05,Will Mika Zibanejad record 40+ goals in the 2026-27 regular season?,運動／電競,39.87,0.0,0.0,0.0,0.0,0.0
+0x5ba01e92ef659a9a0bf72de59114d7b873e27cdf49cb7d4cba129e698c995e60,Will the Democratic Party candidate win the 2026 Hawaii gubernatorial election b,政治,104.5,0.0,0.02,0.0,0.0,0.0
+0x2caf1f64e29296d4c3e52b8450893c1f17128e705f3ab4f9b3ff387874fa17a1,Will kiNgg play for G2 Esports in 2027?,其他,29.85,0.0,0.02,0.0,0.0,0.0
+0x9c5a17d7ba572047df796a623b8a8615e93caead4c7540b87fa880e720d43ccc,"Will White House post 200+ posts from October 30 to November 6, 2026?",政治,70.44,0.0,0.02,0.0,0.0,0.0
+0x299ebe6d77f5aece068d9838192f1955b9c587b12d4a1271c7a4f033eadcb182,Will total votes cast in the 2026 midterm election for Senator from Alaska be be,政治,36.96,0.0,0.01,0.0,0.0,0.0
+0x6c4e97e3a7eeb02da42d5f67636b3f2dfe7c733ad50dac481e669abb13f16b3d,Will the highest temperature in Atlanta be between 68-69°F on October 31?,其他,141.73,0.0,0.03,0.0,0.0,0.0
+0x04f4f90d85ad7cfad1116bbafa98d2ffe1d2cbf8ed2ee36212ef65524965befa,"US Treasury announces Bitcoin purchase by December 31, 2027?",加密貨幣,18.18,0.0,0.01,0.0,0.0,0.0
+0x31ef3f26107d8f82c11f2c801da29e65e209e0045940aeb141cfa54439d176d1,"Will Ethena reach $0.48 by December 31, 2026?",其他,18.18,0.0,0.0,0.0,0.0,0.0
+0x6799b1cf4ed71a79a1d0b0d6425daa3375f78f3a61c03778a3d886c20c711ecf,"Will Malik Willis have 2,699.5+ passing yards in the 2026-27 NFL regular season?",運動／電競,82.08,0.0,0.01,0.0,0.0,0.0
+0x03c752b4664d1453485f3068180635296540b6d371e15aaa6ac2567b7a1147c9,FTC opens investigation into AI book destruction in 2026?,其他,18.18,0.0,0.01,0.0,0.0,0.0
+0x1423b98d2a1ac35f39a0b9efb45d8e175b9f4e3af0df29c148176d7d79a4ba58,Will the Republican Party candidate win the 2026 TX-17 House election by 10%-15%,政治,427.99,0.0,0.03,0.0,0.0,0.0
+0x2b3a8ed5435d2b23ed687977d5bc3b55067d29de60b8047fb617be2ec55f6553,Will the Maine 2026 Senate race be within 1%?,政治,21.59,0.0,0.01,0.0,0.0,0.0
+0xa2e6fc242fe66e20bb680da04d2e2c425a7a02843e85b5966917bad8f3989703,Will the Bank of Brazil make no change to the target for the Selic rate at the D,其他,56.94,0.0,0.02,0.0,0.0,0.0
+0xc41da83b47397fc975a5076a66dceaca49e07c6a0f189fd8e19a57cf2e80c791,Will George Pickens have 10+ receiving touchdowns in the 2026-27 NFL regular sea,運動／電競,21.15,0.0,0.01,0.0,0.0,0.0
+0x204bf35f751ebdbad775da246df58437dcebafccdcf72336b7125044df22c5e7,"Will Emeka Egbuka have 1,299.5+ receiving yards in the 2026-27 NFL regular seaso",運動／電競,20.9,0.0,0.01,0.0,0.0,0.0
+0x13037934605a5dc308595101448a8226b554c1a79353c43db118136b879f3a11,Colorado passes ballot measure banning underage transgender surgeries?,其他,36.14,0.0,0.01,0.0,0.0,0.0
+0x9b8f1313447466955a09b57acb0238453054b12cc0cd4384021be0a366260b28,Will Ime Udoka win the 2026-27 NBA Coach of the Year?,運動／電競,18.74,0.0,0.01,0.0,0.0,0.0
+0x981219376f9549719659bf3fb65f34da7bed52ad2040a24b8a259d5935048b57,"Will Hibachi launch a token by December 31, 2026?",其他,28.11,0.0,0.01,0.0,0.0,0.0
+0x002a9ad4dd7a71625e4c904e3e42eb10e085a8cf45bb2356b0c7cb91ed120969,"Will Trump's approval rating be between 39.0 and 39.4 on October 30, 2026?",政治,18.74,0.0,0.01,0.0,0.0,0.0
+0x3d6dcb0dcf566648f7aed7ea8b41ff0d796a65d5f05cbd88b7910ca602e704b9,Will Manta be relegated from the 2026 LigaPro Serie A (Ecuador)?,運動／電競,19.68,0.0,0.0,0.0,0.0,0.0
+0xb46d40fc6ef8ef2ab5329352633d65e64fe60080785e5751b32263f677960e62,Will the Democratic Party candidate win the 2026 PA-10 House election by 3%-6%?,政治,27.61,0.0,0.0,0.0,0.0,0.0
+0x36fbb4005d644939897becae5638c27e2d2e6fd51036079d14cdbcb3f40078ab,Will crashies play for Fnatic in 2027?,其他,112.24,0.0,0.03,0.0,0.0,0.0
+0xd38f97117caf693a23a0b1ec6af94d172678bc826dde109534ea8019b7aca254,Will the Republicans win Macomb County in the Michigan Senate race in 2026?,政治,60.45,0.0,0.01,0.0,0.0,0.0
+0xcadcbde4b763cd1b8cc934c0dc93c030211832d432b91d38171e9eb2bd0d1bfd,"Will ""Elsinore"" be nominated for Best Film Editing at the 99th Academy Awards?",其他,45.45,0.0,0.02,0.0,0.0,0.0
+0x6fba91af071925b1b200e9a1fb3495981597310f22032e1f0621cae2c3a1b290,Will Otzma Yehudit be in the next Israeli government?,其他,2581.72,0.0,0.14,0.0,0.0,0.0
+0xff87d4833fa99fd64092881e810ef3eb2773bcc34a2789501af1b5b285d15385,"Will ""The Black Ball"" be nominated for Best Original Score at the 99th Academy A",其他,379.51,0.0,0.06,0.0,0.0,0.0
+0x7866d87f677644d8694843197c9f5f249635c7a9a3b7cbc3b25cc503f9f7d2ff,Will Puka Nacua have 7.5+ receiving touchdowns in the 2026-27 NFL regular season,運動／電競,216.79,0.0,0.0,0.0,0.0,0.0
+0x0554b7697673d683170d87ed00e3a7f9c2421cdeae02f10b542dfff04d636480,Will the Republican Party candidate win the 2026 Wyoming gubernatorial election ,政治,105.43,0.0,0.0,0.0,0.0,0.0
+0x56a4e9b62996c161440f3e9da716ac48b4dff9f2a4fc511f53ee648abf8ee329,Will Quentin Johnston have 449.5+ receiving yards in the 2026-27 NFL regular sea,運動／電競,191.2,0.0,0.01,0.0,0.0,0.0
+0x7b900118d59b4fd919da043edeb1f0e7223d8178bab6f6b9f57e6753c7736d4a,Will Matt Olson win a 2026 NL Gold Glove Award?,運動／電競,96.25,0.0,0.01,0.0,0.0,0.0
+0x03dc109bd6f65da00b1298deffec88ec058668062a6e25d94397d6ac18d68277,Will US births in 2026 be between 3.53 million and 3.56 million?,其他,233.57,0.0,0.03,0.0,0.0,0.0
+0xf1469a7c9e77c1b24400aef572a92937d45e074e9a250fa3f8133be3d950414e,Will the highest temperature in Milan be 17°C on October 31?,其他,1028.24,0.0,0.03,0.0,0.0,0.0
+0xb12cae10cab0e4c68720f9510e4e249bf4543740423ce03c3d0e2a2b7c436952,Will the Democratic Party candidate win the 2026 FL-20 House election by 35%-40%,政治,45.38,0.0,0.01,0.0,0.0,0.0
+0xc150d31d3a97083576ee35bc19dcc821e5eb505dbe1be6ae8e00575c989f51d5,Will Masyn Winn win a 2026 NL Gold Glove Award?,運動／電競,57.12,0.0,0.01,0.0,0.0,0.0
+0xe3777d4d32a483bc0e9c674f418f7a5a79f4fac48844dc419001798f7cdd3993,Will the Democratic Party candidate win the 2026 NH-01 House election by 15%-20%,政治,21.4,0.0,0.01,0.0,0.0,0.0
+0x796b241edf77b302d4812ee89223c33c9acd079b584cd92ac105d7e42f8b4a2c,"Will Kyle Monangai have 1,049.5+ rushing yards in the 2026-27 NFL regular season",運動／電競,18.74,0.0,0.0,0.0,0.0,0.0
+0x646d6d1ce605480f5bdcb69c9aade39bb40823457b58e7f32275c3f29257236f,Will BYU Make the 2027 College Football Playoff National Championship Game?,運動／電競,18.74,0.0,0.0,0.0,0.0,0.0
+0x3b9a76f71d86b613273fefdceaffb6382dc36f7bf829145b28d18df92e3510eb,Will Jadarian Price have 549.5+ rushing yards in the 2026-27 NFL regular season?,運動／電競,96.34,0.0,0.01,0.0,0.0,0.0
+0xa6f9ddb9937c422d9303b2d34ab8b4ecb9a2196bb7249b9b4275850aac3b5b38,Will the Republican Party candidate win the 2026 Arkansas Senate election by 20%,政治,144.97,0.0,0.0,0.0,0.0,0.0
+0xbe9299854407f2ecba4b168bb149b3eebf5ebacd108f03b1085114554f7f9b2f,Will Javonte Williams have 549.5+ rushing yards in the 2026-27 NFL regular seaso,運動／電競,37.92,0.0,0.0,0.0,0.0,0.0
+0x43b836166766d7d02c3c548ac422938b2d113ca8a4aa6601e69056926dca9fc0,Will Elias Pettersson record 80+ points in the 2026-27 regular season?,運動／電競,72.51,0.0,0.01,0.0,0.0,0.0
+0xb104b235149192d5feb1f8ad8011fe07999c3c0d2ae4c9f538996f47284da714,"Will Credo Technology (CRDO) be added to the S&P 500 by December 31, 2026?",其他,72.56,0.0,0.01,0.0,0.0,0.0
+0xfa328376531ba2a6d6be96db6d08737bf23871b8c213b7123ad0faad2f88dbb9,Will Ty Jerome win the 2026-27 NBA Most Improved Player?,運動／電競,148.19,0.0,0.01,0.0,0.0,0.0
+0xc55c2583b454dd7e1119d9afebeac98a89be68213070e4f9958d40c807c82ce3,Will Sexyy Red be featured on GTA VI: The Album?,其他,29.64,0.0,0.01,0.0,0.0,0.0
+0x0436e68d2a5503be0bba38f18fc0df08497b393c317039bd65b72621e5dec1cd,Will the Kansas 2026 Senate race be within 5%?,政治,129.21,0.0,0.01,0.0,0.0,0.0
+0xd9c7ba19ebde01390af37b56561e7633b8645f398dbc648f8cb40d3aace798de,Will the Democratic Party candidate win the 2026 NC-04 House election by 45%-50%,政治,70.39,0.0,0.0,0.0,0.0,0.0
+0xe1a717cca1d898e96a2216d4b3c4a4820779896928addfdab74dd861648a6382,Will Helen Zille be the next mayor of Johannesburg?,政治,45.45,0.0,0.01,0.0,0.0,0.0
+0x35c8368e6e8b90882c8fa58c65f4de9b1ded60cfec9603616c6249a1860e7ad9,Will the Republican Party candidate win the 2026 AL-03 House election by 35%-40%,政治,117.43,0.0,0.01,0.0,0.0,0.0
+0x1cd4b83d43cd32b43a233fe3725463811fa2452ba56c9a60cad48046d3b028a5,Will Ilia Topuria fight Justin Gaethje next?,運動／電競,40.7,0.0,0.0,0.0,0.0,0.0
+0xe303ce286b7137af764633d59539de2639957ebc89de5975acc6d819011a7ae8,Will the Republican Party candidate win the 2026 OK-01 House election by 10%-15%,政治,50.04,0.0,0.01,0.0,0.0,0.0
+0x7d1eec1cf7a040965c30f71e84753b57ecd00d6819ac6d668c7bc3d736295bfa,Will the highest score achieved by a SpaceXAI Grok model on Humanity’s Last Exam,其他,34.28,0.0,0.01,0.0,0.0,0.0
+0xde0f150a338f590e7e97d64cb875c90d10719b63eefcb510c1bcfa6873562b01,Will The Baddest Speechwriter of All win Best Documentary Short Film at the 99th,其他,302.02,0.0,0.02,0.0,0.0,0.0
+0x8045cce5dfd0177e59c99595fcc84da613fa6038145f3c53f8dfd0be5318245c,Will Nico Collins have 8.5+ receiving touchdowns in the 2026-27 NFL regular seas,運動／電競,85.54,0.0,0.01,0.0,0.0,0.0
+0xa3a9a9a292f06e423dfa9f35219c2ae35dcefb78a207979d433c11968945641d,Will the Democratic Party candidate win the 2026 NC-11 House election by 3%-6%?,政治,18.46,0.0,0.0,0.0,0.0,0.0
+0xff531b5dc206956e86fb16be2e6d5f62454f56cb0efa40c04bbfca654e2fd49b,Democratic Senate odds 66-68% on November 2?,政治,939.57,0.0,0.0,0.0,0.0,0.0
+0x7b5a17a8d04da63f2c11a09ea3533f91a4262f4d42ebb475c0217bfd30beed3a,Israeli Knesset election annulled?,政治,7706.79,0.0,0.0,0.0,0.0,0.0
+0x15daff3b4eb4be806027905fa3a9febb6f638271aaba0490a2b120d653bbb53f,"Will ""The One About Matthew Perry: Limited Series"" be the top global Netflix sho",運動／電競,2022.24,0.0,0.0,0.0,0.0,0.0
+0x90ffd7b21af57912c74c2a4d804b6f3ef5f447615e7e0838a2fdcdd5aaef909a,Democratic Senate odds 66-68% on November 1?,政治,823.87,0.0,0.0,0.0,0.0,0.0
+0xe01bab56bd4a19b67d3606cfd08a495399f9d328bbba2dcbed5032d1e85fcc64,"Will Gemini Carbon be released on November 14, 2026?",其他,196.01,0.0,0.0,0.0,0.0,0.0
+0xdf11c9f6624831317b7e7a5a71c16cdc46afccfe7b83f1036c344f38505e607e,No change in Reserve Bank of Australia's interest rates at the December 2026 mee,總經,3093.94,0.0,0.0,0.0,0.0,0.0
+0x18e0c7cf54d2180883c72c296f2a353e2a61b27ca731be9d59badc060c778038,Will Shadowrocket be #1 Paid App in the US Apple App Store on October 30?,其他,624.0,0.0,0.0,0.0,0.0,0.0
+0xa2e43598547f2e90e3eee195812c8814202b9b66f6c540d7e15a265cbe93f68f,Will the Republican Party hold below 190 House seats after the 2026 midterm elec,政治,2513.06,0.0,0.0,0.0,0.0,0.0
+0x4221406896175c16530ad05e99989c0f191eb382167f5556b723685d3174b37a,Will OpenRouter process between 185T and 195T tokens the week of November 2?,其他,90.06,0.0,0.0,0.0,0.0,0.0
+0x64963f649713efa8dd004099f3a71f820542a3e167f39280cb63df2af8e04655,Will Brazil's Q3 2026 GDP growth rate (QoQ) be between -0.3% and -0.1%?,總經,3987.36,0.0,0.0,0.0,0.0,0.0
+0x6cefa17ae9d445fa9b66394abf8d336bdac79bd683bb2da6eab6ce2179df22ba,"Will Trump say ""Terrorist"" or ""Terrorism"" during his Midterm Rally in Florida?",政治,108.3,0.0,0.0,0.0,0.0,0.0
+0x771489b5384ad230980cd5fc5b92b21a8d2cecd6dca0f7cba5355a101d7aa660,Will the highest temperature in Kuala Lumpur be 33°C on October 31?,其他,70.23,0.0,0.0,0.0,0.0,0.0
+0xe09c250c2d5ba126bb97b417c55185419600555e9679c9b78cc1a9a4b6e8d151,"Will NVIDIA be the largest company in the world by market cap on October 31, 202",其他,173.08,0.0,0.0,0.0,0.0,0.0
+0x96370e1e8f15d9b4a4acf2b6e7f0ab2bc192ecd7264d8b8b5bb47928cc02692a,Will OpenRouter process between 195T and 205T tokens the week of November 2?,其他,949.35,0.0,0.0,0.0,0.0,0.0
+0x3d0e1bfe94467f7d562169dbbed09a776d911759714fd9d5806ec41757b4e92f,Will OpenAI’s valuation be between $1.20T and $1.30T at the end of October 2026?,其他,705.45,0.0,0.0,0.0,0.0,0.0
+0xb336bf71dc4243083af9936305df7017f4d99b86b204fcd00b8bd660dfca9482,Reserve Bank of Australia increases interest rates by 25 bps at the December 202,總經,3354.93,0.0,0.0,0.0,0.0,0.0
+0x9c1af44b89d0f8bf813387d120bca949f8836d52764afc30dd6199a0d9379e2f,Will Republicans hold ≤46 Senate seats and ≤192 House seats after the 2026 midte,政治,1174.37,0.0,0.0,0.0,0.0,0.0
+0x8bcf65d7c3cc697c0ebc609d7c775599b6f6ea34413fa244fdd12f6b2fcc40b5,Will the Democrats win Sedgwick County in the Kansas Senate race in 2026?,政治,2325.11,0.0,0.0,0.0,0.0,0.0
+0x24947108ea0aa91814673554b04b0b85fdcfd3b16ffbb7d2a0b6642e5870c53b,"Will ""Clayface"" 2nd Weekend Box Office be between 10m and 12m?",其他,623.85,0.0,0.0,0.0,0.0,0.0
+0x84ea4013507329cf673cbb84d110e8f0517f832f541d45642d4e4f16a8f2e0b9,Will MiniMax have the best Image-to-Video AI at the end of October 2026?,其他,3194.93,0.0,0.0,0.0,0.0,0.0
+0xb0d9ef1754e1a25908a57be10bf18712fa66af53b805785bad839922a2e508bb,"Will Gemini Carbon be released on November 25, 2026?",其他,774.88,0.0,0.0,0.0,0.0,0.0
+0x954b4a77b1109ce1dd554f43d18844a648ca5b80ad3c5d993041e57cf589dcba,Will the 5-year Treasury yield hit 4.90% before 2027?,其他,660.38,0.0,0.0,0.0,0.0,0.0
+0xa7a2b9bf4b74f511bad2b5c118c7be6f635dc27a6f7a057bd74150163d74860f,Will the highest temperature in Munich be 10°C on October 31?,其他,47.29,0.0,0.0,0.0,0.0,0.0
+0x1f0afe29179dc52a2faba990b3c7612467fb43628ce1a7a0016fa25d7449b935,Will the highest temperature in Munich be 9°C on October 31?,其他,442.89,0.0,0.0,0.0,0.0,0.0
+0x2de165081f968ce689216557c708c8abaf3d546b7c899748ffbf5524f61a5cb8,"Will GPT Astra 6.1+ be released between October 26 and November 1, 2026?",其他,321.33,0.0,0.0,0.0,0.0,0.0
+0xb52353d574218e37b549e22b48ac58a27e96621300a3cfb09a95332d6bb92e51,Will the Republicans win Genesee County in the Michigan Senate race in 2026?,政治,296.79,0.0,0.0,0.0,0.0,0.0
+0xa6af312109c285d70f39a4f8d8e3d4a2e7e12bcabe5ab03527396a3a1377925d,Will the Republican Party hold between 195 and 199 House seats after the 2026 mi,政治,2636.13,0.0,0.0,0.0,0.0,0.0
+0x4d967657afbff24d46ab0265e656d9799f57eadbd4d21550c2686b0c9d013ab2,"Will ""Wildwood"" 2nd Weekend Box Office be between 5m and 7m?",其他,183.16,0.0,0.0,0.0,0.0,0.0
+0xc45a45f69c812ce413bff2243fbf0bf6b2ac27d24556f3ad4fd61c6a26e68349,Will Alexandria Ocasio-Cortez run for Senate in 2028?,政治,52.76,0.0,0.0,0.0,0.0,0.0
+0xfe5e864c6bdb259f92a610bf77ff95d878d4aebfa47e97acaea6c8d576aa0e36,"Will ""Clayface"" 2nd Weekend Box Office be between 12m and 14m?",其他,265.07,0.0,0.0,0.0,0.0,0.0
+0x3f6154123822e7f817bfddc0ca7a454f1b48e21e62f7b7d69a1b8c09c01086fd,Will PP win the most seats in Granada in the 2026 Spanish general election?,政治,19.18,0.0,0.0,0.0,0.0,0.0
+0x6af0a36ceb2de8075d9085b19392c338449cf7a82efe4190e12d0cb920bc1848,Will Man I Need – Olivia Dean be the #2 song in the US for 2026?,其他,145.2,0.0,0.0,0.0,0.0,0.0
+0x366a98120ec16a252876ffd8b5d64fc170d53277bbe91daf5218e3bd69a24853,Will Anthropic's IPO valuation be between $1.50T and $1.75T?,其他,1171.85,0.0,0.0,0.0,0.0,0.0
+0x95a03d3b3a27e3ea945850e69555a8c343ac7ca4eda053215482c58d43852527,Will the highest temperature in Moscow be 11°C or higher on October 31?,其他,1005.64,0.0,0.0,0.0,0.0,0.0
+0xb8d98e30dc6da729cb480bcce8a9d33df100876c8b989fb94354688e2315c8e5,Will Democrats win exactly 1 House seat in Tennessee in the 2026 midterm electio,政治,1578.59,0.0,0.0,0.0,0.0,0.0
+0xa4909619968dcabc3a1f9461faf593a32d049c4c65bb23284b21da70a12742c0,Will the highest temperature in Chengdu be 20°C on October 31?,其他,19.74,0.0,0.0,0.0,0.0,0.0
+0x0adfb429d51944784f628f11480932f2d38b47c55cb57952595d0dcd3f8ded3b,Will Bilibili Gaming Make the Worlds 2026 Grand Final?,運動／電競,46.85,0.0,0.0,0.0,0.0,0.0
+0x42844f551572379ba59f29afa5fe3abde0346b9f151eefafae2ffd50da8f192f,Will LYON Make the Worlds 2026 Grand Final?,運動／電競,46.85,0.0,0.0,0.0,0.0,0.0
+0x9f6952e573f5dfde7aba8b8d14afd344c8077b2fa725e0c26e0c2a774579026e,Will the Republican Party candidate win the 2026 IN-02 House election by 10%-15%,政治,864.25,0.0,0.0,0.0,0.0,0.0
+0xa840070d1524472147b780157f60c7bcec855846cfc98c2d5ddb8af487b8dd05,Will the highest temperature in Moscow be 10°C on October 31?,其他,757.88,0.0,0.0,0.0,0.0,0.0
+0x1b36d2a53fb9c56e197105868bafeb85874a710d52d1acca3bf9a9b299298843,Will Likud be in the next Israeli government?,其他,1969.8,0.0,0.0,0.0,0.0,0.0
+0x741cad54dace45acf8676bf502c40e7ebccfa96a8edc9b02b6dfb361450692db,"Will ""I Knew It, I Knew You"" from Toy Story 5 be nominated for Best Original Son",其他,575.18,0.0,0.0,0.0,0.0,0.0
+0x82f9a900baaae663ffbd8672b4b73c9d20d01f698a83d5aec7a38bc18d7b18ca,Will the Republican Party candidate win the 2026 Florida Senate election by 6%-9,政治,1266.7,0.0,0.0,0.0,0.0,0.0
+0xc93444900979054396f303fa5534fad5d3c2904ab4e83b5a06e7c8e39058b812,Will the highest temperature in Tokyo be 23°C on October 31?,其他,802.4,0.0,0.0,0.0,0.0,0.0
+0x8510bfed6afdf9d98abf29524b4d4b7a0f7985083bbfe44aaf5a3fa50179123b,Will the highest temperature in Milan be 16°C on October 31?,其他,835.87,0.0,0.0,0.0,0.0,0.0
+0x2756882016eecfebd87ebdaf9fd82499e78d20efe0293ea63663198350c87840,Will the highest temperature in Istanbul be 16°C on October 31?,其他,605.34,0.0,0.0,0.0,0.0,0.0
+0xa70817bec31540d3268e3d66e0313c1cfbf4287af42638d646811a3ed70b49c7,Will the highest temperature in Lucknow be 25°C on October 31?,其他,434.87,0.0,0.0,0.0,0.0,0.0
+0xc26f05506cf2f1b3ba6cf60815ccb90f6ae5f361822ed889eabc3b09ba54a559,"Will total votes cast in the 2026 midterm election for Senator from Kansas be 1,",政治,726.2,0.0,0.0,0.0,0.0,0.0
+0xfa7d4873decc15cd4538e99e87f93a211bcab87ba35d6cfbd73abd18efdad21a,Will the Democratic Party candidate win the 2026 Michigan Senate election by 6%-,政治,836.45,0.0,0.0,0.0,0.0,0.0
+0xc7808ca8ddce5bf91b51bf218fce9755961b22d0beac5ead6f5c50a0bc4761e6,"Will Gemini Carbon be released on November 20, 2026?",其他,398.35,0.0,0.0,0.0,0.0,0.0
+0x46f7454a45c9c80118a982cb5bdba127fc6b3eda999401a55fee19475e9889de,Will the Republican Party candidate win the 2026 FL-15 House election by 15%-20%,政治,389.54,0.0,0.0,0.0,0.0,0.0
+0xa07ac861388dc8b6f28d7d9c96c95498a9d96599b3e66bb4c920b14558c92b87,"Will Gemini Carbon be released on November 2, 2026?",其他,596.57,0.0,0.0,0.0,0.0,0.0
+0xe32f47af1c0c31c8b4892fe47b7655de4439939428e964409fbd813b1d11b8ea,Will Renate Reinsve be nominated for Best Actress at the 99th Academy Awards?,其他,561.59,0.0,0.0,0.0,0.0,0.0
+0x0bfba43f450c0799ceb8ab08c7553d71696eb069fec249468ccb26d0d5181dfb,"Will ""Godzilla Minus Zero"" Opening Weekend Box Office be between 34m and 37m?",其他,347.33,0.0,0.0,0.0,0.0,0.0
+0x7cdac6052ca2da5f6b441a43f2155e1c5cc535c10ddbe4abbeb42c820276cc11,Will the Republican Party candidate win the 2026 Wyoming gubernatorial election ,政治,764.06,0.0,0.0,0.0,0.0,0.0
+0x1c7d7987d276657138c52370f0bd7f90a2b5662dec1f71e5c804642c11de2692,Will 170-189 ships transit the Bab el-Mandeb Strait between November 2-November ,其他,811.3,0.0,0.0,0.0,0.0,0.0
+0xee557d4a950ea3c6a6a22a82b6eae23b1774b7ed30abb50d6b31d815fb2560ca,Will the Republican Party candidate win the 2026 OH-06 House election by 25%-30%,政治,613.65,0.0,0.0,0.0,0.0,0.0
+0x4dccdb83915f27653dd3b36702d09802f988664be07dd90e9f5237941ac4316a,Will Deft play for Nongshim RedForce in 2027?,運動／電競,1671.65,0.0,0.0,0.0,0.0,0.0
+0x5a45c4681101ef485ae264c19e366f33c0dcb172c934fc7fbc09da48b853afb8,"Will Gemini Carbon be released on November 8, 2026?",其他,567.58,0.0,0.0,0.0,0.0,0.0
+0x02079ac3ebd1a6ed288eadf0b724a18d2f4846098456d2a66f1d7cb91ae6750c,Will Jahmyr Gibbs finish the 2026-27 NFL regular season with the most rushing to,運動／電競,307.45,0.0,0.0,0.0,0.0,0.0
+0x976042b4a9d2008c9b2ea8d3ab6c8e74ee6e98726efbc50b5347d806ef44bc01,Will Anthropic's IPO valuation be between $1.75T and $2.00T?,其他,616.5,0.0,0.0,0.0,0.0,0.0
+0x07142ac36a66c4e234b562d0391b8a060a14e3ecee432f1666779a5586076179,Will total votes cast in the 2026 midterm election for Senator from Kansas be be,政治,964.03,0.0,0.0,0.0,0.0,0.0
+0x587462724ab92763b44f54b1cac0013123071075d256025b47495b814fd9db26,Will Houston Rockets receive the first overall pick at the 2027 NBA Draft Lotter,運動／電競,18.74,0.0,0.0,0.0,0.0,0.0
+0xe4fd3619cb2c96def371b9f0befe3f65208f26c5ca9ebe7549506fc33ef8fc06,Will the highest temperature in Tokyo be 21°C on October 31?,其他,19.74,0.0,0.0,0.0,0.0,0.0
+0x784a11b37f4eb41528d905a4b4368e3a1219e8c5fe390ae9e35690c4c93e10d0,Will GitHub's longest critical incident in October 2026 be between 6 and 12 hour,其他,376.02,0.0,0.0,0.0,0.0,0.0
+0x0684a7cf3715ab98bf4b6399a91a8b96bfdfb51df2fef94304d015998bc40e70,"Will the median home value in NYC be less than $445,000 on December 31?",其他,18.74,0.0,0.0,0.0,0.0,0.0
+0x2ec5e14ec0c5bc2ff5effaa59c0e4440666f42189251bd90dd4f8bb363042a5e,Will OpenAI’s valuation be at least $1.30T at the end of October 2026?,其他,588.53,0.0,0.0,0.0,0.0,0.0
+0xcb89eca125841b1267718a6e0431c9de2f4f178b7d2fd8b5719749da301454b2,Will the Republican Party candidate win the 2026 NY-21 House election by 3%-6%?,政治,532.1,0.0,0.0,0.0,0.0,0.0
+0x344f5054e341a287f85cdbcbc361823a7b1b7e607ec64aa5afa2b3738fc9c60b,Will total votes cast in the 2026 midterm election for Senator from Iowa be betw,政治,386.76,0.0,0.0,0.0,0.0,0.0
+0xc75af8f84923b323384d0b77f2cc9efab583ffda4af88182e64fce5def97d021,Will PSOE win the most seats in Las Palmas in the 2026 Spanish general election?,政治,988.84,0.0,0.0,0.0,0.0,0.0
+0x51bbf28e50c5ba495032fced4ea777366f202c367ce56ae29e8ffd4db8b6d361,Will total votes cast in the 2026 midterm election for Senator from Alabama be b,政治,690.54,0.0,0.0,0.0,0.0,0.0
+0xf9ebe59b5b43de0813f467248e817f79980b10047c11a1364bd91d26467c1d45,Will the Democratic Party candidate win the 2026 Pennsylvania gubernatorial elec,政治,530.16,0.0,0.0,0.0,0.0,0.0
+0xa70b7c0bb57ef44e048b204006f856aa484b20537fd6c2c8c54a4f6690240c22,Will PNV win fewer than 4 seats in the 2026 Spanish general election?,政治,272.49,0.0,0.0,0.0,0.0,0.0
+0x8c9d83e18cfe0b9ac5f5698e405bd7fe3fd45373b7c692bad503cb0a56f344de,"Tokenized stocks available on Coinbase by December 31, 2026?",運動／電競,30.52,0.0,0.0,0.0,0.0,0.0
+0x97ab372cd851e677bc64d522517e72a06fb78639cebe96a366b7ef9480c5cb05,Will total votes cast in the 2026 midterm election for Senator from Idaho be bet,政治,419.37,0.0,0.0,0.0,0.0,0.0
+0xc1d2fec376303d9c65d8af0f1eda93d0a746b69fbf045bc37ce5a0b360ba04c9,"Will the next Grok model (4.8+) be released on November 6, 2026?",其他,248.74,0.0,0.0,0.0,0.0,0.0
+0x2190a819a5aa5d7db4d26ac5cbeee5603b6db7f5653f7c41e04e055ba16984c3,Will the Democratic Party candidate win the 2026 Delaware Senate election by 30%,政治,243.38,0.0,0.0,0.0,0.0,0.0
+0x45514e0fcd922a740e67ab064a9042d3e964006712f9540947808ae82067ed23,Extended FDV above $150M one day after launch?,其他,47.85,0.0,0.0,0.0,0.0,0.0
+0x3e2d35d5563354a288cb451d6e432ece7dc08e63fcbefdfb0bcccb5ad44c0cb4,Will the Republican Party candidate win the 2026 Tennessee Senate election by 25,政治,419.97,0.0,0.0,0.0,0.0,0.0
+0x2a91a478769bae0fca80cd74dc01afab8ef301515cb6d242c85d7238634bce9f,Will PSOE receive between 24% and 26% of the vote in the 2026 Spanish general el,政治,182.76,0.0,0.0,0.0,0.0,0.0
+0xe8019d133d55e3af3e1aa109b0751e171aeaecab39472db3fd4b3eed54ef69f0,"Will Gemini Carbon be released on November 12, 2026?",其他,620.85,0.0,0.0,0.0,0.0,0.0
+0xadebf2aec917971a733f74c66387529b3347ebf0f3019410427921d28e921beb,Will Alexandria Ocasio-Cortez run for President in 2028?,政治,844.02,0.0,0.0,0.0,0.0,0.0
+0xcb613036242303dee613a70b1c58afe70695394cbe11ca2b6ca287308c733eee,Will total votes cast in the 2026 midterm election for Senator from New Mexico b,政治,635.26,0.0,0.0,0.0,0.0,0.0
+0x1b018607bb854f39172e9274fab2750eab469c9bfa355e8b8a34b1d1da9ff4aa,"Will KAST launch a token by September 30, 2027?",其他,28.11,0.0,0.0,0.0,0.0,0.0
+0x90b8e65105cf641ca47f54e66cc61c8a022d296390d82056e40c67fcd6ba9593,Will the highest temperature in Warsaw be 11°C on October 31?,其他,182.73,0.0,0.0,0.0,0.0,0.0
+0x757ad18452b272d534a0bcede5ba0e207113433f155df85b10943476cfbcffba,Will Cameron Ward have 15.5+ passing touchdowns in the 2026-27 NFL regular seaso,運動／電競,92.54,0.0,0.0,0.0,0.0,0.0
+0xf9220a02faa4e862bdb60451a9c5a5f5049bb129de7f0c22ece7d8fe793224be,Will the Republican Party candidate win the 2026 OR-02 House election by 15%-20%,政治,721.31,0.0,0.0,0.0,0.0,0.0
+0x8190d08acb3f85394b7830ec14751025ea1a09ba9dc01dfe98442fe345c83838,"Will Democrats win the Michigan Senate seat, and Republicans win Ohio?",政治,127.14,0.0,0.0,0.0,0.0,0.0
+0x20ebeebda9cb65882c80a0e8f4e0beed00465288fc4994313bd4cd1d55cab39e,Will Derrick Henry finish the 2026-27 NFL regular season with the most rushing t,運動／電競,288.17,0.0,0.0,0.0,0.0,0.0
+0x3e6f747b1c67235aae066640566faf680034a11f1767ac533ed2da254bd51f6a,Will the 2026 League of Legends World Championship peak concurrent viewers be at,運動／電競,119.53,0.0,0.0,0.0,0.0,0.0
+0x25bad8eb41e67f2e19df09eb6ff2988cb887bebb9d696e614677ae19350a0457,Will Junts win exactly 6 seats in the 2026 Spanish general election?,政治,153.89,0.0,0.0,0.0,0.0,0.0
+0xc0ffcac16ef69fed030544e93d362ef335e5f57ba482a3597e096eb17f277aa3,Israel Election: Yashar and Likud in coalition?,政治,442.88,0.0,0.0,0.0,0.0,0.0
+0x9e0abb3cf2caa8b7b3d9fff5764fbc9affc5b4dad916a70940819e6cba30c401,Will Al Ahly be relegated from the 2026-27 Egypt Premier League?,運動／電競,133.72,0.0,0.0,0.0,0.0,0.0
+0x0d68af1b206bbdfbfdca3b2d4de5ce35b5d8f651e25947e8cf3d2f84fec8aa8a,"Will Trump say ""Beautiful"" 20+ times during his Midterm Rally in Florida?",政治,88.35,0.0,0.0,0.0,0.0,0.0
+0xb630d0e59e25f3eb6604cd296b93c1be8cf4d376a5ae3e838dceac7ee2ea3a42,Will the Democratic Party candidate win the 2026 MI-13 House election by 55%-60%,政治,475.06,0.0,0.0,0.0,0.0,0.0
+0xf8a4a549f0937ec98b00be5f260f5688e85fe8d3bad51d2664106203f3e07e32,Will the Democratic Party win the NC-13 House seat?,政治,3184.15,0.0,0.0,0.0,0.0,0.0
+0x22ed2ff52846634c0053dd4052c2beadb110049a49e41e4d268125a4aac8deb2,"Will Lamar Jackson have 2,999.5+ passing yards in the 2026-27 NFL regular season",運動／電競,142.58,0.0,0.0,0.0,0.0,0.0
+0x12ed1e6a3a7a8193adc19df4469f07f228356cde75c7a2b57929f161196b46bd,Will the Democratic Party candidate win the 2026 NJ-06 House election by 25%-30%,政治,525.09,0.0,0.0,0.0,0.0,0.0
+0x5f853dae6f1514c3254cd72db620e44954cce0bb6fcec899d69e93736e7ea57f,Will Kenneth Walker III have 9.5+ rushing touchdowns in the 2026-27 NFL regular ,運動／電競,154.88,0.0,0.0,0.0,0.0,0.0
+0x095d45f8aa4a0a7a38c8fb523a083212d27234d013ea473c286d3abfceb23b35,Will Justin Herbert have 21.5+ passing touchdowns in the 2026-27 NFL regular sea,運動／電競,156.81,0.0,0.0,0.0,0.0,0.0
+0xc3a75df64e561d019f49a821a0e083fee2040e18c9ccb8f681fbfa450794f846,"Will ""Oh Whale"" be nominated for Best Documentary Short Film at the 99th Academy",其他,444.9,0.0,0.0,0.0,0.0,0.0
+0x2d05e7aefc2aa3cc3a6519e4dd686ccddf927d944d607583ea38bd6b8c3a136b,Will the Republican Party candidate win the 2026 OH-06 House election by 35%-40%,政治,194.26,0.0,0.0,0.0,0.0,0.0
+0x49f659544c7e9fa556a25fa5d7a1100662f03b70487db4c09d33fa556ee357b8,Will oil be at least $80 on November 2 and the Republicans win the Senate?,政治,1156.94,0.0,0.0,0.0,0.0,0.0
+0xf5ec61bf9ce0b4d51471e94ef49af7e1472f20c2c4f7bc07946d8a4f975a6af2,Will Alphabet’s market capitalization be between $3.50T and $4.00T at the end of,其他,579.78,0.0,0.0,0.0,0.0,0.0
+0xc1df16336f12bd1436bbe6110e410cac44041785aa5db96176547d0e9c2e1c0f,Will Kenneth Walker III have 11.5+ rushing touchdowns in the 2026-27 NFL regular,運動／電競,186.84,0.0,0.0,0.0,0.0,0.0
+0xe93f429d000a3972a9806dea9c1352f30624559be4c11608d20e4e2220042e10,Will Dplus KIA Make the Worlds 2026 Grand Final?,運動／電競,260.8,0.0,0.0,0.0,0.0,0.0
+0xa7f3aa14273a0776f81814e55546d215c9d84b5095972644463486a05c172229,Will the highest temperature in Los Angeles be between 70-71°F on October 31?,其他,468.33,0.0,0.0,0.0,0.0,0.0
+0xab601c1abd037d84787642aa3a766ee8c9d2a07765895e3dd6ad4e9d75ff60e0,Will Breece Hall have 499.5+ rushing yards in the 2026-27 NFL regular season?,運動／電競,195.37,0.0,0.0,0.0,0.0,0.0
+0xed6643dcec0d88c0ee6818e4189bcc98d80164144ee0131343a6be1334439afb,Will James Cook finish the 2026-27 NFL regular season with the most rushing yard,運動／電競,337.45,0.0,0.0,0.0,0.0,0.0
+0xcef7d640fa6fe11de889438bf39f8b7cd233488120aed43838758b6924ce496a,Will Jawgemo play for G2 Esports in 2027?,其他,18.74,0.0,0.0,0.0,0.0,0.0
+0x061d29f94d903f0ebe6b878880c82870866327427d2173a8f54b5141700e3dd2,Will Ilse Aigner be the next President of Germany?,政治,46.45,0.0,0.0,0.0,0.0,0.0
+0x51205237e88073889ef9a1fe71f6eaa38ee4e7f090935481c3e7ec5365031632,Will the highest temperature in London be 15°C on October 31?,其他,550.88,0.0,0.0,0.0,0.0,0.0
+0xa7d6b73aa235157051245aa5a4b115bf022143e2f49419185819f0334d356f88,Will New York Times (NYT) beat quarterly earnings?,其他,64.54,0.0,0.0,0.0,0.0,0.0
+0x7ff4e4b2f389acdd96ef18bb34684b9219a972b7ef0cde5856d28f5d5325f3d4,Will the Republican Party hold between 200 and 204 House seats after the 2026 mi,政治,1348.97,0.0,0.0,0.0,0.0,0.0
+0xe99323483c8f7b9ee0aa48019bbe83388639bd33cbcea78e7dda7d348b9f58d1,"Will ""Digger"" be nominated for Best Production Design at the 99th Academy Awards",其他,413.73,0.0,0.0,0.0,0.0,0.0
+0x69ed502b27cd593383cd7507c13b78a3b92996ba00d245b4940257366787fcfc,Will the lowest St. Louis river level be 1.00 to 2.99 ft by November 30?,其他,322.2,0.0,0.0,0.0,0.0,0.0
+0x749728598deeb6d880a5f2891bb2737aa244cb84ec8b64da14c892b804a03f93,Will valyn play for MIBR in 2027?,其他,242.67,0.0,0.0,0.0,0.0,0.0
+0x08207752c7452c77a632a5f085e892d3add1c88e1c4e15b1ad56a56549734452,Will the highest temperature in Guangzhou be 32°C on October 31?,其他,570.96,0.0,0.0,0.0,0.0,0.0
+0xf6c4e1c71ca4caa882f4b76d8ad17520a509296cb676eb8d93faaeeff01b7b4c,Will the highest temperature in San Francisco be between 66-67°F on October 31?,其他,184.46,0.0,0.0,0.0,0.0,0.0
+0x7163b0c1adbe6297059d50300e99c907e9c273487f31d26d770e2ed689be4fca,Will Republicans win white women in the midterms?,政治,352.64,0.0,0.0,0.0,0.0,0.0
+0x8cd058b4c8316e39c7456cbdc3d409cc887cb79a3c93fb6127dfb3ce8fc1c28b,Will OpenRouter process between 175T and 185T tokens the week of October 26?,其他,37.36,0.0,0.0,0.0,0.0,0.0
+0x8e72fb21b35e6d102e9a41698771eb326e05e5eed8abcaa17383aef7b439cd1a,Will PRI win the most seats in the 2027 Durango Congress election?,政治,426.93,0.0,0.0,0.0,0.0,0.0
+0xb71e54eb1197f87efa1e58821edb18e986962640a5666a7711170ee8e66dff89,"Will Kimi K3.1 Pro debut at a score of at least 1490 by June 30, 2027?",其他,541.7,0.0,0.0,0.0,0.0,0.0
+0x73bb904baf450bf751331ffc082017ddf82bfd98ea94ccf39c342f34681d87a1,Will total votes cast in the 2026 midterm election for Governor of Nevada be bet,政治,462.39,0.0,0.0,0.0,0.0,0.0
+0x31be56564faecc38bb8ce33dd7fb311cd8dcae0188045c20a7f6f33d150dc0ae,Will 0 Independents be elected to Congress in 2026?,其他,367.22,0.0,0.0,0.0,0.0,0.0
+0x82886dbdcc93bd7c49d84aa8039559b1a7037405085aadce979261a9f402f919,Will the Democratic Party candidate win the first round of the 2026 Georgia Sena,政治,734.46,0.0,0.0,0.0,0.0,0.0
+0xeeca90fb3c7483517a318fcc2e64243b4536b920dbe62d63bd55ecb7c1aa3611,Will the highest temperature in Seoul (Incheon) be 17°C on October 31?,其他,299.04,0.0,0.0,0.0,0.0,0.0
+0x1274d235531e9e167ac68fa92e089f6ced068741308676bc8d740bfca84e4d7e,Will Jacory Croskey-Merritt have 574.5+ rushing yards in the 2026-27 NFL regular,運動／電競,217.35,0.0,0.0,0.0,0.0,0.0
+0x8488ccf93e5837e6a87f6dd5a8b87b1fe12618e7c6144fd76b6fd4505be69ff3,Will Jahmyr Gibbs finish the 2026-27 NFL regular season with the most rushing ya,運動／電競,289.25,0.0,0.0,0.0,0.0,0.0
+0x6c6923d87ffeb9e948fbc71444614455be12439c15b2037b06a8b783e4346b44,Will OpenAI be the second-best AI Agent Lab at the end of December 2026?,其他,179.05,0.0,0.0,0.0,0.0,0.0
+0xdba4f9a922f1fb1ed52cfc5cf1189555b1564957b8faa7adcdf389210610462f,Will Jonathan Truong qualify for the 2027 PPA Tour Finals?,其他,87.72,0.0,0.0,0.0,0.0,0.0
+0x6933d380e7ba3af042e75463fc2aa5dcd2f6bea66ebbc8fcd7107f4d8b0c44c9,Will Bruno Mars have the greatest number of monthly Spotify listeners this month,其他,133.08,0.0,0.0,0.0,0.0,0.0
+0x3362822588b3e9f65a95c55a68eafdcda4eed1455b1215c4ec505efdb21640d3,Will the Republican Party candidate win the 2026 Tennessee gubernatorial electio,政治,339.66,0.0,0.0,0.0,0.0,0.0
+0xeea5adf5cf3bd878e26f9e1762842689b72952b61c5a468fb8dc69a546b88f5a,"Will Josh Allen have 3,599.5+ passing yards in the 2026-27 NFL regular season?",運動／電競,213.01,0.0,0.0,0.0,0.0,0.0
+0xceba501e9df947550d3f66234bc4a8f25fc3f09fe8effd647ceb0238f64185ce,"Will ""Minotaur"" be nominated for Best International Feature Film at the 99th Aca",其他,375.43,0.0,0.0,0.0,0.0,0.0
+0x5c32d8a2cd3392933e76207f92d558b100f91df81f9fab1521d2b6f0dc208c50,Will Saints D/ST finish as a top-5 D/ST in the 2026-27 NFL season?,運動／電競,212.03,0.0,0.0,0.0,0.0,0.0
+0x5064e69e8cb26a3047c50459f220079f367cbb38d36fff689377c0f9f24b2a5f,Will the Republican Party candidate win the 2026 AZ-08 House election by 6%-9%?,政治,436.38,0.0,0.0,0.0,0.0,0.0
+0x2c97e9ad07a1b4428304841efb3a7439f75ded956cf3401a43f876acdd65f526,Will the Los Angeles Rams have more than 11.5 wins during the 2026 NFL season?,運動／電競,18.74,0.0,0.0,0.0,0.0,0.0
+0xd64fb30bc643568b7a32ed9b0c99b6e669a80fe8547ff4dfe73298d73728305e,"Will Drake Maye have 4,049.5+ passing yards in the 2026-27 NFL regular season?",運動／電競,211.61,0.0,0.0,0.0,0.0,0.0
+0x5d7e7fdf48a66d25a0ec3bf2510543512f78a81b97805a437fea00576f2eb5e5,Will the Democrats win Georgia in the 2028 Presidential Election?,政治,643.57,0.0,0.0,0.0,0.0,0.0
+0xa2e967855af2fd9869096789fffb8e6acecd134ab04934dbd5f42aaea0372f92,Will the Democratic Party candidate win the 2026 New Hampshire Senate election b,政治,560.06,0.0,0.0,0.0,0.0,0.0
+0xb6ded1887f5d998d46c7f65e0f6a0b08492441e16883983475253241609b5311,Will Justin Herbert have 18.5+ passing touchdowns in the 2026-27 NFL regular sea,運動／電競,206.4,0.0,0.0,0.0,0.0,0.0
+0xf84f562199c8072399d53be3484ea158ec7b68e866a8e250c9d9a3c52f3eb4ed,"Will Elon Musk post 90-114 tweets from October 29 to October 31, 2026?",其他,382.42,0.0,0.0,0.0,0.0,0.0
+0xd6547a4649c21068964d2e629b5d98e8810f966fe4bcc0411a31a49319d5f977,Will Boston Celtics vs Houston Rockets be the 2027 NBA Finals matchup?,運動／電競,128.53,0.0,0.0,0.0,0.0,0.0
+0x5b8c050983246f8cac9ebb5d56ba69fa3e263fc9f30abd554d017ffad8039c22,Will the Democratic Party candidate win the 2026 Oregon Senate election by 30%-3,政治,291.02,0.0,0.0,0.0,0.0,0.0
+0x4a752ec3f18acd17d1cbcff7f0d363ac5e75c5439d320cf0f4c0aaff3226c178,Will the Republican Party candidate win the 2026 TX-09 House election by 12%-15%,政治,150.84,0.0,0.0,0.0,0.0,0.0
+0x38bc3cc22cdfa673df3dd1a61811c6135aa2b292859ffda4eabe55f2976c1261,Will Edward Norton be nominated for Best Supporting Actor at the 99th Academy Aw,其他,335.77,0.0,0.0,0.0,0.0,0.0
+0x776e08cb7c435845c38ed6f989f9f27e4bfe2fa5af60fbcd18fe092eaabc73d8,Will Sport Huancayo be relegated from the 2026 Peru Liga 1?,其他,93.83,0.0,0.0,0.0,0.0,0.0
+0x9d792bc03907e5c258ccf6b403080e3c502bda427151c04d3a4dd9e4a3082b3a,Will Rapid București be relegated from the 2026-27 Romania SuperLiga?,其他,93.83,0.0,0.0,0.0,0.0,0.0
+0x5a458aea3323ed72160340b5a7f0d7fdab884da9f251cc5cb393065ad7eb7ae8,Will Al Ahli be relegated from the 2026-27 Saudi Professional League?,其他,93.83,0.0,0.0,0.0,0.0,0.0
+0x6bed32b9e520bc3e2a7a6ee8eea88c4da431220178fd84ff75a8f3a4a40392ca,Will PSOE win the most seats in Toledo in the 2026 Spanish general election?,政治,304.01,0.0,0.0,0.0,0.0,0.0
+0x508a1ab191a6212c4b51946f2cc0a5dfec6f7b06892dbc67400bb7ef97d6b8f3,Will the Democratic Party candidate win the 2026 North Carolina Senate election ,政治,503.4,0.0,0.0,0.0,0.0,0.0
+0x86646cf754b06b8c287924eebd0af205e928c68c0d0fe1b86182a5636a88e988,"Next White House Press Secretary announced by December 31, 2026?",政治,813.29,0.0,0.0,0.0,0.0,0.0
+0x3293eaff17c861cdf6e2857f11f7bf2ac1055bf5b5bb70b5dede486fd892a3e5,Will Occidental Petroleum (OXY) beat quarterly earnings?,其他,160.46,0.0,0.0,0.0,0.0,0.0
+0xb04cfcc21caec60a5a2561f36c564428041e2faff8ba59baaadce345f93e7405,Will Henry Kessler win 2026 MLS Defender of the Year?,其他,199.59,0.0,0.0,0.0,0.0,0.0
+0xfb45cb3d21fa91863032ec21d5309dbf0f04be1315387600db04efd7507ff4e0,Will the Republican Party candidate win the 2026 Arkansas gubernatorial election,政治,391.52,0.0,0.0,0.0,0.0,0.0
+0xbe5e3ece1afba9154fc4c7aadaeee245e28007338674858706e0166f9d8cc854,Will Kyren Williams have 13.5+ rushing touchdowns in the 2026-27 NFL regular sea,運動／電競,200.06,0.0,0.0,0.0,0.0,0.0
+0x8f2e0ace06e50ac54558065b43e4a6292feb72f0e66bb040e85b75e1a56b62ce,"Will Sam Darnold have 3,500+ passing yards in the 2026-27 NFL regular season?",運動／電競,195.59,0.0,0.0,0.0,0.0,0.0
+0x584f0f47faaaf414ca87bd2a274db51897a8c77ab469c583685eef18a61dbebd,"Will Ja'Marr Chase have 1,000+ receiving yards in the 2026-27 NFL regular season",運動／電競,195.83,0.0,0.0,0.0,0.0,0.0
+0xba6b06f47f607a94ca4f43d4cf4e6ce5a36bc698fdd7a758d4a817b1ab9e0aca,Will the Ohio Special 2026 Senate race be within 5%?,政治,177.28,0.0,0.0,0.0,0.0,0.0
+0xdb245dc3837d2ef3bc41fc064fa6e60bb3085723ce1d3e13e9ae2a39a22fa8f8,"Will Novak Djokovic announce his retirement by November 30, 2026?",其他,18.18,0.0,0.0,0.0,0.0,0.0
+0x52e33a5414cfbdf85bd3866e084891879efa7bee62e1fc1a7a21eeb505433b97,Will Luis Donaldo Colosio Riojas win the 2027 Sonora Governor Election?,政治,44.05,0.0,0.0,0.0,0.0,0.0
+0x70d9cf6b2cbbcd26912d2c5b57972eb1c8198f369f7fd59a26bec0b2f148409b,"Will the next Grok model (4.8+) be released on November 22, 2026?",其他,18.74,0.0,0.0,0.0,0.0,0.0
+0x724afeabf057f23c5d98b57eb07dc84b8e3b2224e48afd0a546546996e3e5028,Will the Democratic Party candidate win the 2026 TX-07 House election by 45%-50%,政治,55.82,0.0,0.0,0.0,0.0,0.0
+0xf87b5497c950b4ae324e20cc02622d56b23131bd2f2f0f36a4a254b0a1f2c609,Will Morena win the most seats in the 2027 Nuevo León Congress election?,政治,325.08,0.0,0.0,0.0,0.0,0.0
+0x3a311da04811ff7c8e003f14cd0ea80a7b95b51812b604228866874e3cd002bd,Will the peak RONI for the 2026–27 El Niño be at least 2.25 but below 2.5?,其他,259.82,0.0,0.0,0.0,0.0,0.0
+0x811268c9165dd4b6ad8cb08e77689c14c4eb59aa02cbe431836c57a1ee40fbe3,Will the Republican Party candidate win the 2026 MT-02 House election by 20%-25%,政治,449.45,0.0,0.0,0.0,0.0,0.0
+0x3c79a5e90e7be7f6ea68fb615662e7962e37756a79b82a9acecf2447d09eeb0a,Will PP win the most seats in La Rioja in the 2026 Spanish general election?,政治,513.49,0.0,0.0,0.0,0.0,0.0
+0x8f6798a3a7888df49e93b87fd2d56c595aa06a215b9f99a1f4b9283113b12b3e,Will the Democratic Party candidate win the 2026 TX-33 House election by 35%-40%,政治,144.17,0.0,0.0,0.0,0.0,0.0
+0xa6c9bac85d99fddf03ea87bbffb644e8ee885a3508d5e0491ec6bbb409a8a6a7,Will the Republican Party candidate win the 2026 TX-21 House election by 25%-30%,政治,113.94,0.0,0.0,0.0,0.0,0.0
+0xccdda72e8306018ecca67bb9e051c79183fb5a9d5bd323bf3dacb0c1839ed9c1,Will Eurozone annual GDP growth in 2026 be between 1.0% and 2.0%?,總經,143.33,0.0,0.0,0.0,0.0,0.0
+0x4a6b2b80955685c765d7b213fdf86d794f48cae3a485e2dfa7265d17844fd92c,"Will Jayden Daniels have 2,999.5+ passing yards in the 2026-27 NFL regular seaso",運動／電競,185.47,0.0,0.0,0.0,0.0,0.0
+0x7d8ec7081ebac5b628ea2875a02172359e89954e6390a94a306ea8721a4e9940,Will the Democrats win Denton County in the Texas Senate race in 2026?,政治,112.52,0.0,0.0,0.0,0.0,0.0
+0x9db8905bffc0df478b336591504245614c631976329df65efd7609f32167a693,Will 1 Fed rate hike happen in 2026?,總經,1453.33,0.0,0.0,0.0,0.0,0.0
+0x3554eebd269d120f6287dbb0e4542e292a196aafb4e00803813080ff84ba5f2f,Will there be exactly 7 UK parliamentary by-elections in 2026?,政治,234.22,0.0,0.0,0.0,0.0,0.0
+0x460b2dc7fbe0d16be9f5e0b5664d2852ae0333e70f30d4b5677106e245ed6459,Will Roope Hintz record 50+ goals in the 2026-27 regular season?,運動／電競,184.17,0.0,0.0,0.0,0.0,0.0
+0xc883d2149bc9c9ddae8ef23e3c79d45bfcb53c642715ede63ac45548e1c3b710,Washington passes ballot measure restricting transgender school sports access?,其他,57.19,0.0,0.0,0.0,0.0,0.0
+0xd80479addfa69cb7aff36ccd686c2f3e95c220f8cf35b977d68c4bebb827f076,Will the Republican Party candidate win the 2026 TX-09 House election by 9%-12%?,政治,320.29,0.0,0.0,0.0,0.0,0.0
+0xbc11ee3caedaa6075883236f1bd28d54c320b37a7256c81960481c3964dce4cd,Will Quentin Johnston have 849.5+ receiving yards in the 2026-27 NFL regular sea,運動／電競,182.52,0.0,0.0,0.0,0.0,0.0
+0x2b492ca4ca0968d8dc11448f6a6f647a70109c06e3fbcb059194e97cf082cf40,Will the Republican Party candidate win the 2026 AZ-08 House election by 0%-3%?,政治,111.18,0.0,0.0,0.0,0.0,0.0
+0x3fc528be60a47068b244abbd80dd0403adb0d1c23e63a303b4fcc21478944c29,Will Gabriel Moreno win a 2026 NL Gold Glove Award?,運動／電競,183.37,0.0,0.0,0.0,0.0,0.0
+0xa4eeeff3085892d8187cf424fe8dea3d7daf17f2ba8ff23f3d321d0a2f1b92cb,Will Bijan Robinson have 12.5+ rushing touchdowns in the 2026-27 NFL regular sea,運動／電競,179.68,0.0,0.0,0.0,0.0,0.0
+0x53930ff38c0dc45e8112f0062d51206e3e5ef0575cd204beb945555ca322a3ee,Will Cason Wallace win the 2026-27 NBA Most Improved Player?,運動／電競,86.12,0.0,0.0,0.0,0.0,0.0
+0x818f13f94c138adbd6bbfe7ad758015346d10cf7ebaced4d1db6a44e8bdc268c,Will Khalil Shakir have 849.5+ receiving yards in the 2026-27 NFL regular season,運動／電競,175.53,0.0,0.0,0.0,0.0,0.0
+0xfc9128e1daabd41836f1f13fc7b9d4e3c4c40a18ac5e06ba4ae8873a13130b1b,Felix Protocol FDV above $10M one day after launch?,其他,56.2,0.0,0.0,0.0,0.0,0.0
+0x9eafb886fc86a9894cb043fe70dabb60fb22bbed93869dc1f264cb9a3de2ed08,Will the highest temperature in Tel Aviv be 26°C on October 31?,其他,366.65,0.0,0.0,0.0,0.0,0.0
+0xc92a777e0e2ed63ed49fadb24bbdb726e968eb3e7eeb0439b0a1a1a4ac1ab493,Will the Georgia 2026 Senate race be within 5%?,政治,108.73,0.0,0.0,0.0,0.0,0.0
+0x39fd100aed21fab3d2a54f8521b4d10cd2e94d27b5f1e24fd474d8bda5170760,"Will NYC Mayor post 20-39 posts from October 30 to November 6, 2026?",政治,197.99,0.0,0.0,0.0,0.0,0.0
+0x55f058100eb7f40da553636f0d5e1215bb06acc4b83223ced6e8b1e1317b8b5e,Will the Republican Party candidate win the 2026 MI-09 House election by 25%-30%,政治,76.49,0.0,0.0,0.0,0.0,0.0
+0x580b8854a9d4df7cde6f643b8243f6f742b49b2654bbd33bbff59a2cd50a82a5,Will total votes cast in the 2026 midterm election for Senator from Massachusett,政治,218.54,0.0,0.0,0.0,0.0,0.0
+0x468519aec8b2a3eff460ce3248800fa10353d685efc81fccb53538f5942a7a5c,"Next Alibaba Qwen Max (3.9+) released by October 31, 2026?",其他,55.76,0.0,0.0,0.0,0.0,0.0
+0x72ea533f9846a0e96a86c1b504ca02d9f5ecd8bddc12bc8824ca836af1b2b83d,Will there be 3+ Pentakills at Worlds 2026?,運動／電競,147.89,0.0,0.0,0.0,0.0,0.0
+0x5b4289a864973e04a35d9fc62c0eb4f5b9b37ded3b3e12584797dbdaca322158,Will the Democratic Party candidate win the 2026 VA-04 House election by 45% or ,政治,418.11,0.0,0.0,0.0,0.0,0.0
+0x487410e1ddebe13f7a988ff193cb0a7e7d1758c7af422d96c1ebfbdc87c7df27,Will UNLV Rebels Win the 2026 Mountain West Championship?,運動／電競,214.98,0.0,0.0,0.0,0.0,0.0
+0x9db477913f6629a6151e59491af47018567706bde90f57c0c76df7e3a2fb7577,Will the highest temperature in London be 13°C on October 31?,其他,18.74,0.0,0.0,0.0,0.0,0.0
+0x1cf72ab76ac1b7e6a11a0d09819786568c8b3b5b786569fc8a4021a5c8f48429,"Will the median home value in Los Angeles Metro be between $1,137,000 and $1,148",其他,18.74,0.0,0.0,0.0,0.0,0.0
+0x7fdf5acfb7c909aabc82d285077446ad96919696a03687b4e13071030cf9a734,Will PSOE win the most seats in Tarragona in the 2026 Spanish general election?,政治,74.99,0.0,0.0,0.0,0.0,0.0
+0x55a5a4b50b7947482e95af8f638fa0b8d9a46740c5cd04c6799443e83565176a,Will Apple be the largest company in the world by market cap on December 31?,其他,316.06,0.0,0.0,0.0,0.0,0.0
+0xf7d69f5dd8485f0b30912c7af107e16d4894d9aa20033f9f5d7c68228b8fa8d1,Will Sporting Cristal be relegated from the 2026 Peru Liga 1?,其他,80.01,0.0,0.0,0.0,0.0,0.0
+0xb87b54876d4d51332626ca16462d3745029298affb6935c71062f3ec5cfa1096,Will Borussia Dortmund qualify for the 2027-28 UEFA Europa League?,運動／電競,32.22,0.0,0.0,0.0,0.0,0.0
+0x96047134bc4462387466af2f205e2596f370f6d12b88937eff8d34f2a01a70ac,Will Neuralink's valuation hit (HIGH) $75B by December 31?,其他,78.5,0.0,0.0,0.0,0.0,0.0
+0x374627f9a8582b9d788b5dd316a7f5b8bb62462daad1734cdf30d02e2c00ef9a,"Will CZ post 0-19 posts from October 30 to November 6, 2026?",其他,167.82,0.0,0.0,0.0,0.0,0.0
+0x3c925581e21baef8af37ee4436e4848f88a168757d6c036e297ee2d20212880b,Will Shenzhen NINJAS IN PYJAMAS make a roster change by December?,其他,18.74,0.0,0.0,0.0,0.0,0.0
+0x0a9e0990377fad6dd541558d7d6f1ee8532dc44160806eef5b9691e7de0d65fb,"Will Kimi K3.1 Pro debut in the top 20 of the Text Arena leaderboard by June 30,",其他,311.97,0.0,0.0,0.0,0.0,0.0
+0x7eafa176e845831938ac066392de40969de846fa7ecc7b3ae784a918135e7cf7,Will the 5-year Treasury yield dip below 4.70% before 2027?,其他,312.16,0.0,0.0,0.0,0.0,0.0
+0xb6df694726967b03a6326accf0cdfd27be5058efa4ae42d1c9394aa2713a4d5f,Will the Democratic Party candidate win the 2026 VA-04 House election by 20%-25%,政治,27.26,0.0,0.0,0.0,0.0,0.0
+0x616b03ffaa6759b972f271954af938147b16e0efc7ef6c547aa075cfeb3ce80d,Will Democrats win exactly 8 House seats in Michigan in the 2026 midterm electio,政治,73.52,0.0,0.0,0.0,0.0,0.0
+0xcece7c22c9ca264d5f9b8a7fde41a339ca82f4113a9dcf1c6accf9bf01fb0501,QFEX FDV above $200M one day after launch?,其他,52.66,0.0,0.0,0.0,0.0,0.0
+0x91fdfdb81e07b3f45d2b802a0402a5f850e35fb247e414040a9209ec1285bc18,Will the Republican Party candidate win the 2026 FL-04 House election by 12%-15%,政治,217.65,0.0,0.0,0.0,0.0,0.0
+0xd0510a8f8463e5533f43daa4dfb7443e4db162d15d59e0f48bb04723726a21b1,Will the Democratic Party candidate win the 2026 IA-03 House election by 15%-18%,政治,71.72,0.0,0.0,0.0,0.0,0.0
+0xbbe152f48bb3fed01914e852a9d7616350b983108a4bee2b06e22e700f3eae82,"Will Russia enter Kramatorsk by June 30, 2027?",其他,113.83,0.0,0.0,0.0,0.0,0.0
+0x6d17f45351c467cf08c10e1c5c1e89c4889bfea0bdc27fa877c499b1c504f209,Will total votes cast in the 2026 midterm election for Senator from North Caroli,政治,223.84,0.0,0.0,0.0,0.0,0.0
+0x8bca11056a3f1c56384708350b13ed1e3840ef78a7a3675ae0c2abf7e936c93e,Will Jalen Hurts finish the 2026-27 NFL regular season with the most rushing tou,運動／電競,128.26,0.0,0.0,0.0,0.0,0.0
+0x9acbe93f685494a2b0b764fa0b93da18a59717ea6c46363556cba756421d7905,Will Mathew Barzal record 80+ points in the 2026-27 regular season?,運動／電競,147.58,0.0,0.0,0.0,0.0,0.0
+0xda7d0fff095ba30a8d8ab398386ee90f2788abc020f8b329e3ba307e4b684ee7,Will the Fed Pause-Pause-Hike in the next three decisions (Oct-Dec-Jan)?,總經,253.05,0.0,0.0,0.0,0.0,0.0
+0xdb83d6847cbae8b0e1054607e8b773f178e585e5cf23c15bd021d343851ee8e6,"Will it snow in Salt Lake City, UT by October 31?",其他,46.85,0.0,0.0,0.0,0.0,0.0
+0x8eccc708010877e4e04295386cde8637c86b33261ab6f27822e69b1ccfb707ef,Will Morena win the most seats in the 2027 Mexico City Congress election?,政治,93.56,0.0,0.0,0.0,0.0,0.0
+0x1eb9231c076edef2aa10434f425b18c49cb95acf1476d01c417db2ec52be9bde,"Will Gemini Carbon be released on November 27, 2026?",其他,164.49,0.0,0.0,0.0,0.0,0.0
+0x7b599851addb4d1222b8718cfd10393a01dd24ab92306c68bbae462546751dda,Will the Republican Party candidate win the 2026 Wyoming gubernatorial election ,政治,250.7,0.0,0.0,0.0,0.0,0.0
+0xbdfa65aaadbe697b67d5c2cf77935aed3c6974847db250a520a9ffdaa1555afd,Will the Republican Party candidate win the 2026 OH-02 House election by 0%-10%?,政治,111.63,0.0,0.0,0.0,0.0,0.0
+0x82dfd854d19b414d98caa64a7f671b9672ec5bdc79ede258ef44313f26857684,"Will Gemini Carbon be released on November 22, 2026?",其他,204.07,0.0,0.0,0.0,0.0,0.0
+0x8df6743e67b27cbdae9353fb8f7a791a3fb89e9a0e9d45c00b1ff1169d5663c1,"Will ""Wicker"" score at least 92 on the Rotten Tomatoes Tomatometer?",其他,48.08,0.0,0.0,0.0,0.0,0.0
+0x56689c737966ffc774be6932175cacd397b494b3908dd463499bc7bdddff52ba,Will Abdul El-Sayed underperform Kamala in Michigan?,其他,48.36,0.0,0.0,0.0,0.0,0.0
+0xbb247b3e7403733458948b3914f8670ca51b571a7a2f6ea7efd5ffb4e08a654c,Will Conor McGregor fight Michael Chandler next?,運動／電競,210.58,0.0,0.0,0.0,0.0,0.0
+0xeef71929e6de499b2eb34de2e56ba9283eeb867d7b7f59af6dd4a3a5476e70ff,Will Bijan Robinson finish the 2026-27 NFL regular season with the most rushing ,運動／電競,280.62,0.0,0.0,0.0,0.0,0.0
+0x935edf435df98897f8da6fcf19b6262c06a107d18dc10aa0a3b4e1f5d4d84857,"Will Chainlink reach $16 by December 31, 2026?",其他,67.49,0.0,0.0,0.0,0.0,0.0
+0xe5b46c674637d2bd8fd04841ec0dc0fe888ffcb5f3592f9d66c28fbe479ab1fa,Will the Democratic Party candidate win the 2026 TX-18 House election by 60%-65%,政治,258.0,0.0,0.0,0.0,0.0,0.0
+0xca244eb30e09c219c946f1cb7350e11752335414195fdac05f5038e65463a79e,Will the highest temperature in Lucknow be 22°C on October 31?,其他,95.95,0.0,0.0,0.0,0.0,0.0
+0x10b5db9b413eff04aa69692bf7c834d16321bdf5ebc774b4adbf7ed3c37da329,Will Verónica Díaz Robles win the 2027 Zacatecas Governor Election?,政治,167.12,0.0,0.0,0.0,0.0,0.0
+0x4ad4ce47d74e2af712c2e16749630cf88a5ee2936aa92b6171e91aad6e233933,Will total votes cast in the 2026 midterm election for Senator from South Caroli,政治,176.32,0.0,0.0,0.0,0.0,0.0
+0x09ca265f228f618fe2dcba22324b1c9f7b4a16045eb64eb8f5a2cc7eb809eb9d,"Will CeeDee Lamb have 1,399.5+ receiving yards in the 2026-27 NFL regular season",運動／電競,135.09,0.0,0.0,0.0,0.0,0.0
+0x24822e058ca43c85b00a54f46b55260f17369788aa354183971fb1274bd0d71f,"Will Aaron Jones have 1,000+ rushing yards in the 2026-27 NFL regular season?",運動／電競,132.54,0.0,0.0,0.0,0.0,0.0
+0x9668e92f98ea6db7b505c54acfd5cbff6ce7e104cf51a92a459b7aa32228494c,Will Boaster play for Gentle Mates in 2027?,其他,209.45,0.0,0.0,0.0,0.0,0.0
+0x492fb7f725ad6bbff8ce10bfbc75119599b958f7459b3e15241af33b809eaa08,Will Turkey Move on a New Constitution in 2026?,其他,34.49,0.0,0.0,0.0,0.0,0.0
+0x27a97d1adfde916acf1866fab3c9da709cfa9c307e5bae334a5d0e4555277ca6,Will the ECB announce a 25 bps increase at the December 2026 meeting?,總經,117.99,0.0,0.0,0.0,0.0,0.0
+0xaa88413db9dfd2bc8e963c5cef92de3fb6d6f2b4b5b0b12bcd4f232fb611fe3d,Will total votes cast in the 2026 midterm election for Senator from Idaho be bet,政治,262.02,0.0,0.0,0.0,0.0,0.0
+0x27348fb53620c9fa2ecccc9772a18c484f43c1e031f8ad5da9d8fff307d2195b,Will Bo Nix have 30+ passing touchdowns in the 2026-27 NFL regular season?,運動／電競,42.28,0.0,0.0,0.0,0.0,0.0
+0xb41e24a4f5152106509070827f6428ab8fd47412b272013b9f4853090ec1f4e7,Will the Democratic Party candidate win the 2026 AZ-01 House election by 6%-9%?,政治,213.47,0.0,0.0,0.0,0.0,0.0
+0xe7a4511417bc968a1f95c64dcc9a2d3651be1bf6cdf81989d7fd7d8003dd8bfe,Will Hanwha Life Esports Make the Worlds 2026 Grand Final?,運動／電競,143.7,0.0,0.0,0.0,0.0,0.0
+0xea32480b703203e9ff94bcd022a65cd398478bf9124201b28dad6b9baf65ec2f,Will Nick Suzuki record 80+ points in the 2026-27 regular season?,運動／電競,128.36,0.0,0.0,0.0,0.0,0.0
+0x15c05c313a5a2743d3400b8f7250c418a94a8b6ed16fadf6ad29542d1673014b,Will there be at least 6000 measles cases in the U.S. in 2026?,其他,142.57,0.0,0.0,0.0,0.0,0.0
+0x3c0e344cc87079a153316124b2b7a48fa23d7be1e3f75128d80746b596bcd5f5,Will Andrés Reyes win 2026 MLS Defender of the Year?,其他,62.9,0.0,0.0,0.0,0.0,0.0
+0xc15090dda01be193376724a35bcd8e37abc1f1ff24132fe338707217113268b7,Will Sam Darnold have 30+ passing touchdowns in the 2026-27 NFL regular season?,運動／電競,41.69,0.0,0.0,0.0,0.0,0.0
+0x6d495b41a9ed33d8601f0762c20949880b56653df92d374fe31f7777d0ed2059,Will the South Carolina 2026 Senate race be within 5%?,政治,84.76,0.0,0.0,0.0,0.0,0.0
+0x3cbac2db9eb8938fc121e7e44ed29980414ad3cbc6eff7af4c5cece316d6d2ed,"Will the next Claude Opus model (5.6+) be released on November 12, 2026?",其他,82.62,0.0,0.0,0.0,0.0,0.0
+0x783c4b97dd4b83f7fcb04da5bc3c6b841380020f450a810e0997f64e3b99d5e6,Will Nazem Kadri record 50+ goals in the 2026-27 regular season?,運動／電競,41.32,0.0,0.0,0.0,0.0,0.0
+0x4eca7d239d8597122c9d00ff8d8c09787d4deb767ec303e501b384f2d0a0c827,Will total votes cast in the 2026 midterm election for Senator from Colorado be ,政治,99.57,0.0,0.0,0.0,0.0,0.0
+0xd5aaf0018e610a10a083e6c6e0a5d4f08eb6c5af64b0e23c28acd225a57dec00,Will PP win the most seats in Seville in the 2026 Spanish general election?,政治,45.45,0.0,0.0,0.0,0.0,0.0
+0xd4443ac9fe6bfdeeab2c2efd2b1dd17325bcf1e9f4c5475a81bc66879b56d698,Will the Democratic Party candidate win the 2026 Illinois gubernatorial election,政治,151.13,0.0,0.0,0.0,0.0,0.0
+0x51f4044ebd263bdda842182cafa66d43ba3f33e0bee26de5cb7596bc12c12f7a,Will Mary Peltola win the 2026 Alaska Senate final round by 3%-6%?,政治,329.78,0.0,0.0,0.0,0.0,0.0
+0xb409ea3667dadefb6e895e924d9cdbcb29f2a60a3cff56bf9433465d491f6088,"Will ""The Birthday Gift"" be nominated for Best Live Action Short Film at the 99t",其他,43.23,0.0,0.0,0.0,0.0,0.0
+0xeea599c9e51d840f2d42e3149465f094e3801ca797dcc0016769f1bfb632024d,Will PRI win the most seats in the 2027 Mexico City Congress election?,政治,45.45,0.0,0.0,0.0,0.0,0.0
+0x37d535b12409528805a0fce0e7a44a94a0b8008943d032440b1ead091243d908,Will Real Madrid finish as runner-up in the 2026-27 UEFA Champions League?,運動／電競,120.88,0.0,0.0,0.0,0.0,0.0
+0x6f4e87654af85b13ffc66ebbbff27c85a1bd37c5b01868adccf40c18a90d6b5a,Will total votes cast in the 2026 midterm election for Governor of Maryland be b,政治,175.31,0.0,0.0,0.0,0.0,0.0
+0xe56b73034a1a9f49ecfa624e9d9ca7e2a6e770e8b1881a0062725567c7ee7bff,Reya FDV above $150M one day after launch?,其他,43.05,0.0,0.0,0.0,0.0,0.0
+0x08f14a4e0bce4ee1c77877d9db24d03401b66d07c1905fd660cb6dbb46fb00e1,Arc FDV above $4B one day after launch?,其他,42.66,0.0,0.0,0.0,0.0,0.0
+0x4a944e0e313679a3903902332a0fdf378d05d22359c4e6d90dbcd7378aba8b11,Will Republicans win the Michigan and Ohio Senate seats?,政治,155.68,0.0,0.0,0.0,0.0,0.0
+0xb3bb2c8065e8192b3d9bc6744fe17ac6e361f89e7e349718e235bade77a5ddc0,Will Yaxel Lendeborg win the 2026-27 NBA Rookie of the Year?,運動／電競,154.82,0.0,0.0,0.0,0.0,0.0
+0x16a377c81225f0cb79c90f322239079a06e079221c7e296a713bb6bb1c7f5420,Will the next governing coalition of Sweden include S + MP?,其他,87.82,0.0,0.0,0.0,0.0,0.0
+0x550fafba5cb05b159753cdfa4e60235b8c2a47d6908332854a8db633e0f05b2e,Will Minnesota Vikings finish the 2026-27 NFL regular season with the most sacks,運動／電競,85.17,0.0,0.0,0.0,0.0,0.0
+0x9a0e4aae823b690dfdaf47fd7625919bc7d626f414ebec46df06c99f400c1246,Will Silver (XAGUSD) hit (HIGH) $64 in November?,其他,18.74,0.0,0.0,0.0,0.0,0.0
+0xf51f23364a5ab3dffa790f83646beda7abc242d8356aafe75f793aa8a48b7564,Will Alphabet’s market capitalization be between $4.00T and $4.50T at the end of,其他,75.49,0.0,0.0,0.0,0.0,0.0
+0x6a7fe7d885b791860ea19844651e453ca949d4908bec4c64c2504611edea2dc5,Will the Republican Party candidate win the 2026 TX-27 House election by 0%-5%?,政治,92.65,0.0,0.0,0.0,0.0,0.0
+0xa82ff3ef92f0436cc7e40c20441938f434b076509934272eeb80817af5593a8b,Will Democrats win exactly 19 House seats in New York in the 2026 midterm electi,政治,59.06,0.0,0.0,0.0,0.0,0.0
+0xd1b059ad277899135cba1cfeb04203792e3758d41fc9d50e07de8292b6f57829,Will the Republican Party candidate win the 2026 KY-01 House election by 0%-15%?,政治,58.56,0.0,0.0,0.0,0.0,0.0
+0x336fb86ec5b042f064cb57a5393f4c5c86a7685e86eaf58c881ae8b060765897,"Will ""Dog Alone"" be nominated for Best Animated Short Film at the 99th Academy A",其他,83.92,0.0,0.0,0.0,0.0,0.0
+0x8259480f1436f12e68626ab9256d8faec95a7f30c80552c53b8b231a9e83efca,Will Lula announce the nomination of an individual for Minister of the Supreme F,政治,102.68,0.0,0.0,0.0,0.0,0.0
+0xd22e62062c2f9ef1e983b93ca4577c32e725a189401d47c8fbaebf831d819440,Will the Democratic Party candidate win the 2026 MD-04 House election by 70%-75%,政治,75.06,0.0,0.0,0.0,0.0,0.0
+0x4927cfa260f9ad6f199b511952a2a9f51c0453c3e437a565f7e11ce717eeaaa2,"Will the Ornn A100 Index be between $1.00 and $1.25 on November 30, 2026?",其他,47.77,0.0,0.0,0.0,0.0,0.0
+0x633343039d1f01cbf9d1946286d61caff7423fe5600ce8aec7e319cbcfab21cf,Will total votes cast in the 2026 midterm election for Senator from Delaware be ,政治,209.93,0.0,0.0,0.0,0.0,0.0
+0x28fb5b4842ab61d012ff35e3bf5245569c1ee70bd7fba8249c785947c0302265,Will the Republican Party candidate win the 2026 MN-08 House election by 3%-6%?,政治,112.71,0.0,0.0,0.0,0.0,0.0
+0xae86d395a9369fa3eca1dd1df68dbeb5696fd534499f833d9dc68166d4a257d6,Will the US add between 75k and 100k jobs in October?,總經,55.1,0.0,0.0,0.0,0.0,0.0
+0x36cf2f7f117e913b55b971350121f051048496648e22f2a69e2da6ee338dfc46,"Will Gemini Carbon be released on November 5, 2026?",其他,173.76,0.0,0.0,0.0,0.0,0.0
+0xae52f08d01ba02bf924646536ad0a5bda06aa8ea54d8db0f14a5f565747482a5,Will the highest temperature in Singapore be 34°C on October 31?,其他,37.64,0.0,0.0,0.0,0.0,0.0
+0x514f1a358017355a504fcb9f4e369ee8b66c00bdf0fb52d31c9af1b0fa4cc000,"Will ""How to Write a Song About You"" from Power Ballad be nominated for Best Ori",其他,139.62,0.0,0.0,0.0,0.0,0.0
+0x4dfc5c3df64c92f0232378583cdb44b2ea75e05d1cb2c798d101dbb8698c0307,Will the highest temperature in Ankara be 18°C on October 31?,其他,44.48,0.0,0.0,0.0,0.0,0.0
+0xc196a2c1ae4c004cf13da671e511d19fd272f5e6a440c43596a688fdd799f49d,"Will Chuba Hubbard have 1,000+ rushing yards in the 2026-27 NFL regular season?",運動／電競,101.91,0.0,0.0,0.0,0.0,0.0
+0x21e0fbb94b001fd0be56d42b4761b6b3d8e1e70d79e5006eae204ccb1761d7dd,Will Tee Higgins have 10+ receiving touchdowns in the 2026-27 NFL regular season,運動／電競,102.02,0.0,0.0,0.0,0.0,0.0
+0x6dcfdb2ea6a557609991bbd17252d68906c0aa63c0eab29381c55505e6ebaf1d,Will there be at least 5500 measles cases in the U.S. in 2026?,其他,18.18,0.0,0.0,0.0,0.0,0.0
+0x55a50ce88443a051d8c405ad0b036df3fa297bad458c22d7c150d6a45fd88a1a,Will gas be below $3.75/gallon in any state on October 31?,其他,18.18,0.0,0.0,0.0,0.0,0.0
+0x267165097bce802e8c35d55168ba8f739cf63fda0e6a1d4c9b080296af90a42d,"Will XRP hit $2 by December 31, 2027?",加密貨幣,77.51,0.0,0.0,0.0,0.0,0.0
+0xacce9e3e03985a6712d958b467060e9eb60df2b94cf77eb69c89854e2fa98e7d,"Will Donald Trump post 120-139 Truth Social posts from October 27 to November 3,",政治,67.67,0.0,0.0,0.0,0.0,0.0
+0xa066eb661421af3df5016345bb2a0dea8d24a468aaba108d1c0a6aab0545e71d,Will the Minnesota Wild record 110+ points?,運動／電競,98.09,0.0,0.0,0.0,0.0,0.0
+0x10ab8d8beb55929d465b5df48647f6d90b03aea3fd0a88c6c34e9706b3778d20,Will Democrats win exactly 10 House seats in New Jersey in the 2026 midterm elec,政治,67.5,0.0,0.0,0.0,0.0,0.0
+0x28922a5eb28d0909bafc625779bf01c08eb1673c60b0183d678bb3417b191cf2,"Will Florida's ""Save Our Homes from Excessive Property Taxes"" referendum pass in",其他,27.8,0.0,0.0,0.0,0.0,0.0
+0x6e3e424f299871f2137fb9d3fe1d96b09d365362cdc53302ecb48206ec234540,Will total votes cast in the 2026 midterm election for Senator from Nebraska be ,政治,187.84,0.0,0.0,0.0,0.0,0.0
+0x279291736878dc58d155b4a7be44c71144c41b80e1af6d1f16386311907a5e29,"Will GPT Astra 6.1+ be released between November 9 and November 15, 2026?",其他,92.06,0.0,0.0,0.0,0.0,0.0
+0x7210dba6e9af0096b31e431cccb4ddd508f7fe0d9c5f3b3baf55fd8fdcef8576,Will Anthropic be the second-best Code Arena | WebDev AI lab at the end of Decem,其他,35.05,0.0,0.0,0.0,0.0,0.0
+0xb71df19c2ee703ce803837ad9de62392a99c67da94d17aa98c715382e8ba19d9,Will the Democratic Party candidate win the 2026 FL-04 House election by 0%-3%?,政治,31.8,0.0,0.0,0.0,0.0,0.0
+0x0a74bf128e545725afe2c28807a1084e284b6cc26c02f01dfd99e609a0cacc45,Will the Republican Party candidate win the 2026 AL-01 House election by 35%-40%,政治,31.6,0.0,0.0,0.0,0.0,0.0
+0xe9e62910865a6c74b6c56085bfd198a61dfa10806e7554df5c82dfb0f458da21,"Will ""Forza Horizon 6"" win Ultimate Game of the Year at the 2026 Golden Joystick",其他,34.47,0.0,0.0,0.0,0.0,0.0
+0x0e66a41aa0e67684d9c36acd743051da37132b91e4e3cce4fd2fc2b8c4296272,Will the Republican Party candidate win the 2026 Texas gubernatorial election by,政治,201.37,0.0,0.0,0.0,0.0,0.0
+0xbe91fb5f94bce3e9e0f8e1ee13033c2e3a35bb9bededbbb43de5bf28d79478b0,Will Nate Sheppard be the 2026 D1 Rushing Yards Leader?,其他,51.68,0.0,0.0,0.0,0.0,0.0
+0x9037b8455f73c577090dfd64a96ca3e017aed55c14a6855e619584ee8b92de7d,"Will ""Digger"" be nominated for Best Makeup and Hairstyling at the 99th Academy A",其他,124.41,0.0,0.0,0.0,0.0,0.0
+0x757de3fd1be3a0d921e9e0d5285af3b6d3904feee8cb521e042c2294103af39d,Will the Democratic Party candidate win the 2026 MA-06 House election by 35%-40%,政治,48.93,0.0,0.0,0.0,0.0,0.0
+0x08140e346670e4a2950c4be026433dbb01e6240a5bfdca11939a978d304e032c,Will the Republican Party candidate win the 2026 IN-02 House election by 20%-25%,政治,49.25,0.0,0.0,0.0,0.0,0.0
+0x84a0748ce75b95f5c5b92655cdcf1514d552cdd642d56247a8002e1ed1f745cd,Will Will Anderson Jr. win the 2026 NFL Defensive Player of the Year award for t,運動／電競,110.04,0.0,0.0,0.0,0.0,0.0
+0xd9bd52684989946bf257a8fb4f5591bbe93ebee2c62cd958580ed87a12b78591,Will the Republican Party candidate win the 2026 PA-04 House election?,政治,47.54,0.0,0.0,0.0,0.0,0.0
+0xbac0af08637f25aae0d661b4f270626a57b2a3a65f81a26c2e4d6deee89edf51,"Next US-Iran senior diplomatic meeting by December 31, 2026?",其他,219.49,0.0,0.0,0.0,0.0,0.0
+0xd7efc6fe4ca27e5da30c9d8d89e42cb616250895459f61aa67ad3ca6b033eec2,Will total votes cast in the 2026 midterm election for Senator from Texas be bet,政治,89.01,0.0,0.0,0.0,0.0,0.0
+0x8eddc3d5822d34581ea7f27e1b41aa518d29e8a4394f932729910d8a443dca47,Will Kimi Antonelli win the 2026 Action of the Year?,其他,63.43,0.0,0.0,0.0,0.0,0.0
+0x2999da585e35489ab7a1ba6930970848d85ddfb56d3572eaa1ee2d7df411faf5,Will the Democratic Party candidate win the 2026 MA-06 House election by 30%-35%,政治,45.55,0.0,0.0,0.0,0.0,0.0
+0x31e3117aeb8965c5c742ec6d5e375268826e9208cc625d00a89821b9617bc6e3,Will Jahmyr Gibbs have 14.5+ rushing touchdowns in the 2026-27 NFL regular seaso,運動／電競,83.8,0.0,0.0,0.0,0.0,0.0
+0x93cd654e90be5755462dbc20988ea53c64ac16f207b17d736b5253381ae0b561,"Will XRP hit $2 by September 30, 2027?",加密貨幣,64.76,0.0,0.0,0.0,0.0,0.0
+0x88a229d4ddd85174f994776eb56a9b36c9716fc140305c98f7c42759444373b4,Will Jesse Love win the 2026 NASCAR O'Reilly Auto Parts Series championship?,運動／電競,62.23,0.0,0.0,0.0,0.0,0.0
+0xf409e8c538b0f10df69d107fd544d78add60f72e62dea6f107f28cd26f729731,Will the Republican Party candidate win the 2026 Georgia Attorney General electi,政治,181.24,0.0,0.0,0.0,0.0,0.0
+0x36c84305fac251d25e37092b1ff3104bad9aee66e9c9c4c7a6f45660952ed4f3,Will Riccardo Orsolini (Bologna) be the top goalscorer of the 2026-27 Serie A se,運動／電競,46.85,0.0,0.0,0.0,0.0,0.0
+0x8f0fc12bc37e4e373bc48de44661a974060d4d150258049ce48f3d014b1ecccf,Will Cale Makar record 80+ points in the 2026-27 regular season?,運動／電競,82.2,0.0,0.0,0.0,0.0,0.0
+0x515155dc9997b73728b424721ea4538cad0de3aad6dd1ceba6277e9fc882276d,Will the Republican Party win the NC-03 House seat?,政治,108.98,0.0,0.0,0.0,0.0,0.0
+0xa1f22f808acae41794e5a8dc3b8ca55f52859fd967b46f7a6587c0d5b79ff3df,Will Katie Zacharia be officially given a new role in the Trump administration b,政治,74.58,0.0,0.0,0.0,0.0,0.0
+0xbbd3a0e2bf9512aca0676b07657e6056a1a7d90efc0d03cff8ad4e84562b4d4d,Will the peak RONI for the 2026–27 El Niño be 2.5 or above?,其他,98.45,0.0,0.0,0.0,0.0,0.0
+0x816ec3b3211089197c974b8f8c782850546a1d710424bd260cf210fef7b86e57,Will Joan García (Barcelona) record the most clean sheets in the 2026-27 La Liga,運動／電競,150.8,0.0,0.0,0.0,0.0,0.0
+0x56fd872248b3702f4cb1eef91e4808dd987ba0f059b0938b0b293878b699c51a,Will Guadalajara (Chivas) finish the 2026-27 Liga MX season with the best combin,其他,55.11,0.0,0.0,0.0,0.0,0.0
+0x09d51680e0f469bbcda418e9b38c2605af588c8d33644efb0335df377ab66253,Will Meta be the third-best Code Arena | WebDev AI lab at the end of November 20,其他,36.36,0.0,0.0,0.0,0.0,0.0
+0x72b6409b8f80c0671b2f42c41659f81e27f15d87023663e330be00d20542f4fd,Will Trevor Lawrence have 25.5+ passing touchdowns in the 2026-27 NFL regular se,運動／電競,78.82,0.0,0.0,0.0,0.0,0.0
+0xee48589a648ccd8ec05490d8db55745e7b827609d859dae0ffa04ea89efa1545,Will the Republican Party candidate win the 2026 TX-06 House election by 20%-25%,政治,64.26,0.0,0.0,0.0,0.0,0.0
+0xb14739855c9bc91f7df3c27939a2e9ab0938f74211b423907c252bc1886a1785,Will the Houston Rockets finish with the worst record in the NBA in 2026-27?,運動／電競,46.47,0.0,0.0,0.0,0.0,0.0
+0xbc6a179c0be3a9638596b693d6ad460fc2e06a61a2b0876588e732f2efca0f69,Will the Republican Party candidate win the 2026 South Dakota gubernatorial elec,政治,27.5,0.0,0.0,0.0,0.0,0.0
+0x03e248d8ab48bf5b9f91c6f052ecae10954d24285e01c925ac569fa853cbab8d,Will Indiana Hoosiers Win the 2026 Big Ten Championship?,運動／電競,45.81,0.0,0.0,0.0,0.0,0.0
+0x4e8c5e7b0333b288545082865ea82902d09ebc7be2f1e9f8e5a5da3c29c7d3f5,Will Brian Thomas Jr. have 724.5+ receiving yards in the 2026-27 NFL regular sea,運動／電競,29.66,0.0,0.0,0.0,0.0,0.0
+0xa31af342d01d5e4a44052e5caabfddd02d24eb5de227f71fcf35717fc1fdcfd9,"Will Prime Intellect launch a token by December 31, 2027?",其他,28.43,0.0,0.0,0.0,0.0,0.0
+0x9493f6ed7cda5225450336ab4e743ddf9a1b0ebcbdbb98c4341bb0132306e332,Will Skuba play for NRG in 2027?,其他,94.9,0.0,0.0,0.0,0.0,0.0
+0xdd8827fdc1546037ec98ec5c6544af5ed39e0213680574b95586e81725d2ffe6,Will the Republican Party candidate win the 2026 OK-05 House election by 5%-10%?,政治,108.49,0.0,0.0,0.0,0.0,0.0
+0xb116dd4dbdfb2a74506b87f51a41cf31374b03cc2bfcb46c5be2d194eadb3714,Will the Democratic Party candidate win the 2026 GA-13 House election by 40%-45%,政治,39.62,0.0,0.0,0.0,0.0,0.0
+0x60d678e65876f094783e1c436ca33d6dfd07cd09e37d1e1ac08c0392f383d293,Will Jawgemo play for Leviatán Esports in 2027?,其他,39.9,0.0,0.0,0.0,0.0,0.0
+0x3e09f992bf1b5985e48c0896caaf29dd759447470515bb2f533260915f1085ad,Will Diosdado Cabello win the next Venezuelan presidential election?,政治,66.59,0.0,0.0,0.0,0.0,0.0
+0x9577d8037553673de9d1965915f9587969df3a067b30b0a71f2c892943cb7cb1,Will the Republican Party candidate win the 2026 NC-05 House election by 0%-3%?,政治,71.91,0.0,0.0,0.0,0.0,0.0
+0xc49565671d203fc09f1a600d596c07dbb43a2a66886b7d001df8ce318ea7a264,"Will Democrats win the Michigan, Minnesota, and New Hampshire Senate seats?",政治,49.08,0.0,0.0,0.0,0.0,0.0
+0x183fd6676f0b38678cd2657431038b9f704c8e43a6bcb70a24be2f22eb4d77e5,"Will Jaylen Warren have 1,000+ rushing yards in the 2026-27 NFL regular season?",運動／電競,69.43,0.0,0.0,0.0,0.0,0.0
+0x34cf91b0a41c097109767a821ceba3a367ad0301d40e1d9ebb3858a697d12c06,Will Cusco FC be relegated from the 2026 Peru Liga 1?,其他,34.79,0.0,0.0,0.0,0.0,0.0
+0xf822d52a3e73aab9c83f99bfe8d076cc5c953ac9a36399e56d858de94efaf731,Will Google have the best Math AI model at the end of November 2026?,其他,48.15,0.0,0.0,0.0,0.0,0.0
+0xa4969a4d4e675fbede98e888d50d93d10371d101d257514d717f7c7df769133f,Will the highest temperature in Shanghai be 25°C on October 31?,其他,53.01,0.0,0.0,0.0,0.0,0.0
+0x049db92830f9796c71df179bd752aa9681b982d15fd178c88326f48ec276c249,Will Adam Fantilli record 50+ goals in the 2026-27 regular season?,運動／電競,26.65,0.0,0.0,0.0,0.0,0.0
+0x8bdf307dc052ffb9b13bbdae9e542413feecc8a37b12bc0f75595e767a2ed477,Will Jordan Kyrou record 50+ goals in the 2026-27 regular season?,運動／電競,26.65,0.0,0.0,0.0,0.0,0.0
+0x5e2ce1a717901638ea0a4bb5ea83189115cd5a64e625c0c5f64e4276e9b3169a,Will Core CPI MoM be 0.1% in October?,總經,36.25,0.0,0.0,0.0,0.0,0.0
+0x16b94a16bb86bcaee52e171355bd477cca27333ec1fd2c78750fd19a2c1e7d59,"Will Solana hit $150 by December 31, 2027?",加密貨幣,51.36,0.0,0.0,0.0,0.0,0.0
+0xe9ddb47cad465880df3a18f36414fdb657c23a1138e9bdbda9030288802c7d2c,Will Jordan Love have 30+ passing touchdowns in the 2026-27 NFL regular season?,運動／電競,66.58,0.0,0.0,0.0,0.0,0.0
+0x0f174610039e95477449c7e79f106ad79b014446ac05794d50a8cd51c0e10a65,"Will ""Ebenezer"" score at least 30 on the Rotten Tomatoes Tomatometer?",其他,27.27,0.0,0.0,0.0,0.0,0.0
+0xb7bcef42153aef4a5bac716995167bade18a27ccaaf4b6539282f4ef8e12e96a,"Will Matthew Stafford have 4,249.5+ passing yards in the 2026-27 NFL regular sea",運動／電競,63.68,0.0,0.0,0.0,0.0,0.0
+0x7f5654a6499f766492d9d396bcfb54a450a1e3ef46f799b4543a83e569deb675,Will the Republican Party candidate win the 2026 AR-02 House election by 5%-10%?,政治,95.24,0.0,0.0,0.0,0.0,0.0
+0x0214f7ca762a121f3309fe11905bc77423b79bf80e6d982c8ba0e2f9ab02c2e0,Will the Democratic Party candidate win the 2026 IL-10 House election by 40%-45%,政治,22.66,0.0,0.0,0.0,0.0,0.0
+0x8017ec26d18e7594ff0a1540c0e7ad1972e8ff5979c5cb0dfd29d1db6643c799,"Will Marvin Harrison Jr. have 1,000+ receiving yards in the 2026-27 NFL regular ",運動／電競,24.5,0.0,0.0,0.0,0.0,0.0
+0xf365f602c4816b8bc2555153632bf16c3fb3ee95faea080aae1ed83c8811f77f,Will AC Horsens be relegated from the 2026-27 Denmark Superliga?,其他,30.9,0.0,0.0,0.0,0.0,0.0
+0x14b4b947357297a25db37c10252062de8a01ce98c23f659688344f62444b3185,Will Parker Posey be nominated for Best Supporting Actress at the 99th Academy A,其他,45.45,0.0,0.0,0.0,0.0,0.0
+0x297acb456e28e20c40a1ce49d7ee3fda6aaea36c0c5915bea1448c0a27fd12a8,Will the San Francisco 49ers have more than 9.5 wins during the 2026 NFL season?,運動／電競,23.97,0.0,0.0,0.0,0.0,0.0
+0x4e4934d441585dbfbc02d375ca524efea6f78af22e83e07d081693e53b35c6e4,Will Frances Tiafoe Qualify for the Nitto ATP Finals 2026?,運動／電競,59.85,0.0,0.0,0.0,0.0,0.0
+0xdfb9ede62f1d118beae01dc709e2706c1a23a2432532046fd49f77851f13d427,Will the Washington Wizards make the 2027 NBA Playoffs?,運動／電競,58.38,0.0,0.0,0.0,0.0,0.0
+0xac36d93ebe36d4e7222072a9c7c20f0b1b309f3b3ddf335f050e47166a1b7cae,Will the highest temperature in Beijing be 10°C on October 31?,其他,37.62,0.0,0.0,0.0,0.0,0.0
+0xc1507c7fed252b8bd05f0d8b22a7c9f16c22e598bb0b1b90992c6c9658960f28,Will Nick Pappas win the 2026 Denton County Judge election?,政治,31.91,0.0,0.0,0.0,0.0,0.0
+0x40b87e57753d8bf61393140c5d983fbc1b4028d7fa7d6d4c8746e8e4cd37ad43,Will OpenAI’s valuation be between $1.20T and $1.30T at the end of November 2026,其他,27.97,0.0,0.0,0.0,0.0,0.0
+0x09256fe9625c03a103ce96fdc41a4089d8b3c380006d0da4583f7a0759ab66e7,"Will AVAX dip to $6 by December 31, 2026?",其他,27.63,0.0,0.0,0.0,0.0,0.0
+0x1ae465aa8b9d3272acdaf7d87705d54ca699d91e20dcb9e8abf0a23fb3599cee,Will the Republican Party candidate win the 2026 Vermont gubernatorial election ,政治,116.77,0.0,0.0,0.0,0.0,0.0
+0x71fa6c97c3b15e981045220c86d373f9b3245ef41d5acd4839d1e4d97f1d8017,Will David Montgomery have 3.5+ rushing touchdowns in the 2026-27 NFL regular se,運動／電競,52.23,0.0,0.0,0.0,0.0,0.0
+0x2af917e1a200cbdb1c9f9d53320b7130c65eadcb8a5b9081db8c1b3b77ffac7f,Will the Republican Party candidate win the 2026 PA-09 House election by 0%-10%?,政治,29.1,0.0,0.0,0.0,0.0,0.0
+0x3a13d7b6d2a6e947f5b7353dc63f35f54557cb9acc4b16e88520ba25d5939272,Will the Democratic Party candidate win the 2026 WI-01 House election by 12% or ,政治,52.58,0.0,0.0,0.0,0.0,0.0
+0x279ee62fe20e42dad27c37a0161e91cf9d4438771c12a24ad5ff97700cd40335,Will Connor Bedard record 80+ points in the 2026-27 regular season?,運動／電競,51.07,0.0,0.0,0.0,0.0,0.0
+0x7d639f2b3f6da650e8e5e43bef24f1e4bb46c568337847f0ec05e8256fb9b821,"Will Justin Herbert have 3,500+ passing yards in the 2026-27 NFL regular season?",運動／電競,51.07,0.0,0.0,0.0,0.0,0.0
+0x90037a27897edd233df9922ac7ceb829f96f7310186ad4a6c804d828d7fb0801,"Will the next Gemini Flash-Lite model (3.6+) be released on November 8, 2026?",其他,35.48,0.0,0.0,0.0,0.0,0.0
+0xba528324eeaab3830fe22307c2d3f580be9772ea8e815ae3f78acdec4d560a27,Will Core CPI MoM be 0.3% in October?,總經,39.93,0.0,0.0,0.0,0.0,0.0
+0xb91a3afec423097bfe91d41595ac5d09f5d71289dcbce36c441c89a11bf942ef,Will the Republican Party candidate win the 2026 OH-15 House election by 9%-12%?,政治,18.74,0.0,0.0,0.0,0.0,0.0
+0x5085c588d552c9982a6250046d5170616a3ac05694646c411178719fc084de1e,Will the Republican Party candidate win the 2026 FL-17 House election by 25%-30%,政治,40.32,0.0,0.0,0.0,0.0,0.0
+0xdf25fc07b4951aeb2efd907d04d322b0fb949c6c945143266bbf533c24637477,Will total votes cast in the first round of the 2026 midterm election for Senato,政治,18.74,0.0,0.0,0.0,0.0,0.0
+0x4127f212056ce184124303ec79707eb39bddb4f367617c25a13b5e450ef602d7,Will Layne Riggs win the 2026 NASCAR Craftsman Truck Series championship?,運動／電競,91.89,0.0,0.0,0.0,0.0,0.0
+0xc5040e97d4640c8621b54802470679bcd5f952185294c7bf865eaeff181b827c,Will the Republican Party candidate win the 2026 WY-AL House election by 25%-30%,政治,53.16,0.0,0.0,0.0,0.0,0.0
+0x104494bd92de65529eca6bf3165de0beca8139389a00fed8aaa210c59005778e,Will Luka Doncic lead the NBA in efficiency (EFF) per game in 2026-27?,運動／電競,39.52,0.0,0.0,0.0,0.0,0.0
+0x4f79d83f6ddc4eddfe935c912fc2cee55caba03a0f5ce1f4255d19102a1bdcb3,Will the Democratic Party candidate win the 2026 AZ-06 House election by 9%-12%?,政治,18.46,0.0,0.0,0.0,0.0,0.0
+0xffb48771c43a54d0fca335e83eb069b60c164002c3bd8d0c9a2e878786e8493c,Will Vox receive between 18% and 20% of the vote in the 2026 Spanish general ele,政治,45.45,0.0,0.0,0.0,0.0,0.0
+0xf990b9cbdf7a6eada98ac46722b225c059df227719a9fdf0739e4eed7130a921,Will Mark Scheifele record 80+ points in the 2026-27 regular season?,運動／電競,41.64,0.0,0.0,0.0,0.0,0.0
+0xf8c3e4e426a7bcb917455a1894f717cbcc938992fd6c025caa9cae6c1fbc7288,Will commitments to the 1W public sale exceed $50M?,其他,20.31,0.0,0.0,0.0,0.0,0.0
+0xc922164e36575e084705f9bbba89b8f1678999ff61bef84c16053ebe9ca8a963,Will the Democratic Party candidate win the 2026 MD-05 House election by 50%-55%,政治,18.46,0.0,0.0,0.0,0.0,0.0
+0x411bcf6c1842e1224633582e8ea2b69423559ea15224168f7d705ffab21b053f,EU country blames Russia for new sabotage attack by November 30?,其他,19.58,0.0,0.0,0.0,0.0,0.0
+0x5cb6d4a5186d3d1ad13df22f1c5c35eeb970d78c06abd8bc2a78e646e49051e3,Will the Republican Party candidate win the 2026 TN-03 House election by 15%-20%,政治,45.69,0.0,0.0,0.0,0.0,0.0
+0x5cc063ced43e6d149bfaaeaf230c54833904922daef804480b1b5cbc96967881,Will Travis Etienne Jr. have 774.5+ rushing yards in the 2026-27 NFL regular sea,運動／電競,37.98,0.0,0.0,0.0,0.0,0.0
+0x684284702a1336909869adc022fb241fef2290830c1a419b8990df8f55271bee,Will the Republican Party candidate win the 2026 KS-04 House election by 25%-30%,政治,18.46,0.0,0.0,0.0,0.0,0.0
+0x5b50bf0a74fba9371d07292fe94e93e6252c134f477f7dec11a56cb7ea3f4c11,Will Google be the second-best Math AI lab at the end of November 2026?,其他,20.87,0.0,0.0,0.0,0.0,0.0
+0x5661913d58d1ab6efcdd8ad3de389ae065328b8e7fa94df300b1b00df8117cf7,Will the October 2026 unemployment rate be 4.2%?,總經,26.37,0.0,0.0,0.0,0.0,0.0
+0xe68374b688f708f33610e2c5e73ab6c3383c85a4f53afc8d459c2ed8f49f71b4,Will Colston Loveland have 599.5+ receiving yards in the 2026-27 NFL regular sea,運動／電競,32.28,0.0,0.0,0.0,0.0,0.0
+0x3a5f7c07fff08151f4d067752768b384a6b3d3628da5fca7bb964548522bdb17,Will the Republican Party candidate win the 2026 FL-15 House election by 5%-10%?,政治,56.8,0.0,0.0,0.0,0.0,0.0
+0xf362631b5af91f5a9ad0b8af9e8550f1accec63e6d3d917438fe023ad6f3392c,Will Anthropic raise between $85B and $95B in its IPO?,其他,46.85,0.0,0.0,0.0,0.0,0.0
+0xd037ab2714cf47f4c909fdf876174372e142a29ff9e86ad91f740115b696b256,Will the Democrats win Greenville County in the South Carolina Senate race in 20,政治,22.45,0.0,0.0,0.0,0.0,0.0
+0xe0d24efb452684d7cdc9e3d2d718a1571b24beab066c83b0a879a0b7dd8139c6,Will the Minnesota 2026 Senate race be within 5%?,政治,22.45,0.0,0.0,0.0,0.0,0.0
+0x742502d21cae9bda5a0af536be66c178e6ab69b02ebb4dae30371d1e86a85854,Will Matthew Tkachuk record 50+ goals in the 2026-27 regular season?,運動／電競,29.39,0.0,0.0,0.0,0.0,0.0
+0x260ca0ed317fa9a9af2b39c786be52fecb298131d263e03604347ff7d946e221,Will Hamburger SV qualify for the 2027-28 UEFA Champions League?,運動／電競,18.74,0.0,0.0,0.0,0.0,0.0
+0x6e1a89326f78c5953d65ae99c346790de06bb85686ad989d7a0069a69afbcaaa,Will total votes cast in the 2026 midterm election for Senator from Idaho be bet,政治,31.31,0.0,0.0,0.0,0.0,0.0
+0x25aca86e62fe62f2516186d5a0508ea7d4a05b1bc9e248a1bc0e3f54fed4722b,"Will Matthew Stafford have 3,499.5+ passing yards in the 2026-27 NFL regular sea",運動／電競,18.74,0.0,0.0,0.0,0.0,0.0
+0xa705ba3ebd57166ab22c96fb3a683b448e3244d7aed45da8a3679677d9953555,Will the Democratic Party candidate win the 2026 NY-09 House election by 50%-55%,政治,18.74,0.0,0.0,0.0,0.0,0.0
+0x0e9df002f591d7dbad69c35e3ca758f4d9a01fe9042ca6e698b6a9f58c32f8c1,Will the Republican Party candidate win the 2026 AR-03 House election by 40% or ,政治,18.46,0.0,0.0,0.0,0.0,0.0
+0x41db441fd76d4352e2cf9d063bb89633c083abbf624632ae653d0c29fdb3c664,Will voter turnout be 70% or higher in the 2026 Spanish general election?,政治,45.45,0.0,0.0,0.0,0.0,0.0
+0x4d8a21e7451dff6419d6d55459119950664d8f93907314e9516fda182c55d6d1,Will China's annual inflation in 2026 be between 1.1% and 1.5%?,運動／電競,18.74,0.0,0.0,0.0,0.0,0.0
+0x1b9a52a20449e1fcc55a8686d8dedd3050ef4a85a91fdbcb6b15a0ff2dceb29d,Will Jalen Hurts have 199.5+ rushing yards in the 2026-27 NFL regular season?,運動／電競,18.74,0.0,0.0,0.0,0.0,0.0
+0x519de46d3249956754f29c8f6ca5820cc7494edfe52de827555116ac520a0f2b,"Next James Bond announced by December 31, 2026?",其他,18.18,0.0,0.0,0.0,0.0,0.0
+0xe6a44cd5f14ca1ed161e16167ca49308a6707b4ac670a6f19a7d16ddb1811359,"Will Donald Trump post 140-159 Truth Social posts from October 30 to November 6,",政治,46.15,0.0,0.0,0.0,0.0,0.0
+0x1adda267e1e7910ed5f759815835cf3a0770491a14ad1ad5dbf458dc77f14bb2,"Will KAST launch a token by March 31, 2027?",其他,28.11,0.0,0.0,0.0,0.0,0.0
+0xe59e2fc70fc4e065ce4f9ab37c5a7843a5c06da9768709aac9c82589692dee9d,"Will NYC Mayor post 40-59 posts from October 27 to November 3, 2026?",政治,18.46,0.0,0.0,0.0,0.0,0.0
+0x250a3c80d2b59fccd72bece1326d536cef62af6be50275d147e89d148bd9e7e6,Will the Democratic Party candidate win the 2026 MT-01 House election by 3%-6%?,政治,18.46,0.0,0.0,0.0,0.0,0.0
+0xa81613d8eb03e95397b796292aa12e196775974a6ca6f2281bc476145fedafce,Will the Republican Party candidate win the 2026 TX-21 House election by 0%-5%?,政治,18.46,0.0,0.0,0.0,0.0,0.0
+0xfa451f537e20fb881eb351e7d92435d46302911676cfb00006442d48e3a47b2a,Will the Republican Party candidate win the 2026 NC-05 House election by 6%-9%?,政治,18.46,0.0,0.0,0.0,0.0,0.0
+0x09f84da61783a51335c028bc00aff39a8953f69d35d573301b5b91d6cb35710b,Will Claude Fable's output price be at or below $40 in 2026?,其他,18.18,0.0,0.0,0.0,0.0,0.0

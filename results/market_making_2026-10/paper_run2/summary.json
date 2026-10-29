@@ -1,0 +1,11 @@
+{
+  "mode": "paper",
+  "hours": 1.08,
+  "markets": 928,
+  "capital": 342365.99,
+  "mtm_pnl": 1.29,
+  "est_reward": 140.79,
+  "rebate": 0.02,
+  "stop_reason": "時間到",
+  "net_est": 142.1
+}

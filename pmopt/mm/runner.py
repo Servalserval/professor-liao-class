@@ -23,10 +23,10 @@ from pathlib import Path
 
 from . import risk
 from .config import MMConfig
-from .exchange import LiveExchange, PaperExchange
+from .exchange import LiveExchange, PaperExchange, _yes_level
 from .feeds import PublicData, TradePoller
 from .quotes import diff_orders, target_quotes
-from .rules import Decision, MarketState, decide
+from .rules import Decision, MarketState, decide, without_own
 from .universe import build_universe
 
 log = logging.getLogger("pmopt.mm")
@@ -43,8 +43,8 @@ class Runner:
         self.retired: dict[str, MarketState] = {}      # 已離開名單、但部位還在的市場
         self.backfill_hours = backfill_hours
         self.errors: deque = deque(maxlen=1000)        # 主迴圈自己遇到的錯誤（時間）
-        self._n_rejections = 0
         self._started = False
+        self._own: dict[str, list] = {}               # Yes token → 自己的掛單 [(leg, Yes 價格, 股數)]（實盤扣掉用）
         stamp = time.strftime("%Y%m%d-%H%M%S", time.gmtime())
         self.dir = Path(log_dir or cfg.log_dir) / f"{mode}-{stamp}"
         self.dir.mkdir(parents=True, exist_ok=True)
@@ -95,7 +95,8 @@ class Runner:
     # ---------- 市場名單 ----------
     def refresh_universe(self, now: float, budget: float | None = None) -> None:
         cfg = replace(self.cfg, budget=budget) if budget is not None else self.cfg
-        infos, plan, mult = build_universe(cfg, self.data, now)
+        infos, plan, mult = build_universe(cfg, self.data, now, incumbents=frozenset(self.states),
+                                           own=self._own if self.mode == "live" else None)
         plan.to_csv(self.dir / f"plan-{int(now)}.csv", index=False)
         self.event("universe", markets=len(infos), capital=round(sum(i.capital for i in infos), 2),
                    budget=cfg.budget, hurdle_mult=round(mult, 3))
@@ -230,6 +231,9 @@ class Runner:
         everyone = self.everyone()
         tokens = [s.info.yes_token for s in everyone.values()]
         books, trades = await asyncio.gather(asyncio.to_thread(self.data.books, tokens), asyncio.to_thread(poller.poll))
+        if self.mode == "live":
+            # 實盤：訂單簿裡有自己的單，扣掉才是別人的報價（模擬的單不在訂單簿裡，不用扣）
+            books = {t: without_own(b, self._own.get(t, [])) for t, b in books.items()}
         for cid, st in everyone.items():
             b = books.get(st.info.yes_token)
             if b is not None:
@@ -289,11 +293,19 @@ class Runner:
             batch, deferred = to_place[:self.cfg.max_new_orders_per_tick], len(to_place) - self.cfg.max_new_orders_per_tick
             placed = await self.exchange.place(batch, now)
             self.event("place", n=len(batch), accepted=len(placed), deferred=max(deferred, 0))
-            n_live = len(open_orders) - len(to_cancel) + len(placed)
         else:
+            placed = []
             if to_place:
                 self.event("skip_place", n=len(to_place), reason=status.reason)
-            n_live = len(open_orders) - len(to_cancel)
+        gone = set(to_cancel)
+        live_orders = [o for o in open_orders if o.id not in gone] + placed
+        n_live = len(live_orders)
+        self._own = {}
+        for o in live_orders:
+            st = everyone.get(o.condition_id)
+            if st is not None:
+                leg, price = _yes_level(o, st.info)
+                self._own.setdefault(st.info.yes_token, []).append((leg, price, o.remaining))
         self._minute_summary(now, n_live, quoting, time.time() - now)
         return status
 

@@ -17,7 +17,7 @@ import pandas as pd
 
 from .config import MMConfig
 from .feeds import PublicData
-from .rules import Book, MarketInfo
+from .rules import Book, MarketInfo, without_own
 
 
 def category(question: str, slug: str = "") -> str:
@@ -64,7 +64,9 @@ def competitor_score(book: Book, mid: float, v: float) -> float:
     return min(q_b, q_a)
 
 
-def candidates(rows: list[dict], books: dict[str, Book], cfg: MMConfig, now: float) -> list[Candidate]:
+def candidates(rows: list[dict], books: dict[str, Book], cfg: MMConfig, now: float,
+               incumbents: frozenset = frozenset()) -> list[Candidate]:
+    """incumbents（已經在掛的市場）不因為價差一時變寬就被拿掉；要不要掛由每分鐘的規則決定。"""
     out, seen = [], set()
     for m in rows:
         if m["condition_id"] in seen:      # 獎勵 API 偶爾會在兩頁重複出現同一個市場
@@ -88,7 +90,7 @@ def candidates(rows: list[dict], books: dict[str, Book], cfg: MMConfig, now: flo
         spread = min(p for p, _ in b.asks) - max(p for p, _ in b.bids)
         end = m.get("end_date")
         end_ts = pd.Timestamp(end).timestamp() if end else None
-        if spread > v + 1e-9:
+        if spread > v + 1e-9 and m["condition_id"] not in incumbents:
             continue
         if end_ts is not None and end_ts - now < cfg.min_days_left * 86400:
             continue
@@ -115,14 +117,15 @@ def best_capital(R, cov, s, K, h, c_min, c_max) -> tuple[float, float, float]:
     return (float(grid[i]), float(val[i]), float(reward[i])) if val[i] > 0 else (0.0, 0.0, 0.0)
 
 
-def allocate(cands: list[Candidate], cfg: MMConfig, mult: float) -> pd.DataFrame:
+def allocate(cands: list[Candidate], cfg: MMConfig, mult: float, incumbents: frozenset = frozenset()) -> pd.DataFrame:
     rows = []
     for c in cands:
         d = cfg.dist_frac * c.v
         s = (1 - cfg.dist_frac) ** 2 / max(1 - 2 * d, 0.05)
         c_min = max(c.reward_min_size, 5) * (1 - 2 * d)
         c_max = min(cfg.market_cap, c.comp / s) if c.comp > 0 else c_min
-        h = mult * cfg.hurdle_by_category.get(c.category, cfg.hurdle_by_category["_"]) + cfg.cost_of_capital / 365
+        m_eff = mult * (cfg.incumbent_hurdle_frac if c.condition_id in incumbents else 1.0)
+        h = m_eff * cfg.hurdle_by_category.get(c.category, cfg.hurdle_by_category["_"]) + cfg.cost_of_capital / 365
         cov = cfg.coverage_by_category.get(c.category, cfg.coverage_by_category["_"])
         cap, net, reward = best_capital(c.rate, cov, s, c.comp, h, c_min, max(c_max, c_min))
         if cap > 0:
@@ -141,22 +144,23 @@ def allocate(cands: list[Candidate], cfg: MMConfig, mult: float) -> pd.DataFrame
     return df
 
 
-def solve_budget(cands: list[Candidate], cfg: MMConfig) -> tuple[pd.DataFrame, float]:
+def solve_budget(cands: list[Candidate], cfg: MMConfig, incumbents: frozenset = frozenset()) -> tuple[pd.DataFrame, float]:
     """從 cfg.hurdle_mult 開始，總本金超過預算就調高門檻倍數。"""
+    alloc = lambda mult: allocate(cands, cfg, mult, incumbents)
     mult = cfg.hurdle_mult
-    df = allocate(cands, cfg, mult)
+    df = alloc(mult)
     if df.empty or df["capital"].sum() <= cfg.budget:
         return df, mult
     lo, hi = mult, mult * 2
-    while allocate(cands, cfg, hi)["capital"].sum() > cfg.budget:
+    while alloc(hi)["capital"].sum() > cfg.budget:
         lo, hi = hi, hi * 2
     for _ in range(30):
         mid = math.sqrt(lo * hi)
-        if allocate(cands, cfg, mid)["capital"].sum() > cfg.budget:
+        if alloc(mid)["capital"].sum() > cfg.budget:
             lo = mid
         else:
             hi = mid
-    return allocate(cands, cfg, hi), hi
+    return alloc(hi), hi
 
 
 def _ts(x) -> float | None:
@@ -168,8 +172,12 @@ def _ts(x) -> float | None:
         return None
 
 
-def build_universe(cfg: MMConfig, data: PublicData, now: float | None = None) -> tuple[list[MarketInfo], pd.DataFrame, float]:
-    """回傳 (要掛的市場, 配置表, 實際用的門檻倍數)。"""
+def build_universe(cfg: MMConfig, data: PublicData, now: float | None = None, incumbents: frozenset = frozenset(),
+                   own: dict[str, list] | None = None) -> tuple[list[MarketInfo], pd.DataFrame, float]:
+    """回傳 (要掛的市場, 配置表, 實際用的門檻倍數)。
+
+    incumbents：已經在掛的市場（遲滯）；own：Yes token → 自己的掛單 [(leg, Yes 價格, 股數)]，實盤時從訂單簿扣掉。
+    """
     now = now or time.time()
     rows = data.reward_markets()
     yes_tokens = []
@@ -178,8 +186,10 @@ def build_universe(cfg: MMConfig, data: PublicData, now: float | None = None) ->
             if str(t.get("outcome", "")).lower() == "yes":
                 yes_tokens.append(str(t["token_id"]))
     books = data.books(yes_tokens)
-    cands = candidates(rows, books, cfg, now)
-    plan, mult = solve_budget(cands, cfg)
+    if own:
+        books = {t: without_own(b, own.get(t, [])) for t, b in books.items()}
+    cands = candidates(rows, books, cfg, now, incumbents)
+    plan, mult = solve_budget(cands, cfg, incumbents)
     if plan.empty:
         return [], plan, mult
     plan = plan.sort_values("exp_net", ascending=False)

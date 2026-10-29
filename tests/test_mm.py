@@ -17,7 +17,7 @@ from pmopt.mm.exchange import LiveExchange, PaperExchange
 from pmopt.mm.feeds import TradePoller
 from pmopt.mm.quotes import Order, OrderIntent, diff_orders, target_quotes
 from pmopt.mm.report import gate, summarize
-from pmopt.mm.rules import Book, Decision, MarketInfo, MarketState, Trade, decide, minute_of
+from pmopt.mm.rules import Book, Decision, MarketInfo, MarketState, Trade, decide, minute_of, without_own
 from pmopt.mm.runner import Runner
 from pmopt.mm.universe import Candidate, allocate, best_capital, candidates, competitor_score, solve_budget
 
@@ -318,6 +318,24 @@ def test_candidates_eligibility():
     assert got == ["ok"]
 
 
+def test_without_own_removes_my_quotes():
+    b = Book(T0, bids=((0.46, 1500.0), (0.45, 200.0)), asks=((0.54, 1000.0), (0.55, 300.0)))
+    out = without_own(b, [("bid", 0.46, 1000.0), ("ask", 0.54, 1000.0)])
+    assert out.bids == ((0.46, 500.0), (0.45, 200.0)) and out.asks == ((0.55, 300.0),)
+    assert without_own(b, []) is b
+
+
+def test_incumbents_need_lower_hurdle_and_survive_wide_spread():
+    cfg = cfg_()
+    marginal = _cand("m", "em", rate=190.0)
+    assert allocate([marginal], cfg, cfg.hurdle_mult).empty
+    kept = allocate([marginal], cfg, cfg.hurdle_mult, incumbents=frozenset({"m"}))
+    assert len(kept) == 1 and kept["capital"].iloc[0] > 0
+    rows, books = [_row("w")], {"Yw": book_(0.44, 0.56)}          # 價差 12¢ > 4.5¢
+    assert candidates(rows, books, cfg, T0) == []
+    assert [c.condition_id for c in candidates(rows, books, cfg, T0, frozenset({"w"}))] == ["w"]
+
+
 def test_candidates_dedupe():
     rows = [_row("ok"), _row("ok")]
     assert len(candidates(rows, {"Yok": book_(0.49, 0.51)}, cfg_(), T0)) == 1
@@ -596,6 +614,8 @@ def test_runner_live_with_fake_sdk(tmp_path, fake_sdk):
     assert client.created and all(c["post_only"] for c in client.created)
     # 持有 Yes：ask 那一邊改成賣 Yes 減倉
     assert any(c["asset_id"] == "Yc1" and c["side"] == "SELL" for c in client.created)
+    # 實盤會記下自己的掛單，下一輪從訂單簿扣掉
+    assert {leg for levels in r._own.values() for leg, _, _ in levels} <= {"bid", "ask"} and r._own
 
 
 # ---------------------------------------------------------------- 設定與上線檢查
