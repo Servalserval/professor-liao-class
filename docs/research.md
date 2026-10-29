@@ -1,0 +1,77 @@
+# 研究紀錄：2026 年 10 月，加密貨幣還有哪些套利機會？
+
+這份是課前用 AI 做的網路研究整理（2026-10-29），目的是找出一個值得寫成程式的方向。
+數字都是當時查到的資料，會隨市場變化；請以來源原文為準。
+
+## 第一步：先看基準線
+
+被動的「delta 中性」收益，現在大概只剩這樣：
+
+| 指標 | 當時水準 | 來源 |
+|---|---|---|
+| BTC 永續資金費率 | 約 0.00–0.01%（每 8 小時），中性 | [convextrade](https://convextrade.com/metrics/btc-funding) |
+| 跨所 BTC 資金費率價差 | 10/8–10/15 一週，HL 約年化 5.5%、Lighter 約 2.6%、Aster 約 1.8% | [cipher-intelligence](https://cipher-intelligence.io/blog/lighter-dex-vs-aster-dex-fees-2026/) |
+| CME 12 月期貨基差 | 10/19 約 0.86%，換算年化約 4.5–5% | [proveyouredge](https://proveyouredge.com/articles/bitcoin-futures-basis-cme-spot-cash-and-carry) |
+| Ethena sUSDe | 約 4.7%，10/1 起停止 ENA 補貼 | [Aavescan](https://aavescan.com/rates/ethena-susde)、[cryptoticker](https://cryptoticker.io/en/ethena-usde-incentives-end/) |
+| 美國三個月國庫券 | 約 3.9%（8 月底） | [MarketXLS](https://marketxls.com/indicators/3-month-treasury-bill-rate) |
+
+**結論**：主流幣的現貨＋永續 carry 只比美債多 0–1.5%，卻要承擔交易所對手風險與爆倉風險。
+還有利潤的地方，集中在市場結構有摩擦的地方。
+
+## 第二步：哪些地方還有摩擦？
+
+| 類型 | 現況 | 主要風險 |
+|---|---|---|
+| 股票永續（Hyperliquid HIP-3）資金費率 | 散戶 24 小時想加槓桿做多美股，長期付費率給空方 | 週末跳空、oracle 異常 |
+| 跨所資金費率 + Pendle Boros 鎖固定利率 | altcoin 費率常錯位，Boros 可把浮動費率鎖成固定 | 容量小、交易所風險 |
+| 預測市場跨平台 | 仍有 YES+NO < $1 的機會，但結算規則常不同 | 規則差異、資金鎖到結算、開戶資格 |
+| 借貸市場事件型機會 | 例：4 月 KelpDAO 事件期間 Aave USDC 利用率卡 100% 數天 | 需要判斷壞帳 |
+| 永續 DEX 點數對沖 | 不是純套利，是賭空投價值 | 規則改變、點數被收回 |
+| 泡菜溢價 | 10 月只有約 0.4–1.4%，大部分是 USDT 本身的溢價 | 外國人進不去 |
+| 以太坊主網 CEX-DEX 套利 | 三個搜尋者拿走約四分之三的利潤 | 新人沒機會 |
+
+主要來源：[Messari（Aave 與 KelpDAO）](https://messari.io/report/aave-cracks-in-the-monolithic-thesis)、
+[SigBTC（泡菜溢價）](https://sigbtc.pro/en/kimchi-premium)、
+[Wu et al.（CEX-DEX 套利）](https://arxiv.org/abs/2507.13023v2)、
+[Pendle Print #122（Boros）](https://pendlefi.substack.com/p/pendle-print-122)。
+
+## 第三步：網路上其他人做過什麼
+
+| 玩法 | 重點 | 現在還行嗎 |
+|---|---|---|
+| Polymarket 15 分鐘 BTC 漲跌盤延遲套利 | 有錢包從 313 美元滾到約 43.8 萬美元 | 機會窗口從 12.3 秒縮到 2.7 秒；8/7 起改用 Chainlink TWAP 結算。HFT 戰場 |
+| **預測市場 vs 期權** | 論文發現 Polymarket BTC 價格盤比 Binance 期權推算的機率平均高 5.6–6.3 個百分點、比 Deribit 高約 11 個百分點，集中在尾部 | **比的是建模，不是速度** |
+| 用 LLM 找互相牽連的市場 | 研究估計 2024/4–2025/4 套利者從 Polymarket 賺走約 4,000 萬美元，研究者用 LLM 抽取市場間的邏輯關係 | 機會零星但成本低 |
+| 天氣盤 | 用公開預報、修正系統偏差、找優勢 | 小規模可行，多為自述 |
+| 運動盤做市 | 拿博彩公司賠率當公允價，吃流動性獎勵 | 一位開源作者表示優勢已衰退、逆選擇造成虧損 |
+| Pre-IPO 永續 | 多個場所同時報價同一個沒有現貨可避險的標的 | oracle 風險大、一次性事件 |
+| 盤前永續對沖預售額度 | 巨鯨在 Hyperliquid 低槓桿放空，鎖定預期拿到的額度價值 | 看個案 |
+
+主要來源：
+[Medium（Polymarket 延遲套利）](https://medium.com/@weare1010/claude-ai-trading-bots-are-making-hundreds-of-thousands-on-polymarket-2840efb9f2cd)、
+[polymtradebot（TWAP 結算）](https://polymtradebot.com/)、
+[arXiv 2606.19517（期權 vs 預測市場）](https://arxiv.org/pdf/2606.19517)、
+[FC'26（尾部高估）](https://fc26.ifca.ai/defi/papers/market-efficiency-prediction-markets.pdf)、
+[podshopguy（實際用 IBIT 期權對沖）](https://podshopguy.substack.com/p/polymarket-overprices-volatility)、
+[arXiv 2508.03474（組合套利）](https://arxiv.org/abs/2508.03474v1)、
+[pm.wiki（運動盤做市的退役機器人）](https://pm.wiki/projects/polymm-a-polymarket-sports-market-making-arbitrage-bot-in-python)、
+[The Block（PUMP 盤前對沖）](https://www.theblock.co/post/361975/pump-token-ico)。
+
+也要注意雜訊：網路上大量「AI 機器人一週賺十萬」的截圖多半是行銷；
+有人實測各種 Polymarket 機器人虧了 3,840 美元，其中一個 GitHub 上的「套利機器人」其實是盜錢包程式
+（[Medium](https://prediction-market.medium.com/polymarket-ai-bot-review-2026-heres-what-actually-worked-efb8e5d75740)）。
+
+## 第四步：為什麼選「預測市場 vs 期權」
+
+1. **錯價是結構性的**：兩邊參與者和資金互相隔開，不會因為有人寫了更快的機器人就消失。
+2. **比的是建模能力**：要處理觸價與歐式的換算、到期日內插、波動率微笑，門檻在數學，不在延遲。
+3. **可以先只做研究**：讀資料不需要帳號，也不用下單，適合當課堂示範。
+
+## 第五步：上實盤之前要回答的問題
+
+1. 用**可成交價**（不是中價）算，錯價還在不在？
+2. **結算對不對得上**？每個盤的結算來源與時點都不同。
+3. 錯價會不會在**結算前收斂**？會的話可以中途平倉，資金效率高很多。
+4. **尾部風險能不能對沖**？偏差多在低機率那側，沒對沖就是「贏 8¢、輸 92¢」的賭局。
+
+這個 repo 的 `collect` 指令，就是為了回答第 1 和第 3 題而設計的。

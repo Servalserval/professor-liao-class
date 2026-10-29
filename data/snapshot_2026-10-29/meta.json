@@ -1,0 +1,23 @@
+{
+  "valuation_time_utc": "2026-10-29T05:59:14Z",
+  "deribit": {
+    "endpoint": "https://www.deribit.com/api/v2/public/get_book_summary_by_currency?currency=BTC&kind=option",
+    "creation_timestamp_ms": 1793253554418,
+    "units": "mark_iv 為百分比；bid/ask/mark 以 BTC 計價；underlying_price 為美元",
+    "note": "回傳的清單在擷取時被截斷，只保留了 30OCT26 / 31OCT26 / 1NOV26 / 6NOV26 的部分履約價。"
+  },
+  "polymarket": {
+    "endpoint": "https://gamma-api.polymarket.com/events?slug=<event_slug>",
+    "events": [
+      "bitcoin-above-on-october-31-2026",
+      "what-price-will-bitcoin-hit-in-october-2026"
+    ],
+    "approx_fetch_time_utc": "2026-10-29T05:50Z ~ 06:00Z",
+    "note": "只有 Gamma API 的 bestBid / bestAsk，沒有掛單深度。"
+  },
+  "caveats": [
+    "兩邊資料是透過網頁擷取工具取得、再轉錄成 CSV，不是 API 原始輸出，可能有轉錄錯誤。",
+    "兩份快照的時間沒有精確同步（相差可達數分鐘），BTC 在這段時間內的波動會直接影響比較結果。",
+    "這份資料只供課堂示範。要做研究結論，請用 `python -m pmopt collect` 在自己的電腦上同步收集。"
+  ]
+}
