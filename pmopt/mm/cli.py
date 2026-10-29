@@ -3,6 +3,7 @@
     python -m pmopt mm-plan --budget 350000                 # 現在會選哪些市場、各配多少（不下單）
     python -m pmopt mm-paper --minutes 60                   # 模擬：用即時公開資料跑，不下任何單
     python -m pmopt mm-report data/mm_logs/paper-...        # 彙整一次執行，對照上線檢查表
+    python -m pmopt mm-check                                # 實盤前：檢查私鑰、錢包、餘額（只讀）
     python -m pmopt mm-live --budget 10000 --confirm-live   # 實盤（只在自己的電腦上、用自己的錢包）
     python -m pmopt mm-earnings --days 7                    # 實盤：查官方記錄的實際獎勵與返佣
 
@@ -123,6 +124,37 @@ def cmd_report(args) -> int:
     return 0
 
 
+def cmd_check(args) -> int:
+    """實盤前的檢查：私鑰、錢包、餘額、closed-only、既有掛單與部位。只讀，不下單也不撤單。"""
+    try:
+        from polymarket import AsyncSecureClient
+    except ImportError:
+        sys.exit('需要官方 SDK：pip install "pmopt[live]"')
+    key, wallet, relayer = _secrets()
+
+    async def go():
+        client = await AsyncSecureClient.create(private_key=key, wallet=wallet)
+        try:
+            ba = await client.get_balance_allowance(asset_type="COLLATERAL")
+            n_orders = n_pos = 0
+            async for page in client.list_open_orders():
+                n_orders += len(page.items)
+            async for page in client.list_positions():
+                n_pos += sum(1 for x in page.items if float(x.current_size) > 0)
+            print(f"錢包：{client.wallet}（{getattr(client, 'wallet_type', '?')}）")
+            print(f"抵押品餘額：{ba.balance / 1e6:,.2f}")
+            print(f"closed-only 模式：{await client.get_closed_only_mode()}")
+            print(f"帳號上的掛單：{n_orders} 張（mm-live 啟動時會全部撤掉）")
+            print(f"持有部位：{n_pos} 個")
+            print(f"Relayer API key：{'有' if relayer else '沒有（auto_merge 不能開）'}")
+        finally:
+            if hasattr(client, "close"):
+                await client.close()
+
+    asyncio.run(go())
+    return 0
+
+
 def cmd_earnings(args) -> int:
     """官方記錄的實際獎勵與返佣（需要私鑰，只讀不下單）。"""
     try:
@@ -183,6 +215,9 @@ def add_parsers(sub) -> None:
     sp.add_argument("--stage", choices=["paper", "live-10k", "live-100k"], help="對照哪一階段的通過條件")
     sp.add_argument("--actual-reward", type=float, default=None, help="同期間官方記錄的實際獎勵（mm-earnings 查）")
     sp.set_defaults(func=cmd_report)
+
+    sp = sub.add_parser("mm-check", help="掛單：實盤前檢查私鑰、錢包、餘額、既有掛單（只讀，不下單）")
+    sp.set_defaults(func=cmd_check)
 
     sp = sub.add_parser("mm-earnings", help="掛單：查官方記錄的實際獎勵與返佣（需要私鑰，只讀）")
     sp.add_argument("--days", type=int, default=7)

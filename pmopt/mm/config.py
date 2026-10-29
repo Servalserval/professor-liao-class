@@ -60,9 +60,9 @@ class MMConfig:
     # ---------- 執行 ----------
     tick_seconds: float = 10.0         # 主迴圈間隔
     universe_refresh_min: int = 60     # 每隔多久重新選市場、配本金
-    requote_frac: float = 0.25         # 目標價移動超過 0.25 × 掛單距離才撤單重掛（減少洗單，維持獎勵計分）
-    gtd_minutes: int = 20              # 每張單 20 分鐘後自動失效（程式當掉時的保險）
-    gtd_renew_minutes: int = 5         # 剩不到 5 分鐘就續掛
+    requote_frac: float = 0.25         # 目標價移動超過 max(0.25 × 掛單距離, 1 tick) 才撤單重掛（減少洗單，維持獎勵計分）
+    gtd_minutes: int = 60              # 每張單 60 分鐘後自動失效（程式當掉時的第二道保險；第一道是 10 秒的心跳）
+    gtd_renew_minutes: int = 5         # 剩不到 5 分鐘就續掛（20 分鐘的話每張單每 14 分鐘就要重掛一次，太常重新計時）
     post_only: bool = True             # 只掛單不吃單
     max_inventory_frac: float = 0.5    # 單一市場庫存價值 > 本金 50% → 只掛減倉那一邊
     auto_merge: bool = False           # 同時持有 Yes 與 No 時自動 merge 回現金（實盤需要錢包支援免 gas 交易）

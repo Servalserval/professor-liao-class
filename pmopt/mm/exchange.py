@@ -4,7 +4,7 @@
     open_orders()、place(intents, now)、cancel(ids)、cancel_all()、fills()、
     collateral()、positions()、merge(condition_id)
 實盤的安全設計：
-- 所有單都是 post-only（只掛單不吃單）＋ GTD（20 分鐘後自動失效）；
+- 所有單都是 post-only（只掛單不吃單）＋ GTD（gtd_minutes 後自動失效，預設 60 分鐘）；
 - 官方心跳：每 5 秒送一次，程式停止回應 10 秒，交易所會撤掉這個 API 金鑰的所有單；
 - 私鑰只從環境變數讀，不寫進任何檔案或記錄。
 """

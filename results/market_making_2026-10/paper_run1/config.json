@@ -1,0 +1,73 @@
+{
+  "budget": 350000.0,
+  "market_cap": 20000.0,
+  "event_cap": 30000.0,
+  "hurdle_mult": 2.0,
+  "hurdle_by_category": {
+    "_": 0.00302,
+    "其他": 0.00435,
+    "政治": 0.00256,
+    "總經": 0.00275,
+    "運動／電競": 0.00252,
+    "加密貨幣": 0.00302
+  },
+  "coverage_by_category": {
+    "_": 0.83,
+    "其他": 0.72,
+    "政治": 0.85,
+    "總經": 0.91,
+    "運動／電競": 0.95,
+    "加密貨幣": 0.83
+  },
+  "cost_of_capital": 0.04,
+  "min_days_left": 1.0,
+  "mid_band": [
+    0.03,
+    0.97
+  ],
+  "max_markets": null,
+  "exclude_categories": [],
+  "dist_frac": 0.7,
+  "stop_loss_frac": 0.025,
+  "cooldown_min": 30,
+  "vol_window_min": 0,
+  "vol_mult": 2.0,
+  "volu_window_min": 10,
+  "volu_mult": 5.0,
+  "trail_hours": 6,
+  "markout_min": 10,
+  "unwind_cost": 0.005,
+  "warmup_min": 30,
+  "sports_stop_before_min": 30,
+  "stop_before_end_hours": 0.0,
+  "freeze_windows": [
+    {
+      "name": "美國期中選舉開票",
+      "start": "2026-11-03T12:00:00Z",
+      "end": "2026-11-06T00:00:00Z",
+      "keywords": [
+        "Senate",
+        "House",
+        "governor",
+        "Governor",
+        "Balance of Power",
+        "midterm",
+        "Midterm"
+      ]
+    }
+  ],
+  "tick_seconds": 10.0,
+  "universe_refresh_min": 60,
+  "requote_frac": 0.25,
+  "gtd_minutes": 20,
+  "gtd_renew_minutes": 5,
+  "post_only": true,
+  "max_inventory_frac": 0.5,
+  "auto_merge": false,
+  "max_new_orders_per_tick": 150,
+  "max_daily_loss_frac": 0.01,
+  "stale_data_seconds": 60.0,
+  "max_api_errors_per_min": 30,
+  "paper_fill_at_level": 0.5,
+  "log_dir": "/tmp/claude-0/-home-user-professor-liao-class/d8228cd5-7f52-5e37-a6ad-a8425351732c/scratchpad/mm_logs"
+}

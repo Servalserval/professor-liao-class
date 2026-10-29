@@ -1,0 +1,1061 @@
+{"time": 1793276712.093, "kind": "universe", "markets": 973, "capital": 345697.84, "budget": 350000.0, "hurdle_mult": 2.094}
+{"time": 1793276712.095, "kind": "start", "mode": "paper", "markets": 973}
+{"time": 1793278425.202, "kind": "place", "n": 150, "accepted": 150, "deferred": 1480}
+{"time": 1793278436.222, "kind": "place", "n": 150, "accepted": 150, "deferred": 1328}
+{"time": 1793278444.653, "kind": "cancel", "n": 2}
+{"time": 1793278444.653, "kind": "place", "n": 150, "accepted": 150, "deferred": 1184}
+{"time": 1793278456.213, "kind": "cancel", "n": 2}
+{"time": 1793278456.214, "kind": "place", "n": 150, "accepted": 150, "deferred": 1036}
+{"time": 1793278464.96, "kind": "place", "n": 150, "accepted": 150, "deferred": 886}
+{"time": 1793278474.87, "kind": "cancel", "n": 3}
+{"time": 1793278474.87, "kind": "place", "n": 150, "accepted": 150, "deferred": 739}
+{"time": 1793278484.678, "kind": "cancel", "n": 3}
+{"time": 1793278484.679, "kind": "place", "n": 150, "accepted": 150, "deferred": 590}
+{"time": 1793278494.788, "kind": "cancel", "n": 7}
+{"time": 1793278494.789, "kind": "place", "n": 150, "accepted": 150, "deferred": 447}
+{"time": 1793278504.883, "kind": "cancel", "n": 5}
+{"time": 1793278504.883, "kind": "place", "n": 150, "accepted": 150, "deferred": 308}
+{"time": 1793278514.655, "kind": "cancel", "n": 6}
+{"time": 1793278514.655, "kind": "place", "n": 150, "accepted": 150, "deferred": 164}
+{"time": 1793278525.302, "kind": "cancel", "n": 14}
+{"time": 1793278525.303, "kind": "place", "n": 150, "accepted": 150, "deferred": 26}
+{"time": 1793278535.771, "kind": "cancel", "n": 33}
+{"time": 1793278535.771, "kind": "place", "n": 37, "accepted": 37, "deferred": 0}
+{"time": 1793278544.886, "kind": "cancel", "n": 16}
+{"time": 1793278544.887, "kind": "place", "n": 12, "accepted": 12, "deferred": 0}
+{"time": 1793278554.682, "kind": "cancel", "n": 19}
+{"time": 1793278554.682, "kind": "place", "n": 15, "accepted": 15, "deferred": 0}
+{"time": 1793278564.863, "kind": "cancel", "n": 14}
+{"time": 1793278564.863, "kind": "place", "n": 12, "accepted": 12, "deferred": 0}
+{"time": 1793278575.521, "kind": "cancel", "n": 13}
+{"time": 1793278575.521, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793278585.893, "kind": "cancel", "n": 14}
+{"time": 1793278585.893, "kind": "place", "n": 14, "accepted": 14, "deferred": 0}
+{"time": 1793278595.799, "kind": "cancel", "n": 6}
+{"time": 1793278595.8, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793278605.705, "kind": "cancel", "n": 9}
+{"time": 1793278605.705, "kind": "place", "n": 9, "accepted": 9, "deferred": 0}
+{"time": 1793278616.002, "kind": "cancel", "n": 15}
+{"time": 1793278616.002, "kind": "place", "n": 13, "accepted": 13, "deferred": 0}
+{"time": 1793278624.8, "kind": "cancel", "n": 8}
+{"time": 1793278624.8, "kind": "place", "n": 12, "accepted": 12, "deferred": 0}
+{"time": 1793278636.367, "kind": "cancel", "n": 2}
+{"time": 1793278636.367, "kind": "place", "n": 2, "accepted": 2, "deferred": 0}
+{"time": 1793278645.167, "kind": "cancel", "n": 4}
+{"time": 1793278645.167, "kind": "place", "n": 4, "accepted": 4, "deferred": 0}
+{"time": 1793278655.508, "kind": "cancel", "n": 9}
+{"time": 1793278655.508, "kind": "place", "n": 9, "accepted": 9, "deferred": 0}
+{"time": 1793278665.266, "kind": "cancel", "n": 7}
+{"time": 1793278665.266, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793278675.351, "kind": "cancel", "n": 7}
+{"time": 1793278675.351, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793278685.058, "kind": "cancel", "n": 11}
+{"time": 1793278685.058, "kind": "place", "n": 13, "accepted": 13, "deferred": 0}
+{"time": 1793278695.219, "kind": "cancel", "n": 14}
+{"time": 1793278695.219, "kind": "place", "n": 12, "accepted": 12, "deferred": 0}
+{"time": 1793278705.567, "kind": "cancel", "n": 6}
+{"time": 1793278705.567, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793278715.68, "kind": "cancel", "n": 11}
+{"time": 1793278715.68, "kind": "place", "n": 9, "accepted": 9, "deferred": 0}
+{"time": 1793278725.564, "kind": "cancel", "n": 9}
+{"time": 1793278725.564, "kind": "place", "n": 9, "accepted": 9, "deferred": 0}
+{"time": 1793278735.851, "kind": "cancel", "n": 11}
+{"time": 1793278735.851, "kind": "place", "n": 9, "accepted": 9, "deferred": 0}
+{"time": 1793278745.329, "kind": "cancel", "n": 15}
+{"time": 1793278745.329, "kind": "place", "n": 19, "accepted": 19, "deferred": 0}
+{"time": 1793278754.934, "kind": "cancel", "n": 7}
+{"time": 1793278754.934, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793278765.794, "kind": "cancel", "n": 9}
+{"time": 1793278765.794, "kind": "place", "n": 9, "accepted": 9, "deferred": 0}
+{"time": 1793278775.022, "kind": "cancel", "n": 11}
+{"time": 1793278775.022, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793278784.98, "kind": "cancel", "n": 9}
+{"time": 1793278784.98, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793278795.193, "kind": "cancel", "n": 13}
+{"time": 1793278795.193, "kind": "place", "n": 13, "accepted": 13, "deferred": 0}
+{"time": 1793278806.341, "kind": "cancel", "n": 6}
+{"time": 1793278806.341, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793278818.191, "kind": "cancel", "n": 9}
+{"time": 1793278818.191, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793278825.636, "kind": "cancel", "n": 18}
+{"time": 1793278825.636, "kind": "place", "n": 14, "accepted": 14, "deferred": 0}
+{"time": 1793278835.607, "kind": "fill", "order_id": "paper-1859", "condition_id": "0x7d542d01581ab32518a4131ef852dbc5167697c8dd9600f3fb0c24df2a417ce1", "token": "36068006789324572684861029557397912467753591130885824951874111943894227132569", "side": "BUY", "price": 0.6, "size": 3.4875, "ts": 1793278832}
+{"time": 1793278835.636, "kind": "cancel", "n": 23}
+{"time": 1793278835.636, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793278846.761, "kind": "cancel", "n": 12}
+{"time": 1793278846.761, "kind": "place", "n": 12, "accepted": 12, "deferred": 0}
+{"time": 1793278856.122, "kind": "cancel", "n": 8}
+{"time": 1793278856.122, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793278866.512, "kind": "cancel", "n": 8}
+{"time": 1793278866.512, "kind": "place", "n": 16, "accepted": 16, "deferred": 0}
+{"time": 1793278875.941, "kind": "cancel", "n": 11}
+{"time": 1793278875.942, "kind": "place", "n": 13, "accepted": 13, "deferred": 0}
+{"time": 1793278887.603, "kind": "cancel", "n": 14}
+{"time": 1793278887.604, "kind": "place", "n": 14, "accepted": 14, "deferred": 0}
+{"time": 1793278895.972, "kind": "cancel", "n": 12}
+{"time": 1793278895.972, "kind": "place", "n": 10, "accepted": 10, "deferred": 0}
+{"time": 1793278906.225, "kind": "cancel", "n": 5}
+{"time": 1793278906.225, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793278915.342, "kind": "cancel", "n": 8}
+{"time": 1793278915.342, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793278925.806, "kind": "cancel", "n": 16}
+{"time": 1793278925.806, "kind": "place", "n": 20, "accepted": 20, "deferred": 0}
+{"time": 1793278936.116, "kind": "cancel", "n": 15}
+{"time": 1793278936.116, "kind": "place", "n": 15, "accepted": 15, "deferred": 0}
+{"time": 1793278945.84, "kind": "cancel", "n": 17}
+{"time": 1793278945.84, "kind": "place", "n": 15, "accepted": 15, "deferred": 0}
+{"time": 1793278956.082, "kind": "cancel", "n": 8}
+{"time": 1793278956.082, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793278966.254, "kind": "cancel", "n": 10}
+{"time": 1793278966.254, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793278976.488, "kind": "cancel", "n": 15}
+{"time": 1793278976.488, "kind": "place", "n": 15, "accepted": 15, "deferred": 0}
+{"time": 1793278986.429, "kind": "cancel", "n": 7}
+{"time": 1793278986.429, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793278996.005, "kind": "cancel", "n": 5}
+{"time": 1793278996.005, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793279005.19, "kind": "cancel", "n": 7}
+{"time": 1793279005.19, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793279016.133, "kind": "cancel", "n": 13}
+{"time": 1793279016.134, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793279026.045, "kind": "cancel", "n": 9}
+{"time": 1793279026.045, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793279035.287, "kind": "cancel", "n": 7}
+{"time": 1793279035.287, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793279045.924, "kind": "cancel", "n": 9}
+{"time": 1793279045.924, "kind": "place", "n": 15, "accepted": 15, "deferred": 0}
+{"time": 1793279055.446, "kind": "cancel", "n": 11}
+{"time": 1793279055.446, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793279065.823, "kind": "cancel", "n": 16}
+{"time": 1793279065.823, "kind": "place", "n": 16, "accepted": 16, "deferred": 0}
+{"time": 1793279075.678, "kind": "cancel", "n": 19}
+{"time": 1793279075.678, "kind": "place", "n": 17, "accepted": 17, "deferred": 0}
+{"time": 1793279085.552, "kind": "cancel", "n": 8}
+{"time": 1793279085.552, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793279095.891, "kind": "cancel", "n": 17}
+{"time": 1793279095.891, "kind": "place", "n": 15, "accepted": 15, "deferred": 0}
+{"time": 1793279106.807, "kind": "cancel", "n": 9}
+{"time": 1793279106.807, "kind": "place", "n": 17, "accepted": 17, "deferred": 0}
+{"time": 1793279115.297, "kind": "cancel", "n": 15}
+{"time": 1793279115.297, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793279126.728, "kind": "cancel", "n": 16}
+{"time": 1793279126.728, "kind": "place", "n": 16, "accepted": 16, "deferred": 0}
+{"time": 1793279136.459, "kind": "fill", "order_id": "paper-2302", "condition_id": "0xa066eb661421af3df5016345bb2a0dea8d24a468aaba108d1c0a6aab0545e71d", "token": "107063386295943575812762318760873312884267211912371300372865917141790725070729", "side": "BUY", "price": 0.41, "size": 20.0, "ts": 1793279126}
+{"time": 1793279136.5, "kind": "cancel", "n": 29}
+{"time": 1793279136.5, "kind": "place", "n": 9, "accepted": 9, "deferred": 0}
+{"time": 1793279146.603, "kind": "cancel", "n": 6}
+{"time": 1793279146.603, "kind": "place", "n": 2, "accepted": 2, "deferred": 0}
+{"time": 1793279156.235, "kind": "cancel", "n": 13}
+{"time": 1793279156.235, "kind": "place", "n": 9, "accepted": 9, "deferred": 0}
+{"time": 1793279166.362, "kind": "cancel", "n": 15}
+{"time": 1793279166.362, "kind": "place", "n": 21, "accepted": 21, "deferred": 0}
+{"time": 1793279177.602, "kind": "cancel", "n": 21}
+{"time": 1793279177.602, "kind": "place", "n": 17, "accepted": 17, "deferred": 0}
+{"time": 1793279186.792, "kind": "cancel", "n": 20}
+{"time": 1793279186.793, "kind": "place", "n": 18, "accepted": 18, "deferred": 0}
+{"time": 1793279196.121, "kind": "cancel", "n": 13}
+{"time": 1793279196.121, "kind": "place", "n": 13, "accepted": 13, "deferred": 0}
+{"time": 1793279206.46, "kind": "cancel", "n": 11}
+{"time": 1793279206.46, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793279216.197, "kind": "cancel", "n": 9}
+{"time": 1793279216.197, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793279226.026, "kind": "cancel", "n": 5}
+{"time": 1793279226.026, "kind": "place", "n": 19, "accepted": 19, "deferred": 0}
+{"time": 1793279235.657, "kind": "cancel", "n": 2}
+{"time": 1793279235.657, "kind": "place", "n": 2, "accepted": 2, "deferred": 0}
+{"time": 1793279246.943, "kind": "cancel", "n": 12}
+{"time": 1793279246.943, "kind": "place", "n": 12, "accepted": 12, "deferred": 0}
+{"time": 1793279256.152, "kind": "cancel", "n": 11}
+{"time": 1793279256.153, "kind": "place", "n": 9, "accepted": 9, "deferred": 0}
+{"time": 1793279265.911, "kind": "cancel", "n": 104}
+{"time": 1793279265.912, "kind": "place", "n": 102, "accepted": 102, "deferred": 0}
+{"time": 1793279275.577, "kind": "cancel", "n": 112}
+{"time": 1793279275.578, "kind": "place", "n": 112, "accepted": 112, "deferred": 0}
+{"time": 1793279286.343, "kind": "cancel", "n": 131}
+{"time": 1793279286.343, "kind": "place", "n": 139, "accepted": 139, "deferred": 0}
+{"time": 1793279296.101, "kind": "cancel", "n": 132}
+{"time": 1793279296.101, "kind": "place", "n": 130, "accepted": 130, "deferred": 0}
+{"time": 1793279305.428, "kind": "cancel", "n": 140}
+{"time": 1793279305.429, "kind": "place", "n": 140, "accepted": 140, "deferred": 0}
+{"time": 1793279315.614, "kind": "cancel", "n": 129}
+{"time": 1793279315.615, "kind": "place", "n": 127, "accepted": 127, "deferred": 0}
+{"time": 1793279325.577, "kind": "cancel", "n": 131}
+{"time": 1793279325.578, "kind": "place", "n": 129, "accepted": 129, "deferred": 0}
+{"time": 1793279335.85, "kind": "cancel", "n": 127}
+{"time": 1793279335.851, "kind": "place", "n": 125, "accepted": 125, "deferred": 0}
+{"time": 1793279346.1, "kind": "cancel", "n": 121}
+{"time": 1793279346.101, "kind": "place", "n": 125, "accepted": 125, "deferred": 0}
+{"time": 1793279355.6, "kind": "cancel", "n": 129}
+{"time": 1793279355.601, "kind": "place", "n": 129, "accepted": 129, "deferred": 0}
+{"time": 1793279366.308, "kind": "cancel", "n": 133}
+{"time": 1793279366.309, "kind": "place", "n": 129, "accepted": 129, "deferred": 0}
+{"time": 1793279375.867, "kind": "cancel", "n": 35}
+{"time": 1793279375.867, "kind": "place", "n": 37, "accepted": 37, "deferred": 0}
+{"time": 1793279385.539, "kind": "cancel", "n": 11}
+{"time": 1793279385.539, "kind": "place", "n": 9, "accepted": 9, "deferred": 0}
+{"time": 1793279398.441, "kind": "cancel", "n": 15}
+{"time": 1793279398.441, "kind": "place", "n": 13, "accepted": 13, "deferred": 0}
+{"time": 1793279407.856, "kind": "cancel", "n": 16}
+{"time": 1793279407.856, "kind": "place", "n": 20, "accepted": 20, "deferred": 0}
+{"time": 1793279416.28, "kind": "cancel", "n": 18}
+{"time": 1793279416.28, "kind": "place", "n": 18, "accepted": 18, "deferred": 0}
+{"time": 1793279430.104, "kind": "cancel", "n": 15}
+{"time": 1793279430.105, "kind": "place", "n": 15, "accepted": 15, "deferred": 0}
+{"time": 1793279436.828, "kind": "cancel", "n": 17}
+{"time": 1793279436.828, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793279446.385, "kind": "cancel", "n": 9}
+{"time": 1793279446.386, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793279456.135, "kind": "cancel", "n": 9}
+{"time": 1793279456.135, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793279466.415, "kind": "cancel", "n": 22}
+{"time": 1793279466.415, "kind": "place", "n": 22, "accepted": 22, "deferred": 0}
+{"time": 1793279475.573, "kind": "cancel", "n": 14}
+{"time": 1793279475.573, "kind": "place", "n": 14, "accepted": 14, "deferred": 0}
+{"time": 1793279486.55, "kind": "cancel", "n": 15}
+{"time": 1793279486.55, "kind": "place", "n": 13, "accepted": 13, "deferred": 0}
+{"time": 1793279496.675, "kind": "cancel", "n": 8}
+{"time": 1793279496.675, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793279506.134, "kind": "cancel", "n": 11}
+{"time": 1793279506.134, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793279515.668, "kind": "cancel", "n": 3}
+{"time": 1793279515.668, "kind": "place", "n": 3, "accepted": 3, "deferred": 0}
+{"time": 1793279525.969, "kind": "cancel", "n": 16}
+{"time": 1793279525.969, "kind": "place", "n": 18, "accepted": 18, "deferred": 0}
+{"time": 1793279535.72, "kind": "cancel", "n": 8}
+{"time": 1793279535.72, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793279547.296, "kind": "cancel", "n": 9}
+{"time": 1793279547.296, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793279557.128, "kind": "cancel", "n": 9}
+{"time": 1793279557.128, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793279565.717, "kind": "cancel", "n": 12}
+{"time": 1793279565.717, "kind": "place", "n": 12, "accepted": 12, "deferred": 0}
+{"time": 1793279577.185, "kind": "cancel", "n": 18}
+{"time": 1793279577.185, "kind": "place", "n": 16, "accepted": 16, "deferred": 0}
+{"time": 1793279585.709, "kind": "cancel", "n": 13}
+{"time": 1793279585.71, "kind": "place", "n": 41, "accepted": 41, "deferred": 0}
+{"time": 1793279596.518, "kind": "cancel", "n": 11}
+{"time": 1793279596.518, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793279606.048, "kind": "cancel", "n": 10}
+{"time": 1793279606.048, "kind": "place", "n": 10, "accepted": 10, "deferred": 0}
+{"time": 1793279615.732, "kind": "cancel", "n": 11}
+{"time": 1793279615.732, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793279627.51, "kind": "cancel", "n": 14}
+{"time": 1793279627.51, "kind": "place", "n": 12, "accepted": 12, "deferred": 0}
+{"time": 1793279636.026, "kind": "cancel", "n": 11}
+{"time": 1793279636.026, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793279646.652, "kind": "cancel", "n": 17}
+{"time": 1793279646.652, "kind": "place", "n": 19, "accepted": 19, "deferred": 0}
+{"time": 1793279656.272, "kind": "cancel", "n": 17}
+{"time": 1793279656.272, "kind": "place", "n": 17, "accepted": 17, "deferred": 0}
+{"time": 1793279666.99, "kind": "cancel", "n": 17}
+{"time": 1793279666.99, "kind": "place", "n": 17, "accepted": 17, "deferred": 0}
+{"time": 1793279676.022, "kind": "cancel", "n": 9}
+{"time": 1793279676.022, "kind": "place", "n": 9, "accepted": 9, "deferred": 0}
+{"time": 1793279686.482, "kind": "cancel", "n": 15}
+{"time": 1793279686.482, "kind": "place", "n": 13, "accepted": 13, "deferred": 0}
+{"time": 1793279695.981, "kind": "cancel", "n": 11}
+{"time": 1793279695.981, "kind": "place", "n": 9, "accepted": 9, "deferred": 0}
+{"time": 1793279707.652, "kind": "cancel", "n": 20}
+{"time": 1793279707.652, "kind": "place", "n": 30, "accepted": 30, "deferred": 0}
+{"time": 1793279715.966, "kind": "cancel", "n": 12}
+{"time": 1793279715.966, "kind": "place", "n": 12, "accepted": 12, "deferred": 0}
+{"time": 1793279725.971, "kind": "cancel", "n": 17}
+{"time": 1793279725.971, "kind": "place", "n": 15, "accepted": 15, "deferred": 0}
+{"time": 1793279737.185, "kind": "cancel", "n": 30}
+{"time": 1793279737.185, "kind": "place", "n": 14, "accepted": 14, "deferred": 0}
+{"time": 1793279746.419, "kind": "cancel", "n": 14}
+{"time": 1793279746.419, "kind": "place", "n": 12, "accepted": 12, "deferred": 0}
+{"time": 1793279755.869, "kind": "cancel", "n": 20}
+{"time": 1793279755.87, "kind": "place", "n": 20, "accepted": 20, "deferred": 0}
+{"time": 1793279765.924, "kind": "cancel", "n": 20}
+{"time": 1793279765.924, "kind": "place", "n": 26, "accepted": 26, "deferred": 0}
+{"time": 1793279776.087, "kind": "cancel", "n": 9}
+{"time": 1793279776.087, "kind": "place", "n": 9, "accepted": 9, "deferred": 0}
+{"time": 1793279786.002, "kind": "cancel", "n": 8}
+{"time": 1793279786.002, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793279795.89, "kind": "cancel", "n": 19}
+{"time": 1793279795.89, "kind": "place", "n": 19, "accepted": 19, "deferred": 0}
+{"time": 1793279805.958, "kind": "cancel", "n": 6}
+{"time": 1793279805.958, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793279816.115, "kind": "cancel", "n": 20}
+{"time": 1793279816.115, "kind": "place", "n": 20, "accepted": 20, "deferred": 0}
+{"time": 1793279826.091, "kind": "cancel", "n": 17}
+{"time": 1793279826.091, "kind": "place", "n": 27, "accepted": 27, "deferred": 0}
+{"time": 1793279836.315, "kind": "cancel", "n": 10}
+{"time": 1793279836.315, "kind": "place", "n": 10, "accepted": 10, "deferred": 0}
+{"time": 1793279846.011, "kind": "cancel", "n": 4}
+{"time": 1793279846.011, "kind": "place", "n": 4, "accepted": 4, "deferred": 0}
+{"time": 1793279856.131, "kind": "cancel", "n": 17}
+{"time": 1793279856.131, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793279866.416, "kind": "cancel", "n": 13}
+{"time": 1793279866.416, "kind": "place", "n": 13, "accepted": 13, "deferred": 0}
+{"time": 1793279876.8, "kind": "cancel", "n": 10}
+{"time": 1793279876.8, "kind": "place", "n": 10, "accepted": 10, "deferred": 0}
+{"time": 1793279887.495, "kind": "cancel", "n": 13}
+{"time": 1793279887.495, "kind": "place", "n": 15, "accepted": 15, "deferred": 0}
+{"time": 1793279895.968, "kind": "cancel", "n": 6}
+{"time": 1793279895.968, "kind": "place", "n": 4, "accepted": 4, "deferred": 0}
+{"time": 1793279906.249, "kind": "cancel", "n": 8}
+{"time": 1793279906.249, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793279916.209, "kind": "cancel", "n": 15}
+{"time": 1793279916.209, "kind": "place", "n": 15, "accepted": 15, "deferred": 0}
+{"time": 1793279926.243, "kind": "cancel", "n": 6}
+{"time": 1793279926.243, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793279936.454, "kind": "cancel", "n": 15}
+{"time": 1793279936.454, "kind": "place", "n": 13, "accepted": 13, "deferred": 0}
+{"time": 1793279947.155, "kind": "cancel", "n": 14}
+{"time": 1793279947.156, "kind": "place", "n": 18, "accepted": 18, "deferred": 0}
+{"time": 1793279956.202, "kind": "cancel", "n": 9}
+{"time": 1793279956.202, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793279966.533, "kind": "cancel", "n": 9}
+{"time": 1793279966.533, "kind": "place", "n": 9, "accepted": 9, "deferred": 0}
+{"time": 1793279976.241, "kind": "cancel", "n": 8}
+{"time": 1793279976.241, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793279986.435, "kind": "cancel", "n": 13}
+{"time": 1793279986.435, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793279996.293, "kind": "cancel", "n": 13}
+{"time": 1793279996.293, "kind": "place", "n": 13, "accepted": 13, "deferred": 0}
+{"time": 1793280007.931, "kind": "cancel", "n": 24}
+{"time": 1793280007.931, "kind": "place", "n": 36, "accepted": 36, "deferred": 0}
+{"time": 1793280016.204, "kind": "cancel", "n": 8}
+{"time": 1793280016.204, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793280026.892, "kind": "cancel", "n": 12}
+{"time": 1793280026.892, "kind": "place", "n": 12, "accepted": 12, "deferred": 0}
+{"time": 1793280036.771, "kind": "cancel", "n": 17}
+{"time": 1793280036.772, "kind": "place", "n": 9, "accepted": 9, "deferred": 0}
+{"time": 1793280048.106, "kind": "cancel", "n": 15}
+{"time": 1793280048.106, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793280056.354, "kind": "cancel", "n": 10}
+{"time": 1793280056.355, "kind": "place", "n": 10, "accepted": 10, "deferred": 0}
+{"time": 1793280066.54, "kind": "cancel", "n": 17}
+{"time": 1793280066.54, "kind": "place", "n": 21, "accepted": 21, "deferred": 0}
+{"time": 1793280076.457, "kind": "cancel", "n": 16}
+{"time": 1793280076.457, "kind": "place", "n": 16, "accepted": 16, "deferred": 0}
+{"time": 1793280086.381, "kind": "cancel", "n": 22}
+{"time": 1793280086.381, "kind": "place", "n": 18, "accepted": 18, "deferred": 0}
+{"time": 1793280096.902, "kind": "cancel", "n": 13}
+{"time": 1793280096.902, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793280106.409, "kind": "cancel", "n": 87}
+{"time": 1793280106.41, "kind": "place", "n": 87, "accepted": 87, "deferred": 0}
+{"time": 1793280117.494, "kind": "cancel", "n": 98}
+{"time": 1793280117.494, "kind": "place", "n": 98, "accepted": 98, "deferred": 0}
+{"time": 1793280126.791, "kind": "cancel", "n": 125}
+{"time": 1793280126.792, "kind": "place", "n": 139, "accepted": 139, "deferred": 0}
+{"time": 1793280137.417, "kind": "cancel", "n": 117}
+{"time": 1793280137.418, "kind": "place", "n": 115, "accepted": 115, "deferred": 0}
+{"time": 1793280147.935, "kind": "cancel", "n": 117}
+{"time": 1793280147.937, "kind": "place", "n": 117, "accepted": 117, "deferred": 0}
+{"time": 1793280157.928, "kind": "cancel", "n": 101}
+{"time": 1793280157.929, "kind": "place", "n": 101, "accepted": 101, "deferred": 0}
+{"time": 1793280167.354, "kind": "cancel", "n": 117}
+{"time": 1793280167.355, "kind": "place", "n": 117, "accepted": 117, "deferred": 0}
+{"time": 1793280176.588, "kind": "cancel", "n": 112}
+{"time": 1793280176.588, "kind": "place", "n": 110, "accepted": 110, "deferred": 0}
+{"time": 1793280187.852, "kind": "cancel", "n": 119}
+{"time": 1793280187.853, "kind": "place", "n": 123, "accepted": 123, "deferred": 0}
+{"time": 1793280197.105, "kind": "cancel", "n": 116}
+{"time": 1793280197.106, "kind": "place", "n": 116, "accepted": 116, "deferred": 0}
+{"time": 1793280207.428, "kind": "cancel", "n": 116}
+{"time": 1793280207.429, "kind": "place", "n": 114, "accepted": 114, "deferred": 0}
+{"time": 1793280216.708, "kind": "cancel", "n": 49}
+{"time": 1793280216.708, "kind": "place", "n": 47, "accepted": 47, "deferred": 0}
+{"time": 1793280293.172, "kind": "universe", "markets": 947, "capital": 340337.66, "budget": 350000.0, "hurdle_mult": 2.034}
+{"time": 1793280296.679, "kind": "cancel", "n": 1139}
+{"time": 1793280296.679, "kind": "place", "n": 150, "accepted": 150, "deferred": 343}
+{"time": 1793280298.425, "kind": "place", "n": 150, "accepted": 150, "deferred": 193}
+{"time": 1793280309.22, "kind": "cancel", "n": 1}
+{"time": 1793280309.22, "kind": "place", "n": 150, "accepted": 150, "deferred": 52}
+{"time": 1793280320.135, "kind": "cancel", "n": 5}
+{"time": 1793280320.135, "kind": "place", "n": 57, "accepted": 57, "deferred": 0}
+{"time": 1793280328.774, "kind": "cancel", "n": 4}
+{"time": 1793280328.774, "kind": "place", "n": 4, "accepted": 4, "deferred": 0}
+{"time": 1793280339.196, "kind": "cancel", "n": 4}
+{"time": 1793280339.196, "kind": "place", "n": 4, "accepted": 4, "deferred": 0}
+{"time": 1793280348.469, "kind": "cancel", "n": 4}
+{"time": 1793280348.469, "kind": "place", "n": 4, "accepted": 4, "deferred": 0}
+{"time": 1793280358.514, "kind": "cancel", "n": 2}
+{"time": 1793280358.514, "kind": "place", "n": 2, "accepted": 2, "deferred": 0}
+{"time": 1793280368.573, "kind": "cancel", "n": 7}
+{"time": 1793280368.573, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793280378.008, "kind": "cancel", "n": 2}
+{"time": 1793280378.008, "kind": "place", "n": 2, "accepted": 2, "deferred": 0}
+{"time": 1793280387.957, "kind": "cancel", "n": 6}
+{"time": 1793280387.957, "kind": "place", "n": 4, "accepted": 4, "deferred": 0}
+{"time": 1793280398.307, "kind": "cancel", "n": 7}
+{"time": 1793280398.307, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793280408.124, "kind": "cancel", "n": 6}
+{"time": 1793280408.124, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793280417.903, "kind": "cancel", "n": 13}
+{"time": 1793280417.903, "kind": "place", "n": 13, "accepted": 13, "deferred": 0}
+{"time": 1793280428.516, "kind": "cancel", "n": 8}
+{"time": 1793280428.516, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793280438.383, "kind": "cancel", "n": 9}
+{"time": 1793280438.383, "kind": "place", "n": 9, "accepted": 9, "deferred": 0}
+{"time": 1793280448.26, "kind": "cancel", "n": 6}
+{"time": 1793280448.26, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793280458.639, "kind": "cancel", "n": 5}
+{"time": 1793280458.639, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793280468.493, "kind": "cancel", "n": 5}
+{"time": 1793280468.494, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793280478.382, "kind": "cancel", "n": 7}
+{"time": 1793280478.382, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793280489.115, "kind": "cancel", "n": 7}
+{"time": 1793280489.115, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793280498.297, "kind": "cancel", "n": 4}
+{"time": 1793280498.297, "kind": "place", "n": 4, "accepted": 4, "deferred": 0}
+{"time": 1793280508.396, "kind": "cancel", "n": 11}
+{"time": 1793280508.396, "kind": "place", "n": 9, "accepted": 9, "deferred": 0}
+{"time": 1793280518.698, "kind": "cancel", "n": 5}
+{"time": 1793280518.698, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793280528.092, "kind": "cancel", "n": 5}
+{"time": 1793280528.092, "kind": "place", "n": 3, "accepted": 3, "deferred": 0}
+{"time": 1793280538.053, "kind": "cancel", "n": 7}
+{"time": 1793280538.053, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793280548.694, "kind": "cancel", "n": 4}
+{"time": 1793280548.694, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793280558.234, "kind": "cancel", "n": 5}
+{"time": 1793280558.234, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793280568.295, "kind": "cancel", "n": 3}
+{"time": 1793280568.295, "kind": "place", "n": 3, "accepted": 3, "deferred": 0}
+{"time": 1793280588.025, "kind": "cancel", "n": 7}
+{"time": 1793280588.025, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793280598.68, "kind": "cancel", "n": 19}
+{"time": 1793280598.68, "kind": "place", "n": 3, "accepted": 3, "deferred": 0}
+{"time": 1793280608.625, "kind": "cancel", "n": 10}
+{"time": 1793280608.625, "kind": "place", "n": 10, "accepted": 10, "deferred": 0}
+{"time": 1793280619.49, "kind": "cancel", "n": 7}
+{"time": 1793280619.49, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793280628.271, "kind": "cancel", "n": 7}
+{"time": 1793280628.272, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793280638.692, "kind": "cancel", "n": 4}
+{"time": 1793280638.692, "kind": "place", "n": 4, "accepted": 4, "deferred": 0}
+{"time": 1793280648.021, "kind": "cancel", "n": 5}
+{"time": 1793280648.022, "kind": "place", "n": 3, "accepted": 3, "deferred": 0}
+{"time": 1793280662.089, "kind": "cancel", "n": 9}
+{"time": 1793280662.089, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793280668.129, "kind": "cancel", "n": 10}
+{"time": 1793280668.129, "kind": "place", "n": 10, "accepted": 10, "deferred": 0}
+{"time": 1793280678.478, "kind": "cancel", "n": 6}
+{"time": 1793280678.478, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793280689.588, "kind": "cancel", "n": 6}
+{"time": 1793280689.588, "kind": "place", "n": 4, "accepted": 4, "deferred": 0}
+{"time": 1793280699.971, "kind": "cancel", "n": 5}
+{"time": 1793280699.971, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793280708.22, "kind": "cancel", "n": 7}
+{"time": 1793280708.221, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793280718.345, "kind": "cancel", "n": 7}
+{"time": 1793280718.345, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793280728.463, "kind": "cancel", "n": 4}
+{"time": 1793280728.463, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793280739.019, "kind": "cancel", "n": 3}
+{"time": 1793280739.019, "kind": "place", "n": 3, "accepted": 3, "deferred": 0}
+{"time": 1793280749.218, "kind": "cancel", "n": 1}
+{"time": 1793280749.218, "kind": "place", "n": 1, "accepted": 1, "deferred": 0}
+{"time": 1793280758.601, "kind": "cancel", "n": 4}
+{"time": 1793280758.602, "kind": "place", "n": 4, "accepted": 4, "deferred": 0}
+{"time": 1793280768.255, "kind": "cancel", "n": 1}
+{"time": 1793280768.255, "kind": "place", "n": 1, "accepted": 1, "deferred": 0}
+{"time": 1793280779.135, "kind": "cancel", "n": 4}
+{"time": 1793280779.136, "kind": "place", "n": 4, "accepted": 4, "deferred": 0}
+{"time": 1793280788.56, "kind": "cancel", "n": 6}
+{"time": 1793280788.56, "kind": "place", "n": 14, "accepted": 14, "deferred": 0}
+{"time": 1793280799.211, "kind": "cancel", "n": 1}
+{"time": 1793280799.211, "kind": "place", "n": 1, "accepted": 1, "deferred": 0}
+{"time": 1793280808.428, "kind": "cancel", "n": 2}
+{"time": 1793280808.428, "kind": "place", "n": 2, "accepted": 2, "deferred": 0}
+{"time": 1793280818.95, "kind": "cancel", "n": 4}
+{"time": 1793280818.95, "kind": "place", "n": 4, "accepted": 4, "deferred": 0}
+{"time": 1793280828.475, "kind": "cancel", "n": 7}
+{"time": 1793280828.475, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793280838.484, "kind": "cancel", "n": 4}
+{"time": 1793280838.484, "kind": "place", "n": 4, "accepted": 4, "deferred": 0}
+{"time": 1793280848.726, "kind": "cancel", "n": 9}
+{"time": 1793280848.727, "kind": "place", "n": 13, "accepted": 13, "deferred": 0}
+{"time": 1793280858.769, "kind": "cancel", "n": 3}
+{"time": 1793280858.769, "kind": "place", "n": 3, "accepted": 3, "deferred": 0}
+{"time": 1793280869.336, "kind": "cancel", "n": 2}
+{"time": 1793280869.336, "kind": "place", "n": 2, "accepted": 2, "deferred": 0}
+{"time": 1793280878.222, "kind": "cancel", "n": 2}
+{"time": 1793280888.313, "kind": "cancel", "n": 3}
+{"time": 1793280888.313, "kind": "place", "n": 3, "accepted": 3, "deferred": 0}
+{"time": 1793280898.838, "kind": "cancel", "n": 9}
+{"time": 1793280898.838, "kind": "place", "n": 1, "accepted": 1, "deferred": 0}
+{"time": 1793280910.229, "kind": "cancel", "n": 7}
+{"time": 1793280910.23, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793280920.333, "kind": "cancel", "n": 4}
+{"time": 1793280929.714, "kind": "cancel", "n": 4}
+{"time": 1793280929.715, "kind": "place", "n": 4, "accepted": 4, "deferred": 0}
+{"time": 1793280938.224, "kind": "cancel", "n": 6}
+{"time": 1793280938.224, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793280949.378, "kind": "cancel", "n": 28}
+{"time": 1793280949.378, "kind": "place", "n": 28, "accepted": 28, "deferred": 0}
+{"time": 1793280958.326, "kind": "cancel", "n": 46}
+{"time": 1793280958.326, "kind": "place", "n": 46, "accepted": 46, "deferred": 0}
+{"time": 1793280968.375, "kind": "cancel", "n": 35}
+{"time": 1793280968.376, "kind": "place", "n": 37, "accepted": 37, "deferred": 0}
+{"time": 1793280978.275, "kind": "cancel", "n": 44}
+{"time": 1793280978.275, "kind": "place", "n": 44, "accepted": 44, "deferred": 0}
+{"time": 1793280991.167, "kind": "cancel", "n": 39}
+{"time": 1793280991.167, "kind": "place", "n": 39, "accepted": 39, "deferred": 0}
+{"time": 1793280999.931, "kind": "cancel", "n": 36}
+{"time": 1793280999.932, "kind": "place", "n": 36, "accepted": 36, "deferred": 0}
+{"time": 1793281011.361, "kind": "cancel", "n": 31}
+{"time": 1793281011.361, "kind": "place", "n": 29, "accepted": 29, "deferred": 0}
+{"time": 1793281019.569, "kind": "cancel", "n": 29}
+{"time": 1793281019.569, "kind": "place", "n": 29, "accepted": 29, "deferred": 0}
+{"time": 1793281029.369, "kind": "cancel", "n": 31}
+{"time": 1793281029.37, "kind": "place", "n": 34, "accepted": 34, "deferred": 0}
+{"time": 1793281039.677, "kind": "cancel", "n": 34}
+{"time": 1793281039.677, "kind": "place", "n": 34, "accepted": 34, "deferred": 0}
+{"time": 1793281048.774, "kind": "cancel", "n": 28}
+{"time": 1793281048.774, "kind": "place", "n": 28, "accepted": 28, "deferred": 0}
+{"time": 1793281060.796, "kind": "cancel", "n": 11}
+{"time": 1793281060.796, "kind": "place", "n": 9, "accepted": 9, "deferred": 0}
+{"time": 1793281070.691, "kind": "cancel", "n": 5}
+{"time": 1793281070.691, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793281079.185, "kind": "cancel", "n": 7}
+{"time": 1793281079.185, "kind": "place", "n": 3, "accepted": 3, "deferred": 0}
+{"time": 1793281089.213, "kind": "cancel", "n": 1}
+{"time": 1793281089.213, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793281100.462, "kind": "cancel", "n": 5}
+{"time": 1793281100.462, "kind": "place", "n": 1, "accepted": 1, "deferred": 0}
+{"time": 1793281109.317, "kind": "cancel", "n": 2}
+{"time": 1793281109.318, "kind": "place", "n": 2, "accepted": 2, "deferred": 0}
+{"time": 1793281118.398, "kind": "cancel", "n": 1}
+{"time": 1793281118.398, "kind": "place", "n": 1, "accepted": 1, "deferred": 0}
+{"time": 1793281129.242, "kind": "cancel", "n": 8}
+{"time": 1793281129.242, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793281138.913, "kind": "cancel", "n": 243}
+{"time": 1793281138.913, "kind": "place", "n": 150, "accepted": 150, "deferred": 93}
+{"time": 1793281148.895, "kind": "cancel", "n": 123}
+{"time": 1793281148.895, "kind": "place", "n": 150, "accepted": 150, "deferred": 80}
+{"time": 1793281158.83, "kind": "cancel", "n": 46}
+{"time": 1793281158.83, "kind": "place", "n": 128, "accepted": 128, "deferred": 0}
+{"time": 1793281168.708, "kind": "cancel", "n": 6}
+{"time": 1793281168.708, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793281179.709, "kind": "cancel", "n": 2}
+{"time": 1793281179.71, "kind": "place", "n": 2, "accepted": 2, "deferred": 0}
+{"time": 1793281189.119, "kind": "cancel", "n": 6}
+{"time": 1793281189.12, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793281200.691, "kind": "cancel", "n": 4}
+{"time": 1793281211.444, "kind": "cancel", "n": 11}
+{"time": 1793281211.444, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793281219.278, "kind": "cancel", "n": 1}
+{"time": 1793281219.278, "kind": "place", "n": 1, "accepted": 1, "deferred": 0}
+{"time": 1793281230.164, "kind": "cancel", "n": 9}
+{"time": 1793281230.165, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793281239.309, "kind": "cancel", "n": 4}
+{"time": 1793281239.309, "kind": "place", "n": 2, "accepted": 2, "deferred": 0}
+{"time": 1793281249.447, "kind": "cancel", "n": 6}
+{"time": 1793281249.447, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793281262.506, "kind": "cancel", "n": 5}
+{"time": 1793281262.506, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793281269.059, "kind": "cancel", "n": 5}
+{"time": 1793281269.059, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793281279.621, "kind": "cancel", "n": 4}
+{"time": 1793281279.621, "kind": "place", "n": 4, "accepted": 4, "deferred": 0}
+{"time": 1793281289.764, "kind": "cancel", "n": 5}
+{"time": 1793281289.764, "kind": "place", "n": 3, "accepted": 3, "deferred": 0}
+{"time": 1793281299.17, "kind": "cancel", "n": 7}
+{"time": 1793281299.17, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793281309.448, "kind": "cancel", "n": 5}
+{"time": 1793281309.448, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793281319.329, "kind": "cancel", "n": 5}
+{"time": 1793281319.329, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793281329.292, "kind": "cancel", "n": 5}
+{"time": 1793281329.292, "kind": "place", "n": 9, "accepted": 9, "deferred": 0}
+{"time": 1793281340.378, "kind": "cancel", "n": 4}
+{"time": 1793281340.378, "kind": "place", "n": 2, "accepted": 2, "deferred": 0}
+{"time": 1793281349.609, "kind": "cancel", "n": 4}
+{"time": 1793281349.61, "kind": "place", "n": 4, "accepted": 4, "deferred": 0}
+{"time": 1793281359.155, "kind": "cancel", "n": 7}
+{"time": 1793281359.155, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793281369.291, "kind": "cancel", "n": 5}
+{"time": 1793281369.291, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793281379.431, "kind": "cancel", "n": 3}
+{"time": 1793281379.431, "kind": "place", "n": 3, "accepted": 3, "deferred": 0}
+{"time": 1793281389.661, "kind": "cancel", "n": 8}
+{"time": 1793281389.661, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793281398.626, "kind": "cancel", "n": 7}
+{"time": 1793281398.626, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793281419.858, "kind": "cancel", "n": 5}
+{"time": 1793281419.858, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793281429.356, "kind": "cancel", "n": 7}
+{"time": 1793281429.356, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793281440.17, "kind": "cancel", "n": 4}
+{"time": 1793281440.17, "kind": "place", "n": 4, "accepted": 4, "deferred": 0}
+{"time": 1793281450.373, "kind": "cancel", "n": 9}
+{"time": 1793281450.373, "kind": "place", "n": 17, "accepted": 17, "deferred": 0}
+{"time": 1793281459.595, "kind": "cancel", "n": 10}
+{"time": 1793281459.595, "kind": "place", "n": 10, "accepted": 10, "deferred": 0}
+{"time": 1793281470.063, "kind": "cancel", "n": 5}
+{"time": 1793281470.063, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793281479.201, "kind": "cancel", "n": 5}
+{"time": 1793281479.201, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793281489.173, "kind": "cancel", "n": 5}
+{"time": 1793281489.174, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793281499.253, "kind": "cancel", "n": 13}
+{"time": 1793281499.253, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793281509.782, "kind": "cancel", "n": 8}
+{"time": 1793281509.782, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793281518.726, "kind": "cancel", "n": 6}
+{"time": 1793281518.726, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793281530.403, "kind": "cancel", "n": 5}
+{"time": 1793281530.404, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793281540.543, "kind": "cancel", "n": 2}
+{"time": 1793281540.543, "kind": "place", "n": 2, "accepted": 2, "deferred": 0}
+{"time": 1793281551.095, "kind": "cancel", "n": 11}
+{"time": 1793281551.095, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793281560.26, "kind": "cancel", "n": 3}
+{"time": 1793281560.26, "kind": "place", "n": 3, "accepted": 3, "deferred": 0}
+{"time": 1793281570.125, "kind": "cancel", "n": 9}
+{"time": 1793281570.125, "kind": "place", "n": 9, "accepted": 9, "deferred": 0}
+{"time": 1793281581.719, "kind": "cancel", "n": 7}
+{"time": 1793281581.719, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793281589.477, "kind": "cancel", "n": 5}
+{"time": 1793281589.477, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793281599.868, "kind": "cancel", "n": 8}
+{"time": 1793281599.868, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793281608.985, "kind": "cancel", "n": 7}
+{"time": 1793281608.985, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793281619.924, "kind": "cancel", "n": 6}
+{"time": 1793281619.925, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793281629.751, "kind": "cancel", "n": 13}
+{"time": 1793281629.751, "kind": "place", "n": 15, "accepted": 15, "deferred": 0}
+{"time": 1793281639.031, "kind": "cancel", "n": 2}
+{"time": 1793281639.031, "kind": "place", "n": 2, "accepted": 2, "deferred": 0}
+{"time": 1793281650.49, "kind": "cancel", "n": 9}
+{"time": 1793281650.49, "kind": "place", "n": 9, "accepted": 9, "deferred": 0}
+{"time": 1793281660.711, "kind": "cancel", "n": 8}
+{"time": 1793281660.711, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793281669.569, "kind": "cancel", "n": 4}
+{"time": 1793281669.569, "kind": "place", "n": 4, "accepted": 4, "deferred": 0}
+{"time": 1793281679.919, "kind": "cancel", "n": 6}
+{"time": 1793281679.919, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793281689.605, "kind": "cancel", "n": 15}
+{"time": 1793281689.605, "kind": "place", "n": 17, "accepted": 17, "deferred": 0}
+{"time": 1793281700.147, "kind": "cancel", "n": 6}
+{"time": 1793281700.147, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793281710.046, "kind": "cancel", "n": 9}
+{"time": 1793281710.046, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793281719.294, "kind": "cancel", "n": 8}
+{"time": 1793281719.295, "kind": "place", "n": 4, "accepted": 4, "deferred": 0}
+{"time": 1793281729.019, "kind": "cancel", "n": 4}
+{"time": 1793281729.019, "kind": "place", "n": 4, "accepted": 4, "deferred": 0}
+{"time": 1793281739.224, "kind": "cancel", "n": 2}
+{"time": 1793281739.224, "kind": "place", "n": 2, "accepted": 2, "deferred": 0}
+{"time": 1793281749.659, "kind": "cancel", "n": 12}
+{"time": 1793281749.659, "kind": "place", "n": 14, "accepted": 14, "deferred": 0}
+{"time": 1793281759.786, "kind": "cancel", "n": 4}
+{"time": 1793281759.786, "kind": "place", "n": 2, "accepted": 2, "deferred": 0}
+{"time": 1793281769.747, "kind": "cancel", "n": 6}
+{"time": 1793281769.747, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793281779.897, "kind": "cancel", "n": 5}
+{"time": 1793281779.897, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793281789.79, "kind": "cancel", "n": 23}
+{"time": 1793281789.79, "kind": "place", "n": 21, "accepted": 21, "deferred": 0}
+{"time": 1793281799.609, "kind": "cancel", "n": 40}
+{"time": 1793281799.61, "kind": "place", "n": 34, "accepted": 34, "deferred": 0}
+{"time": 1793281809.968, "kind": "cancel", "n": 40}
+{"time": 1793281809.968, "kind": "place", "n": 42, "accepted": 42, "deferred": 0}
+{"time": 1793281819.874, "kind": "cancel", "n": 42}
+{"time": 1793281819.874, "kind": "place", "n": 42, "accepted": 42, "deferred": 0}
+{"time": 1793281829.012, "kind": "cancel", "n": 33}
+{"time": 1793281829.012, "kind": "place", "n": 33, "accepted": 33, "deferred": 0}
+{"time": 1793281840.79, "kind": "cancel", "n": 30}
+{"time": 1793281840.79, "kind": "place", "n": 30, "accepted": 30, "deferred": 0}
+{"time": 1793281850.452, "kind": "cancel", "n": 30}
+{"time": 1793281850.452, "kind": "place", "n": 30, "accepted": 30, "deferred": 0}
+{"time": 1793281860.096, "kind": "cancel", "n": 26}
+{"time": 1793281860.096, "kind": "place", "n": 26, "accepted": 26, "deferred": 0}
+{"time": 1793281869.936, "kind": "cancel", "n": 37}
+{"time": 1793281869.936, "kind": "place", "n": 41, "accepted": 41, "deferred": 0}
+{"time": 1793281880.424, "kind": "cancel", "n": 37}
+{"time": 1793281880.424, "kind": "place", "n": 37, "accepted": 37, "deferred": 0}
+{"time": 1793281889.111, "kind": "cancel", "n": 34}
+{"time": 1793281889.111, "kind": "place", "n": 34, "accepted": 34, "deferred": 0}
+{"time": 1793281899.817, "kind": "cancel", "n": 13}
+{"time": 1793281899.817, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793281909.621, "kind": "cancel", "n": 6}
+{"time": 1793281909.621, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793281919.746, "kind": "cancel", "n": 6}
+{"time": 1793281919.746, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793281929.945, "kind": "cancel", "n": 7}
+{"time": 1793281929.946, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793281939.445, "kind": "cancel", "n": 4}
+{"time": 1793281939.445, "kind": "place", "n": 4, "accepted": 4, "deferred": 0}
+{"time": 1793281949.843, "kind": "cancel", "n": 5}
+{"time": 1793281949.843, "kind": "place", "n": 3, "accepted": 3, "deferred": 0}
+{"time": 1793281960.144, "kind": "cancel", "n": 3}
+{"time": 1793281960.144, "kind": "place", "n": 3, "accepted": 3, "deferred": 0}
+{"time": 1793281969.49, "kind": "cancel", "n": 11}
+{"time": 1793281969.49, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793281982.026, "kind": "cancel", "n": 134}
+{"time": 1793281982.026, "kind": "place", "n": 134, "accepted": 134, "deferred": 0}
+{"time": 1793281990.983, "kind": "cancel", "n": 132}
+{"time": 1793281990.984, "kind": "place", "n": 132, "accepted": 132, "deferred": 0}
+{"time": 1793281999.623, "kind": "cancel", "n": 111}
+{"time": 1793281999.624, "kind": "place", "n": 111, "accepted": 111, "deferred": 0}
+{"time": 1793282009.54, "kind": "cancel", "n": 3}
+{"time": 1793282009.54, "kind": "place", "n": 3, "accepted": 3, "deferred": 0}
+{"time": 1793282019.668, "kind": "cancel", "n": 2}
+{"time": 1793282019.668, "kind": "place", "n": 2, "accepted": 2, "deferred": 0}
+{"time": 1793282029.719, "kind": "cancel", "n": 4}
+{"time": 1793282029.72, "kind": "place", "n": 150, "accepted": 150, "deferred": 518}
+{"time": 1793282039.638, "kind": "cancel", "n": 2}
+{"time": 1793282039.639, "kind": "place", "n": 150, "accepted": 150, "deferred": 368}
+{"time": 1793282049.578, "kind": "cancel", "n": 15}
+{"time": 1793282049.579, "kind": "place", "n": 150, "accepted": 150, "deferred": 235}
+{"time": 1793282059.712, "kind": "cancel", "n": 3}
+{"time": 1793282059.712, "kind": "place", "n": 150, "accepted": 150, "deferred": 88}
+{"time": 1793282070.353, "kind": "cancel", "n": 17}
+{"time": 1793282070.353, "kind": "place", "n": 101, "accepted": 101, "deferred": 0}
+{"time": 1793282080.04, "kind": "cancel", "n": 8}
+{"time": 1793282080.04, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793282089.652, "kind": "cancel", "n": 12}
+{"time": 1793282089.653, "kind": "place", "n": 10, "accepted": 10, "deferred": 0}
+{"time": 1793282100.142, "kind": "cancel", "n": 10}
+{"time": 1793282100.142, "kind": "place", "n": 10, "accepted": 10, "deferred": 0}
+{"time": 1793282109.974, "kind": "cancel", "n": 24}
+{"time": 1793282109.974, "kind": "place", "n": 20, "accepted": 20, "deferred": 0}
+{"time": 1793282120.139, "kind": "cancel", "n": 18}
+{"time": 1793282120.139, "kind": "place", "n": 18, "accepted": 18, "deferred": 0}
+{"time": 1793282130.019, "kind": "cancel", "n": 21}
+{"time": 1793282130.019, "kind": "place", "n": 19, "accepted": 19, "deferred": 0}
+{"time": 1793282139.704, "kind": "cancel", "n": 25}
+{"time": 1793282139.704, "kind": "place", "n": 15, "accepted": 15, "deferred": 0}
+{"time": 1793282150.321, "kind": "cancel", "n": 11}
+{"time": 1793282150.321, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793282160.562, "kind": "cancel", "n": 12}
+{"time": 1793282160.562, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793282170.314, "kind": "cancel", "n": 16}
+{"time": 1793282170.314, "kind": "place", "n": 18, "accepted": 18, "deferred": 0}
+{"time": 1793282180.087, "kind": "cancel", "n": 6}
+{"time": 1793282180.087, "kind": "place", "n": 4, "accepted": 4, "deferred": 0}
+{"time": 1793282189.973, "kind": "cancel", "n": 11}
+{"time": 1793282189.973, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793282200.029, "kind": "cancel", "n": 8}
+{"time": 1793282200.03, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793282209.523, "kind": "cancel", "n": 5}
+{"time": 1793282209.523, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793282220.173, "kind": "cancel", "n": 11}
+{"time": 1793282220.173, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793282229.798, "kind": "cancel", "n": 18}
+{"time": 1793282229.798, "kind": "place", "n": 24, "accepted": 24, "deferred": 0}
+{"time": 1793282240.956, "kind": "cancel", "n": 8}
+{"time": 1793282240.956, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793282250.613, "kind": "cancel", "n": 5}
+{"time": 1793282250.613, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793282259.992, "kind": "cancel", "n": 7}
+{"time": 1793282259.992, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793282270.454, "kind": "cancel", "n": 19}
+{"time": 1793282270.454, "kind": "place", "n": 15, "accepted": 15, "deferred": 0}
+{"time": 1793282280.143, "kind": "cancel", "n": 15}
+{"time": 1793282280.143, "kind": "place", "n": 15, "accepted": 15, "deferred": 0}
+{"time": 1793282289.856, "kind": "cancel", "n": 18}
+{"time": 1793282289.856, "kind": "place", "n": 26, "accepted": 26, "deferred": 0}
+{"time": 1793282301.212, "kind": "cancel", "n": 16}
+{"time": 1793282301.212, "kind": "place", "n": 16, "accepted": 16, "deferred": 0}
+{"time": 1793282309.43, "kind": "cancel", "n": 7}
+{"time": 1793282309.43, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793282319.842, "kind": "cancel", "n": 14}
+{"time": 1793282319.842, "kind": "place", "n": 14, "accepted": 14, "deferred": 0}
+{"time": 1793282330.553, "kind": "cancel", "n": 13}
+{"time": 1793282330.553, "kind": "place", "n": 13, "accepted": 13, "deferred": 0}
+{"time": 1793282341.173, "kind": "cancel", "n": 12}
+{"time": 1793282341.173, "kind": "place", "n": 10, "accepted": 10, "deferred": 0}
+{"time": 1793282350.245, "kind": "cancel", "n": 19}
+{"time": 1793282350.245, "kind": "place", "n": 21, "accepted": 21, "deferred": 0}
+{"time": 1793282360.397, "kind": "cancel", "n": 8}
+{"time": 1793282360.397, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793282370.482, "kind": "cancel", "n": 20}
+{"time": 1793282370.482, "kind": "place", "n": 22, "accepted": 22, "deferred": 0}
+{"time": 1793282380.326, "kind": "cancel", "n": 10}
+{"time": 1793282380.326, "kind": "place", "n": 10, "accepted": 10, "deferred": 0}
+{"time": 1793282390.967, "kind": "cancel", "n": 13}
+{"time": 1793282390.967, "kind": "place", "n": 13, "accepted": 13, "deferred": 0}
+{"time": 1793282400.249, "kind": "cancel", "n": 28}
+{"time": 1793282400.249, "kind": "place", "n": 16, "accepted": 16, "deferred": 0}
+{"time": 1793282410.274, "kind": "cancel", "n": 20}
+{"time": 1793282410.274, "kind": "place", "n": 20, "accepted": 20, "deferred": 0}
+{"time": 1793282421.497, "kind": "cancel", "n": 18}
+{"time": 1793282421.497, "kind": "place", "n": 16, "accepted": 16, "deferred": 0}
+{"time": 1793282430.908, "kind": "cancel", "n": 10}
+{"time": 1793282430.908, "kind": "place", "n": 10, "accepted": 10, "deferred": 0}
+{"time": 1793282440.951, "kind": "cancel", "n": 15}
+{"time": 1793282440.951, "kind": "place", "n": 13, "accepted": 13, "deferred": 0}
+{"time": 1793282450.606, "kind": "cancel", "n": 18}
+{"time": 1793282450.607, "kind": "place", "n": 14, "accepted": 14, "deferred": 0}
+{"time": 1793282461.435, "kind": "cancel", "n": 24}
+{"time": 1793282461.436, "kind": "place", "n": 24, "accepted": 24, "deferred": 0}
+{"time": 1793282470.9, "kind": "cancel", "n": 28}
+{"time": 1793282470.9, "kind": "place", "n": 28, "accepted": 28, "deferred": 0}
+{"time": 1793282481.427, "kind": "cancel", "n": 18}
+{"time": 1793282481.427, "kind": "place", "n": 16, "accepted": 16, "deferred": 0}
+{"time": 1793282490.262, "kind": "cancel", "n": 15}
+{"time": 1793282490.262, "kind": "place", "n": 15, "accepted": 15, "deferred": 0}
+{"time": 1793282501.077, "kind": "cancel", "n": 16}
+{"time": 1793282501.078, "kind": "place", "n": 16, "accepted": 16, "deferred": 0}
+{"time": 1793282511.426, "kind": "cancel", "n": 11}
+{"time": 1793282511.426, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793282521.889, "kind": "cancel", "n": 17}
+{"time": 1793282521.889, "kind": "place", "n": 17, "accepted": 17, "deferred": 0}
+{"time": 1793282530.229, "kind": "cancel", "n": 24}
+{"time": 1793282530.229, "kind": "place", "n": 28, "accepted": 28, "deferred": 0}
+{"time": 1793282541.458, "kind": "cancel", "n": 15}
+{"time": 1793282541.458, "kind": "place", "n": 15, "accepted": 15, "deferred": 0}
+{"time": 1793282550.996, "kind": "cancel", "n": 8}
+{"time": 1793282550.996, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793282560.636, "kind": "cancel", "n": 18}
+{"time": 1793282560.636, "kind": "place", "n": 16, "accepted": 16, "deferred": 0}
+{"time": 1793282569.815, "kind": "cancel", "n": 12}
+{"time": 1793282569.816, "kind": "place", "n": 12, "accepted": 12, "deferred": 0}
+{"time": 1793282581.437, "kind": "cancel", "n": 14}
+{"time": 1793282581.438, "kind": "place", "n": 14, "accepted": 14, "deferred": 0}
+{"time": 1793282590.732, "kind": "cancel", "n": 28}
+{"time": 1793282590.732, "kind": "place", "n": 28, "accepted": 28, "deferred": 0}
+{"time": 1793282601.086, "kind": "cancel", "n": 12}
+{"time": 1793282601.086, "kind": "place", "n": 12, "accepted": 12, "deferred": 0}
+{"time": 1793282610.707, "kind": "cancel", "n": 20}
+{"time": 1793282610.707, "kind": "place", "n": 18, "accepted": 18, "deferred": 0}
+{"time": 1793282620.278, "kind": "cancel", "n": 17}
+{"time": 1793282620.278, "kind": "place", "n": 17, "accepted": 17, "deferred": 0}
+{"time": 1793282630.675, "kind": "cancel", "n": 29}
+{"time": 1793282630.675, "kind": "place", "n": 29, "accepted": 29, "deferred": 0}
+{"time": 1793282641.817, "kind": "cancel", "n": 47}
+{"time": 1793282641.817, "kind": "place", "n": 47, "accepted": 47, "deferred": 0}
+{"time": 1793282650.988, "kind": "cancel", "n": 34}
+{"time": 1793282650.989, "kind": "place", "n": 38, "accepted": 38, "deferred": 0}
+{"time": 1793282660.221, "kind": "cancel", "n": 49}
+{"time": 1793282660.221, "kind": "place", "n": 49, "accepted": 49, "deferred": 0}
+{"time": 1793282671.425, "kind": "cancel", "n": 39}
+{"time": 1793282671.425, "kind": "place", "n": 39, "accepted": 39, "deferred": 0}
+{"time": 1793282680.51, "kind": "cancel", "n": 35}
+{"time": 1793282680.51, "kind": "place", "n": 33, "accepted": 33, "deferred": 0}
+{"time": 1793282690.584, "kind": "cancel", "n": 36}
+{"time": 1793282690.584, "kind": "place", "n": 34, "accepted": 34, "deferred": 0}
+{"time": 1793282700.721, "kind": "cancel", "n": 38}
+{"time": 1793282700.721, "kind": "place", "n": 34, "accepted": 34, "deferred": 0}
+{"time": 1793282710.572, "kind": "cancel", "n": 51}
+{"time": 1793282710.572, "kind": "place", "n": 53, "accepted": 53, "deferred": 0}
+{"time": 1793282720.239, "kind": "cancel", "n": 46}
+{"time": 1793282720.239, "kind": "place", "n": 46, "accepted": 46, "deferred": 0}
+{"time": 1793282731.492, "kind": "cancel", "n": 42}
+{"time": 1793282731.492, "kind": "place", "n": 42, "accepted": 42, "deferred": 0}
+{"time": 1793282741.748, "kind": "cancel", "n": 25}
+{"time": 1793282741.749, "kind": "place", "n": 25, "accepted": 25, "deferred": 0}
+{"time": 1793282750.547, "kind": "cancel", "n": 19}
+{"time": 1793282750.547, "kind": "place", "n": 15, "accepted": 15, "deferred": 0}
+{"time": 1793282761.137, "kind": "cancel", "n": 15}
+{"time": 1793282761.137, "kind": "place", "n": 15, "accepted": 15, "deferred": 0}
+{"time": 1793282770.811, "kind": "cancel", "n": 18}
+{"time": 1793282770.812, "kind": "place", "n": 26, "accepted": 26, "deferred": 0}
+{"time": 1793282780.192, "kind": "cancel", "n": 11}
+{"time": 1793282780.193, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793282791.62, "kind": "cancel", "n": 11}
+{"time": 1793282791.62, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793282800.583, "kind": "cancel", "n": 13}
+{"time": 1793282800.583, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793282811.402, "kind": "cancel", "n": 15}
+{"time": 1793282811.402, "kind": "place", "n": 15, "accepted": 15, "deferred": 0}
+{"time": 1793282821.356, "kind": "cancel", "n": 136}
+{"time": 1793282821.357, "kind": "place", "n": 136, "accepted": 136, "deferred": 0}
+{"time": 1793282831.16, "kind": "cancel", "n": 130}
+{"time": 1793282831.16, "kind": "place", "n": 138, "accepted": 138, "deferred": 0}
+{"time": 1793282840.957, "kind": "cancel", "n": 108}
+{"time": 1793282840.957, "kind": "place", "n": 108, "accepted": 108, "deferred": 0}
+{"time": 1793282851.042, "kind": "cancel", "n": 5}
+{"time": 1793282851.042, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793282860.946, "kind": "cancel", "n": 12}
+{"time": 1793282860.946, "kind": "place", "n": 12, "accepted": 12, "deferred": 0}
+{"time": 1793282871.024, "kind": "cancel", "n": 129}
+{"time": 1793282871.025, "kind": "place", "n": 127, "accepted": 127, "deferred": 0}
+{"time": 1793282880.964, "kind": "cancel", "n": 112}
+{"time": 1793282880.965, "kind": "place", "n": 112, "accepted": 112, "deferred": 0}
+{"time": 1793282891.028, "kind": "cancel", "n": 117}
+{"time": 1793282891.028, "kind": "place", "n": 121, "accepted": 121, "deferred": 0}
+{"time": 1793282901.35, "kind": "cancel", "n": 129}
+{"time": 1793282901.35, "kind": "place", "n": 127, "accepted": 127, "deferred": 0}
+{"time": 1793282910.083, "kind": "cancel", "n": 86}
+{"time": 1793282910.084, "kind": "place", "n": 86, "accepted": 86, "deferred": 0}
+{"time": 1793282922.779, "kind": "cancel", "n": 13}
+{"time": 1793282922.779, "kind": "place", "n": 13, "accepted": 13, "deferred": 0}
+{"time": 1793282930.695, "kind": "cancel", "n": 9}
+{"time": 1793282930.695, "kind": "place", "n": 9, "accepted": 9, "deferred": 0}
+{"time": 1793282942.226, "kind": "cancel", "n": 14}
+{"time": 1793282942.226, "kind": "place", "n": 10, "accepted": 10, "deferred": 0}
+{"time": 1793282950.881, "kind": "cancel", "n": 17}
+{"time": 1793282950.881, "kind": "place", "n": 17, "accepted": 17, "deferred": 0}
+{"time": 1793282963.327, "kind": "cancel", "n": 13}
+{"time": 1793282963.327, "kind": "place", "n": 13, "accepted": 13, "deferred": 0}
+{"time": 1793282971.579, "kind": "cancel", "n": 19}
+{"time": 1793282971.579, "kind": "place", "n": 17, "accepted": 17, "deferred": 0}
+{"time": 1793282980.66, "kind": "cancel", "n": 11}
+{"time": 1793282980.66, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793282991.135, "kind": "cancel", "n": 7}
+{"time": 1793282991.135, "kind": "place", "n": 9, "accepted": 9, "deferred": 0}
+{"time": 1793283001.013, "kind": "cancel", "n": 19}
+{"time": 1793283001.013, "kind": "place", "n": 13, "accepted": 13, "deferred": 0}
+{"time": 1793283010.559, "kind": "cancel", "n": 17}
+{"time": 1793283010.56, "kind": "place", "n": 19, "accepted": 19, "deferred": 0}
+{"time": 1793283020.401, "kind": "cancel", "n": 8}
+{"time": 1793283020.401, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793283033.902, "kind": "cancel", "n": 16}
+{"time": 1793283033.902, "kind": "place", "n": 16, "accepted": 16, "deferred": 0}
+{"time": 1793283041.506, "kind": "cancel", "n": 14}
+{"time": 1793283041.506, "kind": "place", "n": 12, "accepted": 12, "deferred": 0}
+{"time": 1793283052.007, "kind": "cancel", "n": 10}
+{"time": 1793283052.007, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793283060.823, "kind": "cancel", "n": 15}
+{"time": 1793283060.823, "kind": "place", "n": 15, "accepted": 15, "deferred": 0}
+{"time": 1793283071.378, "kind": "cancel", "n": 37}
+{"time": 1793283071.378, "kind": "place", "n": 39, "accepted": 39, "deferred": 0}
+{"time": 1793283080.802, "kind": "cancel", "n": 22}
+{"time": 1793283080.803, "kind": "place", "n": 20, "accepted": 20, "deferred": 0}
+{"time": 1793283092.917, "kind": "cancel", "n": 10}
+{"time": 1793283092.917, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793283101.266, "kind": "cancel", "n": 8}
+{"time": 1793283101.266, "kind": "place", "n": 10, "accepted": 10, "deferred": 0}
+{"time": 1793283111.09, "kind": "cancel", "n": 13}
+{"time": 1793283111.09, "kind": "place", "n": 13, "accepted": 13, "deferred": 0}
+{"time": 1793283120.287, "kind": "cancel", "n": 9}
+{"time": 1793283120.287, "kind": "place", "n": 9, "accepted": 9, "deferred": 0}
+{"time": 1793283131.823, "kind": "cancel", "n": 22}
+{"time": 1793283131.823, "kind": "place", "n": 28, "accepted": 28, "deferred": 0}
+{"time": 1793283141.273, "kind": "cancel", "n": 19}
+{"time": 1793283141.274, "kind": "place", "n": 15, "accepted": 15, "deferred": 0}
+{"time": 1793283151.239, "kind": "cancel", "n": 18}
+{"time": 1793283151.24, "kind": "place", "n": 18, "accepted": 18, "deferred": 0}
+{"time": 1793283161.217, "kind": "cancel", "n": 19}
+{"time": 1793283161.217, "kind": "place", "n": 19, "accepted": 19, "deferred": 0}
+{"time": 1793283174.781, "kind": "cancel", "n": 12}
+{"time": 1793283174.781, "kind": "place", "n": 12, "accepted": 12, "deferred": 0}
+{"time": 1793283181.594, "kind": "cancel", "n": 7}
+{"time": 1793283181.594, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793283192.174, "kind": "cancel", "n": 15}
+{"time": 1793283192.174, "kind": "place", "n": 17, "accepted": 17, "deferred": 0}
+{"time": 1793283201.178, "kind": "cancel", "n": 8}
+{"time": 1793283201.179, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793283211.279, "kind": "cancel", "n": 8}
+{"time": 1793283211.279, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793283220.995, "kind": "cancel", "n": 6}
+{"time": 1793283220.995, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793283230.865, "kind": "cancel", "n": 22}
+{"time": 1793283230.865, "kind": "place", "n": 22, "accepted": 22, "deferred": 0}
+{"time": 1793283240.631, "kind": "cancel", "n": 12}
+{"time": 1793283240.631, "kind": "place", "n": 12, "accepted": 12, "deferred": 0}
+{"time": 1793283250.627, "kind": "cancel", "n": 22}
+{"time": 1793283250.627, "kind": "place", "n": 26, "accepted": 26, "deferred": 0}
+{"time": 1793283261.433, "kind": "cancel", "n": 12}
+{"time": 1793283261.434, "kind": "place", "n": 12, "accepted": 12, "deferred": 0}
+{"time": 1793283270.76, "kind": "cancel", "n": 7}
+{"time": 1793283270.761, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793283280.712, "kind": "cancel", "n": 13}
+{"time": 1793283280.712, "kind": "place", "n": 15, "accepted": 15, "deferred": 0}
+{"time": 1793283290.704, "kind": "cancel", "n": 9}
+{"time": 1793283290.704, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793283300.826, "kind": "cancel", "n": 22}
+{"time": 1793283300.826, "kind": "place", "n": 16, "accepted": 16, "deferred": 0}
+{"time": 1793283310.633, "kind": "cancel", "n": 19}
+{"time": 1793283310.633, "kind": "place", "n": 21, "accepted": 21, "deferred": 0}
+{"time": 1793283321.209, "kind": "cancel", "n": 12}
+{"time": 1793283321.209, "kind": "place", "n": 12, "accepted": 12, "deferred": 0}
+{"time": 1793283330.875, "kind": "cancel", "n": 21}
+{"time": 1793283330.875, "kind": "place", "n": 21, "accepted": 21, "deferred": 0}
+{"time": 1793283340.854, "kind": "cancel", "n": 8}
+{"time": 1793283340.855, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793283351.867, "kind": "cancel", "n": 10}
+{"time": 1793283351.867, "kind": "place", "n": 10, "accepted": 10, "deferred": 0}
+{"time": 1793283361.581, "kind": "cancel", "n": 8}
+{"time": 1793283361.581, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793283371.816, "kind": "cancel", "n": 20}
+{"time": 1793283371.816, "kind": "place", "n": 22, "accepted": 22, "deferred": 0}
+{"time": 1793283381.81, "kind": "cancel", "n": 12}
+{"time": 1793283381.81, "kind": "place", "n": 12, "accepted": 12, "deferred": 0}
+{"time": 1793283391.002, "kind": "cancel", "n": 11}
+{"time": 1793283391.002, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793283402.036, "kind": "cancel", "n": 20}
+{"time": 1793283402.036, "kind": "place", "n": 20, "accepted": 20, "deferred": 0}
+{"time": 1793283414.686, "kind": "cancel", "n": 12}
+{"time": 1793283414.686, "kind": "place", "n": 12, "accepted": 12, "deferred": 0}
+{"time": 1793283421.193, "kind": "cancel", "n": 6}
+{"time": 1793283421.193, "kind": "place", "n": 4, "accepted": 4, "deferred": 0}
+{"time": 1793283431.767, "kind": "cancel", "n": 22}
+{"time": 1793283431.767, "kind": "place", "n": 24, "accepted": 24, "deferred": 0}
+{"time": 1793283441.338, "kind": "cancel", "n": 21}
+{"time": 1793283441.338, "kind": "place", "n": 19, "accepted": 19, "deferred": 0}
+{"time": 1793283451.654, "kind": "cancel", "n": 13}
+{"time": 1793283451.654, "kind": "place", "n": 13, "accepted": 13, "deferred": 0}
+{"time": 1793283461.531, "kind": "cancel", "n": 10}
+{"time": 1793283461.531, "kind": "place", "n": 8, "accepted": 8, "deferred": 0}
+{"time": 1793283471.933, "kind": "cancel", "n": 35}
+{"time": 1793283471.933, "kind": "place", "n": 31, "accepted": 31, "deferred": 0}
+{"time": 1793283481.644, "kind": "cancel", "n": 40}
+{"time": 1793283481.644, "kind": "place", "n": 38, "accepted": 38, "deferred": 0}
+{"time": 1793283491.418, "kind": "cancel", "n": 45}
+{"time": 1793283491.419, "kind": "place", "n": 47, "accepted": 47, "deferred": 0}
+{"time": 1793283501.838, "kind": "cancel", "n": 48}
+{"time": 1793283501.838, "kind": "place", "n": 48, "accepted": 48, "deferred": 0}
+{"time": 1793283510.592, "kind": "cancel", "n": 43}
+{"time": 1793283510.592, "kind": "place", "n": 43, "accepted": 43, "deferred": 0}
+{"time": 1793283523.647, "kind": "cancel", "n": 31}
+{"time": 1793283523.647, "kind": "place", "n": 29, "accepted": 29, "deferred": 0}
+{"time": 1793283532.306, "kind": "cancel", "n": 32}
+{"time": 1793283532.307, "kind": "place", "n": 32, "accepted": 32, "deferred": 0}
+{"time": 1793283542.292, "kind": "cancel", "n": 46}
+{"time": 1793283542.292, "kind": "place", "n": 42, "accepted": 42, "deferred": 0}
+{"time": 1793283551.417, "kind": "cancel", "n": 50}
+{"time": 1793283551.417, "kind": "place", "n": 54, "accepted": 54, "deferred": 0}
+{"time": 1793283561.24, "kind": "cancel", "n": 42}
+{"time": 1793283561.24, "kind": "place", "n": 42, "accepted": 42, "deferred": 0}
+{"time": 1793283571.208, "kind": "cancel", "n": 43}
+{"time": 1793283571.209, "kind": "place", "n": 41, "accepted": 41, "deferred": 0}
+{"time": 1793283580.733, "kind": "cancel", "n": 26}
+{"time": 1793283580.734, "kind": "place", "n": 24, "accepted": 24, "deferred": 0}
+{"time": 1793283591.203, "kind": "cancel", "n": 12}
+{"time": 1793283591.203, "kind": "place", "n": 12, "accepted": 12, "deferred": 0}
+{"time": 1793283600.946, "kind": "cancel", "n": 8}
+{"time": 1793283600.946, "kind": "place", "n": 6, "accepted": 6, "deferred": 0}
+{"time": 1793283611.195, "kind": "fill", "order_id": "paper-13103", "condition_id": "0x5df180a46b5b4be1fc5f8956ca3d9c90e4677a94e2315ebba6dbd3eb5053ac1d", "token": "33761223775500949143964424360230674715161376790614120308604894092082868844676", "side": "BUY", "price": 0.79, "size": 136.19, "ts": 1793283580}
+{"time": 1793283611.288, "kind": "cancel", "n": 40}
+{"time": 1793283611.288, "kind": "place", "n": 28, "accepted": 28, "deferred": 0}
+{"time": 1793283621.854, "kind": "cancel", "n": 13}
+{"time": 1793283621.854, "kind": "place", "n": 13, "accepted": 13, "deferred": 0}
+{"time": 1793283631.896, "kind": "cancel", "n": 14}
+{"time": 1793283631.896, "kind": "place", "n": 14, "accepted": 14, "deferred": 0}
+{"time": 1793283641.785, "kind": "cancel", "n": 17}
+{"time": 1793283641.785, "kind": "place", "n": 19, "accepted": 19, "deferred": 0}
+{"time": 1793283650.82, "kind": "cancel", "n": 7}
+{"time": 1793283650.821, "kind": "place", "n": 7, "accepted": 7, "deferred": 0}
+{"time": 1793283661.405, "kind": "cancel", "n": 114}
+{"time": 1793283661.406, "kind": "place", "n": 114, "accepted": 114, "deferred": 0}
+{"time": 1793283671.433, "kind": "cancel", "n": 130}
+{"time": 1793283671.434, "kind": "place", "n": 134, "accepted": 134, "deferred": 0}
+{"time": 1793283683.263, "kind": "cancel", "n": 108}
+{"time": 1793283683.263, "kind": "place", "n": 108, "accepted": 108, "deferred": 0}
+{"time": 1793283690.86, "kind": "cancel", "n": 5}
+{"time": 1793283690.86, "kind": "place", "n": 5, "accepted": 5, "deferred": 0}
+{"time": 1793283701.114, "kind": "cancel", "n": 13}
+{"time": 1793283701.115, "kind": "place", "n": 11, "accepted": 11, "deferred": 0}
+{"time": 1793283711.996, "kind": "cancel", "n": 105}
+{"time": 1793283711.997, "kind": "place", "n": 105, "accepted": 105, "deferred": 0}
+{"time": 1793283721.402, "kind": "cancel", "n": 103}
+{"time": 1793283721.402, "kind": "place", "n": 101, "accepted": 101, "deferred": 0}
+{"time": 1793283731.8, "kind": "cancel", "n": 108}
+{"time": 1793283731.8, "kind": "place", "n": 112, "accepted": 112, "deferred": 0}
+{"time": 1793283741.515, "kind": "cancel", "n": 104}
+{"time": 1793283741.516, "kind": "place", "n": 102, "accepted": 102, "deferred": 0}
+{"time": 1793283754.357, "kind": "cancel", "n": 80}
+{"time": 1793283754.358, "kind": "place", "n": 76, "accepted": 76, "deferred": 0}
+{"time": 1793283762.568, "kind": "cancel", "n": 13}
+{"time": 1793283762.568, "kind": "place", "n": 13, "accepted": 13, "deferred": 0}
+{"time": 1793283772.258, "kind": "cancel", "n": 17}
+{"time": 1793283772.258, "kind": "place", "n": 17, "accepted": 17, "deferred": 0}
+{"time": 1793283782.533, "kind": "cancel", "n": 20}
+{"time": 1793283782.534, "kind": "place", "n": 24, "accepted": 24, "deferred": 0}
+{"time": 1793283792.612, "kind": "cancel", "n": 24}
+{"time": 1793283792.612, "kind": "place", "n": 34, "accepted": 34, "deferred": 0}
+{"time": 1793283801.337, "kind": "cancel", "n": 15}
+{"time": 1793283801.337, "kind": "place", "n": 15, "accepted": 15, "deferred": 0}
+{"time": 1793283812.602, "kind": "cancel", "n": 13}
+{"time": 1793283812.602, "kind": "place", "n": 13, "accepted": 13, "deferred": 0}

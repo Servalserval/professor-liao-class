@@ -105,16 +105,25 @@ def target_quotes(st: MarketState, dec: Decision, cfg: MMConfig) -> list[OrderIn
     return out
 
 
-def diff_orders(open_orders: list[Order], desired: list[OrderIntent], d: float, now: float,
-                cfg: MMConfig) -> tuple[list[str], list[OrderIntent]]:
-    """保留還算接近目標的掛單，其他的撤掉重掛。回傳 (要撤的 id, 要掛的單)。"""
+def diff_orders(open_orders: list[Order], desired: list[OrderIntent], d: float, now: float, cfg: MMConfig,
+                tick: float = 0.0, mid: float | None = None, v: float | None = None,
+                yes_token: str | None = None) -> tuple[list[str], list[OrderIntent]]:
+    """保留還算接近目標的掛單，其他的撤掉重掛。回傳 (要撤的 id, 要掛的單)。
+
+    撤單重掛會讓掛單重新計時（官方要求掛單存活一段時間才計分），所以容忍目標價移動一個 tick；
+    但給了 mid 與 v 時，舊單一定要還在最大合格價差以內才保留。
+    """
     cancel, place = [], []
     remaining = list(open_orders)
+    tol = max(cfg.requote_frac * d, tick)
     for want in desired:
         match = next((o for o in remaining if o.token == want.token and o.side == want.side and o.leg == want.leg), None)
         if match is not None:
             remaining.remove(match)
-            close_price = abs(match.price - want.price) < cfg.requote_frac * d + 1e-9
+            close_price = abs(match.price - want.price) < tol + 1e-9
+            if close_price and mid is not None and v is not None and yes_token is not None:
+                yes_price = match.price if match.token == yes_token else 1 - match.price
+                close_price = abs(mid - yes_price) < v - 1e-9
             close_size = abs(match.remaining - want.size) <= 0.2 * want.size
             fresh = match.expires_at is None or match.expires_at - now > cfg.gtd_renew_minutes * 60
             if close_price and close_size and fresh:

@@ -264,7 +264,9 @@ class Runner:
             if dec.reason:
                 self._reasons[dec.reason] += 1
             desired = target_quotes(st, dec, self.cfg)
-            cancel, place = diff_orders(by_market.get(cid, []), desired, st.d, now, self.cfg)
+            cancel, place = diff_orders(by_market.get(cid, []), desired, st.d, now, self.cfg,
+                                        tick=st.book.tick if st.book else 0.0, mid=st.mid, v=st.info.v,
+                                        yes_token=st.info.yes_token)
             to_cancel += cancel
             to_place += place
             priority[cid] = st.reward_per_min

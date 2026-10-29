@@ -166,15 +166,15 @@ pmopt/mm/
   risk.py      全域風控
   runner.py    主迴圈、記錄
   report.py    彙整一次執行、對照上線檢查表
-  cli.py       mm-plan／mm-paper／mm-live／mm-report／mm-earnings
+  cli.py       mm-plan／mm-paper／mm-check／mm-live／mm-report／mm-earnings
 ```
 
 主迴圈每 10 秒：批次抓 ~1,000 個市場的訂單簿和新成交 → 更新狀態 → 每個市場判斷規則 → 算出目標報價 →
-和現有掛單比對（價格移動不到 0.25 × 掛單距離就不動，維持計分）→ 撤單、下單。每小時重新選市場、配本金。
+和現有掛單比對（目標價只差一個 tick、而且舊單還在合格價差內就不動，避免重新計時）→ 撤單、下單。每小時重新選市場、配本金。
 
 **安全設計（實盤）**
 
-- 所有單都是 **post-only**（只掛單，不會吃單）＋ **GTD 20 分鐘**自動失效：程式當掉，單最多再活 20 分鐘。
+- 所有單都是 **post-only**（只掛單，不會吃單）＋ **GTD 60 分鐘**自動失效（心跳之外的第二道保險）。
 - 官方**心跳**：每 5 秒一次；程式停止回應 10 秒，交易所會撤掉這個帳號所有的單。
 - 啟動時先撤掉帳號上所有的單、讀抵押品（pUSD）餘額（比預算少就用 95% 的餘額；每小時重讀一次）、載入既有部位。
 - **全域停機**：當天總虧損 > 預算 1%，或一分鐘內 API 錯誤＋被拒的單 > 30 次（例如餘額不足一直被拒）→ 全部撤單、結束。心跳不正常 → 暫停下新單。
@@ -253,11 +253,20 @@ read -rs POLYMARKET_PRIVATE_KEY && export POLYMARKET_PRIVATE_KEY
 如果帳號錢包不是簽名私鑰預設的 Deposit Wallet（例如舊的 Proxy／Safe 錢包），再設定 `POLYMARKET_WALLET_ADDRESS`。
 要開 `auto_merge`（把成對的 Yes + No 換回現金）還需要 `POLYMARKET_RELAYER_API_KEY` 和 `POLYMARKET_RELAYER_API_KEY_ADDRESS`；預設關閉。
 
+先做只讀的檢查（不下單、不撤單）：錢包地址對不對、餘額、是不是 closed-only、帳號上有沒有別的掛單：
+
+```bash
+python -m pmopt mm-check
+```
+
+確認沒問題再啟動：
+
 ```bash
 python -m pmopt mm-live --budget 10000 --max-markets 50 --confirm-live
 ```
 
-程式會再請你輸入一次預算數字確認。之後：
+程式會再請你輸入一次預算數字確認。要長時間跑，放在 `tmux` 之類的工作階段裡；Ctrl-C 會全部撤單後結束。
+就算程式被強制關掉（當機、斷電），心跳停止 10 秒後交易所會撤掉所有的單，每張單也會在 60 分鐘後自動失效。之後：
 
 ```bash
 python -m pmopt mm-earnings --days 7

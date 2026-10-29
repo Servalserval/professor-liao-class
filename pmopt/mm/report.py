@@ -38,23 +38,31 @@ def summarize(run_dir: str | Path) -> dict:
         res["note"] = "沒有分鐘記錄（執行時間太短？）"
         return res
     hours = (m["ts"].iloc[-1] - m["ts"].iloc[0]) / 3600 if len(m) > 1 else 0.0
+    # 啟動後的暖機時間不算：從第一次有市場兩邊都掛的那一分鐘開始算掛單比例與每日數字
+    active = m[m.index >= (m["quoting"] > 0).idxmax()] if (m["quoting"] > 0).any() else m
+    active_hours = (active["ts"].iloc[-1] - active["ts"].iloc[0]) / 3600 if len(active) > 1 else 0.0
     last = m.iloc[-1]
     capital = float(m["capital"].mean())
     net = float(last["mtm_pnl"] + last["est_reward"] + last["rebate"])
-    res.update(hours=round(hours, 2), avg_capital=round(capital, 0), markets=int(last["markets"]),
-               quoting_frac=round(float((m["quoting"] / m["markets"].clip(lower=1)).mean()), 3),
+    res.update(hours=round(hours, 2), active_hours=round(active_hours, 2), avg_capital=round(capital, 0),
+               markets=int(last["markets"]),
+               quoting_frac=round(float((active["quoting"] / active["markets"].clip(lower=1)).mean()), 3),
                mtm_pnl=round(float(last["mtm_pnl"]), 2), est_reward=round(float(last["est_reward"]), 2),
                rebate=round(float(last["rebate"]), 2), net_est=round(net, 2),
                max_inventory=round(float(m["inventory"].max()), 2),
                fills=kinds.get("fill", 0), placements=sum(e.get("n", 0) for e in ev if e["kind"] == "place"),
                cancels=sum(e.get("n", 0) for e in ev if e["kind"] == "cancel"),
                errors=kinds.get("error", 0), kills=[e.get("reason") for e in ev if e["kind"] == "kill"])
-    if hours > 0:
-        per_day = net / hours * 24
+    if active_hours > 0:
+        per_day = net / active_hours * 24
         res["net_per_day"] = round(per_day, 2)
         res["apr"] = round(per_day * 365 / capital, 4) if capital > 0 else None
-        res["fill_loss_per_day"] = round(float(last["mtm_pnl"]) / hours * 24, 2)
-        res["reward_per_day"] = round(float(last["est_reward"]) / hours * 24, 2)
+        res["fill_loss_per_day"] = round(float(last["mtm_pnl"]) / active_hours * 24, 2)
+        res["reward_per_day"] = round(float(last["est_reward"]) / active_hours * 24, 2)
+        n_quoting = max(float(active["quoting"].mean()), 1.0)
+        placements = sum(e.get("n", 0) for e in ev if e["kind"] == "place" and e["time"] >= active["ts"].iloc[0] + 600)
+        span_h = max((active["ts"].iloc[-1] - active["ts"].iloc[0] - 600) / 3600, 1e-9)
+        res["orders_per_market_hour"] = round(placements / n_quoting / span_h, 2)   # 不含一開始掛單的前 10 分鐘
     reasons: Counter = Counter()
     for r in m["reasons"].dropna():
         reasons.update(json.loads(r))
@@ -93,11 +101,11 @@ def gate(res: dict, stage: str, actual_reward: float | None = None) -> list[tupl
 
 
 def print_report(res: dict, stage: str | None = None, actual_reward: float | None = None) -> None:
-    labels = dict(hours="執行時數", avg_capital="平均本金", markets="市場數", quoting_frac="兩邊都掛的時間比例",
+    labels = dict(hours="執行時數", active_hours="暖機後時數", avg_capital="平均本金", markets="市場數", quoting_frac="兩邊都掛的時間比例",
                   mtm_pnl="成交損益（市值）", est_reward="估計獎勵", rebate="估計返佣", net_est="估計淨額",
                   net_per_day="每日淨額", apr="年化（估計淨額／本金）", fill_loss_per_day="每日成交損益",
                   reward_per_day="每日估計獎勵", max_inventory="最大庫存", fills="成交筆數", placements="下單張數",
-                  cancels="撤單張數", errors="錯誤次數", scoring_frac="抽樣計分比例", reconcile_max_diffs="對帳不一致")
+                  cancels="撤單張數", orders_per_market_hour="每市場每小時下單", errors="錯誤次數", scoring_frac="抽樣計分比例", reconcile_max_diffs="對帳不一致")
     print(f"記錄：{res['dir']}")
     if "note" in res:
         print(res["note"])

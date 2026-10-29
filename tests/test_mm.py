@@ -253,6 +253,19 @@ def test_diff_orders():
     assert diff_orders(same, [], d, T0, cfg) == (["a", "b"], [])
 
 
+def test_diff_orders_tolerates_one_tick_but_not_leaving_the_band():
+    cfg = cfg_()
+    d, v = 0.0315, 0.045
+    want = [OrderIntent("c1", "Y", "BUY", 0.46, 1000, "bid"), OrderIntent("c1", "N", "BUY", 0.46, 1000, "ask")]
+    kw = dict(tick=0.01, mid=0.50, v=v, yes_token="Y")
+    inside = [_order("a", replace(want[0], price=0.47)), _order("b", replace(want[1], price=0.47))]
+    assert diff_orders(inside, want, d, T0, cfg, **kw) == ([], [])        # 差一格、還在 4.5¢ 以內：不動
+    outside = [_order("a", replace(want[0], price=0.45)), _order("b", replace(want[1], price=0.45))]
+    assert diff_orders(outside, want, d, T0, cfg, **kw) == (["a", "b"], want)   # 差一格但離中價 5¢：不計分，重掛
+    two_ticks = [_order("a", replace(want[0], price=0.48)), _order("b", want[1])]
+    assert diff_orders(two_ticks, want, d, T0, cfg, **kw) == (["a"], [want[0]])
+
+
 # ---------------------------------------------------------------- 選市場、配本金
 def test_competitor_score():
     b = Book(T0, bids=((0.49, 100.0), (0.40, 100.0)), asks=((0.51, 100.0),))
@@ -604,3 +617,21 @@ def test_gate():
     live = dict(good, hours=24 * 15, reconcile_max_diffs=0, scoring_frac=0.9)
     assert all(ok for _, ok, _ in gate(live, "live-10k", actual_reward=400.0))
     assert not all(ok for _, ok, _ in gate(live, "live-10k", actual_reward=100.0))
+
+
+def test_mm_check_is_read_only(fake_sdk, monkeypatch, capsys):
+    from pmopt.mm import cli
+    client = FakeClient(positions=[("c1", "Yc1", 100.0)])
+
+    class _Client:
+        @staticmethod
+        async def create(private_key, wallet=None):
+            assert private_key == "k"
+            return client
+
+    fake_sdk.AsyncSecureClient = _Client
+    monkeypatch.setenv("POLYMARKET_PRIVATE_KEY", "k")
+    assert cli.cmd_check(None) == 0
+    out = capsys.readouterr().out
+    assert "0xABC" in out and "5,000.00" in out and "持有部位：1 個" in out
+    assert client.cancel_all_calls == 0 and client.created == [] and client.cancelled == []
