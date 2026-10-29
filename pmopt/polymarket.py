@@ -64,16 +64,28 @@ def _f(x):
         return None
 
 
+def _fee_rate(m: dict) -> float | None:
+    """taker 手續費係數：fee = 股數 × rate × p × (1 − p)（官方文件）。沒有開手續費就是 0。"""
+    if "feesEnabled" not in m and "feeSchedule" not in m:
+        return None
+    sched = m.get("feeSchedule") or {}
+    return float(sched.get("rate", 0.0)) if m.get("feesEnabled") else 0.0
+
+
 def normalize_market(m: dict, event_slug: str) -> dict:
     tokens = _parse_token_ids(m.get("clobTokenIds"))
     return dict(
         event_slug=event_slug,
+        market_id=m.get("id"),
         question=m.get("question", ""),
         end_date=m.get("endDate"),
+        # 觸價盤碰到之後會「重新上架」同一個價位，題目一模一樣，窗口從新市場建立時開始算
+        start_date=m.get("startDate"),
         best_bid=_f(m.get("bestBid")),
         best_ask=_f(m.get("bestAsk")),
         closed=bool(m.get("closed", False)),
         token_yes=tokens[0] if tokens else None,
+        fee_rate=_fee_rate(m),
     )
 
 
@@ -99,13 +111,15 @@ def fetch_markets(slugs: list[str], session: requests.Session | None = None, ver
                 print(f"  [polymarket] {slug}: {e}")
             continue
         for row in got:
-            key = (row["question"], row["end_date"])
+            # 用市場 id 去重：同一個題目可能有好幾個市場（舊的已結算、新的還在交易）
+            key = row["market_id"] or (row["question"], row["end_date"])
             if key not in seen:
                 seen.add(key)
                 rows.append(row)
         if verbose and got:
             print(f"  [polymarket] {slug}: {len(got)} 個市場")
-    return pd.DataFrame(rows, columns=["event_slug", "question", "end_date", "best_bid", "best_ask", "closed", "token_yes"])
+    return pd.DataFrame(rows, columns=["event_slug", "market_id", "question", "end_date", "start_date", "best_bid",
+                                       "best_ask", "closed", "token_yes", "fee_rate"])
 
 
 def fetch_book_top(token_id: str, session: requests.Session | None = None) -> dict:

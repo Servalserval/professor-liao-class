@@ -46,6 +46,17 @@ def _scan_both(markets, surface, now, cfg):
     return raw, centered, factor, centered_surface
 
 
+def _config(args, markets: pd.DataFrame | None = None, announce: bool = False) -> ScanConfig:
+    """--fee-coeff 沒給時，用市場自己的 feeSchedule（即時資料才有）；離線快照沒有這個欄位就是 0。"""
+    fee, source = args.fee_coeff, "--fee-coeff"
+    if fee is None:
+        rates = markets["fee_rate"].dropna() if markets is not None and "fee_rate" in markets else pd.Series(dtype=float)
+        fee, source = (float(rates.median()), "市場的 feeSchedule") if not rates.empty else (0.0, "預設，資料裡沒有手續費資訊")
+    if announce:
+        print(f"taker 手續費：fee = {fee:g} × p × (1 − p)／股（{source}）")
+    return ScanConfig(asset=args.asset, usdt_usd=args.usdt_usd, taker_fee_coeff=fee, min_edge=args.min_edge)
+
+
 def _load_inputs(args):
     """依 --snapshot 或 --live 載入 (估值時間, 波動率曲面, Polymarket 市場)。"""
     if args.snapshot:
@@ -67,8 +78,8 @@ def _load_inputs(args):
 
 
 def cmd_scan(args) -> int:
-    cfg = ScanConfig(asset=args.asset, usdt_usd=args.usdt_usd, taker_fee_coeff=args.fee_coeff, min_edge=args.min_edge)
     now, surface, markets = _load_inputs(args)
+    cfg = _config(args, markets, announce=True)
 
     print("\n期權波動率曲面（每個到期日）：")
     print(surface.describe().to_string(index=False))
@@ -111,8 +122,8 @@ def _fmt_gap(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def cmd_check(args) -> int:
-    cfg = ScanConfig(asset=args.asset, usdt_usd=args.usdt_usd, taker_fee_coeff=args.fee_coeff, min_edge=args.min_edge)
     now, surface, markets = _load_inputs(args)
+    cfg = _config(args, markets, announce=True)
     factor = fit_center(markets, surface, now, cfg)
     touch_factor = fit_center(markets, surface, now, cfg, band=(0.01, 0.99), kinds=("touch_up", "touch_down"))
     pairs, near, model_surface = _pairs_with_model(markets, surface, now, cfg, factor)
@@ -166,7 +177,6 @@ def cmd_check(args) -> int:
 def cmd_collect(args) -> int:
     from .live import fetch_snapshot
 
-    cfg = ScanConfig(asset=args.asset, usdt_usd=args.usdt_usd, taker_fee_coeff=args.fee_coeff, min_edge=args.min_edge)
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     deadline = time.time() + args.minutes * 60
@@ -175,6 +185,7 @@ def cmd_collect(args) -> int:
         started = time.time()
         try:
             snap = fetch_snapshot(args.asset, args.slug or None, args.days, args.with_depth)
+            cfg = _config(args, snap.markets)
             raw, centered, factor, _ = _scan_both(snap.markets, snap.surface, snap.now, cfg)
             if not raw.empty:
                 raw.insert(0, "ts_utc", snap.now.isoformat())
@@ -229,10 +240,11 @@ def cmd_backtest(args) -> int:
         df.to_csv(out / "history.csv", index=False)
         print(f"原始資料已存到 {out / 'history.csv'}（之後可用 --from-csv 重新分析，不必再連網）")
 
-    if "rule_check" in df and df["rule_check"].notna().any():
-        bad = df[df["rule_check"].notna() & (df["rule_check"].astype(str) == "False")]
-        print(f"\n結算驗證：用 Binance 中午那根 K 線自己算結果，和 Polymarket 結算不一致的有 "
-              f"{bad[['day', 'strike']].drop_duplicates().shape[0]} 個市場。")
+    for col, candle in (("rule_check", "11:59 開盤、12:00 收盤"), ("rule_check_alt", "12:00 開盤")):
+        if col in df and df[col].notna().any():
+            mk = df[df[col].notna()].drop_duplicates(["day", "strike"])
+            bad = int((mk[col].astype(str) == "False").sum())
+            print(f"結算驗證（{candle}的 K 線）：{len(mk)} 個市場中，自己算的結果和 Polymarket 結算不一致的有 {bad} 個。")
 
     u = H.usable(df, args.max_age_min)
     print(f"可用樣本：{len(u)} 筆（{u['day'].nunique()} 天）；價格超過 {args.max_age_min:.0f} 分鐘沒更新的已排除。")
@@ -250,8 +262,9 @@ def cmd_backtest(args) -> int:
         by_model.to_csv(out / f"calibration_model_{h:g}h.csv", index=False)
         p = plot_reliability(by_pm, by_model, out / f"{h:g}h", f"結算前 {h:g} 小時，{len(g)} 筆、{g['day'].nunique()} 天")
         print(f"圖已存到 {p}")
-    st = H.strategy(u, args.threshold, args.half_spread)
-    print(f"\n=== 簡單策略：價差超過 {args.threshold} 就交易，每股扣 {args.half_spread} 的半價差 ===")
+    st = H.strategy(u, args.threshold, args.half_spread, args.fee_coeff)
+    print(f"\n=== 簡單策略：價差超過 {args.threshold} 就交易，每股扣 {args.half_spread} 的半價差"
+          f"與 {args.fee_coeff:g}·p·(1−p) 的手續費 ===")
     print(st.to_string(index=False) if not st.empty else "（沒有觸發任何交易）")
     sc.to_csv(out / "scores.csv", index=False)
     st.to_csv(out / "strategy.csv", index=False)
@@ -284,7 +297,8 @@ def main(argv: list[str] | None = None) -> int:
     def common(sp):
         sp.add_argument("--asset", default="BTC", choices=["BTC", "ETH"])
         sp.add_argument("--usdt-usd", type=float, default=1.0, help="1 USDT 值多少美元（預設 1.0）")
-        sp.add_argument("--fee-coeff", type=float, default=0.0, help="taker 手續費模型係數：fee = c·p·(1-p)")
+        sp.add_argument("--fee-coeff", type=float, default=None,
+                        help="taker 手續費係數 c：fee = c·p·(1-p)。不給就用市場的 feeSchedule（離線快照為 0）")
         sp.add_argument("--min-edge", type=float, default=0.01, help="標示訊號的 edge 門檻（美元／股）")
         sp.add_argument("--slug", action="append", help="指定 Polymarket 事件 slug（可重複）；不給就自動猜")
         sp.add_argument("--days", type=int, default=7, help="自動猜 slug 時往後看幾天")
@@ -327,6 +341,7 @@ def main(argv: list[str] | None = None) -> int:
     sp.add_argument("--vol-scale", type=float, default=1.0, help="模型波動率 = DVOL × 這個倍數")
     sp.add_argument("--threshold", type=float, default=0.05, help="策略的交易門檻（機率差）")
     sp.add_argument("--half-spread", type=float, default=0.01, help="每股扣多少當作買賣價差成本")
+    sp.add_argument("--fee-coeff", type=float, default=0.07, help="taker 手續費係數（加密貨幣盤官方為 0.07）")
     sp.add_argument("--max-age-min", type=float, default=180, help="價格最多可以多舊（分鐘）")
     sp.add_argument("--verbose", action="store_true")
     sp.set_defaults(func=cmd_backtest)

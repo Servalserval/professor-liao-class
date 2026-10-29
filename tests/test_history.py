@@ -52,6 +52,7 @@ def test_clustered_se_counts_days_not_rows():
 
 DAYS = [date(2026, 10, 26), date(2026, 10, 27)]
 STRIKES = [76_000, 78_000, 80_000]
+OLD_ONLY = date(2026, 10, 28)
 
 
 def _spot(ms: int) -> float:
@@ -80,13 +81,19 @@ class _FakeAPI:
             slug = params["slug"]
             for d in DAYS:
                 if slug == H.daily_slugs(d)[0]:
-                    settle_close = _spot(int(H.settle_time(d).timestamp() * 1000))
+                    # 規則：收在 12:00 的那根 K 線（11:59 開盤）
+                    settle_close = _spot(int((H.settle_time(d) - timedelta(minutes=1)).timestamp() * 1000))
                     markets = [dict(
                         question=f"Will the price of Bitcoin be above ${k:,} on {d:%B} {d.day}?",
                         closed=True, clobTokenIds=json.dumps([f"{d}-{k}-yes", f"{d}-{k}-no"]),
                         outcomePrices=json.dumps(["1", "0"] if settle_close > k else ["0", "1"]),
                     ) for k in STRIKES]
-                    return _Resp([dict(slug=slug, markets=markets)])
+                    return _Resp([dict(slug=slug, endDate=H.settle_time(d).isoformat(), markets=markets)])
+            # 10/28 沒有 -2026 的事件，沒有年份的 slug 指到「前一年」的同一天：程式必須忽略
+            if slug == H.daily_slugs(OLD_ONLY)[1]:
+                return _Resp([dict(slug=slug, endDate="2025-10-28T16:00:00Z", markets=[dict(
+                    question="Will the price of Bitcoin be above $100,000 on October 28?", closed=True,
+                    clobTokenIds='["old-yes", "old-no"]', outcomePrices='["1", "0"]')])])
             return _Resp([])
         if url.endswith("/prices-history"):
             if params["fidelity"] == 10 and params["market"].endswith("76000-yes"):
@@ -105,6 +112,13 @@ class _FakeAPI:
         raise AssertionError(url)
 
 
+def test_yearless_slug_from_another_year_is_ignored():
+    api = _FakeAPI()
+    f = H.Fetcher(session=api, pause=0)
+    assert H.resolved_markets(f, OLD_ONLY) == []   # -2026 不存在，退回的舊 slug 是 2025 年的
+    assert [c[1]["slug"] for c in api.calls] == H.daily_slugs(OLD_ONLY)   # 兩個 slug 都問過了
+
+
 def test_collect_history_end_to_end(tmp_path):
     api = _FakeAPI()
     f = H.Fetcher(session=api, cache_dir=tmp_path / "cache", pause=0)
@@ -113,6 +127,7 @@ def test_collect_history_end_to_end(tmp_path):
     assert df["pm_price"].eq(0.5).all() and df["dvol"].eq(40.0).all()
     assert set(df.loc[df["strike"] == 76_000, "fidelity_min"]) == {60}
     assert df["rule_check"].astype(bool).all()  # 我們自己用 K 線算的結果和「結算」一致
+    assert "rule_check_alt" in df and df["binance_settle_close_alt"].notna().all()
     # 現貨取的是「結算前 h 小時」那一分鐘
     r = df[(df["day"] == "2026-10-26") & (df["horizon_h"] == 24.0)].iloc[0]
     t = H.settle_time(DAYS[0]) - timedelta(hours=24)
@@ -168,3 +183,12 @@ def test_cli_backtest_from_csv(tmp_path, capsys):
     out = capsys.readouterr().out
     assert "brier_diff" in out and "依 Polymarket 價格分組" in out
     assert (tmp_path / "bt" / "24h" / "reliability.png").exists()
+
+
+def test_strategy_charges_spread_and_fee():
+    df = pd.DataFrame(dict(day=["a", "b"], horizon_h=[24.0, 24.0], pm_price=[0.20, 0.20],
+                           model_prob=[0.05, 0.05], outcome=[0, 1]))
+    st = H.strategy(df, threshold=0.05, half_spread=0.01, fee_coeff=0.07).iloc[0]
+    fee = 0.07 * 0.2 * 0.8
+    # 賣 Yes：結果 0 賺 0.20，結果 1 賠 0.80，平均 −0.30，再扣成本
+    assert st["side"] == "賣 Yes" and st["mean_pnl"] == pytest.approx(-0.30 - 0.01 - fee, abs=1e-4)

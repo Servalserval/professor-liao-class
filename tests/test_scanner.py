@@ -5,7 +5,7 @@ import pandas as pd
 import pytest
 
 from pmopt.__main__ import main
-from pmopt.polymarket import candidate_event_slugs, fetch_book_top, load_snapshot, normalize_market
+from pmopt.polymarket import candidate_event_slugs, fetch_book_top, fetch_markets, load_snapshot, normalize_market
 from pmopt.scanner import ScanConfig, fit_center, scan
 from pmopt.surface import VolSurface
 
@@ -90,6 +90,31 @@ class _FakeSession:
 
     def get(self, *a, **k):
         return _FakeResp(self.payload)
+
+
+def test_fetch_markets_keeps_relisted_markets():
+    """觸價盤會重新上架：同一個題目，舊的已結算、新的還在交易，兩個都要留下來。"""
+    q = "Will Bitcoin reach $85,000 in October?"
+    event = [{"markets": [
+        {"id": "1", "question": q, "endDate": "2026-11-01T04:00:00Z", "closed": True, "bestBid": 0.999, "bestAsk": 1},
+        {"id": "2", "question": q, "endDate": "2026-11-01T04:00:00Z", "closed": False, "bestBid": 0.032, "bestAsk": 0.033,
+         "feesEnabled": True, "feeSchedule": {"rate": 0.07, "exponent": 1}},
+    ]}]
+    df = fetch_markets(["a", "b"], _FakeSession(event))   # 兩個 slug 回傳同一個事件，也不能重複
+    assert list(df["market_id"]) == ["1", "2"]
+    assert df.loc[df["market_id"] == "2", "fee_rate"].item() == 0.07
+
+
+def test_fee_coefficient_comes_from_markets_unless_given():
+    from argparse import Namespace
+
+    from pmopt.__main__ import _config
+    args = Namespace(asset="BTC", usdt_usd=1.0, min_edge=0.01, fee_coeff=None)
+    live = pd.DataFrame({"fee_rate": [0.07, 0.07, None]})
+    assert _config(args, live).taker_fee_coeff == 0.07
+    assert _config(args, pd.DataFrame({"question": []})).taker_fee_coeff == 0.0   # 離線快照沒有手續費欄位
+    args.fee_coeff = 0.0
+    assert _config(args, live).taker_fee_coeff == 0.0
 
 
 def test_book_top_picks_best_prices_regardless_of_order():

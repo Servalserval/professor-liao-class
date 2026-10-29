@@ -57,6 +57,7 @@ class Fetcher:
         self.pause = pause
         self.verbose = verbose
         self._mem: dict[str, object] = {}
+        self.dead_bases: set[str] = set()  # 回過 451／403 的網址（例如 api.binance.com 擋美國 IP），之後跳過
 
     def get_json(self, url: str, params: dict):
         key = hashlib.sha1(json.dumps([url, sorted(params.items())], default=str).encode()).hexdigest()
@@ -80,7 +81,11 @@ class Fetcher:
 
 
 def settle_time(day: date) -> datetime:
-    """每日盤看「美東時間中午 12:00 那根 1 分鐘 K 線」，換成 UTC（自動處理夏令時間）。"""
+    """每日盤的結算時刻：美東時間中午 12:00，換成 UTC（自動處理夏令時間）。
+
+    規則原文是「the Binance 1 minute candle for BTC/USDT closing at 12:00 in the ET timezone」，
+    也就是 11:59 開盤、12:00 收盤的那根。Binance 的 K 線以開盤時間標示，所以要往前一分鐘取。
+    """
     return datetime(day.year, day.month, day.day, 12, 0, tzinfo=ET).astimezone(timezone.utc)
 
 
@@ -114,6 +119,10 @@ def resolved_markets(f: Fetcher, day: date, asset: str = "BTC") -> list[dict]:
             continue
         rows = []
         for ev in events or []:
+            # 沒有年份的 slug 可能是前一年的同一天（命名在 2026 年中才加上年份），要核對結算日期
+            end = ev.get("endDate")
+            if not end or datetime.fromisoformat(end.replace("Z", "+00:00")).astimezone(ET).date() != day:
+                continue
             for m in ev.get("markets", []):
                 spec = parse_question(m.get("question", ""))
                 if spec is None or spec.kind != "above" or spec.asset != asset:
@@ -159,9 +168,15 @@ def binance_close(f: Fetcher, when: datetime, symbol: str = "BTCUSDT") -> float 
     """從 when 開始的那根 1 分鐘 K 線的收盤價。"""
     ms = int(when.timestamp() * 1000)
     for base in BINANCE_BASES:
+        if base in f.dead_bases:
+            continue
         try:
             rows = f.get_json(f"{base}/api/v3/klines",
                               {"symbol": symbol, "interval": "1m", "startTime": ms, "limit": 1})
+        except requests.HTTPError as e:
+            if e.response is not None and e.response.status_code in (403, 451):
+                f.dead_bases.add(base)
+            continue
         except requests.RequestException:
             continue
         if rows and int(rows[0][0]) == ms:
@@ -208,7 +223,9 @@ def collect_history(start: date, end: date, horizons_h: tuple[float, ...] = (24.
         markets = resolved_markets(f, day, asset)
         settle = settle_time(day)
         if markets:
-            settle_close = binance_close(f, settle, f"{asset}USDT")
+            # 規則寫的是「收在 12:00」那根（11:59 開盤）；12:00 開盤那根也記下來，用實際結算判斷哪一根才對
+            settle_close = binance_close(f, settle - timedelta(minutes=1), f"{asset}USDT")
+            settle_close_alt = binance_close(f, settle, f"{asset}USDT")
             spots = {h: binance_close(f, settle - timedelta(hours=h), f"{asset}USDT") for h in horizons_h}
             for m in markets:
                 hist, fid = price_history(f, m["token_yes"], int((settle - span).timestamp()), int(settle.timestamp()))
@@ -219,6 +236,7 @@ def collect_history(start: date, end: date, horizons_h: tuple[float, ...] = (24.
                         day=day.isoformat(), strike=m["strike"], horizon_h=h, pm_price=p, price_age_min=age,
                         fidelity_min=fid, spot=spots[h], dvol=_asof(dvol, int(t.timestamp())),
                         outcome=m["outcome"], binance_settle_close=settle_close,
+                        binance_settle_close_alt=settle_close_alt,
                     ))
         elif f.verbose:
             print(f"  {day}：找不到已結算的每日盤")
@@ -236,11 +254,11 @@ def add_model(df: pd.DataFrame, vol_scale: float = 1.0) -> pd.DataFrame:
         digital_call_flat(s, k, h / HOURS_PER_YEAR, v / 100.0 * vol_scale)
         for s, k, h, v in zip(df.loc[ok, "spot"], df.loc[ok, "strike"], df.loc[ok, "horizon_h"], df.loc[ok, "dvol"])
     ]
-    if "binance_settle_close" in df:
-        check = df["binance_settle_close"].notna()
-        df["rule_check"] = pd.NA
-        df.loc[check, "rule_check"] = (df.loc[check, "binance_settle_close"] > df.loc[check, "strike"]).astype(int) \
-            == df.loc[check, "outcome"]
+    for col, name in (("binance_settle_close", "rule_check"), ("binance_settle_close_alt", "rule_check_alt")):
+        if col in df:
+            check = df[col].notna()
+            df[name] = pd.NA
+            df.loc[check, name] = (df.loc[check, col] > df.loc[check, "strike"]).astype(int) == df.loc[check, "outcome"]
     return df
 
 
@@ -305,16 +323,19 @@ def calibration_table(df: pd.DataFrame, by: str = "pm_price", bins=DEFAULT_BINS)
     return pd.DataFrame(out)
 
 
-def strategy(df: pd.DataFrame, threshold: float = 0.05, half_spread: float = 0.01) -> pd.DataFrame:
+def strategy(df: pd.DataFrame, threshold: float = 0.05, half_spread: float = 0.01,
+             fee_coeff: float = 0.0) -> pd.DataFrame:
     """很單純的規則：Polymarket 比模型貴超過門檻就賣 Yes，便宜超過門檻就買 Yes，抱到結算。
 
-    每股報酬：賣 Yes = p − 結果，買 Yes = 結果 − p，再扣 half_spread（prices-history 不是可成交價）。
+    每股報酬：賣 Yes = p − 結果，買 Yes = 結果 − p，再扣 half_spread（prices-history 不是可成交價）
+    和 taker 手續費 fee_coeff × p × (1 − p)（官方公式；賣 Yes 等同用 1 − p 買 No，費用相同）。
     """
     gap = df["pm_price"] - df["model_prob"]
     sell, buy = gap > threshold, gap < -threshold
+    cost = half_spread + fee_coeff * df["pm_price"] * (1 - df["pm_price"])
     pnl = pd.Series(np.nan, index=df.index)
-    pnl[sell] = df.loc[sell, "pm_price"] - df.loc[sell, "outcome"] - half_spread
-    pnl[buy] = df.loc[buy, "outcome"] - df.loc[buy, "pm_price"] - half_spread
+    pnl[sell] = df.loc[sell, "pm_price"] - df.loc[sell, "outcome"] - cost[sell]
+    pnl[buy] = df.loc[buy, "outcome"] - df.loc[buy, "pm_price"] - cost[buy]
     trades = df.assign(side=np.where(sell, "賣 Yes", np.where(buy, "買 Yes", "")), pnl=pnl)[sell | buy]
     out = []
     for (h, side), g in trades.groupby(["horizon_h", "side"]):
